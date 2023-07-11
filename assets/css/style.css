@@ -492,6 +492,7 @@ select:focus {
   .mainmenu-area .navbar {
     padding: 0px 0px; }
     .mainmenu-area .navbar .navbar-brand {
+      color: #fff;
       padding: 0px;
       margin: 0px; }
       .mainmenu-area .navbar .navbar-brand img {
