@@ -837,7 +837,7 @@ select:focus {
   .hero-area .left-content {
     z-index: 9; }
     .hero-area .left-content .content .title {
-      font-size: 60px;
+      font-size: 40px;
       font-weight: 500;
       line-height: 70px;
       margin-bottom: 19px;
@@ -988,6 +988,7 @@ select:focus {
     margin-bottom: 56px; }
 
 .single-how-it-work {
+  min-height: 310px;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 27px 30px 26px;

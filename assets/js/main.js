@@ -5,7 +5,7 @@ $(function ($) {
         $('.mainmenu-area .navbar-nav a').on('click', function (event) {
             var $anchor = $(this);
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 100
+                scrollTop: $($anchor.attr('href')).offset().top - 70
             }, 1000);
             event.preventDefault();
         });
