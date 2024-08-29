@@ -7,7 +7,7 @@ github:  [https://github.com/EvilGenius-dot/RustMinerSystem](https://github.com/
 运行以下shell指令以安装：
 
 ```
-  bash <(curl -s -L https://github.com/EvilGenius-dot/RustMinerSystem/raw/main/install.sh)
+bash <(curl -s -L https://github.com/EvilGenius-dot/RustMinerSystem/raw/main/install.sh)
 ```
 
 运行之后按照提示安装即可。
@@ -36,4 +36,16 @@ Windows二进制执行文件下载地址:
 
 如果您无法访问RustMinerSystem后台,  请检查防火墙或服务器安全策略是否放行端口。
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+后台默认账号:
+
+qzpm19kkx
+
+后台默认密码:
+
+xloqslz913
+
+安装完毕后请第一时间修改账号密码以及安全地址, 防止被爆破。
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
