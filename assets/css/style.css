@@ -1180,6 +1180,11 @@ select:focus {
           margin: 0px 4px;
           display: block; }
 
+
+.clause{
+  padding: 130px 0 130px;
+  /* background: #F7F8FC; */
+}
 /* Team Area End */
 /* Faq Area Start */
 .faq-area {
