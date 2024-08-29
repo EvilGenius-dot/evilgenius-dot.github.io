@@ -1,6 +1,7 @@
 # Table of contents
 
 * [RustMinerSystem](README.md)
+  * [安装程序](rustminersystem/an-zhuang-cheng-xu.md)
 
 ## 代理传统矿池
 
