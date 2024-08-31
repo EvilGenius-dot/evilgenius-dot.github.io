@@ -24,5 +24,6 @@ description: RustMinerSystem既可以代理传统矿池，也可以使您的设�
 * [成为矿池节点](broken-reference)
 * [配置矿池费率](cheng-wei-kuang-chi-jie-dian/pei-zhi-kuang-chi-fei-l.md)
 * [创建矿池端口](cheng-wei-kuang-chi-jie-dian/chuang-jian-kuang-chi-duan-kou.md)
+* [个性化矿池首页](cheng-wei-kuang-chi-jie-dian/ge-xing-hua-kuang-chi-shou-ye.md)
 * [开始在您的节点挖矿](cheng-wei-kuang-chi-jie-dian/kai-shi-zai-nin-de-jie-dian-wa-kuang.md)
 * [联系我们](lian-xi-wo-men.md)
