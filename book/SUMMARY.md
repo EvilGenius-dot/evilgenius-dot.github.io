@@ -15,6 +15,7 @@
 * [成为矿池节点](cheng-wei-kuang-chi-jie-dian/cheng-wei-kuang-chi-jie-dian.md)
 * [创建矿池端口](cheng-wei-kuang-chi-jie-dian/chuang-jian-kuang-chi-duan-kou.md)
 * [配置矿池费率](cheng-wei-kuang-chi-jie-dian/pei-zhi-kuang-chi-fei-l.md)
+* [个性化矿池首页](cheng-wei-kuang-chi-jie-dian/ge-xing-hua-kuang-chi-shou-ye.md)
 * [开始在您的节点挖矿](cheng-wei-kuang-chi-jie-dian/kai-shi-zai-nin-de-jie-dian-wa-kuang.md)
 
 ***
