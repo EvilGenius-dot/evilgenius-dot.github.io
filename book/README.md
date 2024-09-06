@@ -31,6 +31,7 @@ description: RustMinerSystem既可以代理传统矿池，也可以使您的设�
 
 * [代理传统矿池](broken-reference)
 * [配置传统代理费率](dai-li-chuan-tong-kuang-chi/pei-zhi-chuan-tong-dai-li-fei-l.md)
+* 矿池起付额
 
 #### 矿池节点
 
