@@ -25,6 +25,7 @@ description: RustMinerSystem既可以代理传统矿池，也可以使您的设�
 * 纯转发模式
 * [费率标准](rustminersystem/feilbiao-zhun.md)
 * [联系我们](lian-xi-wo-men.md)
+* 免费定制专属版本
 
 #### 代理传统矿池
 
