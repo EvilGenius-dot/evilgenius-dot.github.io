@@ -9,6 +9,7 @@
 
 * [代理传统矿池](dai-li-chuan-tong-kuang-chi/dai-li-chuan-tong-kuang-chi.md)
 * [配置传统代理费率](dai-li-chuan-tong-kuang-chi/pei-zhi-chuan-tong-dai-li-fei-l.md)
+* [拦截ALEO锄头抽水、配置ALEO自定义抽水](dai-li-chuan-tong-kuang-chi/lan-jie-aleo-chu-tou-chou-shui-pei-zhi-aleo-zi-ding-yi-chou-shui.md)
 
 ## 成为矿池节点
 
