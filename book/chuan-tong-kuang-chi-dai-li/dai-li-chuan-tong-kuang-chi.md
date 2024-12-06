@@ -24,7 +24,7 @@
 
 <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-例如此处创建了19200端口的BTC代理， 代理至某传统矿池，创建完毕之后，例如RustMinerSystem所在设备公网或内网IP为 x.x.x.x,   矿机挖矿地址直接填写 stream+tcp://x.x.x.x:19200  即可通过RustMinerSystem连接至第三方矿池
+例如此处创建了19200端口的BTC代理， 代理至某传统矿池，创建完毕之后，例如RustMinerSystem所在设备公网或内网IP为 x.x.x.x,   矿机挖矿地址直接填写 stratum+tcp://x.x.x.x:19200  即可通过RustMinerSystem连接至第三方矿池
 
 
 
