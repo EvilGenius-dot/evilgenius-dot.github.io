@@ -16,7 +16,7 @@
 
 (5. 选择代理矿池地址协议, 如果 步骤4 代理地址为TCP协议，此处必须选择TCP， 如果为SSL或TLS， 此处则必须选择SSL， 务必选择要代理矿池地址一致协议， 否则矿机将无法连接)
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;  3\. 创建代理
 
