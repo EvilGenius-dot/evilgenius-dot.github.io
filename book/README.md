@@ -41,4 +41,5 @@ description: RustMinerSystem既可以代理传统矿池，也可以使您的设�
 * [个性化矿池首页](zi-jian-kuang-chi-jie-dian/ge-xing-hua-kuang-chi-shou-ye.md)
 * [开始在您的节点挖矿](zi-jian-kuang-chi-jie-dian/kai-shi-zai-nin-de-jie-dian-wa-kuang.md)
 * 矿池起付额
+* [用户端开放式API](kuang-chi-jie-dian-yong-hu-duan-api/api-shi-yong-zhu-yi-shi-xiang-bi-du.md)
 
