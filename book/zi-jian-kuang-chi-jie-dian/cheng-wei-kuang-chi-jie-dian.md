@@ -6,7 +6,7 @@
 
 1.  选择矿池节点,  申请一个CODE及TOKEN
 
-    <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 2.  输入一个自定义节点名称, 即可申请CODE以及TOKEN
 
     <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

@@ -1,22 +1,19 @@
 # 登录、获取TOKEN
 
-URL: /api/user/login
+```
+URL: 
+/api/user/login
 
-METHOD: POST
+METHOD: 
+POST
 
 REQUEST BODY:
-
-```
-data: {
+{
     email: String,    // 登录的邮箱地址
     code: String      // 获取到的邮箱验证码
 }
-```
 
 RESULT:
-
-```
-// Some code
 {
     "status": 0,
     "error": null,
