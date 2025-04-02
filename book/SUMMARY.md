@@ -21,10 +21,10 @@
 * [使用内置HTTPS工具或第三方HTTPS代理](zi-jian-kuang-chi-jie-dian/shi-yong-nei-zhi-https-gong-ju-huo-di-san-fang-https-dai-li.md)
 * [关闭用户端费率显示](zi-jian-kuang-chi-jie-dian/guan-bi-yong-hu-duan-feilxian-shi.md)
 * [矿池节点用户端API](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/README.md)
-  * [API使用注意事项](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/api-shi-yong-zhu-yi-shi-xiang.md)
+  * [API使用注意事项(必读)](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/api-shi-yong-zhu-yi-shi-xiang-bi-du.md)
   * [调用、获取滑动验证码](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/diao-yong-huo-qu-hua-dong-yan-zheng-ma.md)
   * [发送登录邮箱验证码](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/fa-song-deng-lu-you-xiang-yan-zheng-ma.md)
-  * [登录、获取TOKEN、获取验证码](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/deng-lu-huo-qu-token-huo-qu-yan-zheng-ma.md)
+  * [登录、获取TOKEN](zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/deng-lu-huo-qu-token.md)
 
 ***
 

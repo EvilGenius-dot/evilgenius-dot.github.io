@@ -1,4 +1,4 @@
-# API使用注意事项
+# API使用注意事项(必读)
 
 此API为用户端接口，即![](../../.gitbook/assets/image.png)RUSTMINERSYSTEM默认自带后台中所有接口，用户可根据自己需求调用API开发自己的用户端工具，例如网页、APP或管理工具。
 
@@ -24,7 +24,9 @@
 
 
 
-【**注意**】 **所有接口除登录外，均需要在header处使用Authorization字段来传入token以验证身份, toekn获取方式详见**[**登录、获取TOKEN**](deng-lu-huo-qu-token-huo-qu-yan-zheng-ma.md)**,   调用其他接口时header应传入**
+【**注意**】 **所有接口除登录外，均需要在header处使用Authorization字段来传入token以验证身份, toekn获取方式详见**[**登录、获取TOKEN**](deng-lu-huo-qu-token.md)**,   调用其他接口时header应传入**
+
+请求头的ContentType应为'application/json'
 
 ```
 Authorization: Bearer 获取到的TOKEN
