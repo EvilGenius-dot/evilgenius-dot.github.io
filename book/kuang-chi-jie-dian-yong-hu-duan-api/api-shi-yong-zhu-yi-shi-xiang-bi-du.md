@@ -34,5 +34,5 @@ Authorization: Bearer 获取到的TOKEN
 
 
 
-部分接口需要传入滑动验证码成功后的返回值,   关于滑动验证码调用请参考[滑动验证码](https://app.gitbook.com/o/pfN2ar9xHCUwr1hvPOaW/s/vloF7G6sH3tpG6N1g75q/~/changes/30/zi-jian-kuang-chi-jie-dian/kuang-chi-jie-dian-yong-hu-duan-api/diao-yong-huo-qu-hua-dong-yan-zheng-ma)。
+部分接口需要传入滑动验证码成功后的返回值,   关于滑动验证码调用请参考[滑动验证码](diao-yong-huo-qu-hua-dong-yan-zheng-ma.md)。
 
