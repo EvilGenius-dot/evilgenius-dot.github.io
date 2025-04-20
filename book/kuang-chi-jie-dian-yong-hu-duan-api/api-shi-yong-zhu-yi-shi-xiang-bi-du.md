@@ -36,3 +36,7 @@ Authorization: Bearer 获取到的TOKEN
 
 部分接口需要传入滑动验证码成功后的返回值,   关于滑动验证码调用请参考[滑动验证码](diao-yong-huo-qu-hua-dong-yan-zheng-ma.md)。
 
+
+
+注意：由于历史原因，LTC相关接口，如需传入LTC相关字段，请以SP-LTC代替LTC字段，切记！！切记！！切记！！
+
