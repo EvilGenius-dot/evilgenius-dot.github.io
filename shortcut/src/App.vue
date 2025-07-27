@@ -10,8 +10,9 @@
                 <div class="w-[576px] mb-6" v-show="progressShow">
                     <n-progress type="line" :percentage="percent" indicator-placement="inside" processing />
                 </div>
-                <div class="mb-6">
-                    最新托管版本: {{ version }}
+                <div class="mb-6 gap-4 flex" v-show="searchShow">
+                    <div>定制名称: {{ searchEnd.name }}</div>
+                    <div>最新托管版本: {{ searchEnd.lastVersion }}</div>
                 </div>
                 <div class="w-[576px] mb-6" v-show="errorMessage">
                     <n-card title="抱歉" size="small">
@@ -59,7 +60,8 @@ const version = ref('获取中...')
 const searchEnd = reactive({
     install: '',
     lastName: '',
-    lastVersion: ''
+    lastVersion: '',
+    name: ''
 })
 
 let _cid = 0;
@@ -101,6 +103,7 @@ const searchRust = (cid) => {
             } else {
                 searchEnd.install = `bash <(curl -s -L https://github.com/EvilGenius-dot/shortcut/raw/main/Readme/${cid}/install.sh)`
                 searchEnd.lastName = data[data.length - 1].name;
+                searchEnd.name = data[data.length - 1].name.split('-')[0]
                 searchEnd.lastVersion = data[data.length - 1].name.split('-')[1]
                 searchShow.value = true
             }
