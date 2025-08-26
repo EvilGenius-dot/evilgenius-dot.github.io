@@ -1,6 +1,6 @@
 # API使用注意事项(必读)
 
-此API为用户端接口，即![](<../.gitbook/assets/image (1).png>)RUSTMINERSYSTEM默认自带后台中所有接口，用户可根据自己需求调用API开发自己的用户端工具，例如网页、APP或管理工具。
+此API为用户端接口，即![](<../.gitbook/assets/image (1) (1).png>)RUSTMINERSYSTEM默认自带后台中所有接口，用户可根据自己需求调用API开发自己的用户端工具，例如网页、APP或管理工具。
 
 
 

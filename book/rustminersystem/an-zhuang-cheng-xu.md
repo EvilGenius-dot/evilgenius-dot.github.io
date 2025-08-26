@@ -48,4 +48,4 @@ xloqslz913
 
 安装完毕后请第一时间修改账号密码以及安全地址, 防止被爆破。
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>

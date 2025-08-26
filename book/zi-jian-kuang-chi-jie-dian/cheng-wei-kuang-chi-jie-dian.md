@@ -14,14 +14,14 @@
 
 注意：CODE 以及 TOKEN 可以在多台服务器同时使用，从而可以轻而易举的组件自己的集群，矿池节点内的所有数据（包括用户信息、账单、算力、收益、返佣、费率等等）在相同 CODE 和 TOKEN 下互通，不同 CODE 以及TOKEN 之间的数据完全隔离独立。
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  输入一个自定义节点名称, 即可申请CODE以及TOKEN
 
-    <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 2.  申请后浏览器开始自动下载CODE以及TOKEN， 如果浏览器未能自动下载文件，请检查浏览器策略是否阻止了文件的下载，打开下载的 code-token.txt 文件即可找到CODE和TOKEN。&#x20;
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 3. 请务必保管好CODE以及TOKEN，这是节点的重要凭证，一旦丢失则无法恢复节点。
 4. 如果您有多个服务器或设备，都可以使用相同的CODE和TOKEN进行激活，所有服务器都会自动同步端口配置及费率配置
 5.  输入CODE以及TOKEN点击激活即可

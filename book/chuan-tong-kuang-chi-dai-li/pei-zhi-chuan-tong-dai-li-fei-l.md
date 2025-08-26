@@ -2,7 +2,7 @@
 
 传统矿池代理手续费配置流程:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. 先填写要接受手续费的矿池地址,  例如您代理的是BTC，此处填写任意一个BTC矿池地址（建议与代理地址相同），例如 stratum+tcp://btc.f2pool.com:1314
 2. 选择第一步矿池地址对应的协议, 协议如果与地址不一致则无法正常连接费率地址
