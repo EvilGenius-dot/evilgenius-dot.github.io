@@ -23,10 +23,22 @@
 
 以阿里云为例：
 
-找到您的ECS列表,  点进ECS实例ID进入详情页,  在详情页内找到安全组选项卡,  并且配置您的安全组规则
+找到您的ECS列表,  点进ECS实例ID进入详情页,  在详情页内找到安全组选项卡,  在安全组列表里找到您当前ECS正在使用的规则， 点击管理规则配置您的安全组规则。
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<sup><mark style="color:yellow;">Tips:<mark style="color:yellow;"></sup> 如果您尚未配置任何规则，此时您的服务器所有端口以及挖矿端口均不可被访问，您可先点击手动添加按钮,  授权策略选择允许, 优先级设置110, 协议类型选择全部， 保存后您的服务器所有端口矿机均可接入。
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+随后您应该将22(SSH远程访问端口)禁用，依旧点击手动添加按钮, 授权策略选择<mark style="color:orange;">拒绝</mark>，优先级设置为<mark style="color:orange;">1</mark>, 协议选择自定义TCP, 保存后您的22端口将无法在公网访问, 这样一来即可避免SSH入侵。
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+
+
+2. **防火墙增加WEB访问端口**
+
+另外一种途径攻击者可通过入侵您的WEB后台来修改您的配置, 此时有两种做法：
+
+较为方便的一种是安装完程序后, 进入后台设置登录二步验证, 可有效避免此类攻击.
+
+另一种方式将web访问端口加入至防火墙内，用的时候再打开，不用的时候在防火墙内公网将无法访问到后台（当然也包括你自己）,  具体添加方法与1类似， 假如你的WEB后台端口为12345，那么在添加策略时, 授权策略选择拒绝，优先级为1,协议选择自定义TCP既可以。
+
+
+
+步骤3 4 5 在安装程序后请第一时间在管理后台进行修改，账号密码以及安全地址和您的SSH密码请使用强类型，不要仅仅使用字符+数字的组合。
