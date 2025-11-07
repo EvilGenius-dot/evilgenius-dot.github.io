@@ -16,13 +16,13 @@
 
 (5. 选择代理矿池地址协议, 如果 步骤4 代理地址为TCP协议，此处必须选择TCP， 如果为SSL或TLS， 此处则必须选择SSL， 务必选择要代理矿池地址一致协议， 否则矿机将无法连接)
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;  3\. 创建代理
 
 填写完必须要信息之后，即可创建传统矿池代理
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 例如此处创建了19200端口的BTC代理， 代理至某传统矿池，创建完毕之后，例如RustMinerSystem所在设备公网或内网IP为 x.x.x.x,   矿机挖矿地址直接填写 stratum+tcp://x.x.x.x:19200  即可通过RustMinerSystem连接至第三方矿池
 

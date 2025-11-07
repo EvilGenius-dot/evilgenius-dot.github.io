@@ -10,6 +10,8 @@
 * [代理传统矿池](chuan-tong-kuang-chi-dai-li/dai-li-chuan-tong-kuang-chi.md)
 * [配置传统代理费率](chuan-tong-kuang-chi-dai-li/pei-zhi-chuan-tong-dai-li-fei-l.md)
 * [拦截ALEO锄头抽水、配置ALEO自定义抽水（GPU已失效 后续只支持芯片机）](chuan-tong-kuang-chi-dai-li/lan-jie-aleo-chu-tou-chou-shui-pei-zhi-aleo-zi-ding-yi-chou-shui-gpu-yi-shi-xiao-hou-xu-zhi-zhi-chi.md)
+* [开启管理后台二步验证](chuan-tong-kuang-chi-dai-li/kai-qi-guan-li-hou-tai-er-bu-yan-zheng.md)
+* [如何使我的后台更安全](chuan-tong-kuang-chi-dai-li/ru-he-shi-wo-de-hou-tai-geng-an-quan.md)
 
 ## 自建矿池节点
 
