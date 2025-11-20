@@ -58,6 +58,7 @@
 * [获取个性化配置](kuang-chi-jie-dian-yong-hu-duan-api/huo-qu-ge-xing-hua-pei-zhi.md)
 * [APP端用户注册](kuang-chi-jie-dian-yong-hu-duan-api/app-duan-yong-hu-zhu-ce.md)
 * [App端 滑动验证码接口](kuang-chi-jie-dian-yong-hu-duan-api/app-duan-hua-dong-yan-zheng-ma-jie-kou.md)
+* [APP端中心化登录](kuang-chi-jie-dian-yong-hu-duan-api/app-duan-zhong-xin-hua-deng-lu.md)
 
 ## 关于
 
