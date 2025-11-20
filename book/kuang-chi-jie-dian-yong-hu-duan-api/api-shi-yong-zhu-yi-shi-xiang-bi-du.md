@@ -38,5 +38,14 @@ Authorization: Bearer 获取到的TOKEN
 
 
 
-注意：由于历史原因，LTC相关接口，如需传入LTC相关字段，请以SP-LTC代替LTC字段，切记！！切记！！切记！！
+<mark style="color:$warning;">注意：</mark>
 
+由于历史原因，所有接口需要传入币种的参数均需要加入特殊标记，例如BTC需要传PI-BTC,  以下为币种参数对照表。
+
+BTC:  PI-BTC
+
+LTC: VA-LTC （赠币跟随主币, 例如DOGE为VA-DOGE）
+
+KAS: KAS
+
+ETC: ETC
