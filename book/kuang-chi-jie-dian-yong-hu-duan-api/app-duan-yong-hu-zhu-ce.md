@@ -39,6 +39,6 @@ POST
 
 <table data-header-hidden><thead><tr><th width="213"></th><th></th></tr></thead><tbody><tr><td>参数名</td><td>说明</td></tr><tr><td>status</td><td>状态码，status = 1表示邀请码无效，此时url为空</td></tr><tr><td>url</td><td>后续APP使用的接口地址前缀如"http://1.2.3.4/a/"<br>（后台配置地址注意最后的斜杠没有斜杠APP端会报错）</td></tr></tbody></table>
 
-#### 说明
+#### 接口说明
 
 成功http状态码为200，非200为请求错误，成功后使用url继续请求一次到节点使用邮箱登录
