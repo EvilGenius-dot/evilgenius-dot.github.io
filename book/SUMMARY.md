@@ -22,6 +22,7 @@
 * [开始在您的节点挖矿](zi-jian-kuang-chi-jie-dian/kai-shi-zai-nin-de-jie-dian-wa-kuang.md)
 * [使用内置HTTPS工具或第三方HTTPS代理](zi-jian-kuang-chi-jie-dian/shi-yong-nei-zhi-https-gong-ju-huo-di-san-fang-https-dai-li.md)
 * [关闭用户端费率显示](zi-jian-kuang-chi-jie-dian/guan-bi-yong-hu-duan-feilxian-shi.md)
+* [用户端APP下载](zi-jian-kuang-chi-jie-dian/yong-hu-duan-app-xia-zai.md)
 
 ## 矿池节点用户端API
 
