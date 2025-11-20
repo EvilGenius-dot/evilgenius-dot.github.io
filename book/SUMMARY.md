@@ -56,6 +56,7 @@
 * [获取BTC矿池公共算力曲线](kuang-chi-jie-dian-yong-hu-duan-api/huo-qu-btc-kuang-chi-gong-gong-suan-li-qu-xian.md)
 * [获取其他币种矿池公共算力曲线](kuang-chi-jie-dian-yong-hu-duan-api/huo-qu-qi-ta-bi-zhong-kuang-chi-gong-gong-suan-li-qu-xian.md)
 * [获取个性化配置](kuang-chi-jie-dian-yong-hu-duan-api/huo-qu-ge-xing-hua-pei-zhi.md)
+* [APP端用户注册](kuang-chi-jie-dian-yong-hu-duan-api/app-duan-yong-hu-zhu-ce.md)
 
 ## 关于
 
