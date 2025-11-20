@@ -42,10 +42,10 @@ Authorization: Bearer 获取到的TOKEN
 
 由于历史原因，所有接口需要传入币种的参数均需要加入特殊标记，例如BTC需要传PI-BTC,  以下为币种参数对照表。
 
-BTC:  PI-BTC
+BTC:  **PI-BTC**
 
-LTC: VA-LTC （赠币跟随主币, 例如DOGE为VA-DOGE）
+LTC: **VA-LTC （赠币跟随主币, 例如DOGE为VA-DOGE）**
 
-KAS: KAS
+KAS: **KAS**
 
-ETC: ETC
+ETC: **ETC**
