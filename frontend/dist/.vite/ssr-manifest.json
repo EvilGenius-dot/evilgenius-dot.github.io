@@ -1,50 +1,676 @@
 {
-  "\u0000plugin-vue:export-helper": [],
-  "\u0000vite/modulepreload-polyfill.js": [],
-  "\u0000vite/preload-helper.js": [],
-  "index.html": [],
-  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [],
-  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [],
-  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [],
-  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [],
-  "node_modules/pinia/dist/pinia.mjs": [],
-  "node_modules/vite-ssg/dist/index.mjs": [],
-  "node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [],
-  "node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [],
-  "node_modules/vite-ssg/node_modules/@unhead/vue/dist/client.mjs": [],
-  "node_modules/vite-ssg/node_modules/@unhead/vue/dist/shared/vue.Cr7xSEtD.mjs": [],
-  "node_modules/vite-ssg/node_modules/hookable/dist/index.mjs": [],
-  "node_modules/vite-ssg/node_modules/unhead/dist/client.mjs": [],
-  "node_modules/vite-ssg/node_modules/unhead/dist/shared/unhead.B3VbJo7Y.mjs": [],
-  "node_modules/vite-ssg/node_modules/unhead/dist/shared/unhead.CaI5ZD4O.mjs": [],
-  "node_modules/vite-ssg/node_modules/unhead/dist/shared/unhead.CbpEuj3y.mjs": [],
-  "node_modules/vite-ssg/node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [],
-  "node_modules/vue-router/dist/devtools-BPov6AZY.js": [],
-  "node_modules/vue-router/dist/useApi-DtucMc-S.js": [],
-  "node_modules/vue-router/dist/vue-router.js": [],
-  "src/App.vue": [],
-  "src/App.vue?vue&type=style&index=0&scoped=fc484609&lang.css": [],
-  "src/assets/logo.svg": [],
-  "src/assets/main.css": [],
-  "src/components/HelloWorld.vue": [],
-  "src/components/HelloWorld.vue?vue&type=style&index=0&scoped=fcc5fe42&lang.css": [],
-  "src/components/TheWelcome.vue": [],
-  "src/components/WelcomeItem.vue": [],
-  "src/components/WelcomeItem.vue?vue&type=style&index=0&scoped=40a5c0e5&lang.css": [],
-  "src/components/icons/IconCommunity.vue": [],
-  "src/components/icons/IconDocumentation.vue": [],
-  "src/components/icons/IconEcosystem.vue": [],
-  "src/components/icons/IconSupport.vue": [],
-  "src/components/icons/IconTooling.vue": [],
-  "src/main.js": [],
-  "src/router/index.js": [],
+  "\u0000plugin-vue:export-helper": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "\u0000rolldown/runtime.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "\u0000vite/modulepreload-polyfill.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "\u0000vite/preload-helper.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "../../../../../image/rustminersystem.png": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "index.html": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@floating-ui+core@1.7.5/node_modules/@floating-ui/core/dist/floating-ui.core.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@floating-ui+dom@1.7.6/node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@floating-ui+utils@0.2.11/node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@floating-ui+utils@0.2.11/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@floating-ui+vue@1.1.11_vue@3.5.34/node_modules/@floating-ui/vue/dist/floating-ui.vue.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/ArrowDownTrayIcon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/ArrowTopRightOnSquareIcon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/Bars3Icon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/ChevronDownIcon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/LanguageIcon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@heroicons+vue@2.2.0_vue@3.5.34/node_modules/@heroicons/vue/24/outline/esm/XMarkIcon.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@intlify+core-base@11.4.2/node_modules/@intlify/core-base/dist/core-base.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@intlify+message-compiler@11.4.2/node_modules/@intlify/message-compiler/dist/message-compiler.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@intlify+shared@11.4.2/node_modules/@intlify/shared/dist/shared.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@unhead+vue@2.1.15_vue@3.5.34/node_modules/@unhead/vue/dist/client.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@unhead+vue@2.1.15_vue@3.5.34/node_modules/@unhead/vue/dist/shared/vue.Cr7xSEtD.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@unhead+vue@2.1.15_vue@3.5.34/node_modules/@unhead/vue/dist/shared/vue.N9zWjxoK.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vue+reactivity@3.5.34/node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vue+runtime-core@3.5.34/node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vue+runtime-dom@3.5.34/node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vue+shared@3.5.34/node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vueuse+core@14.3.0_vue@3.5.34/node_modules/@vueuse/core/dist/index.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/@vueuse+shared@14.3.0_vue@3.5.34/node_modules/@vueuse/shared/dist/index.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/defu@6.1.7/node_modules/defu/dist/defu.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/hookable@6.1.1/node_modules/hookable/dist/index.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/pinia@3.0.4_vue@3.5.34/node_modules/pinia/dist/pinia.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Collection/Collection.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/ConfigProvider/ConfigProvider.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DismissableLayer/DismissableLayer.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DismissableLayer/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuContent.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuItem.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuLabel.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuPortal.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuRoot.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuSeparator.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/DropdownMenu/DropdownMenuTrigger.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/FocusScope/FocusScope.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/FocusScope/stack.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/FocusScope/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuAnchor.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuContent.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuContentImpl.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuGroup.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuItem.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuItemImpl.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuLabel.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuPortal.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuRoot.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuRootContentModal.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuRootContentNonModal.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/MenuSeparator.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Menu/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Popper/PopperAnchor.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Popper/PopperContent.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Popper/PopperRoot.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Popper/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Presence/Presence.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Presence/usePresence.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Primitive/Primitive.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Primitive/Slot.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Primitive/usePrimitiveElement.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/RovingFocus/RovingFocusGroup.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/RovingFocus/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/Teleport/Teleport.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/createContext.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/getActiveElement.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/handleAndDispatchCustomEvent.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/nullish.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/renderSlotFragments.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useArrowNavigation.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useBodyScrollLock.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useDirection.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useEmitAsProps.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useFocusGuards.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useForwardExpose.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useForwardProps.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useForwardPropsEmits.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useHideOthers.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useId.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useIsUsingKeyboard.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useSize.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useStateMachine.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/reka-ui@2.9.7_vue@3.5.34/node_modules/reka-ui/dist/shared/useTypeahead.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/tailwind-merge@3.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/unhead@2.1.15/node_modules/unhead/dist/client.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/unhead@2.1.15/node_modules/unhead/dist/shared/unhead.B3VbJo7Y.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/unhead@2.1.15/node_modules/unhead/dist/shared/unhead.CaI5ZD4O.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/unhead@2.1.15/node_modules/unhead/dist/shared/unhead.CbpEuj3y.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/unhead@2.1.15/node_modules/unhead/dist/shared/unhead.yem5I2v_.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_@noble+hashes@1.8.0_unhead@3.1.0_vite@8.0.13_@types+node@25.8.0_jiti@2._680b8f8d646683d3350ec58fdde8f4d6/node_modules/vite-ssg/dist/index.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_@noble+hashes@1.8.0_unhead@3.1.0_vite@8.0.13_@types+node@25.8.0_jiti@2._680b8f8d646683d3350ec58fdde8f4d6/node_modules/vite-ssg/dist/shared/vite-ssg.C6pK7rvr.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vite-ssg@28.3.0_@noble+hashes@1.8.0_unhead@3.1.0_vite@8.0.13_@types+node@25.8.0_jiti@2._680b8f8d646683d3350ec58fdde8f4d6/node_modules/vite-ssg/dist/shared/vite-ssg.ETIvV-80.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vue-i18n@11.4.2_vue@3.5.34/node_modules/vue-i18n/dist/vue-i18n.mjs": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vue-router@5.0.7_@vue+compiler-sfc@3.5.34_pinia@3.0.4_vue@3.5.34__vue@3.5.34/node_modules/vue-router/dist/devtools-BuSwVM2w.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vue-router@5.0.7_@vue+compiler-sfc@3.5.34_pinia@3.0.4_vue@3.5.34__vue@3.5.34/node_modules/vue-router/dist/useApi-BNm6g9O9.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vue-router@5.0.7_@vue+compiler-sfc@3.5.34_pinia@3.0.4_vue@3.5.34__vue@3.5.34/node_modules/vue-router/dist/vue-router.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/.pnpm/vue@3.5.34/node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/App.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/App.vue?vue&type=style&index=0&lang.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/App.vue?vue&type=style&index=1&scoped=506ccece&lang.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/assets/main.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/FooterBar.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/FooterBar.vue?vue&type=style&index=0&scoped=855d9794&lang.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/HeaderBar.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/HeaderBar.vue?vue&type=style&index=0&scoped=f3f3dae9&lang.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/icons/IconGithub.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenu.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenuContent.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenuItem.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenuLabel.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenuSeparator.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/components/ui/dropdown-menu/DropdownMenuTrigger.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/i18n/index.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/i18n/locales/en.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/i18n/locales/ru.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/i18n/locales/zh.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/lib/utils.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/main.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/router/index.js": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
   "src/views/AboutView.vue": [
-    "./assets/AboutView-CG6BvkQ1.js",
-    "./assets/AboutView-CXtZgaLf.css"
+    "./assets/AboutView-DTnHViwz.js",
+    "./assets/AboutView-CHonFoaW.css"
   ],
-  "src/views/AboutView.vue?vue&type=style&index=0&lang.css": [
-    "./assets/AboutView-CG6BvkQ1.js",
-    "./assets/AboutView-CXtZgaLf.css"
+  "src/views/AboutView.vue?vue&type=style&index=0&scoped=3335e65a&lang.css": [
+    "./assets/AboutView-DTnHViwz.js",
+    "./assets/AboutView-CHonFoaW.css"
   ],
-  "src/views/HomeView.vue": []
+  "src/views/CustomizedVersionView.vue": [
+    "./assets/CustomizedVersionView-Rt7g87-S.js",
+    "./assets/CustomizedVersionView-Cb_gZPgd.css"
+  ],
+  "src/views/CustomizedVersionView.vue?vue&type=style&index=0&scoped=6d1fe357&lang.css": [
+    "./assets/CustomizedVersionView-Rt7g87-S.js",
+    "./assets/CustomizedVersionView-Cb_gZPgd.css"
+  ],
+  "src/views/DocumentView.vue": [
+    "./assets/DocumentView-CWUIbpj9.js",
+    "./assets/DocumentView-1-T-VSDm.css"
+  ],
+  "src/views/DocumentView.vue?vue&type=style&index=0&scoped=a31ce976&lang.css": [
+    "./assets/DocumentView-CWUIbpj9.js",
+    "./assets/DocumentView-1-T-VSDm.css"
+  ],
+  "src/views/HomeView.vue": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "src/views/HomeView.vue?vue&type=style&index=0&scoped=59621f5e&lang.css": [
+    "./assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "./assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "./assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ]
 }
