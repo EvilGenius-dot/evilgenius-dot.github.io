@@ -95,6 +95,13 @@ export default {
         title: "Deploy and operate RustMinerSystem",
         description:
             "This page gives crawlers and users a stable documentation entry point for installation, configuration, and operations.",
+        tocTitle: "Contents",
+        navigationTitle: "Documentation",
+        onThisPage: "On this page",
+        readingTime: "Reading time",
+        readingTimeValue: "{minutes} min read",
+        previousPage: "Previous",
+        nextPage: "Next",
         sections: {
             install: {
                 title: "Installation",

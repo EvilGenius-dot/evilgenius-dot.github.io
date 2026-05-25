@@ -160,10 +160,13 @@ const flatDownloadLinks = computed(() =>
 }
 
 .footer-shell {
+    box-sizing: border-box;
     display: grid;
     gap: 2rem;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
     padding: 2rem 1rem;
+    width: 100%;
 }
 
 .footer-brand {
@@ -263,7 +266,14 @@ const flatDownloadLinks = computed(() =>
 
 .footer-bottom {
     border-top: 1px solid var(--color-neutral-900, #2c3437);
+}
+
+.footer-bottom p {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1800px;
     padding: 1rem;
+    width: 100%;
 }
 
 @media (min-width: 640px) {
@@ -272,10 +282,10 @@ const flatDownloadLinks = computed(() =>
     }
 
     .footer-nav {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
 
-    .footer-bottom {
+    .footer-bottom p {
         padding-inline: 1.5rem;
     }
 }
@@ -284,6 +294,10 @@ const flatDownloadLinks = computed(() =>
     .footer-shell {
         align-items: start;
         grid-template-columns: minmax(18rem, 1fr) minmax(28rem, 1.35fr);
+    }
+
+    .footer-nav {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 </style>

@@ -3,8 +3,16 @@
         <a class="skip-link" href="#main-content">{{ t("nav.skip") }}</a>
 
         <div class="header-shell">
-            <RouterLink :to="localizedPath('home')" class="brand-link" :aria-label="t('nav.home')">
-                <img src="/image/rustminersystem.png" alt="" class="brand-logo rotating-element" />
+            <RouterLink
+                :to="localizedPath('home')"
+                class="brand-link"
+                :aria-label="t('nav.home')"
+            >
+                <img
+                    src="/image/rustminersystem.png"
+                    alt=""
+                    class="brand-logo rotating-element"
+                />
                 <span class="brand-name">{{ t("site.name") }}</span>
             </RouterLink>
 
@@ -13,20 +21,46 @@
                 <ul class="desktop-nav-list">
                     <li>
                         <DropdownMenu>
-                            <DropdownMenuTrigger class="nav-link nav-trigger" :aria-label="t('nav.download')">
-                                <ArrowDownTrayIcon class="icon-sm" aria-hidden="true" />
+                            <DropdownMenuTrigger
+                                class="nav-link nav-trigger"
+                                :aria-label="t('nav.download')"
+                            >
+                                <ArrowDownTrayIcon
+                                    class="icon-sm"
+                                    aria-hidden="true"
+                                />
                                 <span>{{ t("nav.download") }}</span>
-                                <ChevronDownIcon class="icon-xs" aria-hidden="true" />
+                                <ChevronDownIcon
+                                    class="icon-xs"
+                                    aria-hidden="true"
+                                />
                             </DropdownMenuTrigger>
-                            <DropdownMenuContent align="start" class="download-menu">
-                                <template v-for="(group, index) in downloadGroups" :key="group.label">
-                                    <DropdownMenuLabel>{{ group.label }}</DropdownMenuLabel>
-                                    <DropdownMenuItem v-for="item in group.items" :key="item.label" as-child>
-                                        <RouterLink :to="item.to" class="dropdown-link">
+                            <DropdownMenuContent
+                                align="start"
+                                class="download-menu"
+                            >
+                                <template
+                                    v-for="(group, index) in downloadGroups"
+                                    :key="group.label"
+                                >
+                                    <DropdownMenuLabel>{{
+                                        group.label
+                                    }}</DropdownMenuLabel>
+                                    <DropdownMenuItem
+                                        v-for="item in group.items"
+                                        :key="item.label"
+                                        as-child
+                                    >
+                                        <RouterLink
+                                            :to="item.to"
+                                            class="dropdown-link"
+                                        >
                                             {{ item.label }}
                                         </RouterLink>
                                     </DropdownMenuItem>
-                                    <DropdownMenuSeparator v-if="index < downloadGroups.length - 1" />
+                                    <DropdownMenuSeparator
+                                        v-if="index < downloadGroups.length - 1"
+                                    />
                                 </template>
                             </DropdownMenuContent>
                         </DropdownMenu>
@@ -36,7 +70,9 @@
                             :to="item.to"
                             class="nav-link"
                             :class="{ 'is-active': isActivePage(item.page) }"
-                            :aria-current="isActivePage(item.page) ? 'page' : undefined"
+                            :aria-current="
+                                isActivePage(item.page) ? 'page' : undefined
+                            "
                         >
                             {{ item.label }}
                         </RouterLink>
@@ -47,13 +83,20 @@
             <div class="header-actions">
                 <!-- 语言切换：切到同一个页面的不同语言路径，不丢失 hash 和 query。 -->
                 <DropdownMenu>
-                    <DropdownMenuTrigger class="language-trigger" :aria-label="t('nav.language')">
+                    <DropdownMenuTrigger
+                        class="language-trigger"
+                        :aria-label="t('nav.language')"
+                    >
                         <LanguageIcon class="icon-md" aria-hidden="true" />
-                        <span class="language-label">{{ currentLanguage.nativeName }}</span>
+                        <span class="language-label">{{
+                            currentLanguage.nativeName
+                        }}</span>
                         <ChevronDownIcon class="icon-xs" aria-hidden="true" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end" class="language-menu">
-                        <DropdownMenuLabel>{{ t("nav.currentLanguage") }}</DropdownMenuLabel>
+                        <DropdownMenuLabel>{{
+                            t("nav.currentLanguage")
+                        }}</DropdownMenuLabel>
                         <DropdownMenuItem
                             v-for="language in languages"
                             :key="language.locale"
@@ -61,7 +104,11 @@
                             @click="switchLocale(language.locale)"
                         >
                             <span>{{ language.nativeName }}</span>
-                            <span v-if="language.locale === currentLocale" class="language-check">✓</span>
+                            <span
+                                v-if="language.locale === currentLocale"
+                                class="language-check"
+                                >✓</span
+                            >
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
@@ -81,10 +128,16 @@
                     class="mobile-toggle"
                     :aria-expanded="isOpen.toString()"
                     aria-controls="mobile-menu"
-                    :aria-label="isOpen ? t('nav.closeMenu') : t('nav.openMenu')"
+                    :aria-label="
+                        isOpen ? t('nav.closeMenu') : t('nav.openMenu')
+                    "
                     @click="toggleMenu"
                 >
-                    <Bars3Icon v-if="!isOpen" class="icon-lg" aria-hidden="true" />
+                    <Bars3Icon
+                        v-if="!isOpen"
+                        class="icon-lg"
+                        aria-hidden="true"
+                    />
                     <XMarkIcon v-else class="icon-lg" aria-hidden="true" />
                 </button>
             </div>
@@ -98,13 +151,20 @@
             leave-from-class="transform opacity-100 translate-y-0"
             leave-to-class="transform opacity-0 -translate-y-2"
         >
-            <nav v-show="isOpen" id="mobile-menu" class="mobile-nav" :aria-label="t('nav.mobile')">
+            <nav
+                v-show="isOpen"
+                id="mobile-menu"
+                class="mobile-nav"
+                :aria-label="t('nav.mobile')"
+            >
                 <ul class="mobile-nav-list">
                     <li v-for="item in primaryLinks" :key="item.page">
                         <RouterLink
                             :to="item.to"
                             class="mobile-nav-link"
-                            :aria-current="isActivePage(item.page) ? 'page' : undefined"
+                            :aria-current="
+                                isActivePage(item.page) ? 'page' : undefined
+                            "
                             @click="closeMenu"
                         >
                             {{ item.label }}
@@ -156,6 +216,7 @@ import { useI18n } from "vue-i18n";
 import {
     LOCALE_META,
     SUPPORTED_LOCALES,
+    docPath,
     getRouteLocale,
     pagePath,
 } from "@/i18n";
@@ -258,10 +319,14 @@ const closeMenu = () => {
 // 切换语言时保留当前页面、hash 与 query，减少用户上下文丢失。
 const switchLocale = (nextLocale) => {
     const page = route.meta?.page || "home";
+    const path =
+        page === "document"
+            ? docPath(route.meta?.docPage, nextLocale)
+            : pagePath(page, nextLocale);
 
     closeMenu();
     router.push({
-        path: pagePath(page, nextLocale),
+        path,
         hash: route.hash,
         query: route.query,
     });
@@ -303,20 +368,33 @@ watch(
 .skip-link {
     background: var(--color-white);
     border-radius: 6px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
     color: var(--color-neutral-950);
     font-size: var(--text-sm);
     font-weight: var(--font-weight-semibold);
+    height: 1px;
     left: 1rem;
-    padding: 0.5rem 0.75rem;
+    overflow: hidden;
+    padding: 0;
     position: absolute;
     top: 0.75rem;
-    transform: translateY(-160%);
-    transition: transform 150ms ease;
+    /* 默认完全视觉隐藏，只给键盘用户聚焦时显示。 */
+    white-space: nowrap;
+    width: 1px;
     z-index: 50;
 }
 
-.skip-link:focus {
-    transform: translateY(0);
+.skip-link:focus,
+.skip-link:focus-visible {
+    clip: auto;
+    clip-path: none;
+    height: auto;
+    outline: 2px solid var(--color-green-400);
+    outline-offset: 2px;
+    overflow: visible;
+    padding: 0.5rem 0.75rem;
+    width: auto;
 }
 
 .header-shell {

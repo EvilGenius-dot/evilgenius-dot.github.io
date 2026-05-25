@@ -96,6 +96,13 @@ export default {
         title: "Развертывание и эксплуатация RustMinerSystem",
         description:
             "Страница дает пользователям и поисковым системам стабильную точку входа для установки, настройки и эксплуатации.",
+        tocTitle: "Содержание",
+        navigationTitle: "Документация",
+        onThisPage: "На этой странице",
+        readingTime: "Время чтения",
+        readingTimeValue: "{minutes} мин",
+        previousPage: "Назад",
+        nextPage: "Далее",
         sections: {
             install: {
                 title: "Установка",

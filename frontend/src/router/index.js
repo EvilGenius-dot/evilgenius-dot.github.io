@@ -5,9 +5,11 @@ import {
 } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import {
+    DOC_PAGES,
     DEFAULT_LOCALE,
     PAGE_SLUGS,
     SUPPORTED_LOCALES,
+    docPath,
     pagePath,
 } from "../i18n";
 
@@ -19,21 +21,43 @@ const pageComponents = {
     about: () => import("../views/AboutView.vue"),
 };
 
-// 为每个页面生成英文、中文、俄语三套路由，保证静态构建能输出独立 HTML。
-const createLocalizedRoutes = () =>
-    Object.keys(PAGE_SLUGS).flatMap((page) =>
+// 为每个普通页面生成英文、中文、俄语三套路由，文档页单独生成文章级路由。
+const createLocalizedPageRoutes = () =>
+    Object.keys(PAGE_SLUGS)
+        .filter((page) => page !== "document")
+        .flatMap((page) =>
+            SUPPORTED_LOCALES.map((locale) => ({
+                path: pagePath(page, locale),
+                name: locale === DEFAULT_LOCALE ? page : `${locale}-${page}`,
+                component: pageComponents[page],
+                meta: {
+                    page,
+                    locale,
+                },
+            })),
+        );
+
+const createLocalizedDocumentRoutes = () =>
+    DOC_PAGES.flatMap((docPage) =>
         SUPPORTED_LOCALES.map((locale) => ({
-            path: pagePath(page, locale),
-            name: locale === DEFAULT_LOCALE ? page : `${locale}-${page}`,
-            component: pageComponents[page],
+            path: docPath(docPage.id, locale),
+            name:
+                locale === DEFAULT_LOCALE
+                    ? `document-${docPage.id}`
+                    : `${locale}-document-${docPage.id}`,
+            component: pageComponents.document,
             meta: {
-                page,
+                page: "document",
+                docPage: docPage.id,
                 locale,
             },
         })),
     );
 
-export const routes = createLocalizedRoutes();
+export const routes = [
+    ...createLocalizedPageRoutes(),
+    ...createLocalizedDocumentRoutes(),
+];
 
 const router = createRouter({
     // 构建阶段使用内存 history，浏览器运行时使用真实 history。

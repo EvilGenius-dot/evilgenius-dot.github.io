@@ -7,11 +7,15 @@ import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
 import {
+    DEFAULT_DOC_PAGE,
     DEFAULT_LOCALE,
     LOCALE_META,
     PAGE_SLUGS,
     SITE_ORIGIN,
     SUPPORTED_LOCALES,
+    docPath,
+    getDocPageBySlug,
+    getDocPageMeta,
     messages,
     pagePath,
 } from "./src/i18n/index.js";
@@ -49,6 +53,23 @@ const resolvePageFromRoute = (route) => {
     const slug = (
         locale === DEFAULT_LOCALE ? segments : segments.slice(1)
     ).join("/");
+
+    if (
+        slug === PAGE_SLUGS.document ||
+        slug.startsWith(`${PAGE_SLUGS.document}/`)
+    ) {
+        const docSlug = slug
+            .replace(PAGE_SLUGS.document, "")
+            .replace(/^\//, "");
+        const docPage = getDocPageBySlug(docSlug);
+
+        return {
+            locale,
+            page: "document",
+            docPage: docPage.id,
+        };
+    }
+
     const page =
         Object.entries(PAGE_SLUGS).find(
             ([, pageSlug]) => pageSlug === slug,
@@ -57,14 +78,18 @@ const resolvePageFromRoute = (route) => {
     return {
         locale,
         page,
+        docPage: DEFAULT_DOC_PAGE,
     };
 };
 
 // 渲染每个语言页面需要的 title、description、canonical 与 hreflang 标签。
 const renderSeoTags = (route) => {
-    const { locale, page } = resolvePageFromRoute(route);
+    const { locale, page, docPage } = resolvePageFromRoute(route);
     const localeMessages = messages[locale];
-    const pageSeo = localeMessages.seo[page];
+    const pageSeo =
+        page === "document"
+            ? getDocPageMeta(docPage, locale)
+            : localeMessages.seo[page];
     const title =
         page === "home"
             ? localeMessages.seo.defaultTitle
@@ -72,13 +97,23 @@ const renderSeoTags = (route) => {
                   "{pageTitle}",
                   pageSeo.title,
               );
-    const canonicalHref = `${SITE_ORIGIN}${pagePath(page, locale)}`;
+    const canonicalHref =
+        page === "document"
+            ? `${SITE_ORIGIN}${docPath(docPage, locale)}`
+            : `${SITE_ORIGIN}${pagePath(page, locale)}`;
     const alternateLinks = SUPPORTED_LOCALES.map((alternateLocale) => {
         const hreflang = LOCALE_META[alternateLocale].htmlLang;
-        const href = `${SITE_ORIGIN}${pagePath(page, alternateLocale)}`;
+        const href =
+            page === "document"
+                ? `${SITE_ORIGIN}${docPath(docPage, alternateLocale)}`
+                : `${SITE_ORIGIN}${pagePath(page, alternateLocale)}`;
 
         return `<link rel="alternate" hreflang="${escapeAttribute(hreflang)}" href="${escapeAttribute(href)}">`;
     });
+    const xDefaultHref =
+        page === "document"
+            ? `${SITE_ORIGIN}${docPath(docPage, DEFAULT_LOCALE)}`
+            : `${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`;
 
     return {
         htmlLang: LOCALE_META[locale].htmlLang,
@@ -92,7 +127,7 @@ const renderSeoTags = (route) => {
             '<meta name="twitter:card" content="summary">',
             `<link rel="canonical" href="${escapeAttribute(canonicalHref)}">`,
             ...alternateLinks,
-            `<link rel="alternate" hreflang="x-default" href="${escapeAttribute(`${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`)}">`,
+            `<link rel="alternate" hreflang="x-default" href="${escapeAttribute(xDefaultHref)}">`,
         ],
     };
 };

@@ -4,7 +4,11 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "docs:generate": "node scripts/generate-docs.mjs",
+        "docs:delete": "node scripts/delete-doc.mjs",
+        "docs:new": "node scripts/new-doc.mjs",
         "dev": "vite",
+        "prebuild": "npm run docs:generate",
         "build": "vite-ssg build",
         "preview": "vite preview"
     },
@@ -17,6 +21,7 @@
         "clsx": "^2.1.1",
         "lucide-react": "^1.14.0",
         "lucide-vue-next": "^1.0.0",
+        "markdown-it": "^14.1.1",
         "pinia": "^3.0.4",
         "radix-ui": "^1.4.3",
         "reka-ui": "^2.9.7",

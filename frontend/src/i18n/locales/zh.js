@@ -95,6 +95,13 @@ export default {
         title: "部署与运维 RustMinerSystem",
         description:
             "该页面为用户和搜索引擎提供安装、配置与运维说明的稳定入口。",
+        tocTitle: "文档目录",
+        navigationTitle: "文档",
+        onThisPage: "本页内容",
+        readingTime: "阅读时间",
+        readingTimeValue: "约 {minutes} 分钟",
+        previousPage: "上一篇",
+        nextPage: "下一篇",
         sections: {
             install: {
                 title: "安装",
