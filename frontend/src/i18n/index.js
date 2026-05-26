@@ -1,5 +1,6 @@
 import { createI18n } from "vue-i18n";
 import {
+    DOC_CATEGORIES,
     DOC_PAGES,
     DOC_PAGE_META,
     DEFAULT_DOC_PAGE,
@@ -42,7 +43,7 @@ export const PAGE_SLUGS = {
     about: "about",
 };
 
-export { DOC_PAGES, DOC_PAGE_META, DEFAULT_DOC_PAGE };
+export { DOC_CATEGORIES, DOC_PAGES, DOC_PAGE_META, DEFAULT_DOC_PAGE };
 
 export const messages = {
     en,
@@ -86,6 +87,19 @@ export const getDocPageMeta = (
     DOC_PAGE_META[docPage]?.[normalizeLocale(locale)] ||
     DOC_PAGE_META[docPage]?.[DEFAULT_LOCALE] ||
     DOC_PAGE_META[DEFAULT_DOC_PAGE][DEFAULT_LOCALE];
+
+export const getDocCategoryMeta = (
+    category = "guide",
+    locale = DEFAULT_LOCALE,
+) =>
+    DOC_CATEGORIES.find((item) => item.id === category)?.meta?.[
+        normalizeLocale(locale)
+    ] ||
+    DOC_CATEGORIES.find((item) => item.id === category)?.meta?.[
+        DEFAULT_LOCALE
+    ] || {
+        title: category,
+    };
 
 export const docPath = (
     docPage = DEFAULT_DOC_PAGE,

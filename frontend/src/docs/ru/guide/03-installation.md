@@ -4,6 +4,9 @@ slug: installation
 title: Руководство по установке RustMinerSystem
 navTitle: Установка
 description: Скачайте, запустите и проверьте серверный пакет RustMinerSystem.
+category: deployment
+categoryTitle: Развертывание
+categoryOrder: 2
 order: 3
 ---
 

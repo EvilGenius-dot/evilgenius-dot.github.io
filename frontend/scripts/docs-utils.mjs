@@ -45,7 +45,9 @@ export const parseFrontmatter = (source, filePath = "markdown") => {
             value = value.slice(1, -1);
         }
 
-        data[key] = key === "order" ? Number(value) : value;
+        data[key] = ["order", "categoryOrder"].includes(key)
+            ? Number(value)
+            : value;
     }
 
     return {
@@ -77,7 +79,16 @@ export const listDefaultDocs = async () => {
         });
     }
 
-    return docs.sort((a, b) => a.order - b.order);
+    return docs.sort((a, b) => {
+        const categoryOrderA = a.categoryOrder ?? 1;
+        const categoryOrderB = b.categoryOrder ?? 1;
+
+        if (categoryOrderA !== categoryOrderB) {
+            return categoryOrderA - categoryOrderB;
+        }
+
+        return a.order - b.order;
+    });
 };
 
 export const collectLocalizedDocMeta = async () => {
@@ -86,6 +97,9 @@ export const collectLocalizedDocMeta = async () => {
     return Promise.all(
         defaultDocs.map(async (doc) => {
             const localized = {};
+            const category = doc.category || "guide";
+            const categoryOrder = doc.categoryOrder ?? 1;
+            const categoryMeta = {};
 
             for (const locale of SUPPORTED_LOCALES) {
                 const filePath = join(docsRoot, locale, "guide", doc.file);
@@ -106,10 +120,25 @@ export const collectLocalizedDocMeta = async () => {
                     throw new Error(`${filePath} slug must match ${doc.slug}`);
                 }
 
+                if ((data.category || "guide") !== category) {
+                    throw new Error(
+                        `${filePath} category must match ${category}`,
+                    );
+                }
+
+                if ((data.categoryOrder ?? 1) !== categoryOrder) {
+                    throw new Error(
+                        `${filePath} categoryOrder must match ${categoryOrder}`,
+                    );
+                }
+
                 localized[locale] = {
                     title: data.title,
                     navTitle: data.navTitle || data.title,
                     description: data.description,
+                };
+                categoryMeta[locale] = {
+                    title: data.categoryTitle || toTitle(category),
                 };
             }
 
@@ -117,7 +146,10 @@ export const collectLocalizedDocMeta = async () => {
                 id: doc.id,
                 slug: doc.slug || "",
                 file: doc.file,
+                category,
+                categoryOrder,
                 order: doc.order,
+                categoryMeta,
                 meta: localized,
             };
         }),

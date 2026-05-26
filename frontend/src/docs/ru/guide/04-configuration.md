@@ -4,6 +4,9 @@ slug: configuration
 title: Настройка RustMinerSystem
 navTitle: Настройка
 description: Настройте адрес прослушивания, endpoint пула, учетные данные воркера и логирование RustMinerSystem.
+category: deployment
+categoryTitle: Развертывание
+categoryOrder: 2
 order: 4
 ---
 

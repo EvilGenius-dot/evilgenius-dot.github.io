@@ -4,6 +4,9 @@ slug: operations
 title: RustMinerSystem operations and troubleshooting
 navTitle: Operations
 description: Review daily checks, upgrade flow, and troubleshooting steps for RustMinerSystem.
+category: deployment
+categoryTitle: Deployment
+categoryOrder: 2
 order: 5
 ---
 

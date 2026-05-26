@@ -4,6 +4,9 @@ slug: operations
 title: RustMinerSystem 运维与故障排查
 navTitle: 运维
 description: 了解 RustMinerSystem 的日常检查、升级流程和常见故障排查方法。
+category: deployment
+categoryTitle: 部署运维
+categoryOrder: 2
 order: 5
 ---
 

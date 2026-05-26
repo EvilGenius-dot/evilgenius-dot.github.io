@@ -2,22 +2,40 @@
     <main id="main-content" class="docs-shell">
         <aside class="docs-sidebar" aria-labelledby="docs-sidebar-title">
             <div class="docs-sidebar-inner">
-                <p id="docs-sidebar-title" class="sidebar-title">
+                <!-- <p id="docs-sidebar-title" class="sidebar-title">
                     {{ t("document.navigationTitle") }}
-                </p>
-                <nav class="sidebar-nav">
-                    <RouterLink
-                        v-for="page in docPages"
-                        :key="page.id"
-                        :to="docPath(page.id, currentLocale)"
-                        :class="[
-                            'sidebar-link',
-                            { 'is-active': page.id === currentDocPage },
-                        ]"
+                </p> -->
+                <div class="sidebar-groups">
+                    <section
+                        v-for="category in docCategories"
+                        :key="category.id"
+                        class="sidebar-group"
                     >
-                        {{ getDocPageMeta(page.id, currentLocale).navTitle }}
-                    </RouterLink>
-                </nav>
+                        <h2>
+                            {{
+                                getDocCategoryMeta(category.id, currentLocale)
+                                    .title
+                            }}
+                        </h2>
+                        <nav class="sidebar-nav">
+                            <RouterLink
+                                v-for="page in pagesByCategory[category.id] ||
+                                []"
+                                :key="page.id"
+                                :to="docPath(page.id, currentLocale)"
+                                :class="[
+                                    'sidebar-link',
+                                    { 'is-active': page.id === currentDocPage },
+                                ]"
+                            >
+                                {{
+                                    getDocPageMeta(page.id, currentLocale)
+                                        .navTitle
+                                }}
+                            </RouterLink>
+                        </nav>
+                    </section>
+                </div>
             </div>
         </aside>
 
@@ -98,9 +116,11 @@ import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { getDocumentMarkdown, getDocumentPageIndex } from "../docs";
 import {
+    DOC_CATEGORIES,
     DOC_PAGES,
     DEFAULT_DOC_PAGE,
     docPath,
+    getDocCategoryMeta,
     getDocPageMeta,
     getRouteLocale,
 } from "../i18n";
@@ -112,6 +132,17 @@ const route = useRoute();
 const currentLocale = computed(() => getRouteLocale(route));
 const currentDocPage = computed(() => route.meta?.docPage || DEFAULT_DOC_PAGE);
 const docPages = DOC_PAGES;
+const docCategories = DOC_CATEGORIES;
+const pagesByCategory = computed(() =>
+    docPages.reduce((groups, page) => {
+        const category = page.category || "guide";
+
+        return {
+            ...groups,
+            [category]: [...(groups[category] || []), page],
+        };
+    }, {}),
+);
 
 const documentMarkdown = computed(() =>
     getDocumentMarkdown(currentLocale.value, currentDocPage.value),
@@ -170,6 +201,7 @@ const readingMinutes = computed(() => {
 }
 
 .sidebar-title,
+.sidebar-group h2,
 .aside-label,
 .article-aside h2 {
     color: var(--color-neutral-500);
@@ -184,6 +216,15 @@ const readingMinutes = computed(() => {
 .article-toc {
     display: grid;
     gap: 0.125rem;
+}
+
+.sidebar-groups {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.sidebar-group {
+    min-width: 0;
 }
 
 .sidebar-link,

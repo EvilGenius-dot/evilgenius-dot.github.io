@@ -7,12 +7,13 @@ export default {
         shortName: "RMS",
     },
     seo: {
-        defaultTitle: "RustMinerSystem - Mining system and pool node toolkit",
+        defaultTitle:
+            "RustMinerSystem - Third-party pool proxy and PoolNode real pool",
         titleTemplate: "{pageTitle} | RustMinerSystem",
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem gives mining operators one entry point for traditional pool proxying, self-hosted pool nodes, and the RMS secure client.",
+                "RustMinerSystem lets operators run a third-party pool proxy that allocates any configured share of connected hashrate to specified pool wallets, or build a real pool with PoolNode and distribute fees at the coin settlement layer.",
         },
         document: {
             title: "Documentation",
@@ -22,7 +23,7 @@ export default {
         customized: {
             title: "Customized Version",
             description:
-                "Request a tailored RustMinerSystem build for private mining pools, branded applications, and advanced operations.",
+                "Request a tailored RustMinerSystem build for third-party pool proxying, PoolNode real-pool mode, branded applications, and advanced operations.",
         },
         about: {
             title: "About",
@@ -48,7 +49,7 @@ export default {
         github: "Open RustMinerSystem on GitHub",
         downloads: {
             server: "RustMinerSystem Server",
-            rms: "RMS Node",
+            rms: "RMS Client",
             desktop: "RustMinerSystem App",
             poolNode: "PoolNode",
         },
@@ -60,34 +61,101 @@ export default {
         community: "Community",
         github: "GitHub",
         description:
-            "RustMinerSystem keeps mining deployment, node operations, and secure transport links in one focused web surface.",
+            "RustMinerSystem focuses on third-party pool proxying and PoolNode real-pool operations, with RMS available as an optional local compression tool.",
         copyright: "© {year} RustMinerSystem. All rights reserved.",
     },
     home: {
-        eyebrow: "Full-chain cryptocurrency mining solution",
+        eyebrow: "Third-party pool proxy and PoolNode real-pool system",
         title: "RustMinerSystem",
         description:
-            "Use it as a traditional pool proxy or turn your device into a real pool node. The companion RMS local secure client encrypts and compresses traffic to reduce bandwidth pressure and improve transport safety.",
+            "RustMinerSystem covers two core paths. It can act as a proxy for third-party mining pools and allocate any configured share of connected miner hashrate to specified third-party pool wallets. It can also use PoolNode to build a real self-owned mining pool, where configured fees are distributed directly at the coin settlement layer. RMS is an optional companion tool for sites that want lower bandwidth usage and fewer public connections, connecting miners to RustMiner over a local encrypted compression link.",
         primaryCta: "View downloads",
         secondaryCta: "Read docs",
-        featuresTitle: "Pool access, node operations, and secure transport",
+        secondaryCtaNote: "Deployment, configuration, and operations",
+        poolLinksLabel: "Third-party mining pool website links",
+        preview: {
+            label: "RustMinerSystem software dashboard preview",
+            imageAlt:
+                "RustMinerSystem mining proxy operations dashboard screenshot",
+            minersLabel: "Connected miners",
+            networkLabel: "Public links compressed",
+            profitLabel: "Hashrate allocation",
+            profitValue: "Allocation policy active",
+        },
+        featuresTitle:
+            "Third-party pool proxy, PoolNode, and optional RMS tooling",
         features: {
             deployment: {
-                title: "Two operating modes",
-                text: "Proxy traditional mining pools or build a self-hosted pool node, depending on your site and revenue strategy.",
+                title: "Third-party pool proxy",
+                text: "Use RustMiner as the access proxy for third-party pools, then allocate any share of connected miner hashrate to specified pool wallets or worker names.",
             },
             operations: {
-                title: "RMS secure client",
-                text: "Encrypt and compress miner traffic to reduce bandwidth pressure while lowering man-in-the-middle risk.",
+                title: "PoolNode real pool",
+                text: "Build your own real mining pool with PoolNode, and distribute configured fees at the coin settlement layer instead of only at the forwarding layer.",
             },
             localization: {
-                title: "Cross-platform deployment",
-                text: "Ship Windows, Linux, ARM, and ARMV7 builds, with one-command deployment for Linux environments.",
+                title: "Optional RMS local compression tool",
+                text: "When a site needs network optimization, RMS can run locally so miners connect to RustMiner through an encrypted compressed link, reducing data volume and public connection count. Sites can also connect directly without RMS.",
             },
         },
-        downloadsTitle: "Downloads",
+        global: {
+            title: "Run locally, manage hashrate allocation from the cloud",
+            description:
+                "RustMinerSystem can run on-site at a mining facility or on a cloud server that connects sites across countries and regions. In proxy mode, it allocates any configured share of connected hashrate to third-party pool wallets by site, miner group, or wallet target. In PoolNode mode, it helps build a real pool and applies fee distribution at the coin settlement layer.",
+            sites: {
+                local: {
+                    region: "Local site",
+                    title: "Nearby miner access",
+                    text: "Handle proxy forwarding, device groups, and hashrate allocation policies inside the mining facility with less public exposure.",
+                },
+                remote: {
+                    region: "Cloud node",
+                    title: "Unified regional console",
+                    text: "Manage multiple sites from cloud servers and adjust proxy targets, wallet targets, and link policies by region.",
+                },
+                multi: {
+                    region: "Multi-site ops",
+                    title: "Multi-wallet allocation",
+                    text: "Create independent hashrate shares and third-party pool wallet targets for miners, teams, or partners.",
+                },
+            },
+            visual: {
+                coreLabel: "Scheduling core",
+                coreTitle: "Hashrate allocation engine",
+                coreText:
+                    "Coordinates miner access, optional RMS compression, third-party pool wallet allocation, and PoolNode settlement-layer fees.",
+                secure: "Local encrypt",
+                compress: "Data compress",
+                route: "Allocation",
+            },
+            targets: {
+                proxy: {
+                    type: "Proxy",
+                    title: "Third-party pool proxy",
+                    text: "Allocate any share of connected miner hashrate to specified third-party pool wallets.",
+                },
+                poolNode: {
+                    type: "Node",
+                    title: "PoolNode real pool",
+                    text: "Build a real self-owned pool and distribute configured fees at the coin settlement layer.",
+                },
+                pool: {
+                    type: "Wallet",
+                    title: "Specified pool wallet",
+                    text: "Route any configured hashrate share to the matching third-party pool address, wallet, or worker name.",
+                },
+            },
+            metrics: {
+                operations: "Flexible local deployment and cloud access",
+                regionsValue: "Allocation",
+                regions: "Manage by site, miner group, or wallet target",
+                clientValue: "Optional RMS",
+                client: "Compress data volume and public links when needed",
+            },
+        },
+        downloadsTitle: "Download deployment components",
         downloadsDescription:
-            "Get the RustMinerSystem server, RMS client, and PoolNode app. The repository publishes Windows, Linux, ARM, and ARMV7 packages.",
+            "Get the RustMinerSystem server, optional RMS client, and PoolNode app for third-party pool proxying, real-pool PoolNode deployment, hashrate allocation policies, and on-demand local compression.",
         releaseLink: "Open release center",
     },
     document: {
@@ -121,15 +189,15 @@ export default {
         eyebrow: "Custom delivery",
         title: "Customized RustMinerSystem versions",
         description:
-            "Plan private pool features, branded applications, deployment automation, and region-specific onboarding flows.",
+            "Plan third-party pool proxy strategies, PoolNode real-pool fee rules, branded applications, deployment automation, and region-specific onboarding flows.",
         points: {
             branding: {
                 title: "Brand packaging",
                 text: "Align app names, visual assets, and navigation labels with your team or pool identity.",
             },
             integrations: {
-                title: "Operational integrations",
-                text: "Connect release flows, node dashboards, and internal support paths to your existing systems.",
+                title: "Strategy integrations",
+                text: "Connect hashrate allocation, third-party pool wallet targets, PoolNode fees, and node dashboards to your existing operations systems.",
             },
             localization: {
                 title: "Localized rollout",

@@ -4,6 +4,9 @@ slug: quick-start
 title: RustMinerSystem 快速开始
 navTitle: 快速开始
 description: 快速完成 RustMinerSystem 环境准备、基础配置和测试接入。
+category: getting-started
+categoryTitle: 开始使用
+categoryOrder: 1
 order: 2
 ---
 

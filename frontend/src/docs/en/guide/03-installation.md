@@ -4,6 +4,9 @@ slug: installation
 title: RustMinerSystem installation guide
 navTitle: Installation
 description: Download, start, and verify the RustMinerSystem server package.
+category: deployment
+categoryTitle: Deployment
+categoryOrder: 2
 order: 3
 ---
 

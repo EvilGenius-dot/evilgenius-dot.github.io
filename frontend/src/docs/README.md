@@ -8,6 +8,12 @@ Docs are maintained as Markdown files with frontmatter. Routes, sidebar labels, 
 npm run docs:new -- my-topic "My Topic"
 ```
 
+Create a page in a specific sidebar category:
+
+```bash
+npm run docs:new -- advanced-config "Advanced Config" --category advanced --category-title "Advanced" --category-order 3
+```
+
 This creates matching files under:
 
 ```text
@@ -25,9 +31,19 @@ slug: my-topic
 title: My SEO Page Title
 navTitle: My Topic
 description: A concise search result description.
+category: getting-started
+categoryTitle: Getting Started
+categoryOrder: 1
 order: 6
 ---
 ```
+
+Category fields control the sidebar grouping:
+
+- `category` is the stable group id and must match across languages.
+- `categoryTitle` is the localized group label shown in the sidebar.
+- `categoryOrder` controls the group order.
+- `order` controls the page order inside the generated docs list.
 
 ## Delete a Page
 
@@ -69,7 +85,9 @@ public/sitemap.xml
 ## Rules
 
 - Keep the same `id`, `slug`, `file`, and `order` across all languages.
+- Keep the same `category` and `categoryOrder` across all languages.
 - Use `title` for SEO page titles.
 - Use `navTitle` for the sidebar and previous/next links.
 - Use `description` for meta descriptions and search snippets.
+- Use `categoryTitle` for the localized sidebar group heading.
 - Keep one top-level `#` heading in each Markdown file; the page layout renders the SEO title as the only page H1.

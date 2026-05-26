@@ -4,6 +4,9 @@ slug: configuration
 title: RustMinerSystem configuration reference
 navTitle: Configuration
 description: Configure RustMinerSystem listen addresses, pool endpoints, worker credentials, and logging.
+category: deployment
+categoryTitle: Deployment
+categoryOrder: 2
 order: 4
 ---
 

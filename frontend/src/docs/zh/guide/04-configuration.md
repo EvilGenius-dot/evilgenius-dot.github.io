@@ -4,6 +4,9 @@ slug: configuration
 title: RustMinerSystem 配置说明
 navTitle: 配置
 description: 配置 RustMinerSystem 监听地址、矿池端点、矿工凭据和日志参数。
+category: deployment
+categoryTitle: 部署运维
+categoryOrder: 2
 order: 4
 ---
 

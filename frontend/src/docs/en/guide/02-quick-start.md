@@ -4,6 +4,9 @@ slug: quick-start
 title: RustMinerSystem quick start
 navTitle: Quick Start
 description: Prepare the environment, configure basics, and validate a RustMinerSystem test connection.
+category: getting-started
+categoryTitle: Getting Started
+categoryOrder: 1
 order: 2
 ---
 

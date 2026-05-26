@@ -4,6 +4,9 @@ slug: operations
 title: Эксплуатация и диагностика RustMinerSystem
 navTitle: Эксплуатация
 description: Изучите ежедневные проверки, процесс обновления и диагностику RustMinerSystem.
+category: deployment
+categoryTitle: Развертывание
+categoryOrder: 2
 order: 5
 ---
 

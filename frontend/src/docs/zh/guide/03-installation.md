@@ -4,6 +4,9 @@ slug: installation
 title: RustMinerSystem 安装指南
 navTitle: 安装
 description: 下载、启动并验证 RustMinerSystem 服务端安装包。
+category: deployment
+categoryTitle: 部署运维
+categoryOrder: 2
 order: 3
 ---
 

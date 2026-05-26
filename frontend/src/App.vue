@@ -153,4 +153,8 @@ body,
 .app-shell :deep(main) {
     flex: 1 0 auto;
 }
+
+.app-shell :deep(main.home-page) {
+    flex: 0 0 auto;
+}
 </style>

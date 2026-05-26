@@ -4,6 +4,9 @@ slug: quick-start
 title: Быстрый старт RustMinerSystem
 navTitle: Быстрый старт
 description: Подготовьте среду, настройте базовые параметры и проверьте тестовое подключение RustMinerSystem.
+category: getting-started
+categoryTitle: Начало работы
+categoryOrder: 1
 order: 2
 ---
 

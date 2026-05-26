@@ -7,12 +7,12 @@ export default {
         shortName: "RMS",
     },
     seo: {
-        defaultTitle: "RustMinerSystem - 挖矿系统与矿池节点工具",
+        defaultTitle: "RustMinerSystem - 第三方矿池 Proxy 与 PoolNode 真矿池系统",
         titleTemplate: "{pageTitle} | RustMinerSystem",
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem 面向矿场和节点运营方，提供传统矿池代理、自建矿池节点与 RMS 安全客户端的一体化入口。",
+                "RustMinerSystem 面向矿场和矿池运营方，支持作为第三方矿池 Proxy 将接入算力按任意比例分配到指定矿池钱包，也支持通过 PoolNode 搭建真正矿池并在虚拟币结算层分配费率。",
         },
         document: {
             title: "文档",
@@ -22,7 +22,7 @@ export default {
         customized: {
             title: "定制版本",
             description:
-                "为私有矿池、品牌应用与高级运维需求定制 RustMinerSystem 版本。",
+                "为第三方矿池 Proxy、PoolNode 真矿池、品牌应用与高级运维需求定制 RustMinerSystem 版本。",
         },
         about: {
             title: "关于",
@@ -48,7 +48,7 @@ export default {
         github: "在 GitHub 打开 RustMinerSystem",
         downloads: {
             server: "RustMinerSystem",
-            rms: "RMS",
+            rms: "RMS 客户端",
             desktop: "RustMinerSystemAPP",
             poolNode: "PoolNodeAPP",
         },
@@ -60,34 +60,99 @@ export default {
         community: "社区",
         github: "GitHub",
         description:
-            "RustMinerSystem 将矿场部署、节点运维与安全传输入口集中在一个清晰的网站界面中。",
+            "RustMinerSystem 聚焦第三方矿池 Proxy 与 PoolNode 真矿池，并提供可选的 RMS 本地压缩工具。",
         copyright: "© {year} RustMinerSystem. 保留所有权利。",
     },
     home: {
-        eyebrow: "虚拟货币挖矿全链路解决方案",
+        eyebrow: "第三方矿池 Proxy 与 PoolNode 真矿池系统",
         title: "RustMinerSystem",
         description:
-            "既可作为传统矿池代理，也可让设备成为真正的矿池节点；配套 RMS 本地安全客户端提供加密压缩能力，帮助矿场降低带宽压力并提升传输安全。",
-        primaryCta: "查看下载",
+            "RustMinerSystem 同时覆盖两条核心链路：可作为第三方矿池的 Proxy，从接入矿机算力中按任意比例分配到指定第三方矿池钱包；也可通过 PoolNode 搭建真正的自有矿池，让设定费率直接在虚拟币结算层面完成分配。RMS 是可选配套工具，适合需要减少带宽占用和公网连接数的矿场，用本地加密压缩链路把矿机接入 RustMiner。",
+        primaryCta: "获取RustMinerSystem",
         secondaryCta: "阅读文档",
-        featuresTitle: "覆盖矿场接入、节点运营与安全传输",
+        secondaryCtaNote: "部署、配置与运维说明",
+        poolLinksLabel: "第三方矿池官网链接",
+        preview: {
+            label: "RustMinerSystem 软件首页预览",
+            imageAlt: "RustMinerSystem 矿机代理运维仪表盘截图",
+            minersLabel: "接入设备",
+            networkLabel: "公网连接压缩",
+            profitLabel: "算力分配",
+            profitValue: "分配策略运行中",
+        },
+        featuresTitle: "围绕第三方矿池 Proxy、PoolNode 与可选 RMS 工具",
         features: {
             deployment: {
-                title: "两种运行模式",
-                text: "按需求选择传统矿池代理，或搭建自有矿池节点，让矿机接入路径和收益策略更可控。",
+                title: "第三方矿池 Proxy",
+                text: "RustMiner 可作为第三方矿池的接入代理，将任意比例的矿机算力分配到指定第三方矿池钱包或矿工名。",
             },
             operations: {
-                title: "RMS 安全客户端",
-                text: "通过加密和压缩矿机通信数据，降低带宽压力，同时减少中间人攻击风险。",
+                title: "PoolNode 真矿池",
+                text: "通过 PoolNode 搭建自己的真实矿池，设定费率直接在虚拟币结算层面分配，而不是停留在转发层。",
             },
             localization: {
-                title: "跨平台部署",
-                text: "提供 Windows、Linux、ARM 与 ARMV7 安装入口，Linux 场景可通过一行命令完成部署。",
+                title: "RMS 可选本地压缩工具",
+                text: "需要优化网络时，可在矿场本地部署 RMS，让矿机通过加密压缩链路接入 RustMiner，减少数据体积和公网连接数；不使用 RMS 也可以直接接入 RustMiner。",
             },
         },
-        downloadsTitle: "下载",
+        global: {
+            title: "本地部署、云端统一管理算力分配",
+            description:
+                "RustMinerSystem 可部署在矿场本地，也可放在云服务器集中接入多国多地区场地。Proxy 模式下，系统按场地、矿机分组或钱包目标把接入算力按任意比例分配到第三方矿池；PoolNode 模式下，系统用于搭建真实矿池，并在虚拟币结算层面执行费率分配。",
+            sites: {
+                local: {
+                    region: "本地场地",
+                    title: "矿机就近接入",
+                    text: "在矿场内完成代理转发、设备分组和算力分配策略下发，减少公网暴露。",
+                },
+                remote: {
+                    region: "云端节点",
+                    title: "跨地区统一后台",
+                    text: "云服务器集中管理多个场地，按区域调整 Proxy 目标、钱包目标和链路策略。",
+                },
+                multi: {
+                    region: "多场地运营",
+                    title: "多钱包分配策略",
+                    text: "为不同矿工、团队或合作方配置独立算力份额和第三方矿池钱包目标。",
+                },
+            },
+            visual: {
+                coreLabel: "调度核心",
+                coreTitle: "算力分配引擎",
+                coreText:
+                    "统一处理矿机接入、可选 RMS 压缩、第三方矿池钱包分配与 PoolNode 结算层费率。",
+                secure: "本地加密",
+                compress: "体积压缩",
+                route: "算力分配",
+            },
+            targets: {
+                proxy: {
+                    type: "代理",
+                    title: "第三方矿池 Proxy",
+                    text: "把接入矿机算力按任意比例分配到指定第三方矿池钱包。",
+                },
+                poolNode: {
+                    type: "节点",
+                    title: "PoolNode 真矿池",
+                    text: "搭建自有真实矿池，并让设定费率在虚拟币结算层面分配。",
+                },
+                pool: {
+                    type: "收益",
+                    title: "指定矿池钱包",
+                    text: "按配置将任意比例算力导向对应第三方矿池地址、钱包或矿工名。",
+                },
+            },
+            metrics: {
+                operations: "本地部署与云端接入灵活切换",
+                regionsValue: "分配策略",
+                regions: "按场地、矿机分组或钱包目标统一管理",
+                clientValue: "可选 RMS",
+                client: "按需压缩数据体积与公网连接数",
+            },
+        },
+        downloadsTitle: "下载部署组件",
         downloadsDescription:
-            "获取 RustMinerSystem 服务端、RMS 客户端与 PoolNode 应用；当前仓库包含 Windows、Linux、ARM 与 ARMV7 发布包。",
+            "获取 RustMinerSystem 服务端、RMS 可选客户端与 PoolNode 应用，用于第三方矿池 Proxy、PoolNode 真矿池、算力分配策略和按需本地压缩接入。",
         releaseLink: "打开发布中心",
     },
     document: {
@@ -121,15 +186,15 @@ export default {
         eyebrow: "定制交付",
         title: "RustMinerSystem 定制版本",
         description:
-            "规划私有矿池功能、品牌化应用、部署自动化与区域化引导流程。",
+            "规划第三方矿池 Proxy 策略、PoolNode 真矿池费率、品牌化应用、部署自动化与区域化引导流程。",
         points: {
             branding: {
                 title: "品牌打包",
                 text: "让应用名称、视觉资产与导航标签匹配你的团队或矿池身份。",
             },
             integrations: {
-                title: "运营集成",
-                text: "把发布流程、节点看板与内部支持路径接入现有系统。",
+                title: "策略集成",
+                text: "把算力分配、第三方矿池钱包目标、PoolNode 费率和节点看板接入现有运营系统。",
             },
             localization: {
                 title: "本地化上线",

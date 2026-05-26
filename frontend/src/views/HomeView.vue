@@ -20,31 +20,73 @@
                             :to="pagePath('document', currentLocale)"
                             class="secondary-action"
                         >
-                            {{ t("home.secondaryCta") }}
+                            <span>{{ t("home.secondaryCta") }}</span>
+                            <small>{{ t("home.secondaryCtaNote") }}</small>
                         </RouterLink>
+                    </div>
+                    <div
+                        class="pool-links"
+                        :aria-label="t('home.poolLinksLabel')"
+                    >
+                        <a
+                            v-for="pool in partnerPools"
+                            :key="pool.name"
+                            :href="pool.href"
+                            class="pool-link"
+                            :class="pool.className"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            :aria-label="pool.name"
+                            :title="pool.name"
+                        >
+                            <img
+                                :src="pool.logo"
+                                :alt="pool.name"
+                                class="pool-logo"
+                                :class="pool.logoClass"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </a>
+                    </div>
+                    <div class="mt-3.5 text-center w-116">
+                        <span class="text-sm text-neutral-600">RustMinerSystem 很荣幸得到上述及更多合作伙伴的支持。</span>
                     </div>
                 </div>
 
-                <section class="demo-panel" aria-label="RustMinerSystem sample">
-                    <div class="demo-tabs" aria-hidden="true">
-                        <span
-                            v-for="(tab, index) in demoTabs"
-                            :key="tab"
-                            class="demo-tab"
-                            :class="{ 'is-active': index === 0 }"
-                        >
-                            {{ tab }}
-                        </span>
+                <section
+                    class="product-preview"
+                    :aria-label="t('home.preview.label')"
+                >
+                    <div class="preview-shell">
+                        <div class="preview-toolbar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <strong>RustMinerSystem</strong>
+                        </div>
+                        <img
+                            src="/image/dashboard-preview.png"
+                            :alt="t('home.preview.imageAlt')"
+                            class="preview-image"
+                            loading="eager"
+                            decoding="async"
+                        />
+                        <div class="preview-shade" aria-hidden="true"></div>
                     </div>
-                    <pre
-                        class="demo-code"
-                    ><code><span class="code-muted">// RustMinerSystem deployment modes</span>
-<span class="code-key">traditional_pool_proxy</span> = <span class="code-value">"enabled"</span>
-<span class="code-key">self_hosted_pool_node</span> = <span class="code-value">"optional"</span>
-<span class="code-key">rms_secure_client</span> = [<span class="code-value">"encrypt"</span>, <span class="code-value">"compress"</span>]
 
-<span class="code-muted">// Linux, Windows, ARM and ARMV7 packages</span>
-<span class="code-key">install</span> --channel latest --target operators</code></pre>
+                    <div class="preview-stat stat-miners">
+                        <span>{{ t("home.preview.minersLabel") }}</span>
+                        <strong>138</strong>
+                    </div>
+                    <div class="preview-stat stat-network">
+                        <span>{{ t("home.preview.networkLabel") }}</span>
+                        <strong>128 : 1</strong>
+                    </div>
+                    <div class="preview-stat stat-profit">
+                        <span>{{ t("home.preview.profitLabel") }}</span>
+                        <strong>{{ t("home.preview.profitValue") }}</strong>
+                    </div>
                 </section>
             </section>
 
@@ -59,6 +101,66 @@
                         <h3>{{ feature.title }}</h3>
                         <p>{{ feature.text }}</p>
                     </article>
+                </div>
+            </section>
+
+            <section
+                class="content-section global-section"
+                aria-labelledby="global-title"
+            >
+                <h2 id="global-title">{{ t("home.global.title") }}</h2>
+                <p class="global-description">
+                    {{ t("home.global.description") }}
+                </p>
+
+                <div class="deployment-panel">
+                    <div class="deployment-column">
+                        <article
+                            v-for="site in deploymentSites"
+                            :key="site.title"
+                            class="deployment-card site-card"
+                        >
+                            <span>{{ site.region }}</span>
+                            <strong>{{ site.title }}</strong>
+                            <p>{{ site.text }}</p>
+                        </article>
+                    </div>
+
+                    <div class="deployment-core" aria-hidden="true">
+                        <span class="core-label">{{
+                            t("home.global.visual.coreLabel")
+                        }}</span>
+                        <h3>{{ t("home.global.visual.coreTitle") }}</h3>
+                        <p>{{ t("home.global.visual.coreText") }}</p>
+                        <div class="core-pills">
+                            <span>{{ t("home.global.visual.secure") }}</span>
+                            <span>{{ t("home.global.visual.compress") }}</span>
+                            <span>{{ t("home.global.visual.route") }}</span>
+                        </div>
+                    </div>
+
+                    <div class="deployment-column">
+                        <article
+                            v-for="target in deploymentTargets"
+                            :key="target.title"
+                            class="deployment-card target-card"
+                        >
+                            <span>{{ target.type }}</span>
+                            <strong>{{ target.title }}</strong>
+                            <p>{{ target.text }}</p>
+                        </article>
+                    </div>
+
+                    <div class="global-metrics">
+                        <article
+                            v-for="metric in globalMetrics"
+                            :key="metric.label"
+                            class="global-metric"
+                        >
+                            <strong>{{ metric.value }}</strong>
+                            <span>{{ metric.label }}</span>
+                        </article>
+                    </div>
                 </div>
             </section>
 
@@ -125,6 +227,88 @@ const features = computed(() => [
     },
 ]);
 
+const deploymentSites = computed(() => [
+    {
+        region: t("home.global.sites.local.region"),
+        title: t("home.global.sites.local.title"),
+        text: t("home.global.sites.local.text"),
+    },
+    {
+        region: t("home.global.sites.remote.region"),
+        title: t("home.global.sites.remote.title"),
+        text: t("home.global.sites.remote.text"),
+    },
+    {
+        region: t("home.global.sites.multi.region"),
+        title: t("home.global.sites.multi.title"),
+        text: t("home.global.sites.multi.text"),
+    },
+]);
+
+const deploymentTargets = computed(() => [
+    {
+        type: t("home.global.targets.proxy.type"),
+        title: t("home.global.targets.proxy.title"),
+        text: t("home.global.targets.proxy.text"),
+    },
+    {
+        type: t("home.global.targets.poolNode.type"),
+        title: t("home.global.targets.poolNode.title"),
+        text: t("home.global.targets.poolNode.text"),
+    },
+    {
+        type: t("home.global.targets.pool.type"),
+        title: t("home.global.targets.pool.title"),
+        text: t("home.global.targets.pool.text"),
+    },
+]);
+
+const globalMetrics = computed(() => [
+    {
+        value: "24/7",
+        label: t("home.global.metrics.operations"),
+    },
+    {
+        value: t("home.global.metrics.regionsValue"),
+        label: t("home.global.metrics.regions"),
+    },
+    {
+        value: t("home.global.metrics.clientValue"),
+        label: t("home.global.metrics.client"),
+    },
+]);
+
+const partnerPools = [
+    {
+        name: "ViaBTC",
+        href: "https://www.viabtc.com/",
+        logo: "/image/viabtc.png",
+        className: "",
+        logoClass: "is-viabtc",
+    },
+    {
+        name: "F2Pool",
+        href: "https://www.f2pool.com/",
+        logo: "/image/f2pool.png",
+        className: "",
+        logoClass: "is-f2pool",
+    },
+    {
+        name: "ANTPOOL",
+        href: "https://www.antpool.com/",
+        logo: "/image/antpool.png",
+        className: "",
+        logoClass: "is-antpool",
+    },
+    {
+        name: "Poolin",
+        href: "https://www.poolin.com/",
+        logo: "/image/poolin.svg",
+        className: "",
+        logoClass: "is-poolin",
+    }
+];
+
 // 下载卡片的 id 与导航 hash 对应，改锚点时两边需要同步。
 const downloads = computed(() => [
     {
@@ -147,13 +331,6 @@ const downloads = computed(() => [
         group: t("nav.app"),
         title: t("nav.downloads.poolNode"),
     },
-]);
-
-const demoTabs = computed(() => [
-    t("nav.downloads.server"),
-    t("nav.downloads.rms"),
-    t("nav.downloads.desktop"),
-    t("nav.downloads.poolNode"),
 ]);
 </script>
 
@@ -183,7 +360,6 @@ const demoTabs = computed(() => [
         auto,
         3rem 3rem,
         3rem 3rem;
-    min-height: calc(100vh - 4rem);
     overflow: hidden;
     padding: 0;
     position: relative;
@@ -218,9 +394,11 @@ const demoTabs = computed(() => [
 }
 
 .bg-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
     margin: 0 auto;
     max-width: 1280px;
-    min-height: calc(100vh - 5rem);
     padding: calc(var(--spacing, 0.25rem) * 4);
     position: relative;
     z-index: 1;
@@ -277,115 +455,348 @@ h1 {
 }
 
 .hero-actions {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
+    align-items: stretch;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.5rem;
     min-width: 0;
+    width: min(100%, 29rem);
 }
 
 .primary-action,
 .secondary-action {
     align-items: center;
-    border-radius: 8px;
     display: inline-flex;
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
+    gap: 0.5rem;
+    justify-content: center;
+    line-height: 1.35;
     min-height: 2.75rem;
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0.625rem 1.125rem;
+    position: relative;
+    text-align: center;
     text-decoration: none;
     transition:
         background-color 150ms ease,
         border-color 150ms ease,
-        color 150ms ease;
+        box-shadow 150ms ease,
+        color 150ms ease,
+        transform 150ms ease;
+    width: 100%;
 }
 
 .primary-action {
-    background: var(--color-green-600);
+    background: rgb(65 126 56 / 10%);
+    border: 1px solid rgb(65 126 56 / 30%);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgb(16 24 40 / 5%);
     color: var(--color-white);
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-semibold);
+    isolation: isolate;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.primary-action::before {
+    background-image: radial-gradient(
+        8em circle at 50% 10px,
+        var(--color-green-400),
+        transparent 30%
+    );
+    content: "";
+    height: 100%;
+    inset-inline: 0;
+    margin-inline: auto;
+    opacity: 0.3;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.primary-action::after {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-green-600),
+        transparent
+    );
+    content: "";
+    height: 1px;
+    inset-inline: 0;
+    margin-inline: auto;
+    pointer-events: none;
+    position: absolute;
+    top: -1px;
+    width: 40%;
 }
 
 .primary-action:hover,
 .primary-action:focus-visible {
-    background: var(--color-green-400);
-    color: var(--color-neutral-950);
+    background: rgb(65 126 56 / 20%);
+    border-color: rgb(65 126 56 / 42%);
+    color: var(--color-white);
     outline: none;
+    transform: translateY(-1px);
 }
 
 .secondary-action {
-    border: 1px solid var(--color-neutral-800);
-    color: var(--color-neutral-100);
+    border: 1px solid rgb(255 255 255 / 13%);
+    border-radius: 8px;
+    color: var(--color-neutral-200);
+    flex-direction: column;
+    font-weight: var(--font-weight-semibold);
+}
+
+.secondary-action small {
+    color: var(--color-neutral-500);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.35;
 }
 
 .secondary-action:hover,
 .secondary-action:focus-visible {
-    background: var(--color-neutral-900);
-    border-color: var(--color-neutral-700);
+    background: rgb(44 52 55 / 78%);
+    border-color: rgb(255 255 255 / 18%);
+    color: var(--color-neutral-100);
     outline: none;
+    transform: translateY(-1px);
 }
 
-.demo-panel {
-    background: rgb(13 18 28 / 86%);
-    border: 1px solid rgb(255 255 255 / 10%);
+.secondary-action:hover small,
+.secondary-action:focus-visible small {
+    color: var(--color-neutral-300);
+}
+
+.pool-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 0.875rem;
+    width: min(100%, 29rem);
+}
+
+.pool-link {
+    align-items: center;
+    border: 1px solid rgb(255 255 255 / 12%);
     border-radius: 8px;
-    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 32%);
-    margin: 0 auto;
-    max-width: 48rem;
+    display: inline-flex;
+    height: 2.25rem;
+    justify-content: center;
+    min-width: 2.25rem;
     overflow: hidden;
+    padding: 0 0.625rem;
+    text-decoration: none;
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        transform 150ms ease;
+}
+
+.pool-link.is-light-logo {
+    background: rgb(246 247 249 / 92%);
+}
+
+.pool-link.is-dark-logo {
+    background: rgb(13 18 28 / 72%);
+}
+
+.pool-link.is-f2pool-link {
+    /* background: #3f5ff6; */
+    padding-inline: 0.5rem;
+}
+
+.pool-link:hover,
+.pool-link:focus-visible {
+    border-color: rgb(255 255 255 / 24%);
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.pool-link.is-light-logo:hover,
+.pool-link.is-light-logo:focus-visible {
+    background: var(--color-white);
+}
+
+.pool-link.is-dark-logo:hover,
+.pool-link.is-dark-logo:focus-visible {
+    background: rgb(13 18 28 / 92%);
+}
+
+.pool-link.is-f2pool-link:hover,
+.pool-link.is-f2pool-link:focus-visible {
+    /* background: #4b68ff; */
+}
+
+.pool-logo {
+    display: block;
+    object-fit: contain;
+}
+
+.pool-logo.is-antpool {
+    height: 1.05rem;
+    width: 6.25rem;
+}
+
+.pool-logo.is-f2pool {
+    border-radius: 4px;
+    height: 1.5rem;
+    object-fit: cover;
+    object-position: left center;
+    /* width: 2.25rem; */
+}
+
+.pool-logo.is-poolin {
+    height: 1.15rem;
+    width: 5.5rem;
+}
+
+.pool-logo.is-viabtc {
+    height: 1.2rem;
+    width: 5rem;
+}
+
+.product-preview {
+    margin: 0 auto;
+    max-width: 56rem;
+    position: relative;
     text-align: left;
     width: 100%;
 }
 
-.demo-tabs {
+.preview-shell {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 10%), transparent 5rem),
+        rgb(13 18 28 / 86%);
+    border: 1px solid rgb(255 255 255 / 12%);
+    border-radius: 8px;
+    box-shadow:
+        0 2rem 5rem rgb(0 0 0 / 38%),
+        0 0 0 1px rgb(65 126 56 / 15%);
+    overflow: hidden;
+    position: relative;
+}
+
+.preview-toolbar {
+    align-items: center;
+    background: rgb(17 22 34 / 92%);
     border-bottom: 1px solid rgb(255 255 255 / 10%);
     display: flex;
-    gap: 0.25rem;
-    overflow-x: auto;
-    padding: 0.5rem;
+    gap: 0.5rem;
+    min-height: 2.25rem;
+    padding: 0 0.875rem;
 }
 
-.demo-tab {
-    border-radius: 6px;
-    color: var(--color-neutral-400);
-    flex: none;
+.preview-toolbar span {
+    border-radius: 9999px;
+    display: block;
+    height: 0.625rem;
+    width: 0.625rem;
+}
+
+.preview-toolbar span:nth-child(1) {
+    background: #ef4444;
+}
+
+.preview-toolbar span:nth-child(2) {
+    background: #f59e0b;
+}
+
+.preview-toolbar span:nth-child(3) {
+    background: #22c55e;
+}
+
+.preview-toolbar strong {
+    color: var(--color-neutral-300);
     font-size: var(--text-xs);
     font-weight: var(--font-weight-semibold);
-    padding: 0.5rem 0.75rem;
-    white-space: nowrap;
+    margin-left: 0.25rem;
 }
 
-.demo-tab.is-active {
-    background: rgb(65 126 56 / 24%);
-    color: var(--color-neutral-100);
+.preview-image {
+    aspect-ratio: 4104 / 2178;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 100%;
 }
 
-.demo-code {
-    color: var(--color-neutral-200);
-    font-family:
-        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-        "Liberation Mono", monospace;
-    font-size: var(--text-sm);
-    line-height: 1.8;
-    margin: 0;
-    overflow-x: auto;
-    padding: 1rem;
+.preview-shade {
+    background: linear-gradient(180deg, transparent 55%, rgb(8 12 20 / 50%));
+    inset: 2.25rem 0 0;
+    pointer-events: none;
+    position: absolute;
 }
 
-.code-muted {
-    color: var(--color-neutral-500);
+.preview-stat {
+    backdrop-filter: blur(18px);
+    background: rgb(12 18 28 / 78%);
+    border: 1px solid rgb(255 255 255 / 14%);
+    border-radius: 8px;
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 28%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 9.5rem;
+    padding: 0.875rem 1rem;
+    position: absolute;
 }
 
-.code-key {
+.preview-stat span {
+    color: var(--color-neutral-400);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+}
+
+.preview-stat strong {
+    color: var(--color-white);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-miners {
+    left: 1rem;
+    top: 4rem;
+}
+
+.stat-network {
+    right: 1rem;
+    top: 4rem;
+}
+
+.stat-network strong {
     color: var(--color-green-400);
 }
 
-.code-value {
-    color: var(--color-neutral-100);
+.stat-profit {
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.stat-profit strong {
+    color: #facc15;
+}
+
+@media (max-width: 640px) {
+    .product-preview {
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .preview-stat {
+        min-width: 0;
+        position: static;
+    }
 }
 
 .content-section {
-    padding: 4rem 0 0;
+    padding: 0;
 }
 
 .content-section h2 {
@@ -436,6 +847,208 @@ h1 {
     margin-bottom: 0;
 }
 
+.global-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.global-section h2 {
+    margin-bottom: 0;
+}
+
+.global-description {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+    max-width: 48rem;
+}
+
+.deployment-panel {
+    background:
+        radial-gradient(
+            circle at 50% 44%,
+            rgb(65 126 56 / 24%),
+            transparent 24rem
+        ),
+        linear-gradient(180deg, rgb(255 255 255 / 6%), transparent 42%),
+        rgb(13 18 28 / 70%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 22%);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-top: 0.75rem;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+}
+
+.deployment-panel::before {
+    background:
+        linear-gradient(rgb(255 255 255 / 4%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(255 255 255 / 4%) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.deployment-column,
+.deployment-core,
+.global-metrics {
+    position: relative;
+    z-index: 1;
+}
+
+.deployment-column {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.deployment-card {
+    background: rgb(9 14 22 / 74%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.375rem;
+    min-height: 6.75rem;
+    padding: 1rem;
+}
+
+.deployment-card span,
+.core-label {
+    color: var(--color-green-400);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+}
+
+.deployment-card strong {
+    color: var(--color-white);
+    font-size: var(--text-base);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.deployment-card p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.site-card {
+    border-left: 2px solid rgb(74 222 128 / 54%);
+}
+
+.target-card {
+    border-left: 2px solid rgb(125 211 252 / 50%);
+}
+
+.deployment-core {
+    align-self: center;
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 8%), transparent),
+        rgb(12 18 28 / 86%);
+    border: 1px solid rgb(134 239 172 / 24%);
+    border-radius: 8px;
+    box-shadow:
+        0 1.5rem 4rem rgb(0 0 0 / 28%),
+        0 0 3rem rgb(65 126 56 / 18%);
+    display: grid;
+    gap: 0.875rem;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.deployment-core::before,
+.deployment-core::after {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgb(74 222 128 / 42%),
+        transparent
+    );
+    content: "";
+    display: none;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 4.5rem;
+}
+
+.deployment-core::before {
+    right: 100%;
+}
+
+.deployment-core::after {
+    left: 100%;
+}
+
+.deployment-core h3 {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.deployment-core p {
+    color: var(--color-neutral-300);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    margin: 0 auto;
+    max-width: 20rem;
+}
+
+.core-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.core-pills span {
+    background: rgb(65 126 56 / 18%);
+    border: 1px solid rgb(134 239 172 / 16%);
+    border-radius: 9999px;
+    color: var(--color-neutral-200);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    padding: 0.375rem 0.625rem;
+}
+
+.global-metrics {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.global-metric {
+    display: grid;
+    gap: 0.375rem;
+    padding: 1.25rem;
+}
+
+.global-metric + .global-metric {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.global-metric strong {
+    color: var(--color-white);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.global-metric span {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+}
+
 .download-card span {
     color: var(--color-green-400);
     display: inline-block;
@@ -459,8 +1072,9 @@ h1 {
 
 @media (min-width: 720px) {
     .bg-container {
-        padding-block: calc(var(--spacing, 0.25rem) * 8)
-            calc(var(--spacing, 0.25rem) * 14);
+        gap: 5.5rem;
+        padding-block: calc(var(--spacing, 0.25rem) * 10)
+            calc(var(--spacing, 0.25rem) * 12);
         padding-inline: calc(var(--spacing, 0.25rem) * 14);
     }
 
@@ -472,24 +1086,34 @@ h1 {
     .download-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .global-metrics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .global-metric + .global-metric {
+        border-left: 1px solid rgb(255 255 255 / 10%);
+        border-top: 0;
+    }
 }
 
 @media (min-width: 1024px) {
     .bg-container {
-        padding-block: calc(var(--spacing, 0.25rem) * 14)
-            calc(var(--spacing, 0.25rem) * 28);
+        gap: 6rem;
+        padding-block: calc(var(--spacing, 0.25rem) * 16)
+            calc(var(--spacing, 0.25rem) * 16);
         padding-inline: calc(var(--spacing, 0.25rem) * 28);
     }
 
     h1 {
-        font-size: 3.75rem;
+        font-size: clamp(2.75rem, 4vw, 3.25rem);
         white-space: nowrap;
     }
 
     .hero-section {
         display: grid;
-        gap: 4rem;
-        grid-template-columns: minmax(0, 1.08fr) minmax(24rem, 0.92fr);
+        gap: 3rem;
+        grid-template-columns: minmax(0, 1fr) minmax(24rem, 1.05fr);
         justify-content: stretch;
         text-align: left;
     }
@@ -504,10 +1128,14 @@ h1 {
     }
 
     .hero-actions {
+        align-self: flex-start;
+    }
+
+    .pool-links {
         justify-content: flex-start;
     }
 
-    .demo-panel {
+    .product-preview {
         align-self: center;
         margin: 0;
     }
@@ -515,12 +1143,29 @@ h1 {
     .feature-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .deployment-panel {
+        gap: 1.25rem;
+        grid-template-columns:
+            minmax(0, 1fr) minmax(18rem, 0.9fr)
+            minmax(0, 1fr);
+        padding: 1.25rem;
+    }
+
+    .deployment-core::before,
+    .deployment-core::after {
+        display: block;
+    }
+
+    .global-metrics {
+        grid-column: 1 / -1;
+    }
 }
 
 @media (min-width: 1440px) {
     .bg-container {
         max-width: 1440px;
-        padding-block-start: calc(200px - 4rem);
+        padding-block-start: calc(var(--spacing, 0.25rem) * 20);
     }
 }
 </style>
