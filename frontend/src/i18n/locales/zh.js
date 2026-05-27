@@ -13,7 +13,7 @@ export default {
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem 面向矿场和矿池运营方，支持作为第三方矿池 Proxy 将接入算力按任意比例分配到指定矿池钱包，也支持通过 PoolNode 搭建真正矿池并在虚拟币结算层分配费率。",
+                "RustMinerSystem 面向矿场和矿池运营方，支持作为第三方矿池 Proxy 将接入算力按任意比例分配到指定矿池钱包，也支持通过 PoolNode 搭建真正矿池并在虚拟币结算层分配费率；在矿机接入上，不仅可以通过传统 TCP/SSL 直连 RustMiner，也可以配套 RMS 客户端进行本地加密压缩接入。",
         },
         document: {
             title: "文档",
@@ -70,7 +70,7 @@ export default {
         eyebrow: "第三方矿池 Proxy 与 PoolNode 真矿池系统",
         title: "RustMinerSystem",
         description:
-            "RustMinerSystem 同时覆盖两条核心链路：可作为第三方矿池的 Proxy，从接入矿机算力中按任意比例分配到指定第三方矿池钱包；也可通过 PoolNode 搭建真正的自有矿池，让设定费率直接在虚拟币结算层面完成分配。RMS 是可选配套工具，适合需要减少带宽占用和公网连接数的矿场，用本地加密压缩链路把矿机接入 RustMiner。",
+            "RustMinerSystem 同时覆盖两条核心链路：可作为第三方矿池的 Proxy，从接入矿机算力中按任意比例分配到指定第三方矿池钱包；也可通过 PoolNode 搭建真正的自有矿池，让设定费率直接在虚拟币结算层面完成分配。在矿机接入上，不仅可以通过传统 TCP/SSL 直连 RustMiner；RMS 也是可选配套工具，适合需要减少带宽占用和公网连接数的矿场，用本地加密压缩链路把矿机接入 RustMiner。",
         primaryCta: "获取RustMinerSystem",
         secondaryCta: "阅读文档",
         secondaryCtaNote: "部署、配置与运维说明",

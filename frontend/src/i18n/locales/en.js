@@ -13,7 +13,7 @@ export default {
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem lets operators run a third-party pool proxy that allocates any configured share of connected hashrate to specified pool wallets, or build a real pool with PoolNode and distribute fees at the coin settlement layer.",
+                "RustMinerSystem lets operators run a third-party pool proxy that allocates any configured share of connected hashrate to specified pool wallets, or build a real pool with PoolNode and distribute fees at the coin settlement layer. For miner access, sites can connect directly to RustMiner over traditional TCP/SSL or pair it with the optional RMS client for local encrypted compression.",
         },
         document: {
             title: "Documentation",
@@ -70,7 +70,7 @@ export default {
         eyebrow: "Third-party pool proxy and PoolNode real-pool system",
         title: "RustMinerSystem",
         description:
-            "RustMinerSystem covers two core paths. It can act as a proxy for third-party mining pools and allocate any configured share of connected miner hashrate to specified third-party pool wallets. It can also use PoolNode to build a real self-owned mining pool, where configured fees are distributed directly at the coin settlement layer. RMS is an optional companion tool for sites that want lower bandwidth usage and fewer public connections, connecting miners to RustMiner over a local encrypted compression link.",
+            "RustMinerSystem covers two core paths. It can act as a proxy for third-party mining pools and allocate any configured share of connected miner hashrate to specified third-party pool wallets. It can also use PoolNode to build a real self-owned mining pool, where configured fees are distributed directly at the coin settlement layer. For miner access, sites can connect directly to RustMiner over traditional TCP/SSL; RMS is also available as an optional companion tool for sites that want lower bandwidth usage and fewer public connections through a local encrypted compression link.",
         primaryCta: "View downloads",
         secondaryCta: "Read docs",
         secondaryCtaNote: "Deployment, configuration, and operations",
