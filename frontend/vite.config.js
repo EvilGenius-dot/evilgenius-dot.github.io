@@ -8,12 +8,16 @@ import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
 import {
     DEFAULT_DOC_PAGE,
+    DEFAULT_DOWNLOAD_PAGE,
     DEFAULT_LOCALE,
     LOCALE_META,
     PAGE_SLUGS,
     SITE_ORIGIN,
     SUPPORTED_LOCALES,
     docPath,
+    downloadPath,
+    getDownloadPageBySlug,
+    getDownloadPageMeta,
     getDocPageBySlug,
     getDocPageMeta,
     messages,
@@ -70,6 +74,23 @@ const resolvePageFromRoute = (route) => {
         };
     }
 
+    if (
+        slug === PAGE_SLUGS.download ||
+        slug.startsWith(`${PAGE_SLUGS.download}/`)
+    ) {
+        const downloadSlug = slug
+            .replace(PAGE_SLUGS.download, "")
+            .replace(/^\//, "");
+        const downloadPage = getDownloadPageBySlug(downloadSlug);
+
+        return {
+            locale,
+            page: "download",
+            docPage: DEFAULT_DOC_PAGE,
+            downloadPage: downloadPage.id,
+        };
+    }
+
     const page =
         Object.entries(PAGE_SLUGS).find(
             ([, pageSlug]) => pageSlug === slug,
@@ -79,17 +100,20 @@ const resolvePageFromRoute = (route) => {
         locale,
         page,
         docPage: DEFAULT_DOC_PAGE,
+        downloadPage: DEFAULT_DOWNLOAD_PAGE,
     };
 };
 
 // 渲染每个语言页面需要的 title、description、canonical 与 hreflang 标签。
 const renderSeoTags = (route) => {
-    const { locale, page, docPage } = resolvePageFromRoute(route);
+    const { locale, page, docPage, downloadPage } = resolvePageFromRoute(route);
     const localeMessages = messages[locale];
     const pageSeo =
         page === "document"
             ? getDocPageMeta(docPage, locale)
-            : localeMessages.seo[page];
+            : page === "download"
+              ? getDownloadPageMeta(downloadPage, locale)
+              : localeMessages.seo[page];
     const title =
         page === "home"
             ? localeMessages.seo.defaultTitle
@@ -100,20 +124,26 @@ const renderSeoTags = (route) => {
     const canonicalHref =
         page === "document"
             ? `${SITE_ORIGIN}${docPath(docPage, locale)}`
-            : `${SITE_ORIGIN}${pagePath(page, locale)}`;
+            : page === "download"
+              ? `${SITE_ORIGIN}${downloadPath(downloadPage, locale)}`
+              : `${SITE_ORIGIN}${pagePath(page, locale)}`;
     const alternateLinks = SUPPORTED_LOCALES.map((alternateLocale) => {
         const hreflang = LOCALE_META[alternateLocale].htmlLang;
         const href =
             page === "document"
                 ? `${SITE_ORIGIN}${docPath(docPage, alternateLocale)}`
-                : `${SITE_ORIGIN}${pagePath(page, alternateLocale)}`;
+                : page === "download"
+                  ? `${SITE_ORIGIN}${downloadPath(downloadPage, alternateLocale)}`
+                  : `${SITE_ORIGIN}${pagePath(page, alternateLocale)}`;
 
         return `<link rel="alternate" hreflang="${escapeAttribute(hreflang)}" href="${escapeAttribute(href)}">`;
     });
     const xDefaultHref =
         page === "document"
             ? `${SITE_ORIGIN}${docPath(docPage, DEFAULT_LOCALE)}`
-            : `${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`;
+            : page === "download"
+              ? `${SITE_ORIGIN}${downloadPath(downloadPage, DEFAULT_LOCALE)}`
+              : `${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`;
 
     return {
         htmlLang: LOCALE_META[locale].htmlLang,

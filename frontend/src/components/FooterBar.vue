@@ -45,13 +45,19 @@
                 <section class="footer-group">
                     <h2>{{ t("footer.community") }}</h2>
                     <a
-                        href="https://github.com/evilgenius-dot"
+                        v-for="item in communityLinks"
+                        :key="item.label"
+                        :href="item.href"
                         class="footer-link external-link"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <IconGithub class="icon-sm" aria-hidden="true" />
-                        <span>{{ t("footer.github") }}</span>
+                        <component
+                            :is="item.icon"
+                            class="icon-sm"
+                            aria-hidden="true"
+                        />
+                        <span>{{ item.label }}</span>
                         <ArrowTopRightOnSquareIcon
                             class="icon-xs"
                             aria-hidden="true"
@@ -70,9 +76,13 @@
 <script setup>
 import { computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
-import { ArrowTopRightOnSquareIcon } from "@heroicons/vue/24/outline";
+import {
+    ArrowTopRightOnSquareIcon,
+    ChatBubbleLeftRightIcon,
+    PaperAirplaneIcon,
+} from "@heroicons/vue/24/outline";
 import { useI18n } from "vue-i18n";
-import { getRouteLocale, pagePath } from "@/i18n";
+import { downloadPath, getRouteLocale, pagePath } from "@/i18n";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 const route = useRoute();
@@ -106,11 +116,11 @@ const downloadGroups = computed(() => [
         items: [
             {
                 label: t("nav.downloads.server"),
-                to: { path: localizedPath("home"), hash: "#download-server" },
+                to: downloadPath("server", currentLocale.value),
             },
             {
                 label: t("nav.downloads.rms"),
-                to: { path: localizedPath("home"), hash: "#download-rms" },
+                to: downloadPath("rms", currentLocale.value),
             },
         ],
     },
@@ -118,15 +128,12 @@ const downloadGroups = computed(() => [
         label: t("nav.app"),
         items: [
             {
-                label: t("nav.downloads.desktop"),
-                to: { path: localizedPath("home"), hash: "#download-app" },
+                label: t("nav.downloads.mobile"),
+                to: downloadPath("mobile", currentLocale.value),
             },
             {
                 label: t("nav.downloads.poolNode"),
-                to: {
-                    path: localizedPath("home"),
-                    hash: "#download-pool-node",
-                },
+                to: downloadPath("pool-node", currentLocale.value),
             },
         ],
     },
@@ -135,6 +142,24 @@ const downloadGroups = computed(() => [
 const flatDownloadLinks = computed(() =>
     downloadGroups.value.flatMap((group) => group.items),
 );
+
+const communityLinks = computed(() => [
+    {
+        label: t("footer.github"),
+        href: "https://github.com/evilgenius-dot",
+        icon: IconGithub,
+    },
+    {
+        label: t("footer.telegram"),
+        href: "https://t.me/rustkt",
+        icon: PaperAirplaneIcon,
+    },
+    {
+        label: t("footer.discord"),
+        href: "https://discord.com/invite/xpjRnv8wpX",
+        icon: ChatBubbleLeftRightIcon,
+    },
+]);
 </script>
 
 <style scoped>

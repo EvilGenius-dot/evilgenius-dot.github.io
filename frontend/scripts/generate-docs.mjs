@@ -2,10 +2,12 @@ import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import {
     DEFAULT_LOCALE,
+    DOWNLOAD_PAGES,
     LOCALE_META,
     SITE_ORIGIN,
     STATIC_PAGES,
     SUPPORTED_LOCALES,
+    downloadPath,
     pagePath,
 } from "./docs-config.mjs";
 import { collectLocalizedDocMeta, repoRoot } from "./docs-utils.mjs";
@@ -75,7 +77,7 @@ const renderAlternateLinks = (pathForLocale) =>
 
 const renderUrl = (loc, pathForLocale) => `    <url>
         <loc>${escapeXml(loc)}</loc>
-        <lastmod>2026-05-26</lastmod>
+        <lastmod>2026-05-27</lastmod>
 ${renderAlternateLinks(pathForLocale)}
     </url>`;
 
@@ -88,6 +90,17 @@ const renderSitemap = (docs) => {
                 renderUrl(
                     `${SITE_ORIGIN}${pagePath(page, locale)}`,
                     (nextLocale) => pagePath(page, nextLocale),
+                ),
+            );
+        }
+    }
+
+    for (const downloadPage of DOWNLOAD_PAGES) {
+        for (const locale of SUPPORTED_LOCALES) {
+            urls.push(
+                renderUrl(
+                    `${SITE_ORIGIN}${downloadPath(downloadPage.id, locale)}`,
+                    (nextLocale) => downloadPath(downloadPage.id, nextLocale),
                 ),
             );
         }

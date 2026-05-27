@@ -7,7 +7,8 @@ export default {
         shortName: "RMS",
     },
     seo: {
-        defaultTitle: "RustMinerSystem - 第三方矿池 Proxy 与 PoolNode 真矿池系统",
+        defaultTitle:
+            "RustMinerSystem - 第三方矿池 Proxy 与 PoolNode 真矿池系统",
         titleTemplate: "{pageTitle} | RustMinerSystem",
         home: {
             title: "RustMinerSystem",
@@ -39,18 +40,18 @@ export default {
         document: "文档",
         customized: "定制版本",
         about: "关于",
-        server: "服务器",
-        app: "应用",
+        server: "服务端组件",
+        app: "移动应用",
         openMenu: "打开导航菜单",
         closeMenu: "关闭导航菜单",
         language: "语言",
         currentLanguage: "当前语言",
         github: "在 GitHub 打开 RustMinerSystem",
         downloads: {
-            server: "RustMinerSystem",
-            rms: "RMS 客户端",
-            desktop: "RustMinerSystemAPP",
-            poolNode: "PoolNodeAPP",
+            server: "RustMinerSystem 核心服务端",
+            rms: "RMS 安全客户端",
+            mobile: "RustMinerSystem 移动应用",
+            poolNode: "PoolNode 移动应用",
         },
     },
     footer: {
@@ -59,8 +60,10 @@ export default {
         product: "产品",
         community: "社区",
         github: "GitHub",
+        telegram: "Telegram",
+        discord: "Discord",
         description:
-            "RustMinerSystem 聚焦第三方矿池 Proxy 与 PoolNode 真矿池，并提供可选的 RMS 本地压缩工具。",
+            "RustMinerSystem 是面向矿场接入的运维入口：第三方矿池 Proxy、PoolNode 真矿池与可选 RMS 加密压缩链路，可按不同部署场景组合使用。",
         copyright: "© {year} RustMinerSystem. 保留所有权利。",
     },
     home: {
@@ -72,13 +75,16 @@ export default {
         secondaryCta: "阅读文档",
         secondaryCtaNote: "部署、配置与运维说明",
         poolLinksLabel: "第三方矿池官网链接",
+        partnerNote: "RustMinerSystem 很荣幸得到上述及更多合作伙伴的支持。",
         preview: {
             label: "RustMinerSystem 软件首页预览",
-            imageAlt: "RustMinerSystem 矿机代理运维仪表盘截图",
-            minersLabel: "接入设备",
-            networkLabel: "公网连接压缩",
-            profitLabel: "算力分配",
-            profitValue: "分配策略运行中",
+            imageAlt: "RustMinerSystem 矿场代理运维动态演示",
+            minersLabel: "第三方矿池 Proxy",
+            minersValue: "算力分配运行中",
+            networkLabel: "RMS 可选压缩",
+            networkValue: "连接压缩 128:1",
+            profitLabel: "PoolNode 真矿池",
+            profitValue: "结算层分配",
         },
         featuresTitle: "围绕第三方矿池 Proxy、PoolNode 与可选 RMS 工具",
         features: {
@@ -150,10 +156,106 @@ export default {
                 client: "按需压缩数据体积与公网连接数",
             },
         },
-        downloadsTitle: "下载部署组件",
-        downloadsDescription:
-            "获取 RustMinerSystem 服务端、RMS 可选客户端与 PoolNode 应用，用于第三方矿池 Proxy、PoolNode 真矿池、算力分配策略和按需本地压缩接入。",
-        releaseLink: "打开发布中心",
+        loadingBadge: "...",
+        unavailableBadge: "N/A",
+        latestRelease: "Latest Release",
+        latestReleaseLoading: "获取版本中",
+        latestReleaseError: "版本获取失败",
+        latestReleaseAria: "RustMinerSystem {version} 最新发布版本",
+        latestReleaseLoadingAria: "正在获取 RustMinerSystem 最新发布版本",
+        latestReleaseErrorAria: "无法获取 RustMinerSystem 最新发布版本",
+        githubStars: "GitHub Stars",
+        githubStarsLoading: "获取 Stars 中",
+        githubStarsError: "Stars 获取失败",
+        githubStarsAria:
+            "EvilGenius-dot/RustMinerSystem 有 {count} 个 GitHub Stars",
+        githubStarsLoadingAria:
+            "正在获取 EvilGenius-dot/RustMinerSystem 的 GitHub Stars",
+        githubStarsErrorAria:
+            "无法获取 EvilGenius-dot/RustMinerSystem 的 GitHub Stars",
+    },
+    download: {
+        eyebrow: "下载",
+        installGuideLink: "查看安装详细教程",
+        pages: {
+            server: {
+                title: "RustMinerSystem 核心服务端下载",
+                heading: "RustMinerSystem 核心服务端",
+                description:
+                    "为矿场接入、第三方矿池 Proxy 与 PoolNode 部署准备服务端程序。选择合适的系统、架构和版本后，可以使用命令安装，也可以下载独立文件手动部署。",
+            },
+            rms: {
+                title: "RMS 安全客户端下载",
+                description:
+                    "RMS 安全客户端的专属下载页面，后续将用于放置版本包与平台说明。",
+            },
+            mobile: {
+                title: "RustMinerSystem 移动应用下载",
+                description:
+                    "RustMinerSystem 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
+            },
+            "pool-node": {
+                title: "PoolNode 移动应用下载",
+                description:
+                    "PoolNode 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
+            },
+        },
+        server: {
+            finderTitle: "选择服务端构建",
+            selectionSummary:
+                "获得适用于 {os} {arch} 的 RustMinerSystem {version}",
+            refresh: "刷新列表",
+            osLabel: "操作系统",
+            archLabel: "架构",
+            versionLabel: "版本",
+            versionPending: "正在识别版本",
+            unknownVersion: "未知版本",
+            loading: "正在从 GitHub 仓库读取 windows 与 linux 目录。",
+            empty: "当前筛选条件下没有可下载文件。",
+            fetchError:
+                "暂时无法读取 GitHub 文件列表，请稍后重试或打开仓库目录下载。",
+            download: "下载",
+            openDirectory: "在 GitHub 中打开 {directory} 独立文件",
+            methodHint: {
+                linux: "下方提供两种安装方式：新手建议优先使用 Linux 命令安装，按终端提示完成；独立文件下载适合需要自行配置启动、开机自启和进程守护的用户。",
+                standalone:
+                    "当前平台提供独立文件下载：下载后需要手动启动程序，并自行配置开机自启或进程守护。",
+            },
+            binary: {
+                title: "独立文件下载",
+                description:
+                    "适合熟悉部署的用户：下载独立文件后，需要手动启动程序，并根据生产环境自行设置进程守护。",
+            },
+            os: {
+                linux: "Linux",
+                windows: "Windows",
+            },
+            arch: {
+                x86: "x86",
+                arm: "ARM",
+                armv7: "ARMv7",
+            },
+            visual: {
+                label: "矿机接入 RustMinerSystem 的示意图",
+                miners: "矿机集群",
+                fieldProxy: "矿场接入节点",
+                remoteNode: "RustMiner 所在服务器",
+                system: "RustMinerSystem",
+                systemHint: "统一接入、分配与代理",
+                target: "第三方矿池 / PoolNode",
+            },
+            install: {
+                title: "Linux 命令安装",
+                description:
+                    "复制适用于 {arch} 的命令到服务器终端执行，并根据终端提示完成安装。",
+                line1: "线路 1",
+                line2: "线路 2",
+                arm: "ARM",
+                armv7: "ARMv7",
+                copy: "复制",
+                copied: "已复制",
+            },
+        },
     },
     document: {
         eyebrow: "文档",

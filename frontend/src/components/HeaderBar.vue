@@ -217,6 +217,7 @@ import {
     LOCALE_META,
     SUPPORTED_LOCALES,
     docPath,
+    downloadPath,
     getRouteLocale,
     pagePath,
 } from "@/i18n";
@@ -268,18 +269,18 @@ const primaryLinks = computed(() => [
     },
 ]);
 
-// 下载入口统一回到当前语言首页的下载区，避免不同语言间跳错路径。
+// 下载入口指向当前语言下对应程序的独立页面。
 const downloadGroups = computed(() => [
     {
         label: t("nav.server"),
         items: [
             {
                 label: t("nav.downloads.server"),
-                to: { path: localizedPath("home"), hash: "#download-server" },
+                to: downloadPath("server", currentLocale.value),
             },
             {
                 label: t("nav.downloads.rms"),
-                to: { path: localizedPath("home"), hash: "#download-rms" },
+                to: downloadPath("rms", currentLocale.value),
             },
         ],
     },
@@ -287,15 +288,12 @@ const downloadGroups = computed(() => [
         label: t("nav.app"),
         items: [
             {
-                label: t("nav.downloads.desktop"),
-                to: { path: localizedPath("home"), hash: "#download-app" },
+                label: t("nav.downloads.mobile"),
+                to: downloadPath("mobile", currentLocale.value),
             },
             {
                 label: t("nav.downloads.poolNode"),
-                to: {
-                    path: localizedPath("home"),
-                    hash: "#download-pool-node",
-                },
+                to: downloadPath("pool-node", currentLocale.value),
             },
         ],
     },
@@ -322,7 +320,9 @@ const switchLocale = (nextLocale) => {
     const path =
         page === "document"
             ? docPath(route.meta?.docPage, nextLocale)
-            : pagePath(page, nextLocale);
+            : page === "download"
+              ? downloadPath(route.meta?.downloadPage, nextLocale)
+              : pagePath(page, nextLocale);
 
     closeMenu();
     router.push({
@@ -491,6 +491,13 @@ watch(
     background-color: var(--color-neutral-900, #2c3437);
     color: var(--color-white);
     outline: none;
+}
+
+/* 导航当前页选中态使用品牌绿色，和你指定的 action 选中色保持一致。 */
+.nav-link.is-active,
+.mobile-nav-link[aria-current="page"] {
+    background-color: #417e38;
+    color: var(--color-white);
 }
 
 .header-actions {

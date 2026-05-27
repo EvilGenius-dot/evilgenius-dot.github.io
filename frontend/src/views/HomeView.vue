@@ -8,10 +8,7 @@
                     <p class="hero-description">{{ t("home.description") }}</p>
                     <div class="hero-actions">
                         <RouterLink
-                            :to="{
-                                path: localizedHomePath,
-                                hash: '#downloads',
-                            }"
+                            :to="primaryDownloadPath"
                             class="primary-action"
                         >
                             {{ t("home.primaryCta") }}
@@ -49,8 +46,8 @@
                             />
                         </a>
                     </div>
-                    <div class="mt-3.5 text-center w-116">
-                        <span class="text-sm text-neutral-600">RustMinerSystem 很荣幸得到上述及更多合作伙伴的支持。</span>
+                    <div class="partner-note">
+                        <span>{{ t("home.partnerNote") }}</span>
                     </div>
                 </div>
 
@@ -58,34 +55,79 @@
                     class="product-preview"
                     :aria-label="t('home.preview.label')"
                 >
-                    <div class="preview-shell">
-                        <div class="preview-toolbar" aria-hidden="true">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <strong>RustMinerSystem</strong>
+                    <div class="preview-frame">
+                        <div class="preview-shell">
+                            <div class="preview-toolbar" aria-hidden="true">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <strong>RustMinerSystem</strong>
+                            </div>
+                            <img
+                                src="/image/review.gif"
+                                :alt="t('home.preview.imageAlt')"
+                                class="preview-image"
+                                loading="eager"
+                                decoding="async"
+                            />
+                            <div class="preview-shade" aria-hidden="true"></div>
                         </div>
-                        <img
-                            src="/image/dashboard-preview.png"
-                            :alt="t('home.preview.imageAlt')"
-                            class="preview-image"
-                            loading="eager"
-                            decoding="async"
-                        />
-                        <div class="preview-shade" aria-hidden="true"></div>
+
+                        <div class="preview-stat stat-miners">
+                            <span>{{ t("home.preview.minersLabel") }}</span>
+                            <strong>{{ t("home.preview.minersValue") }}</strong>
+                        </div>
+                        <div class="preview-stat stat-network">
+                            <span>{{ t("home.preview.profitLabel") }}</span>
+                            <strong>{{ t("home.preview.profitValue") }}</strong>
+                        </div>
+                        <div class="preview-stat stat-profit">
+                            <span>{{ t("home.preview.networkLabel") }}</span>
+                            <strong>{{
+                                t("home.preview.networkValue")
+                            }}</strong>
+                        </div>
                     </div>
 
-                    <div class="preview-stat stat-miners">
-                        <span>{{ t("home.preview.minersLabel") }}</span>
-                        <strong>138</strong>
-                    </div>
-                    <div class="preview-stat stat-network">
-                        <span>{{ t("home.preview.networkLabel") }}</span>
-                        <strong>128 : 1</strong>
-                    </div>
-                    <div class="preview-stat stat-profit">
-                        <span>{{ t("home.preview.profitLabel") }}</span>
-                        <strong>{{ t("home.preview.profitValue") }}</strong>
+                    <div class="preview-meta-pills">
+                        <a
+                            :href="releaseHref"
+                            class="meta-pill release-pill"
+                            :data-state="releaseStatus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            :aria-label="releaseAriaLabel"
+                        >
+                            <span class="meta-badge release-badge">{{
+                                releaseBadgeText
+                            }}</span>
+                            <span class="meta-message">{{
+                                releaseMessage
+                            }}</span>
+                        </a>
+
+                        <a
+                            :href="repositoryHref"
+                            class="meta-pill github-stars-pill"
+                            :data-state="githubStarsStatus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            :aria-label="githubStarsAriaLabel"
+                            :title="githubStarsMessage"
+                        >
+                            <IconGithub
+                                class="github-stars-mark"
+                                aria-hidden="true"
+                            />
+                            <span class="github-stars-name">GitHub</span>
+                            <span class="github-stars-count">
+                                <Star
+                                    class="github-stars-star"
+                                    aria-hidden="true"
+                                />
+                                <span>{{ githubStarsBadgeText }}</span>
+                            </span>
+                        </a>
                     </div>
                 </section>
             </section>
@@ -163,53 +205,176 @@
                     </div>
                 </div>
             </section>
-
-            <section
-                id="downloads"
-                class="content-section"
-                aria-labelledby="downloads-title"
-            >
-                <div class="section-heading">
-                    <h2 id="downloads-title">
-                        {{ t("home.downloadsTitle") }}
-                    </h2>
-                    <p>{{ t("home.downloadsDescription") }}</p>
-                </div>
-                <div class="download-grid">
-                    <article
-                        v-for="item in downloads"
-                        :id="item.id"
-                        :key="item.id"
-                        class="download-card"
-                    >
-                        <span>{{ item.group }}</span>
-                        <h3>{{ item.title }}</h3>
-                        <a
-                            href="https://github.com/evilgenius-dot"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            {{ t("home.releaseLink") }}
-                        </a>
-                    </article>
-                </div>
-            </section>
         </div>
     </main>
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, onMounted, ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { getRouteLocale, pagePath } from "@/i18n";
+import { Star } from "lucide-vue-next";
+import { downloadPath, getRouteLocale, pagePath } from "@/i18n";
+import IconGithub from "@/components/icons/IconGithub.vue";
 
 const route = useRoute();
 const { t } = useI18n();
 
-// 首页按钮和下载锚点跟随当前语言，避免中文/俄语页面跳回英文首页。
 const currentLocale = computed(() => getRouteLocale(route));
-const localizedHomePath = computed(() => pagePath("home", currentLocale.value));
+const primaryDownloadPath = computed(() =>
+    downloadPath("server", currentLocale.value),
+);
+const releaseInfoUrl =
+    "https://raw.githubusercontent.com/EvilGenius-dot/RustMinerSystem/refs/heads/main/origin.json";
+const repositoryApiUrl =
+    "https://api.github.com/repos/EvilGenius-dot/RustMinerSystem";
+const repositoryHref = "https://github.com/EvilGenius-dot/RustMinerSystem";
+const releaseHref =
+    "https://github.com/EvilGenius-dot/RustMinerSystem/releases/latest";
+const releaseVersion = ref("");
+const releaseStatus = ref("loading");
+const githubStars = ref(null);
+const githubStarsStatus = ref("loading");
+const formattedReleaseVersion = computed(() => {
+    const version = releaseVersion.value.trim();
+
+    return version.startsWith("v") ? version : `v${version}`;
+});
+const releaseBadgeText = computed(() => {
+    if (releaseStatus.value === "loading") return t("home.loadingBadge");
+    if (releaseStatus.value === "error") return t("home.unavailableBadge");
+
+    return formattedReleaseVersion.value;
+});
+const releaseMessage = computed(() => {
+    if (releaseStatus.value === "loading") {
+        return t("home.latestReleaseLoading");
+    }
+
+    if (releaseStatus.value === "error") {
+        return t("home.latestReleaseError");
+    }
+
+    return t("home.latestRelease");
+});
+const releaseAriaLabel = computed(() => {
+    if (releaseStatus.value === "loading") {
+        return t("home.latestReleaseLoadingAria");
+    }
+
+    if (releaseStatus.value === "error") {
+        return t("home.latestReleaseErrorAria");
+    }
+
+    return t("home.latestReleaseAria", {
+        version: formattedReleaseVersion.value,
+    });
+});
+const formattedGithubStars = computed(() => {
+    if (!Number.isFinite(githubStars.value)) return "";
+
+    return new Intl.NumberFormat(localeToIntlLocale(currentLocale.value), {
+        maximumFractionDigits: 1,
+        notation: githubStars.value >= 10000 ? "compact" : "standard",
+    }).format(githubStars.value);
+});
+const githubStarsBadgeText = computed(() => {
+    if (githubStarsStatus.value === "loading") return t("home.loadingBadge");
+    if (githubStarsStatus.value === "error") return t("home.unavailableBadge");
+
+    return formattedGithubStars.value;
+});
+const githubStarsMessage = computed(() => {
+    if (githubStarsStatus.value === "loading") {
+        return t("home.githubStarsLoading");
+    }
+
+    if (githubStarsStatus.value === "error") {
+        return t("home.githubStarsError");
+    }
+
+    return t("home.githubStars");
+});
+const githubStarsAriaLabel = computed(() => {
+    if (githubStarsStatus.value === "loading") {
+        return t("home.githubStarsLoadingAria");
+    }
+
+    if (githubStarsStatus.value === "error") {
+        return t("home.githubStarsErrorAria");
+    }
+
+    return t("home.githubStarsAria", {
+        count: formattedGithubStars.value,
+    });
+});
+
+const localeToIntlLocale = (locale) =>
+    ({
+        en: "en-US",
+        zh: "zh-CN",
+        ru: "ru-RU",
+    })[locale] ?? "en-US";
+
+const fetchJson = async (url) => {
+    const controller = new AbortController();
+    const timeoutId = window.setTimeout(() => controller.abort(), 6000);
+
+    try {
+        const response = await fetch(url, {
+            cache: "no-store",
+            signal: controller.signal,
+        });
+
+        if (!response.ok) {
+            throw new Error(`Request failed with ${response.status}`);
+        }
+
+        return await response.json();
+    } finally {
+        window.clearTimeout(timeoutId);
+    }
+};
+
+const loadReleaseVersion = async () => {
+    releaseStatus.value = "loading";
+
+    try {
+        const data = await fetchJson(releaseInfoUrl);
+        const version = data?.version;
+
+        if (typeof version !== "string" || !version.trim()) {
+            throw new Error("Missing version field");
+        }
+
+        releaseVersion.value = version;
+        releaseStatus.value = "ready";
+    } catch {
+        releaseStatus.value = "error";
+    }
+};
+
+const loadGithubStars = async () => {
+    githubStarsStatus.value = "loading";
+
+    try {
+        const data = await fetchJson(repositoryApiUrl);
+        const stars = data?.stargazers_count;
+
+        if (!Number.isFinite(stars)) {
+            throw new Error("Missing stargazers_count field");
+        }
+
+        githubStars.value = stars;
+        githubStarsStatus.value = "ready";
+    } catch {
+        githubStarsStatus.value = "error";
+    }
+};
+
+onMounted(async () => {
+    await Promise.all([loadReleaseVersion(), loadGithubStars()]);
+});
 
 // 功能卡片只维护 key，实际文案交给语言包，便于三语同步更新。
 const features = computed(() => [
@@ -306,32 +471,8 @@ const partnerPools = [
         logo: "/image/poolin.svg",
         className: "",
         logoClass: "is-poolin",
-    }
+    },
 ];
-
-// 下载卡片的 id 与导航 hash 对应，改锚点时两边需要同步。
-const downloads = computed(() => [
-    {
-        id: "download-server",
-        group: t("nav.server"),
-        title: t("nav.downloads.server"),
-    },
-    {
-        id: "download-rms",
-        group: t("nav.server"),
-        title: t("nav.downloads.rms"),
-    },
-    {
-        id: "download-app",
-        group: t("nav.app"),
-        title: t("nav.downloads.desktop"),
-    },
-    {
-        id: "download-pool-node",
-        group: t("nav.app"),
-        title: t("nav.downloads.poolNode"),
-    },
-]);
 </script>
 
 <style scoped>
@@ -420,6 +561,7 @@ const downloads = computed(() => [
     flex-direction: column;
     max-width: 50rem;
     min-width: 0;
+    --hero-cta-width: min(100%, 29rem);
 }
 
 .eyebrow {
@@ -460,7 +602,7 @@ h1 {
     flex-direction: column;
     gap: 0.5rem;
     min-width: 0;
-    width: min(100%, 29rem);
+    width: var(--hero-cta-width);
 }
 
 .primary-action,
@@ -572,12 +714,11 @@ h1 {
 }
 
 .pool-links {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 0.5rem;
-    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 0.875rem;
-    width: min(100%, 29rem);
+    width: var(--hero-cta-width);
 }
 
 .pool-link {
@@ -595,6 +736,7 @@ h1 {
         background-color 150ms ease,
         border-color 150ms ease,
         transform 150ms ease;
+    width: 100%;
 }
 
 .pool-link.is-light-logo {
@@ -634,6 +776,7 @@ h1 {
 
 .pool-logo {
     display: block;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -660,12 +803,24 @@ h1 {
     width: 5rem;
 }
 
+.partner-note {
+    color: var(--color-neutral-600);
+    font-size: var(--text-sm);
+    line-height: 1.5;
+    margin-top: 0.875rem;
+    text-align: center;
+    width: var(--hero-cta-width);
+}
+
 .product-preview {
     margin: 0 auto;
     max-width: 56rem;
-    position: relative;
     text-align: left;
     width: 100%;
+}
+
+.preview-frame {
+    position: relative;
 }
 
 .preview-shell {
@@ -770,21 +925,179 @@ h1 {
     top: 4rem;
 }
 
-.stat-network strong {
-    color: var(--color-green-400);
-}
-
 .stat-profit {
     bottom: 1rem;
     right: 1rem;
 }
 
+.stat-network strong {
+    color: var(--color-white);
+}
+
 .stat-profit strong {
+    color: var(--color-green-400);
+}
+
+.stat-miners strong {
     color: #facc15;
+}
+
+.preview-meta-pills {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    justify-content: center;
+    margin: 0.875rem auto 0;
+    width: 100%;
+}
+
+.meta-pill {
+    align-items: center;
+    background: rgb(44 52 55 / 92%);
+    border: 1px solid rgb(44 104 44 / 100%);
+    border-radius: 9999px;
+    display: inline-flex;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.42857;
+    padding: 0.25rem 0.625rem 0.25rem 0.25rem;
+    text-decoration: none;
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        transform 150ms ease;
+    width: fit-content;
+}
+
+.meta-pill:hover,
+.meta-pill:focus-visible {
+    background: rgb(44 52 55 / 100%);
+    border-color: rgb(65 126 56 / 100%);
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.meta-pill[data-state="error"] {
+    border-color: rgb(110 123 131 / 70%);
+}
+
+.meta-pill[data-state="error"]:hover,
+.meta-pill[data-state="error"]:focus-visible {
+    border-color: rgb(146 159 165 / 90%);
+}
+
+.meta-badge {
+    background: var(--color-green-600);
+    border-radius: 9999px;
+    color: var(--color-white);
+    font-size: var(--text-xs);
+    line-height: 1.33333;
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.375rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.meta-pill[data-state="loading"] .meta-badge {
+    background: var(--color-neutral-800);
+    min-width: 2rem;
+}
+
+.meta-pill[data-state="error"] .meta-badge {
+    background: var(--color-neutral-700);
+}
+
+.meta-message {
+    color: var(--color-green-300);
+    margin-right: 0.25rem;
+    white-space: nowrap;
+}
+
+.meta-pill[data-state="loading"] .meta-message,
+.meta-pill[data-state="error"] .meta-message {
+    color: var(--color-neutral-300);
+}
+
+.github-stars-pill {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 8%), transparent),
+        rgb(13 18 28 / 88%);
+    border-color: rgb(255 255 255 / 14%);
+    box-shadow:
+        inset 0 1px 0 rgb(255 255 255 / 10%),
+        0 0.75rem 1.75rem rgb(0 0 0 / 18%);
+    gap: 0.5rem;
+    padding: 0.25rem 0.375rem 0.25rem 0.625rem;
+}
+
+.github-stars-pill:hover,
+.github-stars-pill:focus-visible {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 11%), transparent),
+        rgb(17 22 34 / 94%);
+    border-color: rgb(255 255 255 / 24%);
+}
+
+.github-stars-mark {
+    color: var(--color-white);
+    flex: 0 0 auto;
+    height: 1rem;
+    opacity: 0.9;
+    width: 1rem;
+}
+
+.github-stars-name {
+    color: var(--color-neutral-200);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1;
+}
+
+.github-stars-count {
+    align-items: center;
+    background: rgb(250 204 21 / 13%);
+    border: 1px solid rgb(250 204 21 / 22%);
+    border-radius: 9999px;
+    color: #facc15;
+    display: inline-flex;
+    font-size: var(--text-xs);
+    font-weight: 700;
+    gap: 0.25rem;
+    justify-content: center;
+    line-height: 1.33333;
+    min-height: 1.375rem;
+    min-width: 2.25rem;
+    padding: 0.125rem 0.5rem;
+    white-space: nowrap;
+}
+
+.github-stars-star {
+    fill: currentColor;
+    height: 0.875rem;
+    stroke-width: 2.25;
+    width: 0.875rem;
+}
+
+.github-stars-pill[data-state="loading"],
+.github-stars-pill[data-state="error"] {
+    border-color: rgb(255 255 255 / 12%);
+}
+
+.github-stars-pill[data-state="loading"] .github-stars-count,
+.github-stars-pill[data-state="error"] .github-stars-count {
+    background: rgb(85 96 102 / 18%);
+    border-color: rgb(146 159 165 / 22%);
+    color: var(--color-neutral-300);
 }
 
 @media (max-width: 640px) {
     .product-preview {
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .preview-frame {
         display: grid;
         gap: 0.75rem;
     }
@@ -807,33 +1120,20 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-.section-heading {
-    max-width: 44rem;
-}
-
-.section-heading p {
-    color: var(--color-neutral-400);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-}
-
-.feature-grid,
-.download-grid {
+.feature-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr;
 }
 
-.info-card,
-.download-card {
+.info-card {
     background: rgb(13 18 28 / 72%);
     border: 1px solid var(--color-neutral-900);
     border-radius: 8px;
     padding: 1.25rem;
 }
 
-.info-card h3,
-.download-card h3 {
+.info-card h3 {
     color: var(--color-white);
     font-size: var(--text-lg);
     font-weight: var(--font-weight-semibold);
@@ -1049,27 +1349,6 @@ h1 {
     line-height: 1.5;
 }
 
-.download-card span {
-    color: var(--color-green-400);
-    display: inline-block;
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-}
-
-.download-card a {
-    color: var(--color-neutral-200);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-medium);
-}
-
-.download-card a:hover,
-.download-card a:focus-visible {
-    color: var(--color-white);
-    outline: none;
-}
-
 @media (min-width: 720px) {
     .bg-container {
         gap: 5.5rem;
@@ -1082,8 +1361,7 @@ h1 {
         font-size: var(--text-5xl);
     }
 
-    .feature-grid,
-    .download-grid {
+    .feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -1132,7 +1410,7 @@ h1 {
     }
 
     .pool-links {
-        justify-content: flex-start;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .product-preview {

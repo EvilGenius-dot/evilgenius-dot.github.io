@@ -5,17 +5,21 @@ import {
 } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import {
+    DEFAULT_DOWNLOAD_PAGE,
+    DOWNLOAD_PAGES,
     DOC_PAGES,
     DEFAULT_LOCALE,
     PAGE_SLUGS,
     SUPPORTED_LOCALES,
     docPath,
+    downloadPath,
     pagePath,
 } from "../i18n";
 
 // 页面组件按页面 key 注册，后续新增页面时这里与 PAGE_SLUGS 保持一致。
 const pageComponents = {
     home: HomeView,
+    download: () => import("../views/DownloadView.vue"),
     document: () => import("../views/DocumentView.vue"),
     customized: () => import("../views/CustomizedVersionView.vue"),
     about: () => import("../views/AboutView.vue"),
@@ -24,7 +28,7 @@ const pageComponents = {
 // 为每个普通页面生成英文、中文、俄语三套路由，文档页单独生成文章级路由。
 const createLocalizedPageRoutes = () =>
     Object.keys(PAGE_SLUGS)
-        .filter((page) => page !== "document")
+        .filter((page) => page !== "document" && page !== "download")
         .flatMap((page) =>
             SUPPORTED_LOCALES.map((locale) => ({
                 path: pagePath(page, locale),
@@ -54,8 +58,31 @@ const createLocalizedDocumentRoutes = () =>
         })),
     );
 
+const createLocalizedDownloadRoutes = () => [
+    ...SUPPORTED_LOCALES.map((locale) => ({
+        path: pagePath("download", locale),
+        redirect: downloadPath(DEFAULT_DOWNLOAD_PAGE, locale),
+    })),
+    ...DOWNLOAD_PAGES.flatMap((downloadPage) =>
+        SUPPORTED_LOCALES.map((locale) => ({
+            path: downloadPath(downloadPage.id, locale),
+            name:
+                locale === DEFAULT_LOCALE
+                    ? `download-${downloadPage.id}`
+                    : `${locale}-download-${downloadPage.id}`,
+            component: pageComponents.download,
+            meta: {
+                page: "download",
+                downloadPage: downloadPage.id,
+                locale,
+            },
+        })),
+    ),
+];
+
 export const routes = [
     ...createLocalizedPageRoutes(),
+    ...createLocalizedDownloadRoutes(),
     ...createLocalizedDocumentRoutes(),
 ];
 

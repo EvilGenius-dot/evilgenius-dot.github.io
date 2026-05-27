@@ -40,18 +40,18 @@ export default {
         document: "Документация",
         customized: "Индивидуальная версия",
         about: "О проекте",
-        server: "Сервер",
-        app: "Приложение",
+        server: "Серверные компоненты",
+        app: "Мобильные приложения",
         openMenu: "Открыть меню навигации",
         closeMenu: "Закрыть меню навигации",
         language: "Язык",
         currentLanguage: "Текущий язык",
         github: "Открыть RustMinerSystem на GitHub",
         downloads: {
-            server: "Сервер RustMinerSystem",
-            rms: "Клиент RMS",
-            desktop: "Приложение RustMinerSystem",
-            poolNode: "PoolNode",
+            server: "Основной сервер RustMinerSystem",
+            rms: "Безопасный клиент RMS",
+            mobile: "Мобильное приложение RustMinerSystem",
+            poolNode: "Мобильное приложение PoolNode",
         },
     },
     footer: {
@@ -60,8 +60,10 @@ export default {
         product: "Продукт",
         community: "Сообщество",
         github: "GitHub",
+        telegram: "Telegram",
+        discord: "Discord",
         description:
-            "RustMinerSystem фокусируется на proxy сторонних пулов и настоящем пуле PoolNode, а RMS доступен как дополнительный локальный инструмент сжатия.",
+            "RustMinerSystem — операционная точка входа для подключения майнинга: proxy сторонних пулов, настоящий пул PoolNode и опциональный зашифрованный канал сжатия RMS можно сочетать под разные схемы площадки.",
         copyright: "© {year} RustMinerSystem. Все права защищены.",
     },
     home: {
@@ -73,13 +75,17 @@ export default {
         secondaryCta: "Читать документацию",
         secondaryCtaNote: "Развертывание, настройка и операции",
         poolLinksLabel: "Ссылки на сайты сторонних пулов",
+        partnerNote:
+            "RustMinerSystem благодарит этих и других партнеров за поддержку.",
         preview: {
             label: "Предпросмотр панели RustMinerSystem",
-            imageAlt: "Скриншот панели операций mining proxy RustMinerSystem",
-            minersLabel: "Подключенные майнеры",
-            networkLabel: "Публичные соединения",
-            profitLabel: "Распределение хешрейта",
-            profitValue: "Правило распределения активно",
+            imageAlt: "Анимированный предпросмотр панели RustMinerSystem",
+            minersLabel: "Proxy сторонних пулов",
+            minersValue: "Доля активна",
+            networkLabel: "Опциональное сжатие RMS",
+            networkValue: "Соединения 128:1",
+            profitLabel: "Настоящий пул PoolNode",
+            profitValue: "Комиссии на расчете",
         },
         featuresTitle: "Proxy сторонних пулов, PoolNode и дополнительный RMS",
         features: {
@@ -146,15 +152,113 @@ export default {
             metrics: {
                 operations: "Гибкое локальное развертывание и облачный доступ",
                 regionsValue: "Распределение",
-                regions: "Управление по площадке, группе майнеров или цели кошелька",
+                regions:
+                    "Управление по площадке, группе майнеров или цели кошелька",
                 clientValue: "RMS по необходимости",
                 client: "Сжатие данных и публичных соединений при необходимости",
             },
         },
-        downloadsTitle: "Загрузки компонентов",
-        downloadsDescription:
-            "Скачайте сервер RustMinerSystem, дополнительный клиент RMS и приложение PoolNode для proxy сторонних пулов, настоящего пула PoolNode, правил распределения хешрейта и локального сжатия по необходимости.",
-        releaseLink: "Открыть центр релизов",
+        loadingBadge: "...",
+        unavailableBadge: "N/A",
+        latestRelease: "Latest Release",
+        latestReleaseLoading: "Проверка релиза",
+        latestReleaseError: "Релиз недоступен",
+        latestReleaseAria: "RustMinerSystem {version} latest release",
+        latestReleaseLoadingAria: "Проверяется последний релиз RustMinerSystem",
+        latestReleaseErrorAria:
+            "Не удалось загрузить последний релиз RustMinerSystem",
+        githubStars: "GitHub Stars",
+        githubStarsLoading: "Проверка stars",
+        githubStarsError: "Stars недоступны",
+        githubStarsAria:
+            "У EvilGenius-dot/RustMinerSystem {count} GitHub stars",
+        githubStarsLoadingAria:
+            "Проверяются GitHub stars для EvilGenius-dot/RustMinerSystem",
+        githubStarsErrorAria:
+            "Не удалось загрузить GitHub stars для EvilGenius-dot/RustMinerSystem",
+    },
+    download: {
+        eyebrow: "Скачать",
+        installGuideLink: "Открыть подробную инструкцию",
+        pages: {
+            server: {
+                title: "Скачать основной сервер RustMinerSystem",
+                heading: "Основной сервер RustMinerSystem",
+                description:
+                    "Подготовьте серверную программу для подключения майнеров, proxy сторонних пулов и развертывания PoolNode. Выберите систему, архитектуру и версию, затем установите командой или разверните отдельный файл вручную.",
+            },
+            rms: {
+                title: "Скачать безопасный клиент RMS",
+                description:
+                    "Отдельная страница загрузки безопасного клиента RMS. Релизы и пакеты для платформ будут добавлены здесь.",
+            },
+            mobile: {
+                title: "Скачать мобильное приложение RustMinerSystem",
+                description:
+                    "Отдельная страница загрузки мобильного приложения RustMinerSystem. Пакеты приложения и заметки по платформам будут добавлены здесь.",
+            },
+            "pool-node": {
+                title: "Скачать мобильное приложение PoolNode",
+                description:
+                    "Отдельная страница загрузки мобильного приложения PoolNode. Пакеты приложения и заметки по платформам будут добавлены здесь.",
+            },
+        },
+        server: {
+            finderTitle: "Выберите сборку сервера",
+            selectionSummary:
+                "Получить RustMinerSystem {version} для {os} {arch}",
+            refresh: "Обновить список",
+            osLabel: "Операционная система",
+            archLabel: "Архитектура",
+            versionLabel: "Версия",
+            versionPending: "Определение версии",
+            unknownVersion: "Неизвестная версия",
+            loading: "Чтение каталогов windows и linux из репозитория GitHub.",
+            empty: "Для выбранных фильтров нет файлов для скачивания.",
+            fetchError:
+                "Сейчас не удалось прочитать список файлов GitHub. Повторите попытку позже или откройте каталог репозитория.",
+            download: "Скачать",
+            openDirectory: "Открыть отдельные файлы {directory} на GitHub",
+            methodHint: {
+                linux: "Ниже доступны два способа установки: новичкам лучше начать с установки командой Linux и следовать подсказкам терминала; отдельные файлы подходят тем, кто сам настраивает запуск, автозапуск и supervision процесса.",
+                standalone:
+                    "Для выбранной платформы доступны отдельные файлы: после скачивания запустите программу вручную и самостоятельно настройте автозапуск или supervision процесса.",
+            },
+            binary: {
+                title: "Скачать отдельный файл",
+                description:
+                    "Для пользователей, знакомых с развертыванием: скачайте отдельный файл, запустите его вручную и настройте supervision процесса для своей среды.",
+            },
+            os: {
+                linux: "Linux",
+                windows: "Windows",
+            },
+            arch: {
+                x86: "x86",
+                arm: "ARM",
+                armv7: "ARMv7",
+            },
+            visual: {
+                label: "Схема подключения майнеров к RustMinerSystem",
+                miners: "Парк майнеров",
+                fieldProxy: "Узел площадки",
+                remoteNode: "Сервер с RustMiner",
+                system: "RustMinerSystem",
+                systemHint: "Единый доступ, распределение и proxy",
+                target: "Сторонний пул / PoolNode",
+            },
+            install: {
+                title: "Установка командой Linux",
+                description:
+                    "Скопируйте команду для {arch} в терминал сервера и следуйте подсказкам для завершения установки.",
+                line1: "Линия 1",
+                line2: "Линия 2",
+                arm: "ARM",
+                armv7: "ARMv7",
+                copy: "Копировать",
+                copied: "Скопировано",
+            },
+        },
     },
     document: {
         eyebrow: "Документация",

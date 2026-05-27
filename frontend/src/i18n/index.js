@@ -38,10 +38,32 @@ export const SITE_ORIGIN = "https://minerproxy.org";
 // 页面 key 与 URL slug 的映射，路由、导航、SEO 都复用这里，避免多处写死。
 export const PAGE_SLUGS = {
     home: "",
+    download: "download",
     document: "document",
     customized: "customized-version",
     about: "about",
 };
+
+export const DOWNLOAD_PAGES = [
+    {
+        id: "server",
+        slug: "rustminersystem-core-server",
+    },
+    {
+        id: "rms",
+        slug: "rms-secure-client",
+    },
+    {
+        id: "mobile",
+        slug: "rustminersystem-mobile-app",
+    },
+    {
+        id: "pool-node",
+        slug: "poolnode-mobile-app",
+    },
+];
+
+export const DEFAULT_DOWNLOAD_PAGE = DOWNLOAD_PAGES[0].id;
 
 export { DOC_CATEGORIES, DOC_PAGES, DOC_PAGE_META, DEFAULT_DOC_PAGE };
 
@@ -111,6 +133,30 @@ export const docPath = (
     return page.slug ? `${basePath}/${page.slug}` : basePath;
 };
 
+export const getDownloadPageById = (id = DEFAULT_DOWNLOAD_PAGE) =>
+    DOWNLOAD_PAGES.find((page) => page.id === id) || DOWNLOAD_PAGES[0];
+
+export const getDownloadPageBySlug = (slug = "") =>
+    DOWNLOAD_PAGES.find((page) => page.slug === slug) || DOWNLOAD_PAGES[0];
+
+export const getDownloadPageMeta = (
+    downloadPage = DEFAULT_DOWNLOAD_PAGE,
+    locale = DEFAULT_LOCALE,
+) =>
+    messages[normalizeLocale(locale)]?.download?.pages?.[downloadPage] ||
+    messages[DEFAULT_LOCALE].download.pages[downloadPage] ||
+    messages[DEFAULT_LOCALE].download.pages[DEFAULT_DOWNLOAD_PAGE];
+
+export const downloadPath = (
+    downloadPage = DEFAULT_DOWNLOAD_PAGE,
+    locale = DEFAULT_LOCALE,
+) => {
+    const page = getDownloadPageById(downloadPage);
+    const basePath = pagePath("download", locale);
+
+    return `${basePath}/${page.slug}`;
+};
+
 // 生成当前页面所有语言版本的 alternate 链接，供 SEO head 使用。
 export const localizedPageLinks = (page = "home") =>
     SUPPORTED_LOCALES.map((locale) => ({
@@ -124,6 +170,13 @@ export const localizedDocLinks = (docPage = DEFAULT_DOC_PAGE) =>
         rel: "alternate",
         hreflang: LOCALE_META[locale].htmlLang,
         href: `${SITE_ORIGIN}${docPath(docPage, locale)}`,
+    }));
+
+export const localizedDownloadLinks = (downloadPage = DEFAULT_DOWNLOAD_PAGE) =>
+    SUPPORTED_LOCALES.map((locale) => ({
+        rel: "alternate",
+        hreflang: LOCALE_META[locale].htmlLang,
+        href: `${SITE_ORIGIN}${downloadPath(downloadPage, locale)}`,
     }));
 
 export const createI18nInstance = () =>

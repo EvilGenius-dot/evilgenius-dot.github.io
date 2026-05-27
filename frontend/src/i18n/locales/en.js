@@ -40,18 +40,18 @@ export default {
         document: "Documentation",
         customized: "Customized version",
         about: "About",
-        server: "Server",
-        app: "App",
+        server: "Server components",
+        app: "Mobile apps",
         openMenu: "Open navigation menu",
         closeMenu: "Close navigation menu",
         language: "Language",
         currentLanguage: "Current language",
         github: "Open RustMinerSystem on GitHub",
         downloads: {
-            server: "RustMinerSystem Server",
-            rms: "RMS Client",
-            desktop: "RustMinerSystem App",
-            poolNode: "PoolNode",
+            server: "RustMinerSystem Core Server",
+            rms: "RMS Secure Client",
+            mobile: "RustMinerSystem Mobile App",
+            poolNode: "PoolNode Mobile App",
         },
     },
     footer: {
@@ -60,8 +60,10 @@ export default {
         product: "Product",
         community: "Community",
         github: "GitHub",
+        telegram: "Telegram",
+        discord: "Discord",
         description:
-            "RustMinerSystem focuses on third-party pool proxying and PoolNode real-pool operations, with RMS available as an optional local compression tool.",
+            "RustMinerSystem is an operations entry point for mining access: combine third-party pool Proxy, PoolNode real-pool deployment, and optional RMS encrypted compression for different site topologies.",
         copyright: "© {year} RustMinerSystem. All rights reserved.",
     },
     home: {
@@ -73,14 +75,18 @@ export default {
         secondaryCta: "Read docs",
         secondaryCtaNote: "Deployment, configuration, and operations",
         poolLinksLabel: "Third-party mining pool website links",
+        partnerNote:
+            "RustMinerSystem is honored to be supported by these and more partners.",
         preview: {
             label: "RustMinerSystem software dashboard preview",
             imageAlt:
-                "RustMinerSystem mining proxy operations dashboard screenshot",
-            minersLabel: "Connected miners",
-            networkLabel: "Public links compressed",
-            profitLabel: "Hashrate allocation",
-            profitValue: "Allocation policy active",
+                "RustMinerSystem mining proxy operations animated preview",
+            minersLabel: "Third-party pool proxy",
+            minersValue: "Allocation active",
+            networkLabel: "Optional RMS compression",
+            networkValue: "128:1 links",
+            profitLabel: "PoolNode real pool",
+            profitValue: "Settlement-layer fees",
         },
         featuresTitle:
             "Third-party pool proxy, PoolNode, and optional RMS tooling",
@@ -153,10 +159,107 @@ export default {
                 client: "Compress data volume and public links when needed",
             },
         },
-        downloadsTitle: "Download deployment components",
-        downloadsDescription:
-            "Get the RustMinerSystem server, optional RMS client, and PoolNode app for third-party pool proxying, real-pool PoolNode deployment, hashrate allocation policies, and on-demand local compression.",
-        releaseLink: "Open release center",
+        loadingBadge: "...",
+        unavailableBadge: "N/A",
+        latestRelease: "Latest Release",
+        latestReleaseLoading: "Checking release",
+        latestReleaseError: "Release unavailable",
+        latestReleaseAria: "RustMinerSystem {version} Latest Release",
+        latestReleaseLoadingAria: "Checking the latest RustMinerSystem release",
+        latestReleaseErrorAria:
+            "Unable to load the latest RustMinerSystem release",
+        githubStars: "GitHub Stars",
+        githubStarsLoading: "Checking stars",
+        githubStarsError: "Stars unavailable",
+        githubStarsAria:
+            "EvilGenius-dot/RustMinerSystem has {count} GitHub stars",
+        githubStarsLoadingAria:
+            "Checking GitHub stars for EvilGenius-dot/RustMinerSystem",
+        githubStarsErrorAria:
+            "Unable to load GitHub stars for EvilGenius-dot/RustMinerSystem",
+    },
+    download: {
+        eyebrow: "Download",
+        installGuideLink: "View installation guide",
+        pages: {
+            server: {
+                title: "RustMinerSystem Core Server Download",
+                heading: "RustMinerSystem Core Server",
+                description:
+                    "Prepare the server program for mining access, third-party pool proxying, and PoolNode deployments. Choose the right system, architecture, and version, then install with a command or deploy a standalone file manually.",
+            },
+            rms: {
+                title: "RMS Secure Client Download",
+                description:
+                    "Dedicated download page for the RMS Secure Client. Release files and platform packages will be listed here.",
+            },
+            mobile: {
+                title: "RustMinerSystem Mobile App Download",
+                description:
+                    "Dedicated download page for the RustMinerSystem Mobile App. App packages and platform notes will be listed here.",
+            },
+            "pool-node": {
+                title: "PoolNode Mobile App Download",
+                description:
+                    "Dedicated download page for the PoolNode Mobile App. App packages and platform notes will be listed here.",
+            },
+        },
+        server: {
+            finderTitle: "Choose a server build",
+            selectionSummary: "Get RustMinerSystem {version} for {os} {arch}",
+            refresh: "Refresh list",
+            osLabel: "Operating system",
+            archLabel: "Architecture",
+            versionLabel: "Version",
+            versionPending: "Detecting version",
+            unknownVersion: "Unknown version",
+            loading:
+                "Reading the windows and linux directories from the GitHub repository.",
+            empty: "No downloadable files match the selected filters.",
+            fetchError:
+                "Unable to read the GitHub file list right now. Try again later or open the repository directory.",
+            download: "Download",
+            openDirectory: "Open {directory} standalone files on GitHub",
+            methodHint: {
+                linux: "Two installation methods are available below: beginners should start with the Linux command installer and follow the terminal prompts; standalone files are for users who want to configure startup, auto-start, and process supervision themselves.",
+                standalone:
+                    "This platform provides standalone files: after downloading, start the program manually and configure auto-start or process supervision yourself.",
+            },
+            binary: {
+                title: "Standalone file download",
+                description:
+                    "For users familiar with deployment: download the standalone file, start it manually, then configure process supervision for your environment.",
+            },
+            os: {
+                linux: "Linux",
+                windows: "Windows",
+            },
+            arch: {
+                x86: "x86",
+                arm: "ARM",
+                armv7: "ARMv7",
+            },
+            visual: {
+                label: "Diagram of miners connecting to RustMinerSystem",
+                miners: "Miner fleet",
+                fieldProxy: "Site access node",
+                remoteNode: "RustMiner host server",
+                system: "RustMinerSystem",
+                systemHint: "Unified access, allocation, and proxying",
+                target: "Third-party pool / PoolNode",
+            },
+            install: {
+                title: "Install with Linux command",
+                description:
+                    "Copy the command for {arch} into your server terminal, then follow the prompts to complete installation.",
+                line1: "Line 1",
+                line2: "Line 2",
+                arm: "ARM",
+                armv7: "ARMv7",
+                copy: "Copy",
+                copied: "Copied",
+            },
+        },
     },
     document: {
         eyebrow: "Documentation",

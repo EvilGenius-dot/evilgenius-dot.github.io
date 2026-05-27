@@ -17,10 +17,14 @@ import {
     DEFAULT_LOCALE,
     LOCALE_META,
     SITE_ORIGIN,
+    DEFAULT_DOWNLOAD_PAGE,
     DEFAULT_DOC_PAGE,
     docPath,
+    downloadPath,
+    getDownloadPageMeta,
     getDocPageMeta,
     getRouteLocale,
+    localizedDownloadLinks,
     localizedDocLinks,
     localizedPageLinks,
     pagePath,
@@ -33,6 +37,9 @@ const { locale, t } = useI18n();
 const currentLocale = computed(() => getRouteLocale(route));
 const currentPage = computed(() => route.meta?.page || "home");
 const currentDocPage = computed(() => route.meta?.docPage || DEFAULT_DOC_PAGE);
+const currentDownloadPage = computed(
+    () => route.meta?.downloadPage || DEFAULT_DOWNLOAD_PAGE,
+);
 
 // 客户端切换路由时同步 vue-i18n 的当前语言。
 watch(
@@ -47,17 +54,25 @@ watch(
 const canonicalHref = computed(() =>
     currentPage.value === "document"
         ? `${SITE_ORIGIN}${docPath(currentDocPage.value, currentLocale.value)}`
-        : `${SITE_ORIGIN}${pagePath(currentPage.value, currentLocale.value)}`,
+        : currentPage.value === "download"
+          ? `${SITE_ORIGIN}${downloadPath(currentDownloadPage.value, currentLocale.value)}`
+          : `${SITE_ORIGIN}${pagePath(currentPage.value, currentLocale.value)}`,
 );
 const pageTitle = computed(() =>
     currentPage.value === "document"
         ? getDocPageMeta(currentDocPage.value, currentLocale.value).title
-        : t(`seo.${currentPage.value}.title`),
+        : currentPage.value === "download"
+          ? getDownloadPageMeta(currentDownloadPage.value, currentLocale.value)
+                .title
+          : t(`seo.${currentPage.value}.title`),
 );
 const pageDescription = computed(() =>
     currentPage.value === "document"
         ? getDocPageMeta(currentDocPage.value, currentLocale.value).description
-        : t(`seo.${currentPage.value}.description`),
+        : currentPage.value === "download"
+          ? getDownloadPageMeta(currentDownloadPage.value, currentLocale.value)
+                .description
+          : t(`seo.${currentPage.value}.description`),
 );
 const fullTitle = computed(() =>
     currentPage.value === "home"
@@ -114,14 +129,18 @@ const head = computed(() => ({
         },
         ...(currentPage.value === "document"
             ? localizedDocLinks(currentDocPage.value)
-            : localizedPageLinks(currentPage.value)),
+            : currentPage.value === "download"
+              ? localizedDownloadLinks(currentDownloadPage.value)
+              : localizedPageLinks(currentPage.value)),
         {
             rel: "alternate",
             hreflang: "x-default",
             href:
                 currentPage.value === "document"
                     ? `${SITE_ORIGIN}${docPath(currentDocPage.value, DEFAULT_LOCALE)}`
-                    : `${SITE_ORIGIN}${pagePath(currentPage.value, DEFAULT_LOCALE)}`,
+                    : currentPage.value === "download"
+                      ? `${SITE_ORIGIN}${downloadPath(currentDownloadPage.value, DEFAULT_LOCALE)}`
+                      : `${SITE_ORIGIN}${pagePath(currentPage.value, DEFAULT_LOCALE)}`,
         },
     ],
 }));

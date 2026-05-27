@@ -16,12 +16,32 @@ export const LOCALE_META = {
 
 export const PAGE_SLUGS = {
     home: "",
+    download: "download",
     document: "document",
     customized: "customized-version",
     about: "about",
 };
 
 export const STATIC_PAGES = ["home", "customized", "about"];
+
+export const DOWNLOAD_PAGES = [
+    {
+        id: "server",
+        slug: "rustminersystem-core-server",
+    },
+    {
+        id: "rms",
+        slug: "rms-secure-client",
+    },
+    {
+        id: "mobile",
+        slug: "rustminersystem-mobile-app",
+    },
+    {
+        id: "pool-node",
+        slug: "poolnode-mobile-app",
+    },
+];
 
 export const pagePath = (page = "home", locale = DEFAULT_LOCALE) => {
     const slug = PAGE_SLUGS[page] ?? PAGE_SLUGS.home;
@@ -32,4 +52,11 @@ export const pagePath = (page = "home", locale = DEFAULT_LOCALE) => {
     }
 
     return `${localePrefix}/${slug}`;
+};
+
+export const downloadPath = (downloadPage, locale = DEFAULT_LOCALE) => {
+    const page = DOWNLOAD_PAGES.find((item) => item.id === downloadPage);
+    const basePath = pagePath("download", locale);
+
+    return `${basePath}/${page.slug}`;
 };
