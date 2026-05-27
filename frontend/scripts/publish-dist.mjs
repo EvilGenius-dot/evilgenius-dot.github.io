@@ -1,4 +1,4 @@
-import { cp, readdir, rm, stat } from "node:fs/promises";
+import { cp, readdir, rm, stat, writeFile } from "node:fs/promises";
 import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -48,6 +48,11 @@ for (const entry of publishEntries) {
     await rm(to, { force: true, recursive: true });
     await cp(from, to, { recursive: true });
 }
+
+await writeFile(
+    join(publishDirectory, ".nojekyll"),
+    "Disable GitHub Pages Jekyll processing for Vite assets.\n",
+);
 
 console.log(
     `Published ${publishEntries.length} build entries from frontend/dist to ${publishDirectory}`,
