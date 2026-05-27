@@ -185,7 +185,7 @@ const injectSeo = (route, html) => {
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: "./",
+    base: "/",
     plugins: [vue(), vueDevTools(), tailwindcss()],
     resolve: {
         // 先解析 Unhead 运行时代码，再保留项目内 @ 指向 src 的别名。
