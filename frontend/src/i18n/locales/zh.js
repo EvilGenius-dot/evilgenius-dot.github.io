@@ -176,7 +176,11 @@ export default {
     },
     download: {
         eyebrow: "下载",
-        installGuideLink: "查看安装详细教程",
+        installGuideLink: "阅读使用教程",
+        latestVersion: "Latest Release {version}",
+        latestVersionLoading: "Latest Release",
+        latestVersionError: "Latest Release unavailable",
+        latestVersionPending: "Latest Release",
         pages: {
             server: {
                 title: "RustMinerSystem 核心服务端下载",
@@ -238,11 +242,18 @@ export default {
             },
             visual: {
                 label: "矿机接入 RustMinerSystem 的示意图",
+                localLabel: "矿机接入方式",
                 miners: "矿机集群",
-                fieldProxy: "矿场接入节点",
-                remoteNode: "RustMiner 所在服务器",
+                fieldProxy: "TCP / SSL 直连",
+                remoteNode: "RMS 可选接入",
                 system: "RustMinerSystem",
-                systemHint: "统一接入、分配与代理",
+                systemHint: "统一接入、算力分配与代理",
+                access: "统一接入",
+                allocation: "算力分配",
+                proxy: "矿池代理",
+                routeLabel: "按配置分流",
+                thirdPartyTarget: "第三方矿池 Proxy",
+                poolNodeTarget: "PoolNode 真矿池",
                 target: "第三方矿池 / PoolNode",
             },
             install: {
@@ -276,8 +287,6 @@ export default {
             },
             methodHint: {
                 linux: "下方提供两种安装方式：新手建议优先使用 RMS3 命令安装，按终端提示完成；独立文件下载适合需要自行配置启动和进程守护的用户。",
-                openwrt:
-                    "OpenWRT 可使用命令安装；由于 OpenWRT 版本较多，如脚本不兼容，可下载对应架构的独立文件手动部署。",
                 standalone:
                     "当前平台提供独立文件下载：下载后需要手动启动程序，并自行配置开机自启或进程守护。Windows 图形界面版本如遇白屏，请安装同目录的 WebView2。",
             },
@@ -288,7 +297,6 @@ export default {
             },
             os: {
                 linux: "Linux",
-                openwrt: "OpenWRT",
                 windows: "Windows",
             },
             arch: {
@@ -303,11 +311,16 @@ export default {
             },
             visual: {
                 label: "矿机通过 RMS 安全客户端接入 RustMiner 的示意图",
+                localLabel: "矿场本地接入",
                 miners: "矿机集群",
                 fieldProxy: "矿场本地网络",
                 remoteNode: "接入设备 / 路由器",
                 system: "RMS 安全客户端",
                 systemHint: "本地压缩、加密与连接收敛",
+                compression: "压缩流量",
+                encryption: "加密隧道",
+                connectionPool: "连接收敛",
+                tunnelLabel: "压缩加密链路",
                 target: "RustMiner 所在服务器",
             },
             install: {
@@ -316,7 +329,6 @@ export default {
                     "复制适用于 {arch} 的命令到设备终端执行，并根据终端提示完成安装。",
                 line1: "线路 1",
                 line2: "线路 2",
-                openwrt: "OpenWRT",
                 copy: "复制",
                 copied: "已复制",
             },

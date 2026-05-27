@@ -7,49 +7,144 @@
                         {{ pageMeta.heading || pageMeta.title }}
                     </h1>
                     <p class="hero-description">{{ pageMeta.description }}</p>
-                    <RouterLink
-                        v-if="hasDownloadFinder"
-                        :to="installationGuidePath"
-                        class="guide-link"
-                    >
-                        <BookOpen aria-hidden="true" />
-                        <span>{{ t("download.installGuideLink") }}</span>
-                    </RouterLink>
+                    <div v-if="hasDownloadFinder" class="hero-actions">
+                        <RouterLink
+                            :to="installationGuidePath"
+                            class="guide-link"
+                        >
+                            <BookOpen aria-hidden="true" />
+                            <span>{{ t("download.installGuideLink") }}</span>
+                        </RouterLink>
+                        <span
+                            class="latest-version-badge"
+                            :class="{
+                                'latest-version-badge-error':
+                                    latestVersionError &&
+                                    !formattedLatestVersion,
+                            }"
+                        >
+                            <BadgeCheck aria-hidden="true" />
+                            <span>{{ latestVersionBadgeText }}</span>
+                        </span>
+                    </div>
                 </div>
 
                 <div
                     v-if="hasHeroVisual"
                     class="download-hero-visual"
+                    :class="{
+                        'download-hero-visual-rms': isRmsDownloadPage,
+                        'download-hero-visual-server': isServerDownloadPage,
+                    }"
                     role="img"
                     :aria-label="downloadText('visual.label')"
                 >
-                    <div class="miner-nodes">
-                        <div
-                            v-for="miner in heroVisualSources"
-                            :key="miner"
-                            class="miner-node"
-                        >
-                            <Cpu aria-hidden="true" />
-                            <span>{{ miner }}</span>
+                    <template v-if="isRmsDownloadPage">
+                        <div class="rms-local-stack">
+                            <span class="visual-kicker">
+                                {{ downloadText("visual.localLabel") }}
+                            </span>
+                            <div class="rms-miner-grid">
+                                <div
+                                    v-for="miner in heroVisualSources"
+                                    :key="miner"
+                                    class="miner-node rms-miner-node"
+                                >
+                                    <Cpu aria-hidden="true" />
+                                    <span>{{ miner }}</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="connection-lines" aria-hidden="true">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="system-node">
-                        <ShieldCheck
-                            v-if="isRmsDownloadPage"
-                            aria-hidden="true"
-                        />
-                        <Server v-else aria-hidden="true" />
-                        <strong>{{ downloadText("visual.system") }}</strong>
-                        <span>{{ downloadText("visual.systemHint") }}</span>
-                    </div>
-                    <div class="target-node">
-                        <span>{{ downloadText("visual.target") }}</span>
-                    </div>
+                        <div class="rms-flow-line" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="system-node rms-system-node">
+                            <ShieldCheck aria-hidden="true" />
+                            <strong>{{ downloadText("visual.system") }}</strong>
+                            <span>{{ downloadText("visual.systemHint") }}</span>
+                            <div class="rms-capabilities">
+                                <span
+                                    v-for="capability in rmsVisualCapabilities"
+                                    :key="capability"
+                                >
+                                    {{ capability }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rms-tunnel">
+                            <span>{{
+                                downloadText("visual.tunnelLabel")
+                            }}</span>
+                        </div>
+                        <div class="target-node rms-target-node">
+                            <Server aria-hidden="true" />
+                            <span>{{ downloadText("visual.target") }}</span>
+                        </div>
+                    </template>
+                    <template v-else>
+                        <div class="server-ingress-stack">
+                            <span class="visual-kicker">
+                                {{ downloadText("visual.localLabel") }}
+                            </span>
+                            <div class="server-ingress-grid">
+                                <div class="miner-node server-ingress-node">
+                                    <Cpu aria-hidden="true" />
+                                    <span>{{
+                                        downloadText("visual.miners")
+                                    }}</span>
+                                </div>
+                                <div class="miner-node server-ingress-node">
+                                    <Network aria-hidden="true" />
+                                    <span>{{
+                                        downloadText("visual.fieldProxy")
+                                    }}</span>
+                                </div>
+                                <div class="miner-node server-ingress-node">
+                                    <ShieldCheck aria-hidden="true" />
+                                    <span>{{
+                                        downloadText("visual.remoteNode")
+                                    }}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="server-flow-line" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="system-node server-system-node">
+                            <Server aria-hidden="true" />
+                            <strong>{{ downloadText("visual.system") }}</strong>
+                            <span>{{ downloadText("visual.systemHint") }}</span>
+                            <div class="server-capabilities">
+                                <span
+                                    v-for="capability in serverVisualCapabilities"
+                                    :key="capability"
+                                >
+                                    {{ capability }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="server-route-label">
+                            <span>{{ downloadText("visual.routeLabel") }}</span>
+                        </div>
+                        <div class="server-target-grid">
+                            <div class="target-node server-target-node">
+                                <GitBranch aria-hidden="true" />
+                                <span>{{
+                                    downloadText("visual.thirdPartyTarget")
+                                }}</span>
+                            </div>
+                            <div class="target-node server-target-node">
+                                <Server aria-hidden="true" />
+                                <span>{{
+                                    downloadText("visual.poolNodeTarget")
+                                }}</span>
+                            </div>
+                        </div>
+                    </template>
                 </div>
             </article>
 
@@ -124,7 +219,10 @@
                         </Select>
                     </label>
 
-                    <label class="filter-field filter-field-version">
+                    <label
+                        v-if="!isRmsDownloadPage"
+                        class="filter-field filter-field-version"
+                    >
                         <span>{{ downloadText("versionLabel") }}</span>
                         <Select
                             v-model="selectedVersion"
@@ -257,7 +355,7 @@
                             class="release-row"
                         >
                             <div class="release-copy">
-                                <span>{{ file.version }}</span>
+                                <span>{{ getReleaseVersionLabel(file) }}</span>
                                 <h3>{{ file.name }}</h3>
                                 <p>{{ file.path }}</p>
                             </div>
@@ -283,13 +381,16 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
 import {
+    BadgeCheck,
     BookOpen,
     Check,
     Clipboard,
     Cpu,
     Download,
     ExternalLink,
+    GitBranch,
     Info,
+    Network,
     Server,
     ShieldCheck,
     Terminal,
@@ -341,9 +442,21 @@ const heroVisualSources = computed(() => [
     downloadText("visual.fieldProxy"),
     downloadText("visual.remoteNode"),
 ]);
+const serverVisualCapabilities = computed(() => [
+    downloadText("visual.access"),
+    downloadText("visual.allocation"),
+    downloadText("visual.proxy"),
+]);
+const rmsVisualCapabilities = computed(() => [
+    downloadText("visual.compression"),
+    downloadText("visual.encryption"),
+    downloadText("visual.connectionPool"),
+]);
 
 const repositoryOwner = "EvilGenius-dot";
 const repositoryBranch = "main";
+const originManifestUrl =
+    "https://raw.githubusercontent.com/EvilGenius-dot/RustMinerSystem/main/origin.json";
 const activeRepositoryName = computed(() =>
     isRmsDownloadPage.value ? "RMS" : "RustMinerSystem",
 );
@@ -395,20 +508,44 @@ const releaseFiles = ref([]);
 const releaseError = ref("");
 const isLoadingReleases = ref(false);
 const copiedCommandId = ref("");
+const latestVersions = ref({
+    rustminer: "4.6.7",
+    rms: "3.1.10",
+});
+const latestVersionError = ref(false);
+const isLoadingLatestVersions = ref(false);
+
+const formatVersion = (version) => {
+    if (!version) return "";
+
+    return /^v/i.test(version) ? version : `v${version}`;
+};
+
+const currentLatestVersion = computed(() =>
+    isRmsDownloadPage.value
+        ? latestVersions.value.rms
+        : latestVersions.value.rustminer,
+);
+const formattedLatestVersion = computed(() =>
+    formatVersion(currentLatestVersion.value),
+);
+const latestVersionBadgeText = computed(() => {
+    if (formattedLatestVersion.value) {
+        return t("download.latestVersion", {
+            version: formattedLatestVersion.value,
+        });
+    }
+
+    return isLoadingLatestVersions.value
+        ? t("download.latestVersionLoading")
+        : t("download.latestVersionError");
+});
 
 const osOptions = computed(() => [
     {
         value: "linux",
         label: downloadText("os.linux"),
     },
-    ...(isRmsDownloadPage.value
-        ? [
-              {
-                  value: "openwrt",
-                  label: downloadText("os.openwrt"),
-              },
-          ]
-        : []),
     {
         value: "windows",
         label: downloadText("os.windows"),
@@ -424,7 +561,6 @@ const archOptions = computed(() => {
 
         return {
             linux: linuxOptions,
-            openwrt: linuxOptions,
             windows: [
                 {
                     value: "windows-gui",
@@ -480,13 +616,10 @@ const selectedArchLabel = computed(
 );
 
 const filesForSelectedPlatform = computed(() =>
-    releaseFiles.value.filter((file) => {
-        if (isRmsDownloadPage.value && selectedOs.value === "openwrt") {
-            return file.os === "linux" && file.arch === selectedArch.value;
-        }
-
-        return file.os === selectedOs.value && file.arch === selectedArch.value;
-    }),
+    releaseFiles.value.filter(
+        (file) =>
+            file.os === selectedOs.value && file.arch === selectedArch.value,
+    ),
 );
 
 const availableVersions = computed(() =>
@@ -496,15 +629,19 @@ const availableVersions = computed(() =>
         .reverse(),
 );
 
-const selectedVersionLabel = computed(
-    () => selectedVersion.value || downloadText("versionPending"),
+const selectedVersionLabel = computed(() =>
+    isRmsDownloadPage.value
+        ? formattedLatestVersion.value || t("download.latestVersionPending")
+        : selectedVersion.value || downloadText("versionPending"),
 );
 
-const filteredReleaseFiles = computed(() =>
-    filesForSelectedPlatform.value.filter(
+const filteredReleaseFiles = computed(() => {
+    if (isRmsDownloadPage.value) return filesForSelectedPlatform.value;
+
+    return filesForSelectedPlatform.value.filter(
         (file) => file.version === selectedVersion.value,
-    ),
-);
+    );
+});
 
 const serverInstallCommands = computed(() => ({
     x86: [
@@ -554,14 +691,6 @@ const rmsInstallCommands = computed(() => ({
                 "bash <(curl -s -L -k https://rustminersystem.com/install.sh)",
         },
     ],
-    openwrt: [
-        {
-            id: "rms-openwrt",
-            label: downloadText("install.openwrt"),
-            command:
-                "wget -N https://rustminersystem.com/install.sh; chmod +x ./install.sh; ./install.sh",
-        },
-    ],
 }));
 
 const visibleInstallCommands = computed(() => {
@@ -574,15 +703,11 @@ const visibleInstallCommands = computed(() => {
     return serverInstallCommands.value[selectedArch.value] || [];
 });
 
-const activeMethodHintKey = computed(() => {
-    if (isRmsDownloadPage.value && selectedOs.value === "openwrt") {
-        return "methodHint.openwrt";
-    }
-
-    return visibleInstallCommands.value.length
+const activeMethodHintKey = computed(() =>
+    visibleInstallCommands.value.length
         ? "methodHint.linux"
-        : "methodHint.standalone";
-});
+        : "methodHint.standalone",
+);
 
 const currentRepositoryDirectory = computed(() => {
     const directory = isRmsDownloadPage.value
@@ -695,6 +820,48 @@ const normalizeRmsReleaseFile = (entry) => {
         size: entry.size || 0,
         version: downloadText("version.rms3"),
     };
+};
+
+const getReleaseVersionLabel = (file) =>
+    isRmsDownloadPage.value
+        ? formattedLatestVersion.value || file.version
+        : file.version;
+
+const loadLatestVersions = async () => {
+    if (!hasDownloadFinder.value || isLoadingLatestVersions.value) return;
+
+    isLoadingLatestVersions.value = true;
+    latestVersionError.value = false;
+
+    try {
+        const response = await fetch(originManifestUrl, {
+            cache: "no-store",
+            headers: {
+                Accept: "application/json",
+            },
+        });
+
+        if (!response.ok) throw new Error("Unable to read origin.json");
+
+        const manifest = await response.json();
+
+        latestVersions.value = {
+            rustminer:
+                typeof manifest.version === "string"
+                    ? manifest.version
+                    : latestVersions.value.rustminer,
+            rms:
+                typeof manifest.RMS === "string"
+                    ? manifest.RMS
+                    : typeof manifest.rms === "string"
+                      ? manifest.rms
+                      : latestVersions.value.rms,
+        };
+    } catch {
+        latestVersionError.value = true;
+    } finally {
+        isLoadingLatestVersions.value = false;
+    }
 };
 
 const fetchDirectory = async (directory) => {
@@ -836,6 +1003,7 @@ watch(currentDownloadPage, () => {
     selectedArch.value = archValues[0] || "x86";
 
     if (hasDownloadFinder.value) {
+        loadLatestVersions();
         loadReleaseFiles();
     }
 });
@@ -843,6 +1011,7 @@ watch(currentDownloadPage, () => {
 onMounted(() => {
     selectedOs.value = getPreferredOs();
 
+    loadLatestVersions();
     loadReleaseFiles();
 });
 </script>
@@ -910,6 +1079,13 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.hero-actions {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 .guide-link {
     align-items: center;
     background: rgb(34 197 94 / 12%);
@@ -937,6 +1113,31 @@ h1 {
     width: 1rem;
 }
 
+.latest-version-badge {
+    align-items: center;
+    background: rgb(56 189 248 / 10%);
+    border: 1px solid rgb(125 211 252 / 18%);
+    border-radius: 999px;
+    color: var(--color-sky-200, #bae6fd);
+    display: inline-flex;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    gap: 0.5rem;
+    min-height: 2.5rem;
+    padding: 0.625rem 0.875rem;
+}
+
+.latest-version-badge svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.latest-version-badge-error {
+    background: rgb(248 113 113 / 10%);
+    border-color: rgb(248 113 113 / 18%);
+    color: rgb(254 202 202);
+}
+
 .download-hero-visual {
     background: rgb(13 18 28 / 64%);
     border: 1px solid var(--color-neutral-900);
@@ -946,9 +1147,52 @@ h1 {
     padding: 1rem;
 }
 
+.download-hero-visual-rms {
+    background:
+        linear-gradient(135deg, rgb(34 197 94 / 8%), transparent 38%),
+        linear-gradient(180deg, rgb(13 18 28 / 80%), rgb(9 14 22 / 88%));
+    overflow: hidden;
+}
+
+.download-hero-visual-server {
+    background:
+        linear-gradient(135deg, rgb(56 189 248 / 8%), transparent 38%),
+        linear-gradient(180deg, rgb(13 18 28 / 80%), rgb(9 14 22 / 88%));
+    overflow: hidden;
+}
+
+.visual-kicker {
+    color: var(--color-neutral-400);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0;
+}
+
 .miner-nodes {
     display: grid;
     gap: 0.625rem;
+}
+
+.rms-local-stack {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.server-ingress-stack {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.rms-miner-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.server-ingress-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .miner-node,
@@ -969,6 +1213,30 @@ h1 {
     padding: 0.625rem 0.75rem;
 }
 
+.rms-miner-node {
+    align-content: center;
+    justify-items: center;
+    min-height: 4.25rem;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+}
+
+.server-ingress-node {
+    align-content: center;
+    justify-items: center;
+    min-height: 4.25rem;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+}
+
+.rms-miner-node span {
+    overflow-wrap: anywhere;
+}
+
+.server-ingress-node span {
+    overflow-wrap: anywhere;
+}
+
 .miner-node svg,
 .system-node svg {
     color: var(--color-green-400);
@@ -981,6 +1249,64 @@ h1 {
 .target-node span {
     font-size: var(--text-sm);
     line-height: 1.45;
+}
+
+.rms-flow-line {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 1.25rem;
+}
+
+.server-flow-line {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 0 1.25rem;
+}
+
+.rms-flow-line span {
+    background: linear-gradient(
+        90deg,
+        rgb(34 197 94 / 14%),
+        rgb(34 197 94 / 82%)
+    );
+    border-radius: 999px;
+    height: 2px;
+    position: relative;
+}
+
+.server-flow-line span {
+    background: linear-gradient(
+        90deg,
+        rgb(56 189 248 / 14%),
+        rgb(34 197 94 / 82%)
+    );
+    border-radius: 999px;
+    height: 2px;
+    position: relative;
+}
+
+.rms-flow-line span::after {
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid rgb(34 197 94 / 82%);
+    border-top: 4px solid transparent;
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.server-flow-line span::after {
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid rgb(34 197 94 / 82%);
+    border-top: 4px solid transparent;
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .connection-lines {
@@ -1020,6 +1346,108 @@ h1 {
     grid-column: 2;
 }
 
+.rms-system-node {
+    background:
+        linear-gradient(180deg, rgb(34 197 94 / 10%), transparent),
+        rgb(6 18 16 / 78%);
+    border-color: rgb(74 222 128 / 28%);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 4%);
+}
+
+.server-system-node {
+    background:
+        linear-gradient(180deg, rgb(56 189 248 / 10%), transparent),
+        rgb(6 15 24 / 78%);
+    border-color: rgb(56 189 248 / 28%);
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 4%);
+}
+
+.rms-capabilities {
+    display: grid;
+    gap: 0.5rem;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 0.25rem;
+}
+
+.server-capabilities {
+    display: grid;
+    gap: 0.5rem;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 0.25rem;
+}
+
+.rms-capabilities span {
+    background: rgb(34 197 94 / 10%);
+    border: 1px solid rgb(134 239 172 / 14%);
+    border-radius: 6px;
+    color: var(--color-green-200);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    grid-column: auto;
+    line-height: 1.35;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.server-capabilities span {
+    background: rgb(56 189 248 / 10%);
+    border: 1px solid rgb(125 211 252 / 14%);
+    border-radius: 6px;
+    color: var(--color-sky-200, #bae6fd);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    grid-column: auto;
+    line-height: 1.35;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.rms-tunnel {
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgb(34 197 94 / 0%),
+            rgb(56 189 248 / 18%),
+            rgb(34 197 94 / 0%)
+        ),
+        rgb(9 14 22 / 56%);
+    border: 1px dashed rgb(56 189 248 / 32%);
+    border-radius: 999px;
+    color: var(--color-sky-200, #bae6fd);
+    display: flex;
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+.server-route-label {
+    align-items: center;
+    background:
+        linear-gradient(
+            90deg,
+            rgb(56 189 248 / 0%),
+            rgb(34 197 94 / 18%),
+            rgb(56 189 248 / 0%)
+        ),
+        rgb(9 14 22 / 56%);
+    border: 1px dashed rgb(134 239 172 / 28%);
+    border-radius: 999px;
+    color: var(--color-green-200);
+    display: flex;
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    justify-content: center;
+    min-height: 2.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
 .target-node {
     border-color: rgb(56 189 248 / 18%);
     padding: 0.75rem 0.875rem;
@@ -1029,6 +1457,41 @@ h1 {
 .target-node span {
     color: var(--color-neutral-300);
     font-weight: var(--font-weight-semibold);
+}
+
+.rms-target-node {
+    align-items: center;
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    text-align: left;
+}
+
+.server-target-grid {
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.server-target-node {
+    align-items: center;
+    display: grid;
+    gap: 0.625rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    min-height: 3.75rem;
+    text-align: left;
+}
+
+.rms-target-node svg {
+    color: var(--color-sky-300, #7dd3fc);
+    height: 1rem;
+    width: 1rem;
+}
+
+.server-target-node svg {
+    color: var(--color-green-300);
+    height: 1rem;
+    width: 1rem;
 }
 
 .download-finder {
@@ -1383,6 +1846,10 @@ h1 {
     .filter-grid {
         align-items: end;
         grid-template-columns: repeat(3, max-content);
+    }
+
+    .download-finder-rms .filter-grid {
+        grid-template-columns: repeat(2, max-content);
     }
 
     .filter-field-os {

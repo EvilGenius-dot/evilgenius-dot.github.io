@@ -179,7 +179,11 @@ export default {
     },
     download: {
         eyebrow: "Скачать",
-        installGuideLink: "Открыть подробную инструкцию",
+        installGuideLink: "Читать руководство",
+        latestVersion: "Latest Release {version}",
+        latestVersionLoading: "Latest Release",
+        latestVersionError: "Latest Release unavailable",
+        latestVersionPending: "Latest Release",
         pages: {
             server: {
                 title: "Скачать основной сервер RustMinerSystem",
@@ -241,11 +245,18 @@ export default {
             },
             visual: {
                 label: "Схема подключения майнеров к RustMinerSystem",
+                localLabel: "Пути подключения майнеров",
                 miners: "Парк майнеров",
-                fieldProxy: "Узел площадки",
-                remoteNode: "Сервер с RustMiner",
+                fieldProxy: "Прямое TCP / SSL",
+                remoteNode: "Опциональный доступ RMS",
                 system: "RustMinerSystem",
-                systemHint: "Единый доступ, распределение и proxy",
+                systemHint: "Единый доступ, распределение хешрейта и proxy",
+                access: "Единый доступ",
+                allocation: "Распределение хешрейта",
+                proxy: "Proxy пула",
+                routeLabel: "Маршрутизация по конфигурации",
+                thirdPartyTarget: "Proxy стороннего пула",
+                poolNodeTarget: "Настоящий пул PoolNode",
                 target: "Сторонний пул / PoolNode",
             },
             install: {
@@ -279,8 +290,6 @@ export default {
             },
             methodHint: {
                 linux: "Ниже доступны два способа установки: новичкам лучше начать с установки RMS3 командой и следовать подсказкам терминала; отдельные файлы подходят тем, кто сам настраивает запуск и supervision процесса.",
-                openwrt:
-                    "OpenWRT можно установить командой. Так как версий OpenWRT много, при несовместимости скрипта скачайте отдельный файл под нужную архитектуру и разверните вручную.",
                 standalone:
                     "Для выбранной платформы доступны отдельные файлы: после скачивания запустите программу вручную и самостоятельно настройте автозапуск или supervision процесса. Если GUI-версия Windows показывает пустой экран, установите WebView2 из того же каталога.",
             },
@@ -291,7 +300,6 @@ export default {
             },
             os: {
                 linux: "Linux",
-                openwrt: "OpenWRT",
                 windows: "Windows",
             },
             arch: {
@@ -306,11 +314,16 @@ export default {
             },
             visual: {
                 label: "Схема подключения майнеров к RustMiner через безопасный клиент RMS",
+                localLabel: "Локальный доступ площадки",
                 miners: "Парк майнеров",
                 fieldProxy: "Локальная сеть площадки",
                 remoteNode: "Устройство доступа / роутер",
                 system: "Безопасный клиент RMS",
                 systemHint: "Локальное сжатие, шифрование и пул соединений",
+                compression: "Сжатие трафика",
+                encryption: "Шифрованный туннель",
+                connectionPool: "Пул соединений",
+                tunnelLabel: "Сжатый зашифрованный канал",
                 target: "Сервер с RustMiner",
             },
             install: {
@@ -319,7 +332,6 @@ export default {
                     "Скопируйте команду для {arch} в терминал устройства и следуйте подсказкам для завершения установки.",
                 line1: "Линия 1",
                 line2: "Линия 2",
-                openwrt: "OpenWRT",
                 copy: "Копировать",
                 copied: "Скопировано",
             },

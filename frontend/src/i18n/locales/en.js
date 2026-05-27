@@ -180,7 +180,11 @@ export default {
     },
     download: {
         eyebrow: "Download",
-        installGuideLink: "View installation guide",
+        installGuideLink: "Read usage guide",
+        latestVersion: "Latest Release {version}",
+        latestVersionLoading: "Latest Release",
+        latestVersionError: "Latest Release unavailable",
+        latestVersionPending: "Latest Release",
         pages: {
             server: {
                 title: "RustMinerSystem Core Server Download",
@@ -242,11 +246,18 @@ export default {
             },
             visual: {
                 label: "Diagram of miners connecting to RustMinerSystem",
+                localLabel: "Miner access paths",
                 miners: "Miner fleet",
-                fieldProxy: "Site access node",
-                remoteNode: "RustMiner host server",
+                fieldProxy: "TCP / SSL direct",
+                remoteNode: "Optional RMS access",
                 system: "RustMinerSystem",
-                systemHint: "Unified access, allocation, and proxying",
+                systemHint: "Unified access, hashrate allocation, and proxying",
+                access: "Unified access",
+                allocation: "Hashrate allocation",
+                proxy: "Pool proxy",
+                routeLabel: "Route by configuration",
+                thirdPartyTarget: "Third-party pool Proxy",
+                poolNodeTarget: "PoolNode real pool",
                 target: "Third-party pool / PoolNode",
             },
             install: {
@@ -281,8 +292,6 @@ export default {
             },
             methodHint: {
                 linux: "Two installation methods are available below: beginners should start with the RMS3 command installer and follow the terminal prompts; standalone files are for users who want to configure startup and process supervision themselves.",
-                openwrt:
-                    "OpenWRT can use the command installer. Because OpenWRT builds vary widely, download the matching standalone file for manual deployment if the script is not compatible.",
                 standalone:
                     "This platform provides standalone files: after downloading, start the program manually and configure auto-start or process supervision yourself. If the Windows GUI shows a blank screen, install WebView2 from the same directory.",
             },
@@ -293,7 +302,6 @@ export default {
             },
             os: {
                 linux: "Linux",
-                openwrt: "OpenWRT",
                 windows: "Windows",
             },
             arch: {
@@ -308,12 +316,17 @@ export default {
             },
             visual: {
                 label: "Diagram of miners connecting to RustMiner through the RMS secure client",
+                localLabel: "Local site access",
                 miners: "Miner fleet",
                 fieldProxy: "Site local network",
                 remoteNode: "Access device / router",
                 system: "RMS Secure Client",
                 systemHint:
                     "Local compression, encryption, and connection pooling",
+                compression: "Traffic compression",
+                encryption: "Encrypted tunnel",
+                connectionPool: "Connection pooling",
+                tunnelLabel: "Compressed encrypted link",
                 target: "RustMiner host server",
             },
             install: {
@@ -322,7 +335,6 @@ export default {
                     "Copy the command for {arch} into the device terminal, then follow the prompts to complete installation.",
                 line1: "Line 1",
                 line2: "Line 2",
-                openwrt: "OpenWRT",
                 copy: "Copy",
                 copied: "Copied",
             },
