@@ -186,8 +186,9 @@ export default {
             },
             rms: {
                 title: "RMS 安全客户端下载",
+                heading: "RMS 安全客户端",
                 description:
-                    "RMS 安全客户端的专属下载页面，后续将用于放置版本包与平台说明。",
+                    "RMS 是部署在矿场本地的安全客户端，用于本地隧道、数据压缩、加密与公网连接数压缩。选择系统、架构或 Windows 版本后，可使用命令安装，也可以下载独立文件手动部署。",
             },
             mobile: {
                 title: "RustMinerSystem 移动应用下载",
@@ -252,6 +253,70 @@ export default {
                 line2: "线路 2",
                 arm: "ARM",
                 armv7: "ARMv7",
+                copy: "复制",
+                copied: "已复制",
+            },
+        },
+        rms: {
+            finderTitle: "选择 RMS 客户端",
+            selectionSummary: "获得适用于 {os} {arch} 的 RMS {version}",
+            osLabel: "操作系统",
+            archLabel: "架构 / 类型",
+            versionLabel: "版本",
+            versionPending: "正在识别版本",
+            unknownVersion: "未知版本",
+            loading: "正在从 GitHub 仓库读取 RMS 客户端目录。",
+            empty: "当前筛选条件下没有可下载文件。",
+            fetchError:
+                "暂时无法读取 GitHub 文件列表，请稍后重试或打开仓库目录下载。",
+            download: "下载",
+            openDirectory: "在 GitHub 中打开 {directory} 独立文件",
+            version: {
+                rms3: "RMS3",
+            },
+            methodHint: {
+                linux: "下方提供两种安装方式：新手建议优先使用 RMS3 命令安装，按终端提示完成；独立文件下载适合需要自行配置启动和进程守护的用户。",
+                openwrt:
+                    "OpenWRT 可使用命令安装；由于 OpenWRT 版本较多，如脚本不兼容，可下载对应架构的独立文件手动部署。",
+                standalone:
+                    "当前平台提供独立文件下载：下载后需要手动启动程序，并自行配置开机自启或进程守护。Windows 图形界面版本如遇白屏，请安装同目录的 WebView2。",
+            },
+            binary: {
+                title: "RMS 独立文件下载",
+                description:
+                    "适合熟悉部署的用户：下载对应系统和架构的独立文件后，需要手动启动 RMS，并根据生产环境自行设置进程守护。",
+            },
+            os: {
+                linux: "Linux",
+                openwrt: "OpenWRT",
+                windows: "Windows",
+            },
+            arch: {
+                x86: "x86_64",
+                aarch64: "ARM64 / aarch64",
+                arm: "ARM",
+                armhf: "ARMHF",
+                armv7: "ARMv7",
+                armv7hf: "ARMv7HF",
+                windowsGui: "Windows 图形界面",
+                windowsCli: "Windows 命令行",
+            },
+            visual: {
+                label: "矿机通过 RMS 安全客户端接入 RustMiner 的示意图",
+                miners: "矿机集群",
+                fieldProxy: "矿场本地网络",
+                remoteNode: "接入设备 / 路由器",
+                system: "RMS 安全客户端",
+                systemHint: "本地压缩、加密与连接收敛",
+                target: "RustMiner 所在服务器",
+            },
+            install: {
+                title: "RMS 命令安装",
+                description:
+                    "复制适用于 {arch} 的命令到设备终端执行，并根据终端提示完成安装。",
+                line1: "线路 1",
+                line2: "线路 2",
+                openwrt: "OpenWRT",
                 copy: "复制",
                 copied: "已复制",
             },

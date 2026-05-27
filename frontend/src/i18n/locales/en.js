@@ -190,8 +190,9 @@ export default {
             },
             rms: {
                 title: "RMS Secure Client Download",
+                heading: "RMS Secure Client",
                 description:
-                    "Dedicated download page for the RMS Secure Client. Release files and platform packages will be listed here.",
+                    "RMS is the local secure client for tunneling, data compression, encryption, and public connection compression. Choose the system, architecture, or Windows variant, then install with a command or deploy a standalone file manually.",
             },
             mobile: {
                 title: "RustMinerSystem Mobile App Download",
@@ -256,6 +257,72 @@ export default {
                 line2: "Line 2",
                 arm: "ARM",
                 armv7: "ARMv7",
+                copy: "Copy",
+                copied: "Copied",
+            },
+        },
+        rms: {
+            finderTitle: "Choose an RMS client",
+            selectionSummary: "Get RMS {version} for {os} {arch}",
+            osLabel: "Operating system",
+            archLabel: "Architecture / type",
+            versionLabel: "Version",
+            versionPending: "Detecting version",
+            unknownVersion: "Unknown version",
+            loading:
+                "Reading RMS client directories from the GitHub repository.",
+            empty: "No downloadable files match the selected filters.",
+            fetchError:
+                "Unable to read the GitHub file list right now. Try again later or open the repository directory.",
+            download: "Download",
+            openDirectory: "Open {directory} standalone files on GitHub",
+            version: {
+                rms3: "RMS3",
+            },
+            methodHint: {
+                linux: "Two installation methods are available below: beginners should start with the RMS3 command installer and follow the terminal prompts; standalone files are for users who want to configure startup and process supervision themselves.",
+                openwrt:
+                    "OpenWRT can use the command installer. Because OpenWRT builds vary widely, download the matching standalone file for manual deployment if the script is not compatible.",
+                standalone:
+                    "This platform provides standalone files: after downloading, start the program manually and configure auto-start or process supervision yourself. If the Windows GUI shows a blank screen, install WebView2 from the same directory.",
+            },
+            binary: {
+                title: "RMS standalone file download",
+                description:
+                    "For users familiar with deployment: download the matching standalone file, start RMS manually, then configure process supervision for your environment.",
+            },
+            os: {
+                linux: "Linux",
+                openwrt: "OpenWRT",
+                windows: "Windows",
+            },
+            arch: {
+                x86: "x86_64",
+                aarch64: "ARM64 / aarch64",
+                arm: "ARM",
+                armhf: "ARMHF",
+                armv7: "ARMv7",
+                armv7hf: "ARMv7HF",
+                windowsGui: "Windows GUI",
+                windowsCli: "Windows CLI",
+            },
+            visual: {
+                label: "Diagram of miners connecting to RustMiner through the RMS secure client",
+                miners: "Miner fleet",
+                fieldProxy: "Site local network",
+                remoteNode: "Access device / router",
+                system: "RMS Secure Client",
+                systemHint:
+                    "Local compression, encryption, and connection pooling",
+                target: "RustMiner host server",
+            },
+            install: {
+                title: "Install RMS with command",
+                description:
+                    "Copy the command for {arch} into the device terminal, then follow the prompts to complete installation.",
+                line1: "Line 1",
+                line2: "Line 2",
+                openwrt: "OpenWRT",
                 copy: "Copy",
                 copied: "Copied",
             },

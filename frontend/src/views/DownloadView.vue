@@ -8,7 +8,7 @@
                     </h1>
                     <p class="hero-description">{{ pageMeta.description }}</p>
                     <RouterLink
-                        v-if="isServerDownloadPage"
+                        v-if="hasDownloadFinder"
                         :to="installationGuidePath"
                         class="guide-link"
                     >
@@ -18,14 +18,14 @@
                 </div>
 
                 <div
-                    v-if="isServerDownloadPage"
+                    v-if="hasHeroVisual"
                     class="download-hero-visual"
                     role="img"
-                    :aria-label="t('download.server.visual.label')"
+                    :aria-label="downloadText('visual.label')"
                 >
                     <div class="miner-nodes">
                         <div
-                            v-for="miner in serverVisualMiners"
+                            v-for="miner in heroVisualSources"
                             :key="miner"
                             class="miner-node"
                         >
@@ -39,31 +39,34 @@
                         <span></span>
                     </div>
                     <div class="system-node">
-                        <Server aria-hidden="true" />
-                        <strong>{{
-                            t("download.server.visual.system")
-                        }}</strong>
-                        <span>{{ t("download.server.visual.systemHint") }}</span>
+                        <ShieldCheck
+                            v-if="isRmsDownloadPage"
+                            aria-hidden="true"
+                        />
+                        <Server v-else aria-hidden="true" />
+                        <strong>{{ downloadText("visual.system") }}</strong>
+                        <span>{{ downloadText("visual.systemHint") }}</span>
                     </div>
                     <div class="target-node">
-                        <span>{{ t("download.server.visual.target") }}</span>
+                        <span>{{ downloadText("visual.target") }}</span>
                     </div>
                 </div>
             </article>
 
             <section
-                v-if="isServerDownloadPage"
+                v-if="hasDownloadFinder"
                 class="download-finder"
-                aria-labelledby="server-download-title"
+                :class="{ 'download-finder-rms': isRmsDownloadPage }"
+                aria-labelledby="download-finder-title"
             >
                 <div class="finder-header">
                     <div>
-                        <h2 id="server-download-title">
-                            {{ t("download.server.finderTitle") }}
+                        <h2 id="download-finder-title">
+                            {{ downloadText("finderTitle") }}
                         </h2>
                         <p>
                             {{
-                                t("download.server.selectionSummary", {
+                                downloadText("selectionSummary", {
                                     os: selectedOsLabel,
                                     arch: selectedArchLabel,
                                     version: selectedVersionLabel,
@@ -84,7 +87,7 @@
 
                 <div class="filter-grid">
                     <label class="filter-field filter-field-os">
-                        <span>{{ t("download.server.osLabel") }}</span>
+                        <span>{{ downloadText("osLabel") }}</span>
                         <Select v-model="selectedOs">
                             <SelectTrigger class="filter-trigger">
                                 <SelectValue />
@@ -103,7 +106,7 @@
                     </label>
 
                     <label class="filter-field filter-field-arch">
-                        <span>{{ t("download.server.archLabel") }}</span>
+                        <span>{{ downloadText("archLabel") }}</span>
                         <Select v-model="selectedArch">
                             <SelectTrigger class="filter-trigger">
                                 <SelectValue />
@@ -122,7 +125,7 @@
                     </label>
 
                     <label class="filter-field filter-field-version">
-                        <span>{{ t("download.server.versionLabel") }}</span>
+                        <span>{{ downloadText("versionLabel") }}</span>
                         <Select
                             v-model="selectedVersion"
                             :disabled="!availableVersions.length"
@@ -130,7 +133,7 @@
                             <SelectTrigger class="filter-trigger">
                                 <SelectValue
                                     :placeholder="
-                                        t('download.server.versionPending')
+                                        downloadText('versionPending')
                                     "
                                 />
                             </SelectTrigger>
@@ -151,13 +154,7 @@
                 <div class="method-hint">
                     <Info aria-hidden="true" />
                     <p>
-                        {{
-                            t(
-                                visibleInstallCommands.length
-                                    ? "download.server.methodHint.linux"
-                                    : "download.server.methodHint.standalone",
-                            )
-                        }}
+                        {{ downloadText(activeMethodHintKey) }}
                     </p>
                 </div>
 
@@ -170,16 +167,13 @@
                         <Terminal aria-hidden="true" />
                         <div>
                             <h3 id="linux-install-title">
-                                {{ t("download.server.install.title") }}
+                                {{ downloadText("install.title") }}
                             </h3>
                             <p>
                                 {{
-                                    t(
-                                        "download.server.install.description",
-                                        {
-                                            arch: selectedArchLabel,
-                                        },
-                                    )
+                                    downloadText("install.description", {
+                                        arch: selectedArchLabel,
+                                    })
                                 }}
                             </p>
                         </div>
@@ -206,12 +200,8 @@
                                     <span>
                                         {{
                                             copiedCommandId === command.id
-                                                ? t(
-                                                      "download.server.install.copied",
-                                                  )
-                                                : t(
-                                                      "download.server.install.copy",
-                                                  )
+                                                ? downloadText("install.copied")
+                                                : downloadText("install.copy")
                                         }}
                                     </span>
                                 </button>
@@ -229,10 +219,10 @@
                         <Download aria-hidden="true" />
                         <div class="binary-header-copy">
                             <h3 id="binary-download-title">
-                                {{ t("download.server.binary.title") }}
+                                {{ downloadText("binary.title") }}
                             </h3>
                             <p>
-                                {{ t("download.server.binary.description") }}
+                                {{ downloadText("binary.description") }}
                             </p>
                         </div>
                     </div>
@@ -247,13 +237,13 @@
                         aria-live="polite"
                     >
                         <p v-if="isLoadingReleases">
-                            {{ t("download.server.loading") }}
+                            {{ downloadText("loading") }}
                         </p>
                         <p v-else-if="releaseError">
                             {{ releaseError }}
                         </p>
                         <p v-else-if="!filteredReleaseFiles.length">
-                            {{ t("download.server.empty") }}
+                            {{ downloadText("empty") }}
                         </p>
                     </div>
 
@@ -278,14 +268,11 @@
                                 rel="noopener noreferrer"
                             >
                                 <Download aria-hidden="true" />
-                                <span>{{
-                                    t("download.server.download")
-                                }}</span>
+                                <span>{{ downloadText("download") }}</span>
                             </a>
                         </article>
                     </div>
                 </div>
-
             </section>
         </div>
     </main>
@@ -304,6 +291,7 @@ import {
     ExternalLink,
     Info,
     Server,
+    ShieldCheck,
     Terminal,
 } from "lucide-vue-next";
 import {
@@ -333,21 +321,63 @@ const pageMeta = computed(() =>
 const isServerDownloadPage = computed(
     () => currentDownloadPage.value === "server",
 );
+const isRmsDownloadPage = computed(() => currentDownloadPage.value === "rms");
+const hasDownloadFinder = computed(
+    () => isServerDownloadPage.value || isRmsDownloadPage.value,
+);
+const hasHeroVisual = computed(
+    () => isServerDownloadPage.value || isRmsDownloadPage.value,
+);
+const downloadTranslationKey = computed(() =>
+    isRmsDownloadPage.value ? "download.rms" : "download.server",
+);
+const downloadText = (key, params) =>
+    t(`${downloadTranslationKey.value}.${key}`, params);
 const installationGuidePath = computed(() =>
     docPath("installation", currentLocale.value),
 );
-const serverVisualMiners = computed(() => [
-    t("download.server.visual.miners"),
-    t("download.server.visual.fieldProxy"),
-    t("download.server.visual.remoteNode"),
+const heroVisualSources = computed(() => [
+    downloadText("visual.miners"),
+    downloadText("visual.fieldProxy"),
+    downloadText("visual.remoteNode"),
 ]);
 
 const repositoryOwner = "EvilGenius-dot";
-const repositoryName = "RustMinerSystem";
 const repositoryBranch = "main";
-const repositoryContentsApi = `https://api.github.com/repos/${repositoryOwner}/${repositoryName}/contents`;
-const repositoryRootUrl = `https://github.com/${repositoryOwner}/${repositoryName}`;
-const binaryDirectories = ["windows", "linux"];
+const activeRepositoryName = computed(() =>
+    isRmsDownloadPage.value ? "RMS" : "RustMinerSystem",
+);
+const repositoryContentsApi = computed(
+    () =>
+        `https://api.github.com/repos/${repositoryOwner}/${activeRepositoryName.value}/contents`,
+);
+const repositoryRootUrl = computed(
+    () => `https://github.com/${repositoryOwner}/${activeRepositoryName.value}`,
+);
+const serverBinaryDirectories = ["windows", "linux"];
+const rmsBinaryDirectoryByArch = {
+    x86: "x86_64-musl",
+    aarch64: "aarch64-musl",
+    arm: "arm-musleabi",
+    armhf: "arm-musleabihf",
+    armv7: "armv7-musleabi",
+    armv7hf: "armv7-musleabihf",
+    "windows-gui": "windows-gui",
+    "windows-cli": "windows-no-gui",
+};
+const rmsLinuxArchOptions = [
+    "x86",
+    "aarch64",
+    "arm",
+    "armhf",
+    "armv7",
+    "armv7hf",
+];
+const binaryDirectories = computed(() =>
+    isRmsDownloadPage.value
+        ? Object.values(rmsBinaryDirectoryByArch)
+        : serverBinaryDirectories,
+);
 const skippedFileExtensions = new Set([
     "md",
     "txt",
@@ -369,36 +399,68 @@ const copiedCommandId = ref("");
 const osOptions = computed(() => [
     {
         value: "linux",
-        label: t("download.server.os.linux"),
+        label: downloadText("os.linux"),
     },
+    ...(isRmsDownloadPage.value
+        ? [
+              {
+                  value: "openwrt",
+                  label: downloadText("os.openwrt"),
+              },
+          ]
+        : []),
     {
         value: "windows",
-        label: t("download.server.os.windows"),
+        label: downloadText("os.windows"),
     },
 ]);
 
-const archOptions = computed(() => ({
-    linux: [
-        {
-            value: "x86",
-            label: t("download.server.arch.x86"),
-        },
-        {
-            value: "arm",
-            label: t("download.server.arch.arm"),
-        },
-        {
-            value: "armv7",
-            label: t("download.server.arch.armv7"),
-        },
-    ],
-    windows: [
-        {
-            value: "x86",
-            label: t("download.server.arch.x86"),
-        },
-    ],
-}));
+const archOptions = computed(() => {
+    if (isRmsDownloadPage.value) {
+        const linuxOptions = rmsLinuxArchOptions.map((arch) => ({
+            value: arch,
+            label: downloadText(`arch.${arch}`),
+        }));
+
+        return {
+            linux: linuxOptions,
+            openwrt: linuxOptions,
+            windows: [
+                {
+                    value: "windows-gui",
+                    label: downloadText("arch.windowsGui"),
+                },
+                {
+                    value: "windows-cli",
+                    label: downloadText("arch.windowsCli"),
+                },
+            ],
+        };
+    }
+
+    return {
+        linux: [
+            {
+                value: "x86",
+                label: downloadText("arch.x86"),
+            },
+            {
+                value: "arm",
+                label: downloadText("arch.arm"),
+            },
+            {
+                value: "armv7",
+                label: downloadText("arch.armv7"),
+            },
+        ],
+        windows: [
+            {
+                value: "x86",
+                label: downloadText("arch.x86"),
+            },
+        ],
+    };
+});
 
 const availableArchOptions = computed(
     () => archOptions.value[selectedOs.value] || archOptions.value.linux,
@@ -418,10 +480,13 @@ const selectedArchLabel = computed(
 );
 
 const filesForSelectedPlatform = computed(() =>
-    releaseFiles.value.filter(
-        (file) =>
-            file.os === selectedOs.value && file.arch === selectedArch.value,
-    ),
+    releaseFiles.value.filter((file) => {
+        if (isRmsDownloadPage.value && selectedOs.value === "openwrt") {
+            return file.os === "linux" && file.arch === selectedArch.value;
+        }
+
+        return file.os === selectedOs.value && file.arch === selectedArch.value;
+    }),
 );
 
 const availableVersions = computed(() =>
@@ -432,7 +497,7 @@ const availableVersions = computed(() =>
 );
 
 const selectedVersionLabel = computed(
-    () => selectedVersion.value || t("download.server.versionPending"),
+    () => selectedVersion.value || downloadText("versionPending"),
 );
 
 const filteredReleaseFiles = computed(() =>
@@ -441,55 +506,99 @@ const filteredReleaseFiles = computed(() =>
     ),
 );
 
-const linuxInstallCommands = computed(() => ({
+const serverInstallCommands = computed(() => ({
     x86: [
         {
-            id: "linux-x86-primary",
-            label: t("download.server.install.line1"),
+            id: "server-linux-x86-primary",
+            label: downloadText("install.line1"),
             command:
                 "bash <(curl -s -L https://github.com/EvilGenius-dot/RustMinerSystem/raw/main/install.sh)",
         },
         {
-            id: "linux-x86-mirror",
-            label: t("download.server.install.line2"),
+            id: "server-linux-x86-mirror",
+            label: downloadText("install.line2"),
             command:
                 "bash <(curl -s -L -k https://rustminersystem.com/EvilGenius-dot/RustMinerSystem/raw/main/install.sh)",
         },
     ],
     arm: [
         {
-            id: "linux-arm",
-            label: t("download.server.install.arm"),
+            id: "server-linux-arm",
+            label: downloadText("install.arm"),
             command:
                 "bash <(curl -s -L https://github.com/EvilGenius-dot/RustMinerSystem/raw/main/arm-install.sh)",
         },
     ],
     armv7: [
         {
-            id: "linux-armv7",
-            label: t("download.server.install.armv7"),
+            id: "server-linux-armv7",
+            label: downloadText("install.armv7"),
             command:
                 "bash <(curl -s -L https://github.com/EvilGenius-dot/RustMinerSystem/raw/main/armv7-install.sh)",
         },
     ],
 }));
 
-const visibleInstallCommands = computed(() => {
-    if (selectedOs.value !== "linux") return [];
+const rmsInstallCommands = computed(() => ({
+    linux: [
+        {
+            id: "rms-linux-primary",
+            label: downloadText("install.line1"),
+            command:
+                "bash <(curl -s -L https://raw.githubusercontent.com/EvilGenius-dot/RMS/main/install.sh)",
+        },
+        {
+            id: "rms-linux-mirror",
+            label: downloadText("install.line2"),
+            command:
+                "bash <(curl -s -L -k https://rustminersystem.com/install.sh)",
+        },
+    ],
+    openwrt: [
+        {
+            id: "rms-openwrt",
+            label: downloadText("install.openwrt"),
+            command:
+                "wget -N https://rustminersystem.com/install.sh; chmod +x ./install.sh; ./install.sh",
+        },
+    ],
+}));
 
-    return linuxInstallCommands.value[selectedArch.value] || [];
+const visibleInstallCommands = computed(() => {
+    if (isRmsDownloadPage.value) {
+        return rmsInstallCommands.value[selectedOs.value] || [];
+    }
+
+    if (!isServerDownloadPage.value || selectedOs.value !== "linux") return [];
+
+    return serverInstallCommands.value[selectedArch.value] || [];
+});
+
+const activeMethodHintKey = computed(() => {
+    if (isRmsDownloadPage.value && selectedOs.value === "openwrt") {
+        return "methodHint.openwrt";
+    }
+
+    return visibleInstallCommands.value.length
+        ? "methodHint.linux"
+        : "methodHint.standalone";
 });
 
 const currentRepositoryDirectory = computed(() => {
-    const directory = binaryDirectories.includes(selectedOs.value)
-        ? selectedOs.value
-        : "linux";
+    const directory = isRmsDownloadPage.value
+        ? rmsBinaryDirectoryByArch[selectedArch.value] || "x86_64-musl"
+        : serverBinaryDirectories.includes(selectedOs.value)
+          ? selectedOs.value
+          : "linux";
+    const label = isRmsDownloadPage.value
+        ? selectedArchLabel.value
+        : selectedOsLabel.value;
 
     return {
-        label: t("download.server.openDirectory", {
-            directory: selectedOsLabel.value,
+        label: downloadText("openDirectory", {
+            directory: label,
         }),
-        href: `${repositoryRootUrl}/tree/${repositoryBranch}/${directory}`,
+        href: `${repositoryRootUrl.value}/tree/${repositoryBranch}/${directory}`,
     };
 });
 
@@ -503,13 +612,15 @@ const inferArch = (entry, os) => {
         return "armv7";
     }
 
-    if (
-        /(^|[/._-])(aarch64|arm64|arm)($|[/._-])/.test(normalizedPath)
-    ) {
+    if (/(^|[/._-])(aarch64|arm64|arm)($|[/._-])/.test(normalizedPath)) {
         return "arm";
     }
 
-    if (/(^|[/._-])(x86_64|amd64|x64|x86|i386|i686)($|[/._-])/.test(normalizedPath)) {
+    if (
+        /(^|[/._-])(x86_64|amd64|x64|x86|i386|i686)($|[/._-])/.test(
+            normalizedPath,
+        )
+    ) {
         return "x86";
     }
 
@@ -519,9 +630,11 @@ const inferArch = (entry, os) => {
 };
 
 const extractVersion = (path) => {
+    if (isRmsDownloadPage.value) return downloadText("version.rms3");
+
     const match = path.match(/(?:^|[-_.v/])(\d+(?:[-_.]\d+){1,3})(?:\D|$)/i);
 
-    if (!match) return t("download.server.unknownVersion");
+    if (!match) return downloadText("unknownVersion");
 
     return `v${match[1].replace(/[-_]/g, ".")}`;
 };
@@ -542,10 +655,12 @@ const isBinaryCandidate = (entry) => {
 };
 
 const normalizeReleaseFile = (entry) => {
+    if (isRmsDownloadPage.value) return normalizeRmsReleaseFile(entry);
+
     const os = entry.path.startsWith("windows/") ? "windows" : "linux";
     const downloadUrl =
         entry.download_url ||
-        `https://raw.githubusercontent.com/${repositoryOwner}/${repositoryName}/${repositoryBranch}/${entry.path}`;
+        `https://raw.githubusercontent.com/${repositoryOwner}/${activeRepositoryName.value}/${repositoryBranch}/${entry.path}`;
 
     return {
         arch: inferArch(entry, os),
@@ -559,13 +674,36 @@ const normalizeReleaseFile = (entry) => {
     };
 };
 
+const normalizeRmsReleaseFile = (entry) => {
+    const rootDirectory = entry.path.split("/")[0];
+    const arch =
+        Object.entries(rmsBinaryDirectoryByArch).find(
+            ([, directory]) => directory === rootDirectory,
+        )?.[0] || "x86";
+    const os = rootDirectory.startsWith("windows") ? "windows" : "linux";
+    const downloadUrl =
+        entry.download_url ||
+        `https://raw.githubusercontent.com/${repositoryOwner}/${activeRepositoryName.value}/${repositoryBranch}/${entry.path}`;
+
+    return {
+        arch,
+        downloadUrl,
+        htmlUrl: entry.html_url,
+        name: entry.name,
+        os,
+        path: entry.path,
+        size: entry.size || 0,
+        version: downloadText("version.rms3"),
+    };
+};
+
 const fetchDirectory = async (directory) => {
     const controller = new AbortController();
     const timeoutId = window.setTimeout(() => controller.abort(), 8000);
 
     try {
         const response = await fetch(
-            `${repositoryContentsApi}/${directory}?ref=${repositoryBranch}`,
+            `${repositoryContentsApi.value}/${directory}?ref=${repositoryBranch}`,
             {
                 cache: "no-store",
                 headers: {
@@ -576,14 +714,16 @@ const fetchDirectory = async (directory) => {
         );
 
         if (!response.ok) {
-            throw new Error(t("download.server.fetchError"));
+            throw new Error(downloadText("fetchError"));
         }
 
         const entries = await response.json();
 
         if (!Array.isArray(entries)) return [];
 
-        const childDirectories = entries.filter((entry) => entry.type === "dir");
+        const childDirectories = entries.filter(
+            (entry) => entry.type === "dir",
+        );
         const childFiles = entries.filter(isBinaryCandidate);
         const nestedFiles = await Promise.all(
             childDirectories.map((entry) => fetchDirectory(entry.path)),
@@ -592,7 +732,7 @@ const fetchDirectory = async (directory) => {
         return [...childFiles, ...nestedFiles.flat()];
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
-            throw new Error(t("download.server.fetchError"));
+            throw new Error(downloadText("fetchError"));
         }
 
         throw error;
@@ -602,26 +742,32 @@ const fetchDirectory = async (directory) => {
 };
 
 const loadReleaseFiles = async () => {
-    if (!isServerDownloadPage.value) return;
+    if (!hasDownloadFinder.value) return;
 
     isLoadingReleases.value = true;
     releaseError.value = "";
 
     try {
-        const directoryFiles = await Promise.all(
-            binaryDirectories.map((directory) => fetchDirectory(directory)),
+        const directoryResults = await Promise.allSettled(
+            binaryDirectories.value.map((directory) =>
+                fetchDirectory(directory),
+            ),
+        );
+        const directoryFiles = directoryResults.flatMap((result) =>
+            result.status === "fulfilled" ? result.value : [],
         );
 
+        if (!directoryFiles.length) {
+            throw new Error(downloadText("fetchError"));
+        }
+
         releaseFiles.value = directoryFiles
-            .flat()
             .map(normalizeReleaseFile)
             .sort((first, second) => second.size - first.size);
     } catch (error) {
         releaseFiles.value = [];
         releaseError.value =
-            error instanceof Error
-                ? error.message
-                : t("download.server.fetchError");
+            error instanceof Error ? error.message : downloadText("fetchError");
     } finally {
         isLoadingReleases.value = false;
     }
@@ -673,20 +819,29 @@ watch(
     { immediate: true },
 );
 
-watch(isServerDownloadPage, (isServerPage) => {
-    if (
-        isServerPage &&
-        !releaseFiles.value.length &&
-        !isLoadingReleases.value
-    ) {
+const getPreferredOs = () =>
+    typeof window !== "undefined" &&
+    window.navigator.userAgent.toLowerCase().includes("windows")
+        ? "windows"
+        : "linux";
+
+watch(currentDownloadPage, () => {
+    releaseFiles.value = [];
+    releaseError.value = "";
+    copiedCommandId.value = "";
+    selectedVersion.value = "";
+    selectedOs.value = getPreferredOs();
+
+    const archValues = availableArchOptions.value.map((option) => option.value);
+    selectedArch.value = archValues[0] || "x86";
+
+    if (hasDownloadFinder.value) {
         loadReleaseFiles();
     }
 });
 
 onMounted(() => {
-    if (window.navigator.userAgent.toLowerCase().includes("windows")) {
-        selectedOs.value = "windows";
-    }
+    selectedOs.value = getPreferredOs();
 
     loadReleaseFiles();
 });
@@ -1236,6 +1391,10 @@ h1 {
 
     .filter-field-arch {
         width: 8.25rem;
+    }
+
+    .download-finder-rms .filter-field-arch {
+        width: 11.75rem;
     }
 
     .filter-field-version {
