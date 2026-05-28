@@ -28,7 +28,7 @@ export default {
         about: {
             title: "About",
             description:
-                "Learn about RustMinerSystem, its product direction, and the operational tooling behind the project.",
+                "Learn about RustMinerSystem's product scope, software fee rates, legal disclaimer, community links, and download/deployment infrastructure support.",
         },
     },
     nav: {
@@ -615,8 +615,57 @@ export default {
     },
     about: {
         eyebrow: "About",
-        title: "A focused web surface for RustMinerSystem",
+        title: "About RustMinerSystem",
         description:
-            "The site is structured for international users, search engines, and operators who need fast access to downloads and documentation.",
+            "RustMinerSystem is software for miner, mining farm, and mining pool operations. It covers traditional pool proxying, self-hosted pool nodes, optional RMS access, downloads, deployment, and multilingual operations entry points.",
+        rates: {
+            eyebrow: "Software fee rates",
+            title: "Transparent software service rates",
+            proxy: {
+                label: "Traditional pool proxy",
+                title: "Traditional pool proxy",
+                value: "2‰",
+                text: "A 2 per mille software fee on connected hashrate for third-party mining pool proxy scenarios.",
+                textHighlight: "2 per mille",
+            },
+            poolNode: {
+                label: "Self-hosted pool node",
+                title: "Self-hosted pool node",
+                value: "1%",
+                text: "Self-hosted pool nodes use a 1% software fee rate for PoolNode real-pool operations.",
+            },
+        },
+        legal: {
+            eyebrow: "Disclaimer",
+            title: "Confirm the legal requirements in your jurisdiction before use",
+            description:
+                "These terms describe RustMinerSystem's scope, user responsibilities, and restricted regions. Using the product means you understand and accept these statements.",
+            items: {
+                1: "RustMinerSystem is governed by Hong Kong law. Legal requirements in different countries or regions may restrict this type of product and service.",
+                2: "Therefore, the product, the service, and certain features may be unavailable or restricted in certain jurisdictions, regions, or for certain users.",
+                3: "This product is not a VPN product, because it cannot enable users in disallowed regions to access prohibited content.",
+                4: "This product is miner and mining farm management software. It does not obtain miner data through improper means. Every connected device requires the device owner to actively set the miner connection address, ensuring customers using the program have informed consent.",
+                5: "You are not included on any terrorist organization or terrorist personnel list, including lists set out in United Nations Security Council resolutions.",
+                6: "You have not been restricted or prohibited from using this program by any administrative or law-enforcement agency in any country or region.",
+                7: "You are not a resident of Cuba, Iran, North Korea, Syria, or any other country or region subject to sanctions enforced by relevant governments or international organizations.",
+                8: "You are not a resident of a country or region that restricts or prohibits digital-currency-related activities, including but not limited to mainland China.",
+                9: "Your use of the services provided by this program complies with the laws, regulations, and policies of your country or region.",
+                10: "You agree that if your use of the services becomes illegal due to the laws, regulations, policies, or any other applicable law of your country or region, you will independently bear the relevant legal risks and liabilities, and unconditionally and irrevocably waive any right of recourse against this program.",
+                11: "You should understand and comply with local laws and regulations. If you use this product, you are deemed to accept the above license and statements. Legal issues caused by your use of this product are unrelated to the product itself.",
+            },
+        },
+        community: {
+            eyebrow: "Community",
+            title: "Community and support channels",
+            description:
+                "Follow project updates, release news, deployment discussions, and support conversations through GitHub, Telegram, and Discord.",
+        },
+        providers: {
+            eyebrow: "Service providers",
+            title: "Infrastructure for downloads and deployment",
+            description:
+                "RustMinerSystem relies on cloud services, network infrastructure, and code hosting platforms to provide stable downloads, deployments, and access for users worldwide.",
+            ariaLabel: "RustMinerSystem service provider list",
+        },
     },
 };
