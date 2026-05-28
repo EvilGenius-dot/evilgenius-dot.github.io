@@ -268,7 +268,7 @@
                     </article>
                 </div>
 
-                <div class="poolnode-screen-strip">
+                <!-- <div class="poolnode-screen-strip">
                     <figure
                         v-for="screen in poolNodeScreenshots"
                         :key="screen.src"
@@ -282,7 +282,7 @@
                         />
                         <figcaption>{{ screen.label }}</figcaption>
                     </figure>
-                </div>
+                </div> -->
             </section>
 
             <section
