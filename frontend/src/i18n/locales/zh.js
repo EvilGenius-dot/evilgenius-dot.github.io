@@ -54,6 +54,13 @@ export default {
             poolNode: "PoolNode 移动应用",
         },
     },
+    localePrompt: {
+        title: "切换语言？",
+        description:
+            "检测到你的浏览器语言更接近 {language}，是否切换到这个语言版本？",
+        cancel: "保持当前语言",
+        confirm: "切换到 {language}",
+    },
     footer: {
         brandLabel: "RustMinerSystem 页脚",
         navigation: "页脚导航",

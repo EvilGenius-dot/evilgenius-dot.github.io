@@ -54,6 +54,13 @@ export default {
             poolNode: "Мобильное приложение PoolNode",
         },
     },
+    localePrompt: {
+        title: "Сменить язык?",
+        description:
+            "Язык вашего браузера ближе к {language}. Хотите переключиться на эту версию?",
+        cancel: "Оставить текущий язык",
+        confirm: "Переключиться на {language}",
+    },
     footer: {
         brandLabel: "Footer RustMinerSystem",
         navigation: "Навигация footer",

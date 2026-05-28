@@ -54,6 +54,13 @@ export default {
             poolNode: "PoolNode Mobile App",
         },
     },
+    localePrompt: {
+        title: "Switch language?",
+        description:
+            "Your browser language looks closer to {language}. Would you like to switch to that version?",
+        cancel: "Keep current language",
+        confirm: "Switch to {language}",
+    },
     footer: {
         brandLabel: "RustMinerSystem footer",
         navigation: "Footer navigation",

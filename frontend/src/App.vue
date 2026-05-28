@@ -3,6 +3,7 @@
         <HeaderBar />
         <RouterView />
         <FooterBar />
+        <LocaleSuggestionDialog />
     </div>
 </template>
 
@@ -13,6 +14,7 @@ import { useHead } from "@unhead/vue";
 import { useI18n } from "vue-i18n";
 import FooterBar from "./components/FooterBar.vue";
 import HeaderBar from "./components/HeaderBar.vue";
+import LocaleSuggestionDialog from "./components/LocaleSuggestionDialog.vue";
 import {
     DEFAULT_LOCALE,
     LOCALE_META,
