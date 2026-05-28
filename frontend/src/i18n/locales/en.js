@@ -51,7 +51,7 @@ export default {
             server: "RustMinerSystem Core Server",
             rms: "RMS Secure Client",
             mobile: "RustMinerSystem Mobile App",
-            poolNode: "PoolNode App",
+            poolNode: "PoolNode Mobile App",
         },
     },
     footer: {
@@ -241,10 +241,10 @@ export default {
                     "Dedicated download page for the RustMinerSystem Mobile App. App packages and platform notes will be listed here.",
             },
             "pool-node": {
-                title: "PoolNode App Download",
-                heading: "PoolNode App",
+                title: "PoolNode Mobile App Download",
+                heading: "PoolNode Mobile App",
                 description:
-                    "PoolNodeApp is the end-user mobile app for pool nodes built on RustMinerSystem, giving pool users a mobile entry for earnings, hashrate, workers, and asset records.",
+                    "PoolNode Mobile App is the end-user mobile app for pool nodes built on RustMinerSystem, giving pool users a mobile entry for earnings, hashrate, workers, and asset records.",
             },
         },
         server: {
@@ -384,8 +384,8 @@ export default {
             downloadDescription:
                 "Android users can download the APK directly. iOS users should install from the App Store with a Hong Kong or US Apple ID.",
             visual: {
-                label: "Preview of PoolNode App earnings, hashrate, and worker screens",
-                badge: "PoolNode App",
+                label: "Preview of PoolNode Mobile App earnings, hashrate, and worker screens",
+                badge: "PoolNode Mobile App",
                 title: "End-user app for pool nodes",
                 description:
                     "Let pool users check node earnings, hashrate trends, worker status, and asset records in a familiar mining-pool app experience.",
@@ -421,16 +421,16 @@ export default {
             screens: {
                 overview: "Earnings overview",
                 overviewAlt:
-                    "PoolNode App screenshot showing earnings overview and pool-node list",
+                    "PoolNode Mobile App screenshot showing earnings overview and pool-node list",
                 hashrate: "Hashrate details",
                 hashrateAlt:
-                    "PoolNode App screenshot showing BTC hashrate details",
+                    "PoolNode Mobile App screenshot showing BTC hashrate details",
                 workers: "Worker list",
                 workersAlt:
-                    "PoolNode App screenshot showing worker list and online status",
+                    "PoolNode Mobile App screenshot showing worker list and online status",
                 assets: "Asset records",
                 assetsAlt:
-                    "PoolNode App screenshot showing asset and income records",
+                    "PoolNode Mobile App screenshot showing asset and income records",
             },
         },
     },

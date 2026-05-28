@@ -51,7 +51,7 @@ export default {
             server: "RustMinerSystem 核心服务端",
             rms: "RMS 安全客户端",
             mobile: "RustMinerSystem 移动应用",
-            poolNode: "PoolNode App",
+            poolNode: "PoolNode 移动应用",
         },
     },
     footer: {
@@ -237,10 +237,10 @@ export default {
                     "RustMinerSystem 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
             },
             "pool-node": {
-                title: "PoolNode App 下载",
-                heading: "PoolNode App",
+                title: "PoolNode 移动应用下载",
+                heading: "PoolNode 移动应用",
                 description:
-                    "PoolNodeApp 是基于 RustMinerSystem 搭建的矿池节点用户终端 APP，为矿池用户提供收益、算力、矿工与资产数据的移动端入口。",
+                    "PoolNode 移动应用是基于 RustMinerSystem 搭建的矿池节点用户终端，为矿池用户提供收益、算力、矿工与资产数据的移动端入口。",
             },
         },
         server: {
@@ -378,11 +378,11 @@ export default {
             downloadDescription:
                 "Android 用户可以直接下载 APK 安装包；iOS 用户通过 App Store 下载，安装前请确认使用港区或美区 Apple ID。",
             visual: {
-                label: "PoolNode App 收益、算力与矿工界面预览",
-                badge: "PoolNode App",
+                label: "PoolNode 移动应用收益、算力与矿工界面预览",
+                badge: "PoolNode 移动应用",
                 title: "矿池节点用户终端",
                 description:
-                    "让终端用户像使用传统矿池 App 一样查看节点收益、算力走势、矿工在线状态和资产记录。",
+                    "让终端用户像使用传统矿池移动应用一样查看节点收益、算力走势、矿工在线状态和资产记录。",
             },
             platforms: {
                 android: {
@@ -414,13 +414,13 @@ export default {
             },
             screens: {
                 overview: "收益总览",
-                overviewAlt: "PoolNode App 收益总览和矿池节点列表截图",
+                overviewAlt: "PoolNode 移动应用收益总览和矿池节点列表截图",
                 hashrate: "算力详情",
-                hashrateAlt: "PoolNode App BTC 算力详情截图",
+                hashrateAlt: "PoolNode 移动应用 BTC 算力详情截图",
                 workers: "矿工列表",
-                workersAlt: "PoolNode App 矿工列表和在线状态截图",
+                workersAlt: "PoolNode 移动应用矿工列表和在线状态截图",
                 assets: "资产记录",
-                assetsAlt: "PoolNode App 资产和收入记录截图",
+                assetsAlt: "PoolNode 移动应用资产和收入记录截图",
             },
         },
     },
