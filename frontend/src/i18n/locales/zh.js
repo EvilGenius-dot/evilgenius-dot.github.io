@@ -51,7 +51,7 @@ export default {
             server: "RustMinerSystem 核心服务端",
             rms: "RMS 安全客户端",
             mobile: "RustMinerSystem 移动应用",
-            poolNode: "PoolNode 移动应用",
+            poolNode: "PoolNode App",
         },
     },
     footer: {
@@ -237,9 +237,10 @@ export default {
                     "RustMinerSystem 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
             },
             "pool-node": {
-                title: "PoolNode 移动应用下载",
+                title: "PoolNode App 下载",
+                heading: "PoolNode App",
                 description:
-                    "PoolNode 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
+                    "PoolNodeApp 是基于 RustMinerSystem 搭建的矿池节点用户终端 APP，为矿池用户提供收益、算力、矿工与资产数据的移动端入口。",
             },
         },
         server: {
@@ -368,6 +369,58 @@ export default {
                 line2: "线路 2",
                 copy: "复制",
                 copied: "已复制",
+            },
+        },
+        poolNode: {
+            latestRelease: "Latest Release Android {android} / iOS {ios}",
+            downloadKicker: "移动端下载",
+            downloadTitle: "选择适合手机系统的安装方式",
+            downloadDescription:
+                "Android 用户可以直接下载 APK 安装包；iOS 用户通过 App Store 下载，安装前请确认使用港区或美区 Apple ID。",
+            visual: {
+                label: "PoolNode App 收益、算力与矿工界面预览",
+                badge: "PoolNode App",
+                title: "矿池节点用户终端",
+                description:
+                    "让终端用户像使用传统矿池 App 一样查看节点收益、算力走势、矿工在线状态和资产记录。",
+            },
+            platforms: {
+                android: {
+                    title: "Android APK",
+                    note: "扫码或点击按钮下载 APK。安装时如果系统提示未知来源，请根据手机安全提示允许本次安装。",
+                    button: "下载 Android APK",
+                    qrAlt: "PoolNode Android APK 下载二维码",
+                },
+                ios: {
+                    title: "iOS App Store",
+                    note: "扫码或点击按钮跳转 App Store。当前 iOS 版本需要使用港区或美区 Apple ID 获取。",
+                    button: "前往 App Store",
+                    qrAlt: "PoolNode iOS App Store 下载二维码",
+                },
+            },
+            features: {
+                node: {
+                    title: "节点收益看板",
+                    text: "聚合币种收益、预计法币价值和矿池节点数据，让用户快速掌握账户状态。",
+                },
+                worker: {
+                    title: "矿工与算力",
+                    text: "查看 10 分钟算力、24 小时算力、在线离线状态和拒绝率，方便定位异常矿工。",
+                },
+                asset: {
+                    title: "资产与记录",
+                    text: "移动端查看收入记录、支付记录和支付地址绑定，降低终端用户查询成本。",
+                },
+            },
+            screens: {
+                overview: "收益总览",
+                overviewAlt: "PoolNode App 收益总览和矿池节点列表截图",
+                hashrate: "算力详情",
+                hashrateAlt: "PoolNode App BTC 算力详情截图",
+                workers: "矿工列表",
+                workersAlt: "PoolNode App 矿工列表和在线状态截图",
+                assets: "资产记录",
+                assetsAlt: "PoolNode App 资产和收入记录截图",
             },
         },
     },

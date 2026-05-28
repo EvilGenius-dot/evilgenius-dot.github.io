@@ -51,7 +51,7 @@ export default {
             server: "RustMinerSystem Core Server",
             rms: "RMS Secure Client",
             mobile: "RustMinerSystem Mobile App",
-            poolNode: "PoolNode Mobile App",
+            poolNode: "PoolNode App",
         },
     },
     footer: {
@@ -241,9 +241,10 @@ export default {
                     "Dedicated download page for the RustMinerSystem Mobile App. App packages and platform notes will be listed here.",
             },
             "pool-node": {
-                title: "PoolNode Mobile App Download",
+                title: "PoolNode App Download",
+                heading: "PoolNode App",
                 description:
-                    "Dedicated download page for the PoolNode Mobile App. App packages and platform notes will be listed here.",
+                    "PoolNodeApp is the end-user mobile app for pool nodes built on RustMinerSystem, giving pool users a mobile entry for earnings, hashrate, workers, and asset records.",
             },
         },
         server: {
@@ -374,6 +375,62 @@ export default {
                 line2: "Line 2",
                 copy: "Copy",
                 copied: "Copied",
+            },
+        },
+        poolNode: {
+            latestRelease: "Latest Release Android {android} / iOS {ios}",
+            downloadKicker: "Mobile downloads",
+            downloadTitle: "Choose the installer for your phone",
+            downloadDescription:
+                "Android users can download the APK directly. iOS users should install from the App Store with a Hong Kong or US Apple ID.",
+            visual: {
+                label: "Preview of PoolNode App earnings, hashrate, and worker screens",
+                badge: "PoolNode App",
+                title: "End-user app for pool nodes",
+                description:
+                    "Let pool users check node earnings, hashrate trends, worker status, and asset records in a familiar mining-pool app experience.",
+            },
+            platforms: {
+                android: {
+                    title: "Android APK",
+                    note: "Scan the QR code or use the button to download the APK. If Android blocks unknown sources, follow the system prompt to allow this installation.",
+                    button: "Download Android APK",
+                    qrAlt: "QR code for downloading the PoolNode Android APK",
+                },
+                ios: {
+                    title: "iOS App Store",
+                    note: "Scan the QR code or use the button to open the App Store. The current iOS app requires a Hong Kong or US Apple ID.",
+                    button: "Open App Store",
+                    qrAlt: "QR code for opening the PoolNode iOS App Store page",
+                },
+            },
+            features: {
+                node: {
+                    title: "Node earnings dashboard",
+                    text: "Bring coin earnings, estimated fiat value, and pool-node data into one mobile view.",
+                },
+                worker: {
+                    title: "Workers and hashrate",
+                    text: "Check 10-minute hashrate, 24-hour hashrate, online status, and rejection rate to spot abnormal workers.",
+                },
+                asset: {
+                    title: "Assets and records",
+                    text: "Review income records, payout records, and payout address binding from the phone.",
+                },
+            },
+            screens: {
+                overview: "Earnings overview",
+                overviewAlt:
+                    "PoolNode App screenshot showing earnings overview and pool-node list",
+                hashrate: "Hashrate details",
+                hashrateAlt:
+                    "PoolNode App screenshot showing BTC hashrate details",
+                workers: "Worker list",
+                workersAlt:
+                    "PoolNode App screenshot showing worker list and online status",
+                assets: "Asset records",
+                assetsAlt:
+                    "PoolNode App screenshot showing asset and income records",
             },
         },
     },

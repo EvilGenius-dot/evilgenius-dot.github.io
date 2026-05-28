@@ -51,7 +51,7 @@ export default {
             server: "Основной сервер RustMinerSystem",
             rms: "Безопасный клиент RMS",
             mobile: "Мобильное приложение RustMinerSystem",
-            poolNode: "Мобильное приложение PoolNode",
+            poolNode: "PoolNode App",
         },
     },
     footer: {
@@ -240,9 +240,10 @@ export default {
                     "Отдельная страница загрузки мобильного приложения RustMinerSystem. Пакеты приложения и заметки по платформам будут добавлены здесь.",
             },
             "pool-node": {
-                title: "Скачать мобильное приложение PoolNode",
+                title: "Скачать PoolNode App",
+                heading: "PoolNode App",
                 description:
-                    "Отдельная страница загрузки мобильного приложения PoolNode. Пакеты приложения и заметки по платформам будут добавлены здесь.",
+                    "PoolNodeApp — мобильное приложение для конечных пользователей узлов пула на базе RustMinerSystem: доход, хешрейт, воркеры и записи активов в одном интерфейсе.",
             },
         },
         server: {
@@ -371,6 +372,60 @@ export default {
                 line2: "Линия 2",
                 copy: "Копировать",
                 copied: "Скопировано",
+            },
+        },
+        poolNode: {
+            latestRelease: "Latest Release Android {android} / iOS {ios}",
+            downloadKicker: "Мобильные загрузки",
+            downloadTitle: "Выберите установку для своего телефона",
+            downloadDescription:
+                "Пользователи Android могут скачать APK напрямую. Для iOS используйте App Store с аккаунтом Apple ID региона Гонконг или США.",
+            visual: {
+                label: "Превью экранов дохода, хешрейта и воркеров PoolNode App",
+                badge: "PoolNode App",
+                title: "Приложение пользователя узла пула",
+                description:
+                    "Пользователи пула могут смотреть доход узла, динамику хешрейта, статус воркеров и записи активов как в привычном приложении майнинг-пула.",
+            },
+            platforms: {
+                android: {
+                    title: "Android APK",
+                    note: "Отсканируйте QR-код или нажмите кнопку, чтобы скачать APK. Если Android предупреждает о неизвестном источнике, следуйте системной подсказке для этой установки.",
+                    button: "Скачать Android APK",
+                    qrAlt: "QR-код для скачивания Android APK PoolNode",
+                },
+                ios: {
+                    title: "iOS App Store",
+                    note: "Отсканируйте QR-код или нажмите кнопку, чтобы открыть App Store. Текущая версия iOS требует Apple ID региона Гонконг или США.",
+                    button: "Открыть App Store",
+                    qrAlt: "QR-код для открытия страницы PoolNode в iOS App Store",
+                },
+            },
+            features: {
+                node: {
+                    title: "Панель дохода узла",
+                    text: "Доход по монетам, оценка в фиатной валюте и данные узла пула собраны в одном мобильном представлении.",
+                },
+                worker: {
+                    title: "Воркеры и хешрейт",
+                    text: "Проверяйте хешрейт за 10 минут, хешрейт за 24 часа, online-статус и процент отказов для поиска проблемных воркеров.",
+                },
+                asset: {
+                    title: "Активы и записи",
+                    text: "Смотрите записи дохода, выплаты и привязку адреса выплат прямо с телефона.",
+                },
+            },
+            screens: {
+                overview: "Обзор дохода",
+                overviewAlt:
+                    "Скриншот PoolNode App с обзором дохода и списком узлов пула",
+                hashrate: "Детали хешрейта",
+                hashrateAlt: "Скриншот PoolNode App с деталями BTC хешрейта",
+                workers: "Список воркеров",
+                workersAlt:
+                    "Скриншот PoolNode App со списком воркеров и online-статусом",
+                assets: "Записи активов",
+                assetsAlt: "Скриншот PoolNode App с активами и записями дохода",
             },
         },
     },

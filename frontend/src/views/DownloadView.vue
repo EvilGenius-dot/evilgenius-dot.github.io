@@ -1,13 +1,20 @@
 <template>
-    <main id="main-content" class="download-page">
-        <div class="download-shell">
+    <main
+        id="main-content"
+        class="download-page"
+        :class="{ 'download-page-app': isPoolNodeDownloadPage }"
+    >
+        <div
+            class="download-shell"
+            :class="{ 'download-shell-app': isPoolNodeDownloadPage }"
+        >
             <article class="download-hero" aria-labelledby="download-title">
                 <div class="download-hero-copy">
                     <h1 id="download-title">
                         {{ pageMeta.heading || pageMeta.title }}
                     </h1>
                     <p class="hero-description">{{ pageMeta.description }}</p>
-                    <div v-if="hasDownloadFinder" class="hero-actions">
+                    <div v-if="hasHeroActions" class="hero-actions">
                         <RouterLink
                             :to="installationGuidePath"
                             class="guide-link"
@@ -16,6 +23,7 @@
                             <span>{{ t("download.installGuideLink") }}</span>
                         </RouterLink>
                         <span
+                            v-if="hasDownloadFinder"
                             class="latest-version-badge"
                             :class="{
                                 'latest-version-badge-error':
@@ -26,6 +34,18 @@
                             <BadgeCheck aria-hidden="true" />
                             <span>{{ latestVersionBadgeText }}</span>
                         </span>
+                        <span
+                            v-if="isPoolNodeDownloadPage"
+                            class="latest-version-badge latest-version-badge-app"
+                            :class="{
+                                'latest-version-badge-error':
+                                    latestVersionError &&
+                                    !poolNodeLatestReleaseText,
+                            }"
+                        >
+                            <BadgeCheck aria-hidden="true" />
+                            <span>{{ poolNodeLatestReleaseBadgeText }}</span>
+                        </span>
                     </div>
                 </div>
 
@@ -35,11 +55,41 @@
                     :class="{
                         'download-hero-visual-rms': isRmsDownloadPage,
                         'download-hero-visual-server': isServerDownloadPage,
+                        'download-hero-visual-app': isPoolNodeDownloadPage,
                     }"
                     role="img"
                     :aria-label="downloadText('visual.label')"
                 >
-                    <template v-if="isRmsDownloadPage">
+                    <template v-if="isPoolNodeDownloadPage">
+                        <div class="poolnode-visual-stage">
+                            <figure
+                                class="poolnode-phone poolnode-phone-primary"
+                            >
+                                <img
+                                    :src="poolNodeScreenshots[0].src"
+                                    :alt="poolNodeScreenshots[0].alt"
+                                    decoding="async"
+                                    fetchpriority="high"
+                                />
+                            </figure>
+                            <figure
+                                class="poolnode-phone poolnode-phone-secondary"
+                            >
+                                <img
+                                    :src="poolNodeScreenshots[1].src"
+                                    :alt="poolNodeScreenshots[1].alt"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
+                            </figure>
+                        </div>
+                        <div class="poolnode-visual-summary">
+                            <span>{{ downloadText("visual.badge") }}</span>
+                            <strong>{{ downloadText("visual.title") }}</strong>
+                            <p>{{ downloadText("visual.description") }}</p>
+                        </div>
+                    </template>
+                    <template v-else-if="isRmsDownloadPage">
                         <div class="rms-local-stack">
                             <span class="visual-kicker">
                                 {{ downloadText("visual.localLabel") }}
@@ -147,6 +197,93 @@
                     </template>
                 </div>
             </article>
+
+            <section
+                v-if="isPoolNodeDownloadPage"
+                class="poolnode-download-section"
+                aria-labelledby="poolnode-download-title"
+            >
+                <div class="poolnode-section-copy">
+                    <span>{{ downloadText("downloadKicker") }}</span>
+                    <h2 id="poolnode-download-title">
+                        {{ downloadText("downloadTitle") }}
+                    </h2>
+                    <p>{{ downloadText("downloadDescription") }}</p>
+                </div>
+
+                <div class="poolnode-download-grid">
+                    <article
+                        v-for="option in poolNodeDownloadOptions"
+                        :key="option.id"
+                        class="poolnode-platform-card"
+                    >
+                        <div class="poolnode-platform-heading">
+                            <span class="poolnode-platform-icon">
+                                <Smartphone aria-hidden="true" />
+                            </span>
+                            <div>
+                                <h3>{{ option.title }}</h3>
+                                <p>{{ option.versionLabel }}</p>
+                            </div>
+                        </div>
+
+                        <div class="poolnode-qr-wrap">
+                            <img
+                                :src="option.qr"
+                                :alt="option.qrAlt"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </div>
+
+                        <p class="poolnode-platform-note">
+                            {{ option.note }}
+                        </p>
+
+                        <a
+                            :href="option.href"
+                            class="poolnode-store-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Download aria-hidden="true" />
+                            <span>{{ option.buttonLabel }}</span>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="poolnode-feature-grid">
+                    <article
+                        v-for="feature in poolNodeFeatures"
+                        :key="feature.title"
+                        class="poolnode-feature-card"
+                    >
+                        <span class="poolnode-feature-icon">
+                            <component :is="feature.icon" aria-hidden="true" />
+                        </span>
+                        <div>
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.text }}</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="poolnode-screen-strip">
+                    <figure
+                        v-for="screen in poolNodeScreenshots"
+                        :key="screen.src"
+                        class="poolnode-screen-card"
+                    >
+                        <img
+                            :src="screen.src"
+                            :alt="screen.alt"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                        <figcaption>{{ screen.label }}</figcaption>
+                    </figure>
+                </div>
+            </section>
 
             <section
                 v-if="hasDownloadFinder"
@@ -402,9 +539,7 @@
                             <img
                                 :src="partner.logo"
                                 :alt="
-                                    t(
-                                        `download.partners.items.${partner.key}`,
-                                    )
+                                    t(`download.partners.items.${partner.key}`)
                                 "
                                 class="partner-logo"
                                 loading="lazy"
@@ -438,6 +573,7 @@ import {
     Network,
     Server,
     ShieldCheck,
+    Smartphone,
     Terminal,
 } from "lucide-vue-next";
 import {
@@ -468,15 +604,30 @@ const isServerDownloadPage = computed(
     () => currentDownloadPage.value === "server",
 );
 const isRmsDownloadPage = computed(() => currentDownloadPage.value === "rms");
+const isPoolNodeDownloadPage = computed(
+    () => currentDownloadPage.value === "pool-node",
+);
 const hasDownloadFinder = computed(
     () => isServerDownloadPage.value || isRmsDownloadPage.value,
 );
 const hasHeroVisual = computed(
-    () => isServerDownloadPage.value || isRmsDownloadPage.value,
+    () =>
+        isServerDownloadPage.value ||
+        isRmsDownloadPage.value ||
+        isPoolNodeDownloadPage.value,
 );
-const downloadTranslationKey = computed(() =>
-    isRmsDownloadPage.value ? "download.rms" : "download.server",
+const hasHeroActions = computed(
+    () => hasDownloadFinder.value || isPoolNodeDownloadPage.value,
 );
+const hasLatestVersionLookup = computed(
+    () => hasDownloadFinder.value || isPoolNodeDownloadPage.value,
+);
+const downloadTranslationKey = computed(() => {
+    if (isRmsDownloadPage.value) return "download.rms";
+    if (isPoolNodeDownloadPage.value) return "download.poolNode";
+
+    return "download.server";
+});
 const downloadText = (key, params) =>
     t(`${downloadTranslationKey.value}.${key}`, params);
 const installationGuidePath = computed(() =>
@@ -529,6 +680,49 @@ const partnerLinks = [
         href: "https://github.com/EvilGenius-dot",
     },
 ];
+const poolNodeAndroidDownloadUrl =
+    "https://github.com/EvilGenius-dot/RustMinerSystem/raw/refs/heads/main/APP/PoolNode/Android/PoolNode.apk";
+const poolNodeIosDownloadUrl =
+    "https://apps.apple.com/hk/app/poolnode/id6754824577";
+const poolNodeScreenshots = computed(() => [
+    {
+        src: "/image/poolnode/overview.jpg",
+        alt: downloadText("screens.overviewAlt"),
+        label: downloadText("screens.overview"),
+    },
+    {
+        src: "/image/poolnode/hashrate.jpg",
+        alt: downloadText("screens.hashrateAlt"),
+        label: downloadText("screens.hashrate"),
+    },
+    {
+        src: "/image/poolnode/workers.jpg",
+        alt: downloadText("screens.workersAlt"),
+        label: downloadText("screens.workers"),
+    },
+    {
+        src: "/image/poolnode/assets.jpg",
+        alt: downloadText("screens.assetsAlt"),
+        label: downloadText("screens.assets"),
+    },
+]);
+const poolNodeFeatures = computed(() => [
+    {
+        icon: Network,
+        title: downloadText("features.node.title"),
+        text: downloadText("features.node.text"),
+    },
+    {
+        icon: Cpu,
+        title: downloadText("features.worker.title"),
+        text: downloadText("features.worker.text"),
+    },
+    {
+        icon: ShieldCheck,
+        title: downloadText("features.asset.title"),
+        text: downloadText("features.asset.text"),
+    },
+]);
 
 const repositoryOwner = "EvilGenius-dot";
 const repositoryBranch = "main";
@@ -588,6 +782,8 @@ const copiedCommandId = ref("");
 const latestVersions = ref({
     rustminer: "4.6.7",
     rms: "3.1.10",
+    poolNodeAndroid: "1.0.1",
+    poolNodeIos: "1.0.1",
 });
 const latestVersionError = ref(false);
 const isLoadingLatestVersions = ref(false);
@@ -617,6 +813,54 @@ const latestVersionBadgeText = computed(() => {
         ? t("download.latestVersionLoading")
         : t("download.latestVersionError");
 });
+const poolNodeLatestReleaseText = computed(() => {
+    const androidVersion = formatVersion(latestVersions.value.poolNodeAndroid);
+    const iosVersion = formatVersion(latestVersions.value.poolNodeIos);
+
+    if (!androidVersion && !iosVersion) return "";
+
+    return t("download.poolNode.latestRelease", {
+        android: androidVersion || t("download.latestVersionPending"),
+        ios: iosVersion || t("download.latestVersionPending"),
+    });
+});
+const poolNodeLatestReleaseBadgeText = computed(() => {
+    if (poolNodeLatestReleaseText.value) return poolNodeLatestReleaseText.value;
+
+    return isLoadingLatestVersions.value
+        ? t("download.latestVersionLoading")
+        : t("download.latestVersionError");
+});
+const poolNodeDownloadOptions = computed(() => [
+    {
+        id: "android",
+        title: downloadText("platforms.android.title"),
+        versionLabel: t("download.latestVersion", {
+            version:
+                formatVersion(latestVersions.value.poolNodeAndroid) ||
+                t("download.latestVersionPending"),
+        }),
+        note: downloadText("platforms.android.note"),
+        buttonLabel: downloadText("platforms.android.button"),
+        href: poolNodeAndroidDownloadUrl,
+        qr: "/image/poolnode/android-qr.png",
+        qrAlt: downloadText("platforms.android.qrAlt"),
+    },
+    {
+        id: "ios",
+        title: downloadText("platforms.ios.title"),
+        versionLabel: t("download.latestVersion", {
+            version:
+                formatVersion(latestVersions.value.poolNodeIos) ||
+                t("download.latestVersionPending"),
+        }),
+        note: downloadText("platforms.ios.note"),
+        buttonLabel: downloadText("platforms.ios.button"),
+        href: poolNodeIosDownloadUrl,
+        qr: "/image/poolnode/ios-qr.png",
+        qrAlt: downloadText("platforms.ios.qrAlt"),
+    },
+]);
 
 const osOptions = computed(() => [
     {
@@ -905,7 +1149,7 @@ const getReleaseVersionLabel = (file) =>
         : file.version;
 
 const loadLatestVersions = async () => {
-    if (!hasDownloadFinder.value || isLoadingLatestVersions.value) return;
+    if (!hasLatestVersionLookup.value || isLoadingLatestVersions.value) return;
 
     isLoadingLatestVersions.value = true;
     latestVersionError.value = false;
@@ -933,6 +1177,14 @@ const loadLatestVersions = async () => {
                     : typeof manifest.rms === "string"
                       ? manifest.rms
                       : latestVersions.value.rms,
+            poolNodeAndroid:
+                typeof manifest.PoolNodeAndroidVersion === "string"
+                    ? manifest.PoolNodeAndroidVersion
+                    : latestVersions.value.poolNodeAndroid,
+            poolNodeIos:
+                typeof manifest.PoolNodeIosVersion === "string"
+                    ? manifest.PoolNodeIosVersion
+                    : latestVersions.value.poolNodeIos,
         };
     } catch {
         latestVersionError.value = true;
@@ -1079,8 +1331,11 @@ watch(currentDownloadPage, () => {
     const archValues = availableArchOptions.value.map((option) => option.value);
     selectedArch.value = archValues[0] || "x86";
 
-    if (hasDownloadFinder.value) {
+    if (hasLatestVersionLookup.value) {
         loadLatestVersions();
+    }
+
+    if (hasDownloadFinder.value) {
         loadReleaseFiles();
     }
 });
@@ -1107,6 +1362,27 @@ onMounted(() => {
     min-height: calc(100vh - 4rem);
     padding: clamp(4rem, 9vw, 8rem) 1rem;
     width: 100%;
+}
+
+.download-page-app {
+    background-image:
+        radial-gradient(
+            circle at 78% 12%,
+            rgb(124 58 237 / 18%),
+            transparent 30rem
+        ),
+        radial-gradient(
+            circle at 16% 34%,
+            rgb(34 197 94 / 10%),
+            transparent 26rem
+        ),
+        linear-gradient(
+            180deg,
+            color-mix(in oklab, #2c3437 42%, transparent) 0%,
+            color-mix(in oklab, #2c3437 0%, transparent) 48.32%
+        );
+    padding-top: clamp(3rem, 6vw, 5.5rem);
+    place-items: start center;
 }
 
 .download-shell {
@@ -1236,6 +1512,34 @@ h1 {
         linear-gradient(135deg, rgb(56 189 248 / 8%), transparent 38%),
         linear-gradient(180deg, rgb(13 18 28 / 80%), rgb(9 14 22 / 88%));
     overflow: hidden;
+}
+
+.download-hero-visual-app {
+    background:
+        radial-gradient(
+            circle at 24% 12%,
+            rgb(124 58 237 / 24%),
+            transparent 36%
+        ),
+        radial-gradient(
+            circle at 88% 72%,
+            rgb(34 197 94 / 18%),
+            transparent 32%
+        ),
+        linear-gradient(180deg, rgb(23 25 48 / 88%), rgb(8 12 26 / 94%));
+    border-color: rgb(139 92 246 / 24%);
+    overflow: hidden;
+    position: relative;
+}
+
+.download-hero-visual-app::before {
+    background:
+        linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 9%)),
+        linear-gradient(180deg, rgb(124 58 237 / 0%), rgb(124 58 237 / 18%));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
 }
 
 .visual-kicker {
@@ -1569,6 +1873,263 @@ h1 {
     color: var(--color-green-300);
     height: 1rem;
     width: 1rem;
+}
+
+.poolnode-visual-stage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 22rem;
+    position: relative;
+    z-index: 1;
+}
+
+.poolnode-phone {
+    background: rgb(5 8 18);
+    border: 1px solid rgb(255 255 255 / 12%);
+    box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 42%);
+    margin: 0;
+    overflow: hidden;
+}
+
+.poolnode-phone img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.poolnode-phone-primary {
+    aspect-ratio: 415 / 900;
+    border-radius: 30px;
+    width: min(58%, 13.25rem);
+    z-index: 2;
+}
+
+.poolnode-phone-secondary {
+    aspect-ratio: 415 / 900;
+    border-radius: 26px;
+    opacity: 0.74;
+    position: absolute;
+    right: -0.25rem;
+    top: 2rem;
+    transform: rotate(5deg);
+    width: min(44%, 10rem);
+    z-index: 1;
+}
+
+.poolnode-visual-summary {
+    background: rgb(5 8 18 / 68%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.375rem;
+    padding: 0.875rem;
+    position: relative;
+    z-index: 1;
+}
+
+.poolnode-visual-summary span {
+    color: rgb(167 139 250);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.poolnode-visual-summary strong {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    line-height: 1.25;
+}
+
+.poolnode-visual-summary p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.poolnode-download-section {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.poolnode-section-copy {
+    display: grid;
+    gap: 0.625rem;
+    max-width: 52rem;
+}
+
+.poolnode-section-copy span {
+    color: rgb(167 139 250);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.poolnode-section-copy h2 {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.poolnode-section-copy p {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.poolnode-download-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.poolnode-platform-card {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 5%), transparent),
+        rgb(10 13 29 / 78%);
+    border: 1px solid rgb(139 92 246 / 20%);
+    border-radius: 8px;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.poolnode-platform-heading {
+    align-items: center;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+.poolnode-platform-icon,
+.poolnode-feature-icon {
+    align-items: center;
+    background: rgb(124 58 237 / 16%);
+    border: 1px solid rgb(167 139 250 / 20%);
+    border-radius: 8px;
+    color: rgb(196 181 253);
+    display: inline-flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+}
+
+.poolnode-platform-icon svg,
+.poolnode-feature-icon svg {
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+.poolnode-platform-heading h3,
+.poolnode-feature-card h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.25rem;
+}
+
+.poolnode-platform-heading p,
+.poolnode-feature-card p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.poolnode-qr-wrap {
+    background: var(--color-white);
+    border-radius: 8px;
+    justify-self: center;
+    padding: 0.75rem;
+    width: min(100%, 13.5rem);
+}
+
+.poolnode-qr-wrap img {
+    aspect-ratio: 1;
+    display: block;
+    object-fit: contain;
+    width: 100%;
+}
+
+.poolnode-platform-note {
+    color: var(--color-neutral-300);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.poolnode-store-link {
+    align-items: center;
+    background: var(--color-green-400);
+    border-radius: 6px;
+    color: rgb(3 7 18);
+    display: inline-flex;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    gap: 0.5rem;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
+
+.poolnode-store-link:hover,
+.poolnode-store-link:focus-visible {
+    background: var(--color-green-300);
+    outline: none;
+}
+
+.poolnode-store-link svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.poolnode-feature-grid {
+    display: grid;
+    gap: 0.875rem;
+}
+
+.poolnode-feature-card {
+    align-items: start;
+    background: rgb(9 14 22 / 64%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 1rem;
+}
+
+.poolnode-screen-strip {
+    display: grid;
+    gap: 0.875rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.poolnode-screen-card {
+    background: rgb(9 14 22 / 64%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.poolnode-screen-card img {
+    aspect-ratio: 415 / 900;
+    display: block;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.poolnode-screen-card figcaption {
+    color: var(--color-neutral-300);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.35;
+    padding: 0.75rem;
 }
 
 .download-finder {
@@ -2051,6 +2612,22 @@ h1 {
         grid-template-columns: minmax(0, 1fr) auto;
     }
 
+    .poolnode-download-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .poolnode-feature-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .poolnode-feature-card {
+        grid-template-columns: 1fr;
+    }
+
+    .poolnode-screen-strip {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .partner-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -2072,6 +2649,14 @@ h1 {
         padding: 1.25rem;
     }
 
+    .download-shell-app {
+        max-width: 78rem;
+    }
+
+    .download-page-app .download-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(24rem, 31rem);
+    }
+
     .download-finder {
         padding: 1.5rem;
     }
@@ -2090,9 +2675,17 @@ h1 {
         max-width: 76rem;
     }
 
+    .download-shell-app {
+        max-width: 84rem;
+    }
+
     .download-hero {
         gap: 3rem;
         grid-template-columns: minmax(0, 1fr) minmax(24rem, 28rem);
+    }
+
+    .download-page-app .download-hero {
+        grid-template-columns: minmax(0, 1fr) minmax(29rem, 34rem);
     }
 
     h1 {
