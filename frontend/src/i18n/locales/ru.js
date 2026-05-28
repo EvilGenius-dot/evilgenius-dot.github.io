@@ -61,9 +61,31 @@ export default {
         community: "Сообщество",
         github: "GitHub",
         telegram: "Telegram",
+        telegramEnglish: "Telegram (английский)",
+        telegramRussian: "Telegram (русский)",
         discord: "Discord",
+        miningPoolPartners: {
+            title: "Партнерские майнинг-пулы",
+            items: {
+                viabtc: "ViaBTC",
+                f2pool: "F2Pool",
+                antpool: "AntPool",
+                poolin: "Poolin",
+            },
+        },
+        infrastructurePartners: {
+            title: "Партнеры облачной и сетевой инфраструктуры",
+            items: {
+                vultr: "Vultr",
+                aws: "Amazon AWS",
+                azure: "Microsoft Azure",
+                aliyun: "Alibaba Cloud International",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         description:
-            "RustMinerSystem — операционная точка входа для подключения майнинга: proxy сторонних пулов, настоящий пул PoolNode и опциональный зашифрованный канал сжатия RMS можно сочетать под разные схемы площадки.",
+            "RustMinerSystem создан для операторов, которым нужен не просто pool proxy: направляйте майнеров в сторонние пулы с явным fee-skimming, запускайте настоящий PoolNode с комиссией на уровне расчетов и подключайте RMS, когда канал или публичные соединения становятся узким местом.",
         copyright: "© {year} RustMinerSystem. Все права защищены.",
     },
     home: {
@@ -184,6 +206,21 @@ export default {
         latestVersionLoading: "Latest Release",
         latestVersionError: "Latest Release unavailable",
         latestVersionPending: "Latest Release",
+        partners: {
+            kicker: "Поддержка экосистемы",
+            title: "Инфраструктура для загрузок и развертывания",
+            description:
+                "RustMinerSystem использует облачные сервисы, сетевую инфраструктуру и платформы хостинга кода для надежных загрузок, развертывания и глобального доступа.",
+            ariaLabel: "Список партнеров RustMinerSystem",
+            items: {
+                vultr: "Vultr",
+                aws: "Amazon AWS",
+                azure: "Microsoft Azure",
+                aliyun: "Alibaba Cloud International",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         pages: {
             server: {
                 title: "Скачать основной сервер RustMinerSystem",

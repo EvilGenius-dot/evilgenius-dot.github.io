@@ -61,9 +61,31 @@ export default {
         community: "社区",
         github: "GitHub",
         telegram: "Telegram",
+        telegramEnglish: "Telegram（英文）",
+        telegramRussian: "Telegram（俄语）",
         discord: "Discord",
+        miningPoolPartners: {
+            title: "矿池合作伙伴",
+            items: {
+                viabtc: "ViaBTC",
+                f2pool: "F2Pool",
+                antpool: "AntPool",
+                poolin: "Poolin",
+            },
+        },
+        infrastructurePartners: {
+            title: "全球云与网络基础设施合作商",
+            items: {
+                vultr: "Vultr",
+                aws: "亚马逊 AWS",
+                azure: "微软云 Azure",
+                aliyun: "阿里云国际",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         description:
-            "RustMinerSystem 是面向矿场接入的运维入口：第三方矿池 Proxy、PoolNode 真矿池与可选 RMS 加密压缩链路，可按不同部署场景组合使用。",
+            "RustMinerSystem 不只是矿池代理入口：它能把矿机接入第三方矿池并按策略完成收益与费率分配，也能通过 PoolNode 搭建真正的自有矿池，在结算层管理费率；当带宽和公网连接成为瓶颈时，可叠加 RMS 加密压缩链路，把部署、分配和运维收拢到同一套系统。",
         copyright: "© {year} RustMinerSystem. 保留所有权利。",
     },
     home: {
@@ -181,6 +203,21 @@ export default {
         latestVersionLoading: "Latest Release",
         latestVersionError: "Latest Release unavailable",
         latestVersionPending: "Latest Release",
+        partners: {
+            kicker: "生态支持",
+            title: "下载与部署基础设施支持",
+            description:
+                "RustMinerSystem 结合云服务、网络基础设施与代码托管平台，为全球用户提供稳定的下载、部署与访问体验。",
+            ariaLabel: "RustMinerSystem 合作伙伴列表",
+            items: {
+                vultr: "Vultr",
+                aws: "亚马逊 AWS",
+                azure: "微软云 Azure",
+                aliyun: "阿里云国际",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         pages: {
             server: {
                 title: "RustMinerSystem 核心服务端下载",

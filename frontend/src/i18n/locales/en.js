@@ -61,9 +61,31 @@ export default {
         community: "Community",
         github: "GitHub",
         telegram: "Telegram",
+        telegramEnglish: "Telegram (English)",
+        telegramRussian: "Telegram (Russian)",
         discord: "Discord",
+        miningPoolPartners: {
+            title: "Mining Pool Partners",
+            items: {
+                viabtc: "ViaBTC",
+                f2pool: "F2Pool",
+                antpool: "AntPool",
+                poolin: "Poolin",
+            },
+        },
+        infrastructurePartners: {
+            title: "Cloud and Network Infrastructure Partners",
+            items: {
+                vultr: "Vultr",
+                aws: "Amazon AWS",
+                azure: "Microsoft Azure",
+                aliyun: "Alibaba Cloud International",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         description:
-            "RustMinerSystem is an operations entry point for mining access: combine third-party pool Proxy, PoolNode real-pool deployment, and optional RMS encrypted compression for different site topologies.",
+            "RustMinerSystem is built for operators who need more than a pool proxy: route miners to third-party pools with explicit hashrate skimming rules, launch a real PoolNode with settlement-layer fees, and add RMS encrypted compression when bandwidth or public connections become the bottleneck.",
         copyright: "© {year} RustMinerSystem. All rights reserved.",
     },
     home: {
@@ -185,6 +207,21 @@ export default {
         latestVersionLoading: "Latest Release",
         latestVersionError: "Latest Release unavailable",
         latestVersionPending: "Latest Release",
+        partners: {
+            kicker: "Ecosystem support",
+            title: "Infrastructure for downloads and deployment",
+            description:
+                "RustMinerSystem works with cloud services, network infrastructure, and code hosting platforms to support reliable downloads, deployments, and global access.",
+            ariaLabel: "RustMinerSystem partner list",
+            items: {
+                vultr: "Vultr",
+                aws: "Amazon AWS",
+                azure: "Microsoft Azure",
+                aliyun: "Alibaba Cloud International",
+                cloudflare: "Cloudflare",
+                github: "GitHub",
+            },
+        },
         pages: {
             server: {
                 title: "RustMinerSystem Core Server Download",

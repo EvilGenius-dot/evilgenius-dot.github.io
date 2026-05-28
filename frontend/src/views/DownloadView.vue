@@ -372,6 +372,51 @@
                     </div>
                 </div>
             </section>
+
+            <section
+                v-if="hasDownloadFinder"
+                class="download-partners"
+                aria-labelledby="download-partners-title"
+            >
+                <div class="partners-copy">
+                    <span>{{ t("download.partners.kicker") }}</span>
+                    <h2 id="download-partners-title">
+                        {{ t("download.partners.title") }}
+                    </h2>
+                    <p>{{ t("download.partners.description") }}</p>
+                </div>
+
+                <div
+                    class="partner-grid"
+                    :aria-label="t('download.partners.ariaLabel')"
+                >
+                    <a
+                        v-for="partner in partnerLinks"
+                        :key="partner.key"
+                        :href="partner.href"
+                        class="partner-card"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="partner-logo-frame">
+                            <img
+                                :src="partner.logo"
+                                :alt="
+                                    t(
+                                        `download.partners.items.${partner.key}`,
+                                    )
+                                "
+                                class="partner-logo"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        </span>
+                        <span class="partner-name">
+                            {{ t(`download.partners.items.${partner.key}`) }}
+                        </span>
+                    </a>
+                </div>
+            </section>
         </div>
     </main>
 </template>
@@ -452,6 +497,38 @@ const rmsVisualCapabilities = computed(() => [
     downloadText("visual.encryption"),
     downloadText("visual.connectionPool"),
 ]);
+const partnerLinks = [
+    {
+        key: "vultr",
+        logo: "/image/partners/vultr.svg",
+        href: "https://www.vultr.com/",
+    },
+    {
+        key: "aws",
+        logo: "/image/partners/aws.svg",
+        href: "https://aws.amazon.com/",
+    },
+    {
+        key: "azure",
+        logo: "/image/partners/azure.svg",
+        href: "https://azure.microsoft.com/",
+    },
+    {
+        key: "aliyun",
+        logo: "/image/partners/aliyun.svg",
+        href: "https://www.alibabacloud.com/",
+    },
+    {
+        key: "cloudflare",
+        logo: "/image/partners/cloudflare.svg",
+        href: "https://www.cloudflare.com/",
+    },
+    {
+        key: "github",
+        logo: "/image/partners/github.svg",
+        href: "https://github.com/EvilGenius-dot",
+    },
+];
 
 const repositoryOwner = "EvilGenius-dot";
 const repositoryBranch = "main";
@@ -1821,6 +1898,103 @@ h1 {
     outline: none;
 }
 
+.download-partners {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    display: grid;
+    gap: 1.125rem;
+    justify-items: center;
+    padding-top: 1.75rem;
+}
+
+.partners-copy {
+    display: grid;
+    gap: 0.625rem;
+    justify-items: center;
+    max-width: 46rem;
+    text-align: center;
+}
+
+.partners-copy span {
+    color: var(--color-green-300);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.partners-copy h2 {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.partners-copy p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.partner-grid {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 4%), transparent),
+        rgb(9 14 22 / 54%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.partner-card {
+    align-items: center;
+    background: rgb(255 255 255 / 3%);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: var(--color-neutral-200);
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+    min-height: 6.25rem;
+    padding: 0.875rem 0.75rem;
+    text-decoration: none;
+}
+
+.partner-card:hover,
+.partner-card:focus-visible {
+    border-color: rgb(74 222 128 / 42%);
+    color: var(--color-white);
+    outline: none;
+}
+
+.partner-logo-frame {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 2.75rem;
+    width: 100%;
+}
+
+.partner-logo {
+    display: block;
+    height: 2.25rem;
+    max-width: 9.25rem;
+    object-fit: contain;
+    width: 100%;
+}
+
+.partner-name {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    justify-self: center;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    text-align: center;
+}
+
 @media (min-width: 720px) {
     .download-page {
         padding-inline: 1.5rem;
@@ -1876,6 +2050,10 @@ h1 {
     .release-row {
         grid-template-columns: minmax(0, 1fr) auto;
     }
+
+    .partner-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1896,6 +2074,14 @@ h1 {
 
     .download-finder {
         padding: 1.5rem;
+    }
+
+    .partner-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .partner-card {
+        min-height: 6.75rem;
     }
 }
 

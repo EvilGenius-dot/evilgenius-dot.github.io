@@ -43,6 +43,46 @@
                 </section>
 
                 <section class="footer-group">
+                    <h2>{{ t("footer.miningPoolPartners.title") }}</h2>
+                    <a
+                        v-for="item in miningPoolPartners"
+                        :key="item.label"
+                        :href="item.href"
+                        class="footer-link partner-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            :src="item.iconSrc"
+                            alt=""
+                            class="partner-icon"
+                            aria-hidden="true"
+                        />
+                        <span>{{ item.label }}</span>
+                    </a>
+                </section>
+
+                <section class="footer-group">
+                    <h2>{{ t("footer.infrastructurePartners.title") }}</h2>
+                    <a
+                        v-for="item in infrastructurePartners"
+                        :key="item.label"
+                        :href="item.href"
+                        class="footer-link partner-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            :src="item.iconSrc"
+                            alt=""
+                            class="partner-icon"
+                            aria-hidden="true"
+                        />
+                        <span>{{ item.label }}</span>
+                    </a>
+                </section>
+
+                <section class="footer-group">
                     <h2>{{ t("footer.community") }}</h2>
                     <a
                         v-for="item in communityLinks"
@@ -143,6 +183,62 @@ const flatDownloadLinks = computed(() =>
     downloadGroups.value.flatMap((group) => group.items),
 );
 
+const miningPoolPartners = computed(() => [
+    {
+        label: t("footer.miningPoolPartners.items.viabtc"),
+        href: "https://www.viabtc.com/",
+        iconSrc: "/image/viabtc.png",
+    },
+    {
+        label: t("footer.miningPoolPartners.items.f2pool"),
+        href: "https://www.f2pool.com/",
+        iconSrc: "/image/f2pool.png",
+    },
+    {
+        label: t("footer.miningPoolPartners.items.antpool"),
+        href: "https://www.antpool.com/",
+        iconSrc: "/image/antpool.png",
+    },
+    {
+        label: t("footer.miningPoolPartners.items.poolin"),
+        href: "https://www.poolin.com/",
+        iconSrc: "/image/poolin.svg",
+    },
+]);
+
+const infrastructurePartners = computed(() => [
+    {
+        label: t("footer.infrastructurePartners.items.vultr"),
+        href: "https://www.vultr.com/",
+        iconSrc: "/image/partners/vultr.svg",
+    },
+    {
+        label: t("footer.infrastructurePartners.items.aws"),
+        href: "https://aws.amazon.com/",
+        iconSrc: "/image/partners/aws.svg",
+    },
+    {
+        label: t("footer.infrastructurePartners.items.azure"),
+        href: "https://azure.microsoft.com/",
+        iconSrc: "/image/partners/azure.svg",
+    },
+    {
+        label: t("footer.infrastructurePartners.items.aliyun"),
+        href: "https://www.alibabacloud.com/",
+        iconSrc: "/image/partners/aliyun.svg",
+    },
+    {
+        label: t("footer.infrastructurePartners.items.cloudflare"),
+        href: "https://www.cloudflare.com/",
+        iconSrc: "/image/partners/cloudflare.svg",
+    },
+    {
+        label: t("footer.infrastructurePartners.items.github"),
+        href: "https://github.com/",
+        iconSrc: "/image/partners/github.svg",
+    },
+]);
+
 const communityLinks = computed(() => [
     {
         label: t("footer.github"),
@@ -152,6 +248,16 @@ const communityLinks = computed(() => [
     {
         label: t("footer.telegram"),
         href: "https://t.me/rustkt",
+        icon: PaperAirplaneIcon,
+    },
+    {
+        label: t("footer.telegramEnglish"),
+        href: "https://t.me/rustkt/55515",
+        icon: PaperAirplaneIcon,
+    },
+    {
+        label: t("footer.telegramRussian"),
+        href: "https://t.me/rustkt/55517",
         icon: PaperAirplaneIcon,
     },
     {
@@ -257,8 +363,9 @@ const communityLinks = computed(() => [
     font-size: var(--text-sm);
     font-weight: var(--font-weight-medium);
     gap: 0.375rem;
-    min-height: 2.25rem;
-    padding: 0 0.625rem;
+    margin-inline-start: -0.5rem;
+    min-height: 2rem;
+    padding: 0 0.5rem;
     text-decoration: none;
     transition:
         background-color 150ms ease,
@@ -275,8 +382,15 @@ const communityLinks = computed(() => [
     outline: none;
 }
 
-.external-link {
-    padding-right: 0.5rem;
+.partner-link {
+    color: var(--color-neutral-400);
+}
+
+.partner-icon {
+    flex: 0 0 auto;
+    height: 1rem;
+    object-fit: contain;
+    width: 1.25rem;
 }
 
 .icon-xs {
@@ -318,11 +432,11 @@ const communityLinks = computed(() => [
 @media (min-width: 1024px) {
     .footer-shell {
         align-items: start;
-        grid-template-columns: minmax(18rem, 1fr) minmax(28rem, 1.35fr);
+        grid-template-columns: minmax(18rem, 0.7fr) minmax(42rem, 1.8fr);
     }
 
     .footer-nav {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 }
 </style>
