@@ -23,7 +23,7 @@ export default {
         customized: {
             title: "定制版本",
             description:
-                "为第三方矿池 Proxy、PoolNode 真矿池、品牌应用与高级运维需求定制 RustMinerSystem 版本。",
+                "制作用于推广的定制版 RustMiner，配套管理后台、安装统计、内抽比例配置、热更新与付费托管部署能力。",
         },
         about: {
             title: "关于",
@@ -452,22 +452,153 @@ export default {
         },
     },
     customized: {
-        eyebrow: "定制交付",
-        title: "RustMinerSystem 定制版本",
+        eyebrow: "定制版 RustMiner",
+        title: "制作属于你的 RustMiner 定制版本",
         description:
-            "规划第三方矿池 Proxy 策略、PoolNode 真矿池费率、品牌化应用、部署自动化与区域化引导流程。",
+            "客户可以免费或付费制作定制版 RustMiner，用自己的品牌名称、LOGO 和页面信息推广客户端。每个定制者都会获得管理后台，用于查看安装统计、管理内置抽水比例，并支持比例配置热更新。",
+        hero: {
+            primaryCta: "联系定制",
+            secondaryCta: "查看版本方案",
+            previewLabel: "定制版管理后台预览",
+            previewTitle: "Customized RustMiner Dashboard",
+            previewAlt: "定制版 RustMiner 管理后台统计数据预览",
+            previewBadge: "总控后台",
+            previewCaption:
+                "RustMinerSystem 定制版总控后台用于集中查看安装统计、客户端数量、活跃设备、算力走势与内抽配置，帮助定制者持续管理自己的推广版本。",
+            metrics: {
+                editions: {
+                    label: "可选版本",
+                    value: "免费 / 付费",
+                },
+                fee: {
+                    label: "内抽配置",
+                    value: "比例热更新",
+                },
+                hosting: {
+                    label: "程序托管",
+                    value: "付费版支持",
+                },
+            },
+        },
+        pointsEyebrow: "核心能力",
+        pointsTitle: "从品牌推广到后台运营都能覆盖",
+        pointsDescription:
+            "定制版不是简单改名打包，而是围绕推广、统计、内抽策略和部署更新建立一套可持续运营的工具链。",
         points: {
+            dashboard: {
+                title: "管理后台",
+                text: "定制者可查看别人安装的 RustMiner 统计信息，掌握客户端推广后的真实使用情况。",
+            },
+            fee: {
+                title: "内抽比例管理",
+                text: "可随时配置自己的内置抽水比例，配置变更支持热更新，不需要重新发包。",
+            },
             branding: {
-                title: "品牌打包",
-                text: "让应用名称、视觉资产与导航标签匹配你的团队或矿池身份。",
+                title: "品牌信息定制",
+                text: "支持修改软件名称、底部信息和 LOGO，让定制版 RustMiner 更适合你的推广入口。",
             },
-            integrations: {
-                title: "策略集成",
-                text: "把算力分配、第三方矿池钱包目标、PoolNode 费率和节点看板接入现有运营系统。",
+            hosting: {
+                title: "一键部署与程序托管",
+                text: "付费版包含远程安装脚本和托管程序，发布或更新后远程程序同步更新，省去自己维护部署脚本。",
             },
-            localization: {
-                title: "本地化上线",
-                text: "基于同一路由感知的翻译基础，同时发布英文、中文与俄语内容。",
+            client: {
+                title: "客户端页面深度定制",
+                text: "高级版支持按你的业务流程进一步定制客户端页面，而不只停留在基础品牌替换。",
+            },
+            rms: {
+                title: "定制 RMS",
+                text: "高级版可定制 RMS 配套能力，适合需要完整品牌链路和更深接入形态的团队。",
+            },
+        },
+        plans: {
+            eyebrow: "版本方案",
+            title: "选择适合推广阶段的定制版本",
+            description:
+                "免费版覆盖基础品牌替换和后台能力；基础付费版加入部署托管；高级付费版面向需要深度客户端页面和定制 RMS 的长期项目。",
+            included: "支持",
+            excluded: "不支持",
+            minerRequirementLabel: "矿机数量要求",
+            tiers: {
+                free: {
+                    name: "免费定制版",
+                    badge: "免费起步",
+                    description:
+                        "适合先验证定制版推广效果，保留管理后台和基础品牌修改。",
+                    price: "0 USD",
+                    period: "免费申请",
+                    minerRequirement: ">1000 台矿机",
+                    cta: "申请免费定制",
+                },
+                basic: {
+                    name: "基础付费版",
+                    badge: "托管部署",
+                    description:
+                        "适合希望省去远程安装脚本和程序托管维护成本的推广者。",
+                    price: "88 USD",
+                    period: "/ 月",
+                    minerRequirement: "不需要",
+                    cta: "开通基础版",
+                },
+                advanced: {
+                    name: "高级付费版",
+                    badge: "深度定制",
+                    description:
+                        "适合需要深度客户端页面、定制 RMS 和长期完整品牌链路的团队。",
+                    price: "18888 USD",
+                    period: "/ 永久",
+                    minerRequirement: "不需要",
+                    cta: "咨询高级定制",
+                },
+            },
+        },
+        features: {
+            admin: {
+                title: "管理后台",
+                text: "查看定制版安装和运行统计。",
+            },
+            name: {
+                title: "修改软件名称",
+                text: "将 RustMiner 命名为你的品牌版本。",
+            },
+            footer: {
+                title: "修改底部信息",
+                text: "替换底部展示内容和推广信息。",
+            },
+            logo: {
+                title: "修改 LOGO",
+                text: "使用自己的图标和视觉资产。",
+            },
+            hosting: {
+                title: "一键部署、程序托管",
+                text: "包含远程安装脚本，发布及更新会同步远程托管程序。",
+            },
+            client: {
+                title: "深度定制化客户端页面",
+                text: "按推广或业务流程定制客户端界面。",
+            },
+            rms: {
+                title: "定制 RMS",
+                text: "定制配套 RMS 客户端能力。",
+            },
+        },
+        delivery: {
+            eyebrow: "交付流程",
+            title: "先完成基础定制，再按版本扩展部署和深度能力",
+            description:
+                "页面将定制范围拆成品牌信息、后台权限、托管部署和深度客户端能力，方便客户快速理解每个版本的差异。",
+            steps: {
+                scope: {
+                    title: "确认品牌资料",
+                    text: "收集软件名称、LOGO、底部信息以及需要展示的推广内容。",
+                },
+                package: {
+                    title: "生成定制版本",
+                    text: "完成定制版 RustMiner 打包，并开通对应的管理后台权限。",
+                },
+                operate: {
+                    title: "配置内抽并运营",
+                    text: "在后台查看安装统计，调整内置抽水比例，并通过热更新下发配置。",
+                },
             },
         },
     },

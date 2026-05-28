@@ -23,7 +23,7 @@ export default {
         customized: {
             title: "Customized Version",
             description:
-                "Request a tailored RustMinerSystem build for third-party pool proxying, PoolNode real-pool mode, branded applications, and advanced operations.",
+                "Create a branded RustMiner build with an admin dashboard, install statistics, built-in fee-ratio management, hot updates, and paid hosted deployment options.",
         },
         about: {
             title: "About",
@@ -462,22 +462,154 @@ export default {
         },
     },
     customized: {
-        eyebrow: "Custom delivery",
-        title: "Customized RustMinerSystem versions",
+        eyebrow: "Custom RustMiner builds",
+        title: "Create your own branded RustMiner version",
         description:
-            "Plan third-party pool proxy strategies, PoolNode real-pool fee rules, branded applications, deployment automation, and region-specific onboarding flows.",
+            "Customers can create free or paid custom RustMiner builds to promote their own branded version. Every customizer receives an admin dashboard for install statistics, built-in fee-ratio management, and hot updates for fee configuration changes.",
+        hero: {
+            primaryCta: "Request customization",
+            secondaryCta: "View plans",
+            previewLabel: "Custom admin dashboard preview",
+            previewTitle: "Customized RustMiner Dashboard",
+            previewAlt:
+                "Preview of the custom RustMiner admin dashboard statistics",
+            previewBadge: "Master dashboard",
+            previewCaption:
+                "The RustMinerSystem custom-edition master dashboard centralizes install statistics, client counts, active devices, hashrate trends, and built-in fee configuration so customizers can keep operating their promoted version.",
+            metrics: {
+                editions: {
+                    label: "Available editions",
+                    value: "Free / Paid",
+                },
+                fee: {
+                    label: "Fee settings",
+                    value: "Hot updates",
+                },
+                hosting: {
+                    label: "Program hosting",
+                    value: "Paid plans",
+                },
+            },
+        },
+        pointsEyebrow: "Core capabilities",
+        pointsTitle: "Built for branding, promotion, and operations",
+        pointsDescription:
+            "A custom version is more than a renamed package. It gives customizers a practical operating loop for promotion, statistics, built-in fee strategy, deployment, and updates.",
         points: {
+            dashboard: {
+                title: "Admin dashboard",
+                text: "Customizers can view statistics from installed RustMiner clients and understand real usage after promotion.",
+            },
+            fee: {
+                title: "Built-in fee-ratio management",
+                text: "Configure your own built-in fee ratio at any time. Changes support hot updates without repackaging.",
+            },
             branding: {
-                title: "Brand packaging",
-                text: "Align app names, visual assets, and navigation labels with your team or pool identity.",
+                title: "Brand customization",
+                text: "Change the software name, footer information, and logo so the custom RustMiner matches your promotion channel.",
             },
-            integrations: {
-                title: "Strategy integrations",
-                text: "Connect hashrate allocation, third-party pool wallet targets, PoolNode fees, and node dashboards to your existing operations systems.",
+            hosting: {
+                title: "One-click deployment and hosting",
+                text: "Paid editions include remote install scripts and hosted programs that update whenever a release or custom update is published.",
             },
-            localization: {
-                title: "Localized rollout",
-                text: "Ship English, Chinese, and Russian copy from the same route-aware translation foundation.",
+            client: {
+                title: "Deep client page customization",
+                text: "The advanced edition supports deeper client UI customization around your own workflow, beyond simple branding changes.",
+            },
+            rms: {
+                title: "Custom RMS",
+                text: "The advanced edition can customize RMS companion capabilities for teams that need a complete branded access path.",
+            },
+        },
+        plans: {
+            eyebrow: "Plans",
+            title: "Choose the right custom edition for your promotion stage",
+            description:
+                "The free edition covers branding and the admin dashboard. The basic paid edition adds hosted deployment. The advanced edition is for long-term projects that need deep client pages and custom RMS.",
+            included: "Included",
+            excluded: "Not included",
+            minerRequirementLabel: "Miner requirement",
+            tiers: {
+                free: {
+                    name: "Free custom edition",
+                    badge: "Start free",
+                    description:
+                        "Good for testing promotion with the admin dashboard and essential brand changes.",
+                    price: "0 USD",
+                    period: "Free request",
+                    minerRequirement: ">1000 miners",
+                    cta: "Request free edition",
+                },
+                basic: {
+                    name: "Basic paid edition",
+                    badge: "Hosted deployment",
+                    description:
+                        "For promoters who want remote install scripts and hosted program updates maintained for them.",
+                    price: "88 USD",
+                    period: "/ month",
+                    minerRequirement: "Not required",
+                    cta: "Start basic",
+                },
+                advanced: {
+                    name: "Advanced paid edition",
+                    badge: "Deep customization",
+                    description:
+                        "For teams that need custom client pages, custom RMS, and a long-term branded product path.",
+                    price: "18888 USD",
+                    period: "/ lifetime",
+                    minerRequirement: "Not required",
+                    cta: "Discuss advanced",
+                },
+            },
+        },
+        features: {
+            admin: {
+                title: "Admin dashboard",
+                text: "View custom build install and runtime statistics.",
+            },
+            name: {
+                title: "Change software name",
+                text: "Rename RustMiner as your branded edition.",
+            },
+            footer: {
+                title: "Change footer information",
+                text: "Replace footer content and promotion details.",
+            },
+            logo: {
+                title: "Change logo",
+                text: "Use your own icon and visual assets.",
+            },
+            hosting: {
+                title: "One-click deployment and hosting",
+                text: "Includes remote install scripts and hosted program updates for releases and custom updates.",
+            },
+            client: {
+                title: "Deep client page customization",
+                text: "Customize client pages around your promotion or workflow.",
+            },
+            rms: {
+                title: "Custom RMS",
+                text: "Customize the companion RMS client capabilities.",
+            },
+        },
+        delivery: {
+            eyebrow: "Delivery flow",
+            title: "Start with branding, then expand into hosting and deeper capabilities",
+            description:
+                "The page separates brand information, admin access, hosted deployment, and deep client capabilities so customers can understand the plan differences quickly.",
+            steps: {
+                scope: {
+                    title: "Confirm brand assets",
+                    text: "Collect the software name, logo, footer information, and promotion content for the custom build.",
+                },
+                package: {
+                    title: "Generate the custom build",
+                    text: "Package the custom RustMiner build and enable the matching admin dashboard access.",
+                },
+                operate: {
+                    title: "Configure fees and operate",
+                    text: "Use the dashboard to view install statistics, adjust the built-in fee ratio, and hot-update the configuration.",
+                },
             },
         },
     },
