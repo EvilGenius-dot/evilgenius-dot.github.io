@@ -50,7 +50,7 @@ export default {
         downloads: {
             server: "RustMinerSystem Core Server",
             rms: "RMS Secure Client",
-            mobile: "RustMinerSystem Mobile App",
+            mobile: "RustMinerApp Mobile App",
             poolNode: "PoolNode Mobile App",
         },
     },
@@ -243,15 +243,73 @@ export default {
                     "RMS is the local secure client for tunneling, data compression, encryption, and public connection compression. Choose the system, architecture, or Windows variant, then install with a command or deploy a standalone file manually.",
             },
             mobile: {
-                title: "RustMinerSystem Mobile App Download",
+                title: "RustMinerApp Download",
+                heading: "RustMinerApp",
                 description:
-                    "Dedicated download page for the RustMinerSystem Mobile App. App packages and platform notes will be listed here.",
+                    "RustMinerApp is the mobile operations console for RustMinerSystem, designed for checking pool proxy, PoolNode, server status, ports, wallets, and worker hashrate data. The app is not live yet, so this page currently presents interface previews and platform status.",
             },
             "pool-node": {
                 title: "PoolNode Mobile App Download",
                 heading: "PoolNode Mobile App",
                 description:
                     "PoolNode Mobile App is the end-user mobile app for pool nodes built on RustMinerSystem, giving pool users a mobile entry for earnings, hashrate, workers, and asset records.",
+            },
+        },
+        rustMinerApp: {
+            comingSoonBadge: "App not live yet",
+            downloadKicker: "Mobile app preview",
+            downloadTitle: "RustMinerApp is being prepared for release",
+            downloadDescription:
+                "This page is open first as a preview. Install packages, store links, and QR codes will be added after the public release. The screenshots below come from the mobile interface in preparation and show the main pool proxy and pool-node management views.",
+            visual: {
+                label: "Preview of RustMinerApp pool proxy, pool node, and worker detail screens",
+                badge: "RustMinerApp mobile console",
+                title: "RustMinerSystem operations from your phone",
+                description:
+                    "Check ports, servers, system load, live hashrate, worker details, and wallet data from a phone whenever you need to confirm pool proxy or pool-node status.",
+            },
+            platforms: {
+                ios: {
+                    title: "iOS",
+                    status: "Coming soon",
+                    note: "The App Store link is being prepared and will be placed here after release.",
+                },
+                android: {
+                    title: "Android",
+                    status: "Coming soon",
+                    note: "The APK package is being prepared. The download link and QR code will be placed here after release.",
+                },
+            },
+            features: {
+                proxy: {
+                    title: "Pool proxy overview",
+                    text: "View BTC live hashrate, online devices, port status, and TCP, TLS/SSL, RMS access types.",
+                },
+                worker: {
+                    title: "Worker and hashrate details",
+                    text: "Open a port or device to inspect 24-hour hashrate curves, wallets, efficiency, uptime, and rejected shares.",
+                },
+                system: {
+                    title: "Server status",
+                    text: "Review server lists, system load, CPU, disk, memory, program version, and runtime.",
+                },
+            },
+            screens: {
+                ariaLabel: "RustMinerApp interface preview screenshots",
+                dashboard: "Pool proxy overview",
+                dashboardAlt:
+                    "RustMinerApp screenshot showing pool proxy overview and port list",
+                servers: "Server list",
+                serversAlt: "RustMinerApp screenshot showing server list",
+                system: "System information",
+                systemAlt:
+                    "RustMinerApp screenshot showing system information and server load",
+                worker: "Worker list",
+                workerAlt:
+                    "RustMinerApp screenshot showing worker list and 24-hour hashrate",
+                device: "Device details",
+                deviceAlt:
+                    "RustMinerApp screenshot showing device details, wallet, and hashrate statistics",
             },
         },
         server: {

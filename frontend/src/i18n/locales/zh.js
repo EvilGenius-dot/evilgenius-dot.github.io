@@ -50,7 +50,7 @@ export default {
         downloads: {
             server: "RustMinerSystem 核心服务端",
             rms: "RMS 安全客户端",
-            mobile: "RustMinerSystem 移动应用",
+            mobile: "RustMinerApp 移动应用",
             poolNode: "PoolNode 移动应用",
         },
     },
@@ -239,15 +239,69 @@ export default {
                     "RMS 是部署在矿场本地的安全客户端，用于本地隧道、数据压缩、加密与公网连接数压缩。选择系统、架构或 Windows 版本后，可使用命令安装，也可以下载独立文件手动部署。",
             },
             mobile: {
-                title: "RustMinerSystem 移动应用下载",
+                title: "RustMinerApp 下载",
+                heading: "RustMinerApp",
                 description:
-                    "RustMinerSystem 移动应用的专属下载页面，后续将用于放置应用安装包与平台说明。",
+                    "RustMinerApp 是面向 RustMinerSystem 运维的移动端控制台，用于查看矿池代理、矿池节点、服务器状态、端口、钱包和矿工算力数据。应用暂未正式上线，页面先展示界面预览与平台状态。",
             },
             "pool-node": {
                 title: "PoolNode 移动应用下载",
                 heading: "PoolNode 移动应用",
                 description:
                     "PoolNode 移动应用是基于 RustMinerSystem 搭建的矿池节点用户终端，为矿池用户提供收益、算力、矿工与资产数据的移动端入口。",
+            },
+        },
+        rustMinerApp: {
+            comingSoonBadge: "应用暂未上线",
+            downloadKicker: "移动应用预览",
+            downloadTitle: "RustMinerApp 正在准备上线",
+            downloadDescription:
+                "当前先开放页面预览，安装包、商店链接和二维码会在正式发布后补齐。页面中的截图来自正在准备的移动端界面，用于展示矿池代理与矿池节点的主要管理视图。",
+            visual: {
+                label: "RustMinerApp 矿池代理、矿池节点与矿工详情界面预览",
+                badge: "RustMinerApp 移动控制台",
+                title: "把 RustMinerSystem 运维带到手机上",
+                description:
+                    "从手机查看端口、服务器、系统负载、实时算力、矿工详情和钱包数据，适合随时确认矿池代理与矿池节点状态。",
+            },
+            platforms: {
+                ios: {
+                    title: "iOS",
+                    status: "暂未上线",
+                    note: "App Store 链接准备中，正式发布后会在这里放置下载入口。",
+                },
+                android: {
+                    title: "Android",
+                    status: "暂未上线",
+                    note: "APK 安装包准备中，正式发布后会在这里放置下载入口与二维码。",
+                },
+            },
+            features: {
+                proxy: {
+                    title: "矿池代理总览",
+                    text: "查看 BTC 实时算力、在线设备、端口状态和 TCP、TLS/SSL、RMS 等接入类型。",
+                },
+                worker: {
+                    title: "矿工与算力详情",
+                    text: "进入单个端口或设备，查看 24 小时算力曲线、钱包、效率、在线时长和拒绝份额。",
+                },
+                system: {
+                    title: "服务器状态",
+                    text: "查看服务器列表、系统负载、CPU、硬盘、内存、程序版本和运行时长。",
+                },
+            },
+            screens: {
+                ariaLabel: "RustMinerApp 界面预览截图",
+                dashboard: "矿池代理总览",
+                dashboardAlt: "RustMinerApp 矿池代理总览和端口列表截图",
+                servers: "服务器列表",
+                serversAlt: "RustMinerApp 服务器列表截图",
+                system: "系统信息",
+                systemAlt: "RustMinerApp 系统信息和服务器负载截图",
+                worker: "矿工列表",
+                workerAlt: "RustMinerApp 矿工列表和 24 小时算力截图",
+                device: "设备详情",
+                deviceAlt: "RustMinerApp 设备详情、钱包和算力统计截图",
             },
         },
         server: {

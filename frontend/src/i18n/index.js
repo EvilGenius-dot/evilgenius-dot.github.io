@@ -55,7 +55,7 @@ export const DOWNLOAD_PAGES = [
     },
     {
         id: "mobile",
-        slug: "rustminersystem-mobile-app",
+        slug: "rustminerapp-mobile-app",
     },
     {
         id: "pool-node",

@@ -2,11 +2,14 @@
     <main
         id="main-content"
         class="download-page"
-        :class="{ 'download-page-app': isPoolNodeDownloadPage }"
+        :class="{
+            'download-page-app': isMobileAppDownloadPage,
+            'download-page-rustminerapp': isRustMinerAppDownloadPage,
+        }"
     >
         <div
             class="download-shell"
-            :class="{ 'download-shell-app': isPoolNodeDownloadPage }"
+            :class="{ 'download-shell-app': isMobileAppDownloadPage }"
         >
             <article class="download-hero" aria-labelledby="download-title">
                 <div class="download-hero-copy">
@@ -16,12 +19,20 @@
                     <p class="hero-description">{{ pageMeta.description }}</p>
                     <div v-if="hasHeroActions" class="hero-actions">
                         <RouterLink
+                            v-if="!isRustMinerAppDownloadPage"
                             :to="installationGuidePath"
                             class="guide-link"
                         >
                             <BookOpen aria-hidden="true" />
                             <span>{{ t("download.installGuideLink") }}</span>
                         </RouterLink>
+                        <span
+                            v-if="isRustMinerAppDownloadPage"
+                            class="latest-version-badge latest-version-badge-app rustminerapp-status-badge"
+                        >
+                            <Info aria-hidden="true" />
+                            <span>{{ downloadText("comingSoonBadge") }}</span>
+                        </span>
                         <span
                             v-if="hasDownloadFinder"
                             class="latest-version-badge"
@@ -55,12 +66,45 @@
                     :class="{
                         'download-hero-visual-rms': isRmsDownloadPage,
                         'download-hero-visual-server': isServerDownloadPage,
-                        'download-hero-visual-app': isPoolNodeDownloadPage,
+                        'download-hero-visual-app': isMobileAppDownloadPage,
+                        'download-hero-visual-rustminerapp':
+                            isRustMinerAppDownloadPage,
                     }"
                     role="img"
                     :aria-label="downloadText('visual.label')"
                 >
-                    <template v-if="isPoolNodeDownloadPage">
+                    <template v-if="isRustMinerAppDownloadPage">
+                        <div class="rustminerapp-visual-stage">
+                            <figure
+                                v-for="screen in rustMinerAppHeroScreens"
+                                :key="screen.src"
+                                class="rustminerapp-phone"
+                                :class="`rustminerapp-phone-${screen.slot}`"
+                            >
+                                <img
+                                    :src="screen.src"
+                                    :alt="screen.alt"
+                                    :loading="
+                                        screen.slot === 'primary'
+                                            ? undefined
+                                            : 'lazy'
+                                    "
+                                    :fetchpriority="
+                                        screen.slot === 'primary'
+                                            ? 'high'
+                                            : undefined
+                                    "
+                                    decoding="async"
+                                />
+                            </figure>
+                        </div>
+                        <div class="rustminerapp-visual-summary">
+                            <span>{{ downloadText("visual.badge") }}</span>
+                            <strong>{{ downloadText("visual.title") }}</strong>
+                            <p>{{ downloadText("visual.description") }}</p>
+                        </div>
+                    </template>
+                    <template v-else-if="isPoolNodeDownloadPage">
                         <div class="poolnode-visual-stage">
                             <figure
                                 class="poolnode-phone poolnode-phone-primary"
@@ -197,6 +241,55 @@
                     </template>
                 </div>
             </article>
+
+            <section
+                v-if="isRustMinerAppDownloadPage"
+                class="rustminerapp-download-section"
+                aria-labelledby="rustminerapp-download-title"
+            >
+                <div class="rustminerapp-section-copy">
+                    <span>{{ downloadText("downloadKicker") }}</span>
+                    <h2 id="rustminerapp-download-title">
+                        {{ downloadText("downloadTitle") }}
+                    </h2>
+                    <p>{{ downloadText("downloadDescription") }}</p>
+                </div>
+
+                <div class="rustminerapp-platform-grid">
+                    <article
+                        v-for="platform in rustMinerAppPlatformStatuses"
+                        :key="platform.id"
+                        class="rustminerapp-platform-card"
+                    >
+                        <span class="rustminerapp-platform-icon">
+                            <Smartphone aria-hidden="true" />
+                        </span>
+                        <div>
+                            <h3>{{ platform.title }}</h3>
+                            <p>{{ platform.note }}</p>
+                        </div>
+                        <span class="rustminerapp-platform-state">
+                            {{ platform.status }}
+                        </span>
+                    </article>
+                </div>
+
+                <div class="rustminerapp-feature-grid">
+                    <article
+                        v-for="feature in rustMinerAppFeatures"
+                        :key="feature.title"
+                        class="rustminerapp-feature-card"
+                    >
+                        <span class="rustminerapp-feature-icon">
+                            <component :is="feature.icon" aria-hidden="true" />
+                        </span>
+                        <div>
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.text }}</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
             <section
                 v-if="isPoolNodeDownloadPage"
@@ -511,7 +604,7 @@
             </section>
 
             <section
-                v-if="hasDownloadFinder"
+                v-if="hasDownloadFinder || isRustMinerAppDownloadPage"
                 class="download-partners"
                 aria-labelledby="download-partners-title"
             >
@@ -604,8 +697,14 @@ const isServerDownloadPage = computed(
     () => currentDownloadPage.value === "server",
 );
 const isRmsDownloadPage = computed(() => currentDownloadPage.value === "rms");
+const isRustMinerAppDownloadPage = computed(
+    () => currentDownloadPage.value === "mobile",
+);
 const isPoolNodeDownloadPage = computed(
     () => currentDownloadPage.value === "pool-node",
+);
+const isMobileAppDownloadPage = computed(
+    () => isRustMinerAppDownloadPage.value || isPoolNodeDownloadPage.value,
 );
 const hasDownloadFinder = computed(
     () => isServerDownloadPage.value || isRmsDownloadPage.value,
@@ -614,16 +713,17 @@ const hasHeroVisual = computed(
     () =>
         isServerDownloadPage.value ||
         isRmsDownloadPage.value ||
-        isPoolNodeDownloadPage.value,
+        isMobileAppDownloadPage.value,
 );
 const hasHeroActions = computed(
-    () => hasDownloadFinder.value || isPoolNodeDownloadPage.value,
+    () => hasDownloadFinder.value || isMobileAppDownloadPage.value,
 );
 const hasLatestVersionLookup = computed(
     () => hasDownloadFinder.value || isPoolNodeDownloadPage.value,
 );
 const downloadTranslationKey = computed(() => {
     if (isRmsDownloadPage.value) return "download.rms";
+    if (isRustMinerAppDownloadPage.value) return "download.rustMinerApp";
     if (isPoolNodeDownloadPage.value) return "download.poolNode";
 
     return "download.server";
@@ -680,6 +780,76 @@ const partnerLinks = [
         href: "https://github.com/EvilGenius-dot",
     },
 ];
+const rustMinerAppScreenshots = computed(() => [
+    {
+        src: "/image/rustminerapp1.png",
+        alt: downloadText("screens.dashboardAlt"),
+        label: downloadText("screens.dashboard"),
+    },
+    {
+        src: "/image/rustminerapp2.png",
+        alt: downloadText("screens.serversAlt"),
+        label: downloadText("screens.servers"),
+    },
+    {
+        src: "/image/rustminerapp3.png",
+        alt: downloadText("screens.systemAlt"),
+        label: downloadText("screens.system"),
+    },
+    {
+        src: "/image/rustminerapp4.png",
+        alt: downloadText("screens.workerAlt"),
+        label: downloadText("screens.worker"),
+    },
+    {
+        src: "/image/rustminerapp5.png",
+        alt: downloadText("screens.deviceAlt"),
+        label: downloadText("screens.device"),
+    },
+]);
+const rustMinerAppHeroScreens = computed(() =>
+    [
+        rustMinerAppScreenshots.value[0],
+        rustMinerAppScreenshots.value[3],
+        rustMinerAppScreenshots.value[4],
+    ]
+        .filter(Boolean)
+        .map((screen, index) => ({
+            ...screen,
+            slot: ["primary", "secondary", "tertiary"][index],
+        })),
+);
+const rustMinerAppPlatformStatuses = computed(() => [
+    {
+        id: "ios",
+        title: downloadText("platforms.ios.title"),
+        status: downloadText("platforms.ios.status"),
+        note: downloadText("platforms.ios.note"),
+    },
+    {
+        id: "android",
+        title: downloadText("platforms.android.title"),
+        status: downloadText("platforms.android.status"),
+        note: downloadText("platforms.android.note"),
+    },
+]);
+const rustMinerAppFeatures = computed(() => [
+    {
+        icon: Network,
+        title: downloadText("features.proxy.title"),
+        text: downloadText("features.proxy.text"),
+    },
+    {
+        icon: Cpu,
+        title: downloadText("features.worker.title"),
+        text: downloadText("features.worker.text"),
+    },
+    {
+        icon: ShieldCheck,
+        title: downloadText("features.system.title"),
+        text: downloadText("features.system.text"),
+    },
+]);
 const poolNodeAndroidDownloadUrl =
     "https://github.com/EvilGenius-dot/RustMinerSystem/raw/refs/heads/main/APP/PoolNode/Android/PoolNode.apk";
 const poolNodeIosDownloadUrl =
@@ -1385,6 +1555,13 @@ onMounted(() => {
     place-items: start center;
 }
 
+.download-page-rustminerapp {
+    background-image:
+        linear-gradient(90deg, rgb(163 255 18 / 7%), transparent 38%),
+        linear-gradient(270deg, rgb(56 189 248 / 7%), transparent 42%),
+        linear-gradient(180deg, rgb(13 18 28 / 96%), rgb(3 7 18) 58%);
+}
+
 .download-shell {
     display: grid;
     gap: 1.75rem;
@@ -1532,6 +1709,14 @@ h1 {
     position: relative;
 }
 
+.download-hero-visual-rustminerapp {
+    background:
+        linear-gradient(135deg, rgb(163 255 18 / 12%), transparent 42%),
+        linear-gradient(225deg, rgb(56 189 248 / 10%), transparent 46%),
+        linear-gradient(180deg, rgb(7 10 16 / 96%), rgb(3 7 18 / 96%));
+    border-color: rgb(163 255 18 / 22%);
+}
+
 .download-hero-visual-app::before {
     background:
         linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 9%)),
@@ -1540,6 +1725,12 @@ h1 {
     inset: 0;
     pointer-events: none;
     position: absolute;
+}
+
+.download-hero-visual-rustminerapp::before {
+    background:
+        linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 7%)),
+        linear-gradient(180deg, rgb(163 255 18 / 0%), rgb(163 255 18 / 8%));
 }
 
 .visual-kicker {
@@ -1873,6 +2064,199 @@ h1 {
     color: var(--color-green-300);
     height: 1rem;
     width: 1rem;
+}
+
+.rustminerapp-status-badge {
+    background: rgb(163 255 18 / 10%);
+    border-color: rgb(163 255 18 / 18%);
+    color: rgb(217 255 125);
+}
+
+.rustminerapp-visual-stage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 25rem;
+    position: relative;
+    z-index: 1;
+}
+
+.rustminerapp-phone {
+    aspect-ratio: 1206 / 2622;
+    background: var(--color-black, #000);
+    border: 1px solid rgb(255 255 255 / 14%);
+    box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 46%);
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.rustminerapp-phone img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.rustminerapp-phone-primary {
+    border-radius: 30px;
+    position: relative;
+    width: min(56%, 13.75rem);
+    z-index: 3;
+}
+
+.rustminerapp-phone-secondary {
+    border-radius: 26px;
+    bottom: 1rem;
+    left: 0.375rem;
+    opacity: 0.76;
+    transform: rotate(-5deg);
+    width: min(42%, 10.75rem);
+    z-index: 2;
+}
+
+.rustminerapp-phone-tertiary {
+    border-radius: 26px;
+    opacity: 0.72;
+    right: 0.375rem;
+    top: 1rem;
+    transform: rotate(5deg);
+    width: min(42%, 10.75rem);
+    z-index: 1;
+}
+
+.rustminerapp-visual-summary {
+    background: rgb(2 6 23 / 72%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.375rem;
+    padding: 0.875rem;
+    position: relative;
+    z-index: 1;
+}
+
+.rustminerapp-visual-summary span {
+    color: rgb(217 255 125);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.rustminerapp-visual-summary strong {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    line-height: 1.25;
+}
+
+.rustminerapp-visual-summary p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.rustminerapp-download-section {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.rustminerapp-section-copy {
+    display: grid;
+    gap: 0.625rem;
+    max-width: 52rem;
+}
+
+.rustminerapp-section-copy span {
+    color: rgb(217 255 125);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.rustminerapp-section-copy h2 {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.rustminerapp-section-copy p {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.rustminerapp-platform-grid,
+.rustminerapp-feature-grid {
+    display: grid;
+    gap: 0.875rem;
+}
+
+.rustminerapp-platform-card,
+.rustminerapp-feature-card {
+    align-items: start;
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 5%), transparent),
+        rgb(9 14 22 / 68%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 1rem;
+}
+
+.rustminerapp-platform-card {
+    align-items: center;
+}
+
+.rustminerapp-platform-icon,
+.rustminerapp-feature-icon {
+    align-items: center;
+    background: rgb(163 255 18 / 12%);
+    border: 1px solid rgb(163 255 18 / 18%);
+    border-radius: 8px;
+    color: rgb(217 255 125);
+    display: inline-flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+}
+
+.rustminerapp-platform-icon svg,
+.rustminerapp-feature-icon svg {
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+.rustminerapp-platform-card h3,
+.rustminerapp-feature-card h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.25rem;
+}
+
+.rustminerapp-platform-card p,
+.rustminerapp-feature-card p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.rustminerapp-platform-state {
+    background: rgb(56 189 248 / 10%);
+    border: 1px solid rgb(125 211 252 / 16%);
+    border-radius: 999px;
+    color: var(--color-sky-200, #bae6fd);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    grid-column: 2;
+    justify-self: start;
+    line-height: 1.35;
+    padding: 0.375rem 0.625rem;
 }
 
 .poolnode-visual-stage {
@@ -2614,6 +2998,18 @@ h1 {
 
     .poolnode-download-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rustminerapp-platform-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rustminerapp-feature-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .rustminerapp-feature-card {
+        grid-template-columns: 1fr;
     }
 
     .poolnode-feature-grid {
