@@ -103,13 +103,6 @@
                         <span>{{ plan.period }}</span>
                     </div>
 
-                    <div class="plan-requirement">
-                        <span>{{
-                            t("customized.plans.minerRequirementLabel")
-                        }}</span>
-                        <strong>{{ plan.minerRequirement }}</strong>
-                    </div>
-
                     <a
                         :href="contactHref"
                         class="plan-cta"
@@ -192,7 +185,7 @@ import {
     X,
 } from "lucide-vue-next";
 
-const { t } = useI18n();
+const { t, te } = useI18n();
 
 const contactHref = "https://t.me/rustkt";
 
@@ -245,10 +238,12 @@ const points = computed(() => [
 ]);
 
 const featureKeys = [
+    "noMinerLimit",
     "admin",
     "name",
     "footer",
     "logo",
+    "officialClientStyle",
     "hosting",
     "client",
     "rms",
@@ -263,7 +258,15 @@ const tierDefinitions = [
     {
         id: "basic",
         featured: true,
-        included: ["admin", "name", "footer", "logo", "hosting"],
+        included: [
+            "admin",
+            "name",
+            "footer",
+            "logo",
+            "noMinerLimit",
+            "officialClientStyle",
+            "hosting",
+        ],
     },
     {
         id: "advanced",
@@ -273,12 +276,22 @@ const tierDefinitions = [
             "name",
             "footer",
             "logo",
+            "noMinerLimit",
+            "officialClientStyle",
             "hosting",
             "client",
             "rms",
         ],
     },
 ];
+
+const getFeatureText = (featureKey, tierId) => {
+    const tierTextKey = `customized.features.${featureKey}.tiers.${tierId}`;
+
+    return te(tierTextKey)
+        ? t(tierTextKey)
+        : t(`customized.features.${featureKey}.text`);
+};
 
 const plans = computed(() =>
     tierDefinitions.map((tier) => ({
@@ -289,13 +302,10 @@ const plans = computed(() =>
         description: t(`customized.plans.tiers.${tier.id}.description`),
         price: t(`customized.plans.tiers.${tier.id}.price`),
         period: t(`customized.plans.tiers.${tier.id}.period`),
-        minerRequirement: t(
-            `customized.plans.tiers.${tier.id}.minerRequirement`,
-        ),
         cta: t(`customized.plans.tiers.${tier.id}.cta`),
         features: featureKeys.map((key) => ({
             title: t(`customized.features.${key}.title`),
-            text: t(`customized.features.${key}.text`),
+            text: getFeatureText(key, tier.id),
             included: tier.included.includes(key),
         })),
     })),
@@ -659,34 +669,6 @@ h3 {
     color: var(--color-neutral-500);
     font-size: var(--text-sm);
     font-weight: var(--font-weight-medium);
-}
-
-.plan-requirement {
-    align-items: center;
-    background: rgb(255 255 255 / 4%);
-    border: 1px solid rgb(255 255 255 / 10%);
-    border-radius: 8px;
-    display: flex;
-    gap: 0.75rem;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-    min-height: 2.5rem;
-    padding: 0.625rem 0.75rem;
-}
-
-.plan-requirement span {
-    color: var(--color-neutral-500);
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.35;
-}
-
-.plan-requirement strong {
-    color: var(--color-neutral-100);
-    font-size: var(--text-sm);
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.35;
-    text-align: right;
 }
 
 .plan-features {

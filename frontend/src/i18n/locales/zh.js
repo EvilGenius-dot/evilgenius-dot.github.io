@@ -578,7 +578,6 @@ export default {
                 "免费版覆盖基础品牌替换和后台能力；基础付费版加入部署托管；高级付费版面向需要深度客户端页面和定制 RMS 的长期项目。",
             included: "支持",
             excluded: "不支持",
-            minerRequirementLabel: "矿机数量要求",
             tiers: {
                 free: {
                     name: "免费定制版",
@@ -587,7 +586,6 @@ export default {
                         "适合先验证定制版推广效果，保留管理后台和基础品牌修改。",
                     price: "0 USD",
                     period: "免费申请",
-                    minerRequirement: ">1000 台矿机",
                     cta: "申请免费定制",
                 },
                 basic: {
@@ -597,7 +595,6 @@ export default {
                         "适合希望省去远程安装脚本和程序托管维护成本的推广者。",
                     price: "88 USD",
                     period: "/ 月",
-                    minerRequirement: "不需要",
                     cta: "开通基础版",
                 },
                 advanced: {
@@ -607,12 +604,19 @@ export default {
                         "适合需要深度客户端页面、定制 RMS 和长期完整品牌链路的团队。",
                     price: "18888 USD",
                     period: "/ 永久",
-                    minerRequirement: "不需要",
                     cta: "咨询高级定制",
                 },
             },
         },
         features: {
+            noMinerLimit: {
+                title: "无矿机数量限制",
+                tiers: {
+                    free: "免费版需要 >1000 台矿机",
+                    basic: "不需要矿机数量限制",
+                    advanced: "不需要矿机数量限制",
+                },
+            },
             admin: {
                 title: "管理后台",
                 text: "查看定制版安装和运行统计。",
@@ -628,6 +632,14 @@ export default {
             logo: {
                 title: "修改 LOGO",
                 text: "使用自己的图标和视觉资产。",
+            },
+            officialClientStyle: {
+                title: "可选官方版客户端样式",
+                tiers: {
+                    free: "仅支持旧版客户端样式",
+                    basic: "可使用官方版客户端样式",
+                    advanced: "可使用官方版客户端样式",
+                },
             },
             hosting: {
                 title: "一键部署、程序托管",

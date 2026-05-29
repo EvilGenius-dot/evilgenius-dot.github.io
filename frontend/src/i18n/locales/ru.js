@@ -590,7 +590,6 @@ export default {
                 "Free-версия покрывает брендинг и admin-панель. Basic paid добавляет hosted-развертывание. Advanced рассчитана на долгосрочные проекты с глубокими страницами клиента и индивидуальным RMS.",
             included: "Включено",
             excluded: "Не включено",
-            minerRequirementLabel: "Требование к майнерам",
             tiers: {
                 free: {
                     name: "Free custom edition",
@@ -599,7 +598,6 @@ export default {
                         "Подходит для проверки продвижения с admin-панелью и базовыми изменениями бренда.",
                     price: "0 USD",
                     period: "Бесплатная заявка",
-                    minerRequirement: ">1000 майнеров",
                     cta: "Запросить free",
                 },
                 basic: {
@@ -609,7 +607,6 @@ export default {
                         "Для тех, кто хочет не обслуживать удаленные install-скрипты и hosted-обновления программы самостоятельно.",
                     price: "88 USD",
                     period: "/ месяц",
-                    minerRequirement: "Не требуется",
                     cta: "Запустить basic",
                 },
                 advanced: {
@@ -619,12 +616,19 @@ export default {
                         "Для команд, которым нужны индивидуальные страницы клиента, custom RMS и долгосрочная брендированная линия продукта.",
                     price: "18888 USD",
                     period: "/ бессрочно",
-                    minerRequirement: "Не требуется",
                     cta: "Обсудить advanced",
                 },
             },
         },
         features: {
+            noMinerLimit: {
+                title: "Без лимита по майнерам",
+                tiers: {
+                    free: "Free-версия требует >1000 майнеров",
+                    basic: "Требование по числу майнеров отсутствует",
+                    advanced: "Требование по числу майнеров отсутствует",
+                },
+            },
             admin: {
                 title: "Admin-панель",
                 text: "Статистика установок и работы индивидуальной сборки.",
@@ -640,6 +644,14 @@ export default {
             logo: {
                 title: "Изменение LOGO",
                 text: "Используйте свои иконки и визуальные материалы.",
+            },
+            officialClientStyle: {
+                title: "Опциональный официальный стиль клиента",
+                tiers: {
+                    free: "Доступен только legacy-стиль клиента",
+                    basic: "Доступен официальный стиль клиента",
+                    advanced: "Доступен официальный стиль клиента",
+                },
             },
             hosting: {
                 title: "One-click deployment и hosting",

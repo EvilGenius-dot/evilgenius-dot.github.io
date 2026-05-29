@@ -593,7 +593,6 @@ export default {
                 "The free edition covers branding and the admin dashboard. The basic paid edition adds hosted deployment. The advanced edition is for long-term projects that need deep client pages and custom RMS.",
             included: "Included",
             excluded: "Not included",
-            minerRequirementLabel: "Miner requirement",
             tiers: {
                 free: {
                     name: "Free custom edition",
@@ -602,7 +601,6 @@ export default {
                         "Good for testing promotion with the admin dashboard and essential brand changes.",
                     price: "0 USD",
                     period: "Free request",
-                    minerRequirement: ">1000 miners",
                     cta: "Request free edition",
                 },
                 basic: {
@@ -612,7 +610,6 @@ export default {
                         "For promoters who want remote install scripts and hosted program updates maintained for them.",
                     price: "88 USD",
                     period: "/ month",
-                    minerRequirement: "Not required",
                     cta: "Start basic",
                 },
                 advanced: {
@@ -622,12 +619,19 @@ export default {
                         "For teams that need custom client pages, custom RMS, and a long-term branded product path.",
                     price: "18888 USD",
                     period: "/ lifetime",
-                    minerRequirement: "Not required",
                     cta: "Discuss advanced",
                 },
             },
         },
         features: {
+            noMinerLimit: {
+                title: "No miner-count limit",
+                tiers: {
+                    free: "Free edition requires >1000 miners",
+                    basic: "No miner-count requirement",
+                    advanced: "No miner-count requirement",
+                },
+            },
             admin: {
                 title: "Admin dashboard",
                 text: "View custom build install and runtime statistics.",
@@ -643,6 +647,14 @@ export default {
             logo: {
                 title: "Change logo",
                 text: "Use your own icon and visual assets.",
+            },
+            officialClientStyle: {
+                title: "Optional official client style",
+                tiers: {
+                    free: "Only the legacy client style is available",
+                    basic: "Official client style is available",
+                    advanced: "Official client style is available",
+                },
             },
             hosting: {
                 title: "One-click deployment and hosting",
