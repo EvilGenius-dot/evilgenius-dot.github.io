@@ -33,14 +33,8 @@
                 :aria-label="t('customized.hero.previewLabel')"
             >
                 <div class="preview-window">
-                    <div class="preview-toolbar" aria-hidden="true">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <strong>{{ t("customized.hero.previewTitle") }}</strong>
-                    </div>
                     <img
-                        src="/image/customized-dashboard-preview.png"
+                        src="/image/clientreview.png"
                         :alt="t('customized.hero.previewAlt')"
                         class="preview-image"
                         loading="eager"
@@ -509,59 +503,19 @@ h3 {
 }
 
 .preview-window {
-    background:
-        linear-gradient(180deg, rgb(255 255 255 / 10%), transparent 5rem),
-        rgb(6 12 14 / 92%);
-    border: 1px solid rgb(132 186 100 / 24%);
+    background: rgb(9 14 22 / 78%);
+    border: 1px solid rgb(148 163 184 / 18%);
     border-radius: 8px;
-    box-shadow: 0 2rem 4.5rem rgb(0 0 0 / 36%);
+    box-shadow:
+        0 2rem 4.5rem rgb(0 0 0 / 38%),
+        0 0 0 1px rgb(255 255 255 / 4%) inset;
     overflow: hidden;
-}
-
-.preview-toolbar {
-    align-items: center;
-    background: rgb(8 13 18 / 96%);
-    border-bottom: 1px solid rgb(255 255 255 / 10%);
-    display: flex;
-    gap: 0.5rem;
-    min-height: 2.25rem;
-    padding: 0 0.875rem;
-}
-
-.preview-toolbar span {
-    border-radius: 9999px;
-    display: block;
-    height: 0.625rem;
-    width: 0.625rem;
-}
-
-.preview-toolbar span:nth-child(1) {
-    background: #ef4444;
-}
-
-.preview-toolbar span:nth-child(2) {
-    background: #f59e0b;
-}
-
-.preview-toolbar span:nth-child(3) {
-    background: #22c55e;
-}
-
-.preview-toolbar strong {
-    color: var(--color-neutral-300);
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-semibold);
-    line-height: 1.3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .preview-image {
-    aspect-ratio: 4076 / 2336;
+    aspect-ratio: 4102 / 2194;
     display: block;
-    object-fit: cover;
-    object-position: 50% 0;
+    object-fit: contain;
     width: 100%;
 }
 
