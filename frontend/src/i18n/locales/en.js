@@ -636,6 +636,14 @@ export default {
                 title: "Admin dashboard",
                 text: "View custom build install and runtime statistics.",
             },
+            customManagement: {
+                title: "Multiple builds and permission management",
+                tiers: {
+                    free: "Limited to one custom build per person. The dashboard manages only your own build and cannot manage other custom permissions.",
+                    basic: "Create multiple custom builds and manage other custom permissions.",
+                    advanced: "Create multiple custom builds and manage other custom permissions.",
+                },
+            },
             name: {
                 title: "Change software name",
                 text: "Rename RustMiner as your branded edition.",

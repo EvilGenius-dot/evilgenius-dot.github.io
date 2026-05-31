@@ -238,11 +238,12 @@ const points = computed(() => [
 ]);
 
 const featureKeys = [
-    "noMinerLimit",
     "admin",
+    "customManagement",
     "name",
     "footer",
     "logo",
+    "noMinerLimit",
     "officialClientStyle",
     "hosting",
     "client",
@@ -260,6 +261,7 @@ const tierDefinitions = [
         featured: true,
         included: [
             "admin",
+            "customManagement",
             "name",
             "footer",
             "logo",
@@ -273,6 +275,7 @@ const tierDefinitions = [
         featured: false,
         included: [
             "admin",
+            "customManagement",
             "name",
             "footer",
             "logo",
@@ -293,6 +296,19 @@ const getFeatureText = (featureKey, tierId) => {
         : t(`customized.features.${featureKey}.text`);
 };
 
+const getPlanFeatures = (tier) => {
+    const features = featureKeys.map((key) => ({
+        title: t(`customized.features.${key}.title`),
+        text: getFeatureText(key, tier.id),
+        included: tier.included.includes(key),
+    }));
+
+    return [
+        ...features.filter((feature) => feature.included),
+        ...features.filter((feature) => !feature.included),
+    ];
+};
+
 const plans = computed(() =>
     tierDefinitions.map((tier) => ({
         id: tier.id,
@@ -303,11 +319,7 @@ const plans = computed(() =>
         price: t(`customized.plans.tiers.${tier.id}.price`),
         period: t(`customized.plans.tiers.${tier.id}.period`),
         cta: t(`customized.plans.tiers.${tier.id}.cta`),
-        features: featureKeys.map((key) => ({
-            title: t(`customized.features.${key}.title`),
-            text: getFeatureText(key, tier.id),
-            included: tier.included.includes(key),
-        })),
+        features: getPlanFeatures(tier),
     })),
 );
 

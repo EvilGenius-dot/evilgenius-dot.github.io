@@ -621,6 +621,14 @@ export default {
                 title: "管理后台",
                 text: "查看定制版安装和运行统计。",
             },
+            customManagement: {
+                title: "多套定制与权限管理",
+                tiers: {
+                    free: "仅限 1 人创建 1 套定制，后台只管理自己的版本，无法管理其他定制权限。",
+                    basic: "可创建多套定制，并可管理其他定制权限。",
+                    advanced: "可创建多套定制，并可管理其他定制权限。",
+                },
+            },
             name: {
                 title: "修改软件名称",
                 text: "将 RustMiner 命名为你的品牌版本。",
