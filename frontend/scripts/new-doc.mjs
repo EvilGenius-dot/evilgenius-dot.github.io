@@ -1,11 +1,17 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
-import { SUPPORTED_LOCALES } from "./docs-config.mjs";
-import { docsRoot, listDefaultDocs, toTitle } from "./docs-utils.mjs";
+import { DEFAULT_DOC_COLLECTION, SUPPORTED_LOCALES } from "./docs-config.mjs";
+import {
+    docsRoot,
+    listDefaultDocs,
+    resolveDocCollection,
+    toTitle,
+} from "./docs-utils.mjs";
 
 const args = process.argv.slice(2);
 const options = {
+    collection: DEFAULT_DOC_COLLECTION,
     category: "guide",
     categoryOrder: 1,
     categoryTitle: "",
@@ -14,6 +20,12 @@ const positional = [];
 
 for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
+
+    if (arg === "--collection") {
+        options.collection = args[index + 1] || options.collection;
+        index += 1;
+        continue;
+    }
 
     if (arg === "--category") {
         options.category = args[index + 1] || options.category;
@@ -41,11 +53,12 @@ const [rawSlug, ...rawTitleParts] = positional;
 if (!rawSlug) {
     console.error('Usage: npm run docs:new -- "my-topic" "My Topic"');
     console.error(
-        'With category: npm run docs:new -- "my-topic" "My Topic" --category advanced --category-title "Advanced" --category-order 3',
+        'With collection/category: npm run docs:new -- "my-topic" "My Topic" --collection rms --category advanced --category-title "Advanced" --category-order 3',
     );
     process.exit(1);
 }
 
+const collection = resolveDocCollection(options.collection);
 const slug = rawSlug
     .trim()
     .toLowerCase()
@@ -59,12 +72,12 @@ const category = options.category
     .replace(/^-|-$/g, "");
 const title = rawTitleParts.join(" ").trim() || toTitle(slug);
 const categoryTitle = options.categoryTitle.trim() || toTitle(category);
-const docs = await listDefaultDocs();
+const docs = await listDefaultDocs(collection.id);
 const nextOrder = Math.max(...docs.map((doc) => doc.order), 0) + 1;
 const file = `${String(nextOrder).padStart(2, "0")}-${slug}.md`;
 
 for (const locale of SUPPORTED_LOCALES) {
-    const dir = join(docsRoot, locale, "guide");
+    const dir = join(docsRoot, locale, collection.slug, "guide");
     const filePath = join(dir, file);
 
     if (existsSync(filePath)) {
@@ -95,7 +108,9 @@ TODO: Write this section.
     );
 }
 
-console.log(`Created ${file} for ${SUPPORTED_LOCALES.join(", ")}`);
+console.log(
+    `Created ${file} in ${collection.id} for ${SUPPORTED_LOCALES.join(", ")}`,
+);
 console.log(
     "Edit the frontmatter titles/descriptions for each language, then run npm run docs:generate.",
 );

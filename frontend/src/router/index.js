@@ -5,6 +5,8 @@ import {
 } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import {
+    DEFAULT_DOC_COLLECTION,
+    DEFAULT_DOC_PAGE,
     DEFAULT_DOWNLOAD_PAGE,
     DOWNLOAD_PAGES,
     DOC_PAGES,
@@ -41,22 +43,37 @@ const createLocalizedPageRoutes = () =>
             })),
         );
 
-const createLocalizedDocumentRoutes = () =>
-    DOC_PAGES.flatMap((docPage) =>
+const createLocalizedDocumentRoutes = () => [
+    ...SUPPORTED_LOCALES.map((locale) => ({
+        path: pagePath("document", locale),
+        redirect: docPath(DEFAULT_DOC_PAGE, locale, DEFAULT_DOC_COLLECTION),
+    })),
+    ...DOC_PAGES.filter(
+        (docPage) =>
+            docPage.collection === DEFAULT_DOC_COLLECTION && docPage.slug,
+    ).flatMap((docPage) =>
         SUPPORTED_LOCALES.map((locale) => ({
-            path: docPath(docPage.id, locale),
+            path: `${pagePath("document", locale)}/${docPage.slug}`,
+            redirect: docPath(docPage.id, locale, DEFAULT_DOC_COLLECTION),
+        })),
+    ),
+    ...DOC_PAGES.flatMap((docPage) =>
+        SUPPORTED_LOCALES.map((locale) => ({
+            path: docPath(docPage.id, locale, docPage.collection),
             name:
                 locale === DEFAULT_LOCALE
-                    ? `document-${docPage.id}`
-                    : `${locale}-document-${docPage.id}`,
+                    ? `document-${docPage.collection}-${docPage.id}`
+                    : `${locale}-document-${docPage.collection}-${docPage.id}`,
             component: pageComponents.document,
             meta: {
                 page: "document",
+                docCollection: docPage.collection,
                 docPage: docPage.id,
                 locale,
             },
         })),
-    );
+    ),
+];
 
 const createLocalizedDownloadRoutes = () => [
     ...SUPPORTED_LOCALES.map((locale) => ({

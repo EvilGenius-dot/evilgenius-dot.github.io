@@ -16,7 +16,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "../../../../../image/clientreview.png": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "../../../../../image/review.gif": [
@@ -80,6 +80,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/@heroicons/vue/24/outline/esm/ChevronDownIcon.js": [
+    "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
+  "node_modules/@heroicons/vue/24/outline/esm/DocumentTextIcon.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -151,12 +156,12 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/linkify-it/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/linkify-it/lib/re.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/Icon.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -174,102 +179,102 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/arrow-up-right.js": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/badge-check.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/book-open.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/check.js": [
-    "/assets/check-CKYxyIDy.js"
+    "/assets/check--jVgRxXe.js"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/chevron-down.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/chevron-up.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/clipboard.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/cloud-cog.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/cpu.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/download.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/external-link.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/gauge.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/git-branch.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/github.js": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/info.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/layout-dashboard.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/message-circle.js": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/network.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/palette.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/radio-tower.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/send.js": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/server.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/shield-check.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/sliders-horizontal.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/smartphone.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/star.js": [
@@ -278,11 +283,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/terminal.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/x.js": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/shared/src/utils/hasA11yProp.js": [
@@ -316,255 +321,255 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/markdown-it/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/common/html_blocks.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/common/html_re.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/common/utils.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/helpers/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_destination.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_label.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_title.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/parser_block.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/parser_core.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/parser_inline.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/presets/commonmark.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/presets/default.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/presets/zero.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/renderer.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/ruler.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/blockquote.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/code.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/fence.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/heading.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/hr.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/html_block.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/lheading.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/list.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/paragraph.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/reference.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/state_block.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_block/table.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/block.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/inline.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/linkify.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/normalize.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/replacements.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/smartquotes.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/state_core.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_core/text_join.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/autolink.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/backticks.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/emphasis.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/entity.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/escape.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/fragments_join.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/html_inline.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/image.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/link.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/linkify.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/newline.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/state_inline.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/strikethrough.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/text.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/lib/token.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/decode.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/decode_codepoint.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/generated/decode-data-html.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/generated/decode-data-xml.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/mdurl/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/mdurl/lib/decode.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/mdurl/lib/encode.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/mdurl/lib/format.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/mdurl/lib/parse.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/ohash/dist/shared/ohash.D__AXeF1.mjs": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/pinia/dist/pinia.mjs": [
@@ -573,8 +578,8 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/punycode.js/punycode.es6.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/reka-ui/dist/AlertDialog/AlertDialogAction.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -857,79 +862,79 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/Select/BubbleSelect.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectContent.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectContentImpl.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectIcon.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItem.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemAlignedPosition.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemIndicator.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemText.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectPopperPosition.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectPortal.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectProvider.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectRoot.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollButtonImpl.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollDownButton.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollUpButton.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectTrigger.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectValue.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectViewport.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/utils.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Teleport/Teleport.js": [
@@ -938,11 +943,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/VisuallyHidden/VisuallyHidden.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/clamp.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/createContext.js": [
@@ -996,7 +1001,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/shared/useFormControl.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/useForwardExpose.js": [
@@ -1030,7 +1035,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/shared/useNonce.js": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/useSize.js": [
@@ -1054,32 +1059,32 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/uc.micro/categories/Cc/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/categories/Cf/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/categories/P/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/categories/S/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/categories/Z/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/index.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/uc.micro/properties/Any/regex.mjs": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -1172,7 +1177,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/App.vue?vue&type=style&index=1&scoped=01caf252&lang.css": [
+  "src/App.vue?vue&type=style&index=1&scoped=fd43fd2f&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -1187,7 +1192,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/components/FooterBar.vue?vue&type=style&index=0&scoped=cd8edfcd&lang.css": [
+  "src/components/FooterBar.vue?vue&type=style&index=0&scoped=e20c9d7f&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -1197,7 +1202,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/components/HeaderBar.vue?vue&type=style&index=0&scoped=e2717798&lang.css": [
+  "src/components/HeaderBar.vue?vue&type=style&index=0&scoped=4fca704d&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -1207,7 +1212,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/components/LocaleSuggestionDialog.vue?vue&type=style&index=0&scoped=d9a75c86&lang.css": [
+  "src/components/LocaleSuggestionDialog.vue?vue&type=style&index=0&scoped=2dd4ea1f&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -1303,56 +1308,72 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/components/ui/select/Select.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectContent.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectItem.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectScrollDownButton.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectScrollUpButton.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectTrigger.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectValue.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/docs/README.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/en/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/en/custom-management/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/en/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/en/poolnode/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/en/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/en/rms/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/en/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/en/rustminersystem-cli/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/en/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/en/rustminersystem/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/en/rustminersystem/guide/02-quick-start.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/en/rustminersystem/guide/03-installation.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/en/rustminersystem/guide/04-configuration.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/en/rustminersystem/guide/05-operations.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "src/docs/generated.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -1360,48 +1381,80 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/docs/index.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/ru/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/custom-management/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/ru/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/poolnode/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/ru/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rms/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/ru/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem-cli/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/ru/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/zh/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem/guide/02-quick-start.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/zh/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem/guide/03-installation.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/zh/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem/guide/04-configuration.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/zh/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/ru/rustminersystem/guide/05-operations.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/docs/zh/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/docs/zh/custom-management/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/poolnode/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rms/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem-cli/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem/guide/01-overview.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem/guide/02-quick-start.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem/guide/03-installation.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem/guide/04-configuration.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
+  ],
+  "src/docs/zh/rustminersystem/guide/05-operations.md?raw": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "src/i18n/index.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -1424,8 +1477,8 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/lib/markdown.js": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "src/lib/utils.js": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
@@ -1443,35 +1496,35 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/views/AboutView.vue": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "src/views/AboutView.vue?vue&type=style&index=0&scoped=0d81e36d&lang.css": [
-    "/assets/AboutView-BnypR_Yn.js",
+    "/assets/AboutView-BlVhVqKs.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "src/views/CustomizedVersionView.vue": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "src/views/CustomizedVersionView.vue?vue&type=style&index=0&scoped=ab671a2d&lang.css": [
-    "/assets/CustomizedVersionView-Cfw_wr4I.js",
+    "/assets/CustomizedVersionView-DbPfsJBz.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "src/views/DocumentView.vue": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
-  "src/views/DocumentView.vue?vue&type=style&index=0&scoped=45da75d2&lang.css": [
-    "/assets/DocumentView-BcGG_hcg.js",
-    "/assets/DocumentView-CbB7ca8E.css"
+  "src/views/DocumentView.vue?vue&type=style&index=0&scoped=a2ab522a&lang.css": [
+    "/assets/DocumentView-BNxOZyOX.js",
+    "/assets/DocumentView-BuRF0hNR.css"
   ],
   "src/views/DownloadView.vue": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/views/DownloadView.vue?vue&type=style&index=0&scoped=18de0a21&lang.css": [
-    "/assets/DownloadView-DUUPu7GR.js",
+    "/assets/DownloadView-CnMpZGVq.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/views/HomeView.vue": [
@@ -1479,7 +1532,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/views/HomeView.vue?vue&type=style&index=0&scoped=a40c24ce&lang.css": [
+  "src/views/HomeView.vue?vue&type=style&index=0&scoped=c2f52b21&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"

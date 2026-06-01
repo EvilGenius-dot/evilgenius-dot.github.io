@@ -20,6 +20,7 @@ import {
     LOCALE_META,
     SITE_ORIGIN,
     DEFAULT_DOWNLOAD_PAGE,
+    DEFAULT_DOC_COLLECTION,
     DEFAULT_DOC_PAGE,
     docPath,
     downloadPath,
@@ -38,6 +39,9 @@ const { locale, t } = useI18n();
 // 当前语言与页面 key 都从路由读取，页面切换和直接访问静态页都能复用。
 const currentLocale = computed(() => getRouteLocale(route));
 const currentPage = computed(() => route.meta?.page || "home");
+const currentDocCollection = computed(
+    () => route.meta?.docCollection || DEFAULT_DOC_COLLECTION,
+);
 const currentDocPage = computed(() => route.meta?.docPage || DEFAULT_DOC_PAGE);
 const currentDownloadPage = computed(
     () => route.meta?.downloadPage || DEFAULT_DOWNLOAD_PAGE,
@@ -55,14 +59,22 @@ watch(
 // canonical、title、description 都按当前页面和语言生成，供运行时 head 使用。
 const canonicalHref = computed(() =>
     currentPage.value === "document"
-        ? `${SITE_ORIGIN}${docPath(currentDocPage.value, currentLocale.value)}`
+        ? `${SITE_ORIGIN}${docPath(
+              currentDocPage.value,
+              currentLocale.value,
+              currentDocCollection.value,
+          )}`
         : currentPage.value === "download"
           ? `${SITE_ORIGIN}${downloadPath(currentDownloadPage.value, currentLocale.value)}`
           : `${SITE_ORIGIN}${pagePath(currentPage.value, currentLocale.value)}`,
 );
 const pageTitle = computed(() =>
     currentPage.value === "document"
-        ? getDocPageMeta(currentDocPage.value, currentLocale.value).title
+        ? getDocPageMeta(
+              currentDocPage.value,
+              currentLocale.value,
+              currentDocCollection.value,
+          ).title
         : currentPage.value === "download"
           ? getDownloadPageMeta(currentDownloadPage.value, currentLocale.value)
                 .title
@@ -70,7 +82,11 @@ const pageTitle = computed(() =>
 );
 const pageDescription = computed(() =>
     currentPage.value === "document"
-        ? getDocPageMeta(currentDocPage.value, currentLocale.value).description
+        ? getDocPageMeta(
+              currentDocPage.value,
+              currentLocale.value,
+              currentDocCollection.value,
+          ).description
         : currentPage.value === "download"
           ? getDownloadPageMeta(currentDownloadPage.value, currentLocale.value)
                 .description
@@ -130,7 +146,10 @@ const head = computed(() => ({
             href: canonicalHref.value,
         },
         ...(currentPage.value === "document"
-            ? localizedDocLinks(currentDocPage.value)
+            ? localizedDocLinks(
+                  currentDocPage.value,
+                  currentDocCollection.value,
+              )
             : currentPage.value === "download"
               ? localizedDownloadLinks(currentDownloadPage.value)
               : localizedPageLinks(currentPage.value)),
@@ -139,7 +158,11 @@ const head = computed(() => ({
             hreflang: "x-default",
             href:
                 currentPage.value === "document"
-                    ? `${SITE_ORIGIN}${docPath(currentDocPage.value, DEFAULT_LOCALE)}`
+                    ? `${SITE_ORIGIN}${docPath(
+                          currentDocPage.value,
+                          DEFAULT_LOCALE,
+                          currentDocCollection.value,
+                      )}`
                     : currentPage.value === "download"
                       ? `${SITE_ORIGIN}${downloadPath(currentDownloadPage.value, DEFAULT_LOCALE)}`
                       : `${SITE_ORIGIN}${pagePath(currentPage.value, DEFAULT_LOCALE)}`,

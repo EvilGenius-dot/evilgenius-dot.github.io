@@ -122,7 +122,7 @@ import {
     PaperAirplaneIcon,
 } from "@heroicons/vue/24/outline";
 import { useI18n } from "vue-i18n";
-import { downloadPath, getRouteLocale, pagePath } from "@/i18n";
+import { docPath, downloadPath, getRouteLocale, pagePath } from "@/i18n";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 const route = useRoute();
@@ -136,7 +136,7 @@ const primaryLinks = computed(() => [
     {
         page: "document",
         label: t("nav.document"),
-        to: localizedPath("document"),
+        to: docPath(undefined, currentLocale.value),
     },
     {
         page: "customized",

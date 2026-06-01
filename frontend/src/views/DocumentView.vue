@@ -13,8 +13,11 @@
                     >
                         <h2>
                             {{
-                                getDocCategoryMeta(category.id, currentLocale)
-                                    .title
+                                getDocCategoryMeta(
+                                    category.id,
+                                    currentLocale,
+                                    currentDocCollection,
+                                ).title
                             }}
                         </h2>
                         <nav class="sidebar-nav">
@@ -22,15 +25,24 @@
                                 v-for="page in pagesByCategory[category.id] ||
                                 []"
                                 :key="page.id"
-                                :to="docPath(page.id, currentLocale)"
+                                :to="
+                                    docPath(
+                                        page.id,
+                                        currentLocale,
+                                        currentDocCollection,
+                                    )
+                                "
                                 :class="[
                                     'sidebar-link',
                                     { 'is-active': page.id === currentDocPage },
                                 ]"
                             >
                                 {{
-                                    getDocPageMeta(page.id, currentLocale)
-                                        .navTitle
+                                    getDocPageMeta(
+                                        page.id,
+                                        currentLocale,
+                                        currentDocCollection,
+                                    ).navTitle
                                 }}
                             </RouterLink>
                         </nav>
@@ -56,20 +68,42 @@
                 <RouterLink
                     v-if="previousPage"
                     class="page-nav-link"
-                    :to="docPath(previousPage.id, currentLocale)"
+                    :to="
+                        docPath(
+                            previousPage.id,
+                            currentLocale,
+                            currentDocCollection,
+                        )
+                    "
                 >
                     <span>{{ t("document.previousPage") }}</span>
                     {{
-                        getDocPageMeta(previousPage.id, currentLocale).navTitle
+                        getDocPageMeta(
+                            previousPage.id,
+                            currentLocale,
+                            currentDocCollection,
+                        ).navTitle
                     }}
                 </RouterLink>
                 <RouterLink
                     v-if="nextPage"
                     class="page-nav-link is-next"
-                    :to="docPath(nextPage.id, currentLocale)"
+                    :to="
+                        docPath(
+                            nextPage.id,
+                            currentLocale,
+                            currentDocCollection,
+                        )
+                    "
                 >
                     <span>{{ t("document.nextPage") }}</span>
-                    {{ getDocPageMeta(nextPage.id, currentLocale).navTitle }}
+                    {{
+                        getDocPageMeta(
+                            nextPage.id,
+                            currentLocale,
+                            currentDocCollection,
+                        ).navTitle
+                    }}
                 </RouterLink>
             </nav>
         </article>
@@ -114,10 +148,14 @@ import { computed } from "vue";
 import { RouterLink } from "vue-router";
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { getDocumentMarkdown, getDocumentPageIndex } from "../docs";
+import {
+    getDocumentMarkdown,
+    getDocumentPageIndex,
+    getDocumentPages,
+} from "../docs";
 import {
     DOC_CATEGORIES,
-    DOC_PAGES,
+    DEFAULT_DOC_COLLECTION,
     DEFAULT_DOC_PAGE,
     docPath,
     getDocCategoryMeta,
@@ -130,11 +168,13 @@ const { t } = useI18n();
 const route = useRoute();
 
 const currentLocale = computed(() => getRouteLocale(route));
+const currentDocCollection = computed(
+    () => route.meta?.docCollection || DEFAULT_DOC_COLLECTION,
+);
 const currentDocPage = computed(() => route.meta?.docPage || DEFAULT_DOC_PAGE);
-const docPages = DOC_PAGES;
-const docCategories = DOC_CATEGORIES;
+const docPages = computed(() => getDocumentPages(currentDocCollection.value));
 const pagesByCategory = computed(() =>
-    docPages.reduce((groups, page) => {
+    docPages.value.reduce((groups, page) => {
         const category = page.category || "guide";
 
         return {
@@ -143,9 +183,20 @@ const pagesByCategory = computed(() =>
         };
     }, {}),
 );
+const docCategories = computed(() =>
+    DOC_CATEGORIES.filter(
+        (category) =>
+            category.collection === currentDocCollection.value &&
+            pagesByCategory.value[category.id]?.length,
+    ),
+);
 
 const documentMarkdown = computed(() =>
-    getDocumentMarkdown(currentLocale.value, currentDocPage.value),
+    getDocumentMarkdown(
+        currentLocale.value,
+        currentDocPage.value,
+        currentDocCollection.value,
+    ),
 );
 const contentMarkdown = computed(() =>
     documentMarkdown.value.replace(/^#\s+.+(?:\r?\n)+/, ""),
@@ -153,16 +204,26 @@ const contentMarkdown = computed(() =>
 const documentHtml = computed(() => renderMarkdown(contentMarkdown.value));
 const headings = computed(() => extractHeadings(contentMarkdown.value));
 const pageTitle = computed(
-    () => getDocPageMeta(currentDocPage.value, currentLocale.value).title,
+    () =>
+        getDocPageMeta(
+            currentDocPage.value,
+            currentLocale.value,
+            currentDocCollection.value,
+        ).title,
 );
 const pageDescription = computed(
-    () => getDocPageMeta(currentDocPage.value, currentLocale.value).description,
+    () =>
+        getDocPageMeta(
+            currentDocPage.value,
+            currentLocale.value,
+            currentDocCollection.value,
+        ).description,
 );
 const currentPageIndex = computed(() =>
-    getDocumentPageIndex(currentDocPage.value),
+    getDocumentPageIndex(currentDocPage.value, currentDocCollection.value),
 );
-const previousPage = computed(() => DOC_PAGES[currentPageIndex.value - 1]);
-const nextPage = computed(() => DOC_PAGES[currentPageIndex.value + 1]);
+const previousPage = computed(() => docPages.value[currentPageIndex.value - 1]);
+const nextPage = computed(() => docPages.value[currentPageIndex.value + 1]);
 const readingMinutes = computed(() => {
     const text = contentMarkdown.value
         .replace(/```[\s\S]*?```/g, "")
@@ -220,7 +281,7 @@ const readingMinutes = computed(() => {
 
 .sidebar-groups {
     display: grid;
-    gap: 1.5rem;
+    gap: 1.1rem;
 }
 
 .sidebar-group {
@@ -233,7 +294,7 @@ const readingMinutes = computed(() => {
     color: var(--color-neutral-400);
     font-size: var(--text-sm);
     line-height: 1.45;
-    padding: 0.45rem 0.625rem;
+    padding: 0.35rem 0.5rem;
     text-decoration: none;
 }
 
@@ -489,7 +550,7 @@ h1 {
     .docs-shell {
         align-items: start;
         grid-template-columns:
-            minmax(12rem, 17rem)
+            minmax(10rem, 13.5rem)
             minmax(0, 74rem)
             minmax(12rem, 15rem);
         padding-inline: clamp(2rem, 2.5vw, 3rem);
@@ -506,7 +567,7 @@ h1 {
         grid-column: 1;
         max-height: none;
         overflow-y: auto;
-        padding: 2rem 1.5rem 5rem;
+        padding: 1.5rem 1rem 4rem;
     }
 
     .docs-article {

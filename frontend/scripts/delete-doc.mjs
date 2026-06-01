@@ -2,36 +2,51 @@ import { existsSync } from "node:fs";
 import { unlink } from "node:fs/promises";
 import { spawn } from "node:child_process";
 import { join } from "node:path";
-import { SUPPORTED_LOCALES } from "./docs-config.mjs";
-import { docsRoot, listDefaultDocs } from "./docs-utils.mjs";
+import { DEFAULT_DOC_COLLECTION, SUPPORTED_LOCALES } from "./docs-config.mjs";
+import {
+    docsRoot,
+    listDefaultDocs,
+    resolveDocCollection,
+} from "./docs-utils.mjs";
 
 const args = process.argv.slice(2);
 const isDryRun = args.includes("--dry-run");
-const rawTarget = args.find((arg) => arg !== "--dry-run");
+const collectionIndex = args.indexOf("--collection");
+const rawCollection =
+    collectionIndex === -1
+        ? DEFAULT_DOC_COLLECTION
+        : args[collectionIndex + 1] || DEFAULT_DOC_COLLECTION;
+const rawTarget = args.find(
+    (arg, index) =>
+        arg !== "--dry-run" &&
+        arg !== "--collection" &&
+        index !== collectionIndex + 1,
+);
 
 if (!rawTarget) {
     console.error('Usage: npm run docs:delete -- "my-topic"');
-    console.error('Preview only: npm run docs:delete -- "my-topic" --dry-run');
+    console.error(
+        'Preview only: npm run docs:delete -- "my-topic" --collection rms --dry-run',
+    );
     process.exit(1);
 }
 
+const collection = resolveDocCollection(rawCollection);
 const slugifiedTarget = rawTarget
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
-const docs = await listDefaultDocs();
+const docs = await listDefaultDocs(collection.id);
 const targetDoc = docs.find((doc) => {
     const fileWithoutExtension = doc.file.replace(/\.md$/, "");
     const fileSlug = fileWithoutExtension.replace(/^\d+-/, "");
 
-    return [
-        doc.id,
-        doc.slug,
-        doc.file,
-        fileWithoutExtension,
-        fileSlug,
-    ].includes(rawTarget) || doc.slug === slugifiedTarget;
+    return (
+        [doc.id, doc.slug, doc.file, fileWithoutExtension, fileSlug].includes(
+            rawTarget,
+        ) || doc.slug === slugifiedTarget
+    );
 });
 
 if (!targetDoc) {
@@ -45,7 +60,7 @@ if (!targetDoc) {
 }
 
 const filePaths = SUPPORTED_LOCALES.map((locale) =>
-    join(docsRoot, locale, "guide", targetDoc.file),
+    join(docsRoot, locale, collection.slug, "guide", targetDoc.file),
 );
 const missingFiles = filePaths.filter((filePath) => !existsSync(filePath));
 
@@ -60,7 +75,7 @@ if (missingFiles.length > 0) {
 }
 
 console.log(
-    `${isDryRun ? "Would delete" : "Deleting"} document "${targetDoc.id}" (${targetDoc.slug || targetDoc.file}):`,
+    `${isDryRun ? "Would delete" : "Deleting"} ${collection.id} document "${targetDoc.id}" (${targetDoc.slug || targetDoc.file}):`,
 );
 
 for (const filePath of filePaths) {
@@ -85,7 +100,9 @@ const exitCode = await new Promise((resolve) => {
 });
 
 if (exitCode !== 0) {
-    console.error("Deleted markdown files, but docs metadata generation failed.");
+    console.error(
+        "Deleted markdown files, but docs metadata generation failed.",
+    );
     process.exit(exitCode);
 }
 

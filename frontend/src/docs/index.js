@@ -1,4 +1,10 @@
-import { DOC_PAGES, DEFAULT_DOC_PAGE, getDocPageById } from "../i18n";
+import {
+    DOC_PAGES,
+    DEFAULT_DOC_COLLECTION,
+    DEFAULT_DOC_PAGE,
+    getDocCollectionById,
+    getDocPageById,
+} from "../i18n";
 
 const markdownFiles = import.meta.glob("./**/*.md", {
     eager: true,
@@ -14,15 +20,25 @@ const stripFrontmatter = (source = "") =>
 export const getDocumentMarkdown = (
     locale = "en",
     docPage = DEFAULT_DOC_PAGE,
+    docCollection = DEFAULT_DOC_COLLECTION,
 ) => {
-    const { file } = getDocPageById(docPage);
-    const localizedPath = `./${locale}/guide/${file}`;
-    const fallbackPath = `./en/guide/${file}`;
+    const collection = getDocCollectionById(docCollection);
+    const { file } = getDocPageById(docPage, collection.id);
+    const localizedPath = `./${locale}/${collection.slug}/guide/${file}`;
+    const fallbackPath = `./en/${collection.slug}/guide/${file}`;
 
     return stripFrontmatter(
         markdownFiles[localizedPath] || markdownFiles[fallbackPath] || "",
     );
 };
 
-export const getDocumentPageIndex = (docPage = DEFAULT_DOC_PAGE) =>
-    DOC_PAGES.findIndex(({ id }) => id === docPage);
+export const getDocumentPages = (docCollection = DEFAULT_DOC_COLLECTION) => {
+    const collection = getDocCollectionById(docCollection);
+
+    return DOC_PAGES.filter((page) => page.collection === collection.id);
+};
+
+export const getDocumentPageIndex = (
+    docPage = DEFAULT_DOC_PAGE,
+    docCollection = DEFAULT_DOC_COLLECTION,
+) => getDocumentPages(docCollection).findIndex(({ id }) => id === docPage);

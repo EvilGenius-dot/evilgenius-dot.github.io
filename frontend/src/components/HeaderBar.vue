@@ -65,6 +65,45 @@
                             </DropdownMenuContent>
                         </DropdownMenu>
                     </li>
+                    <li>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger
+                                :class="[
+                                    'nav-link',
+                                    'nav-trigger',
+                                    { 'is-active': isActivePage('document') },
+                                ]"
+                                :aria-label="t('nav.document')"
+                            >
+                                <DocumentTextIcon
+                                    class="icon-sm"
+                                    aria-hidden="true"
+                                />
+                                <span>{{ t("nav.document") }}</span>
+                                <ChevronDownIcon
+                                    class="icon-xs"
+                                    aria-hidden="true"
+                                />
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent
+                                align="start"
+                                class="docs-menu"
+                            >
+                                <DropdownMenuItem
+                                    v-for="item in documentLinks"
+                                    :key="item.collection"
+                                    as-child
+                                >
+                                    <RouterLink
+                                        :to="item.to"
+                                        class="dropdown-link"
+                                    >
+                                        {{ item.label }}
+                                    </RouterLink>
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
+                    </li>
                     <li v-for="item in primaryLinks" :key="item.page">
                         <RouterLink
                             :to="item.to"
@@ -158,6 +197,23 @@
                 :aria-label="t('nav.mobile')"
             >
                 <ul class="mobile-nav-list">
+                    <li class="mobile-document-group">
+                        <p>{{ t("nav.document") }}</p>
+                        <RouterLink
+                            v-for="item in documentLinks"
+                            :key="item.collection"
+                            :to="item.to"
+                            class="mobile-document-link"
+                            :aria-current="
+                                isActiveDocCollection(item.collection)
+                                    ? 'page'
+                                    : undefined
+                            "
+                            @click="closeMenu"
+                        >
+                            {{ item.label }}
+                        </RouterLink>
+                    </li>
                     <li v-for="item in primaryLinks" :key="item.page">
                         <RouterLink
                             :to="item.to"
@@ -209,15 +265,18 @@ import {
     ArrowDownTrayIcon,
     Bars3Icon,
     ChevronDownIcon,
+    DocumentTextIcon,
     LanguageIcon,
     XMarkIcon,
 } from "@heroicons/vue/24/outline";
 import { useI18n } from "vue-i18n";
 import {
+    DOC_COLLECTIONS,
     LOCALE_META,
     SUPPORTED_LOCALES,
     docPath,
     downloadPath,
+    getDocCollectionMeta,
     getRouteLocale,
     pagePath,
 } from "@/i18n";
@@ -253,11 +312,6 @@ const localizedPath = (page) => pagePath(page, currentLocale.value);
 // 主导航使用页面 key 生成路径，新增页面时优先补 i18n 的 PAGE_SLUGS。
 const primaryLinks = computed(() => [
     {
-        page: "document",
-        label: t("nav.document"),
-        to: localizedPath("document"),
-    },
-    {
         page: "customized",
         label: t("nav.customized"),
         to: localizedPath("customized"),
@@ -268,6 +322,14 @@ const primaryLinks = computed(() => [
         to: localizedPath("about"),
     },
 ]);
+
+const documentLinks = computed(() =>
+    DOC_COLLECTIONS.map((collection) => ({
+        collection: collection.id,
+        label: getDocCollectionMeta(collection.id, currentLocale.value).title,
+        to: docPath(undefined, currentLocale.value, collection.id),
+    })),
+);
 
 // 下载入口指向当前语言下对应程序的独立页面。
 const downloadGroups = computed(() => [
@@ -304,6 +366,9 @@ const flatDownloadLinks = computed(() =>
 );
 
 const isActivePage = (page) => route.meta?.page === page;
+const isActiveDocCollection = (docCollection) =>
+    route.meta?.page === "document" &&
+    route.meta?.docCollection === docCollection;
 
 // 移动端菜单只维护开关状态，路由变化时在 watch 中自动关闭。
 const toggleMenu = () => {
@@ -319,7 +384,11 @@ const switchLocale = (nextLocale) => {
     const page = route.meta?.page || "home";
     const path =
         page === "document"
-            ? docPath(route.meta?.docPage, nextLocale)
+            ? docPath(
+                  route.meta?.docPage,
+                  nextLocale,
+                  route.meta?.docCollection,
+              )
             : page === "download"
               ? downloadPath(route.meta?.downloadPage, nextLocale)
               : pagePath(page, nextLocale);
@@ -564,7 +633,8 @@ watch(
     width: 100%;
 }
 
-.download-menu {
+.download-menu,
+.docs-menu {
     min-width: 14rem;
 }
 
@@ -598,6 +668,7 @@ watch(
 }
 
 .mobile-nav-link,
+.mobile-document-link,
 .mobile-download-link {
     border-radius: 8px;
     color: var(--color-neutral-200);
@@ -610,6 +681,8 @@ watch(
 
 .mobile-nav-link:hover,
 .mobile-nav-link:focus-visible,
+.mobile-document-link:hover,
+.mobile-document-link:focus-visible,
 .mobile-download-link:hover,
 .mobile-download-link:focus-visible {
     background-color: var(--color-neutral-900, #2c3437);
@@ -617,12 +690,14 @@ watch(
     outline: none;
 }
 
+.mobile-document-group,
 .mobile-download-group {
     border-top: 1px solid var(--color-neutral-900, #2c3437);
     margin-top: 0.5rem;
     padding-top: 0.5rem;
 }
 
+.mobile-document-group p,
 .mobile-download-group p {
     color: var(--color-neutral-500);
     font-size: var(--text-xs);
@@ -632,10 +707,16 @@ watch(
     text-transform: uppercase;
 }
 
+.mobile-document-link,
 .mobile-download-link {
     color: var(--color-neutral-300);
     font-size: var(--text-sm);
     padding-block: 0.625rem;
+}
+
+.mobile-document-link[aria-current="page"] {
+    background-color: #417e38;
+    color: var(--color-white);
 }
 
 .mobile-language-group {

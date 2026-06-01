@@ -1,8 +1,10 @@
 import { createI18n } from "vue-i18n";
 import {
+    DOC_COLLECTIONS,
     DOC_CATEGORIES,
     DOC_PAGES,
     DOC_PAGE_META,
+    DEFAULT_DOC_COLLECTION,
     DEFAULT_DOC_PAGE,
 } from "../docs/generated.js";
 import en from "./locales/en";
@@ -65,7 +67,14 @@ export const DOWNLOAD_PAGES = [
 
 export const DEFAULT_DOWNLOAD_PAGE = DOWNLOAD_PAGES[0].id;
 
-export { DOC_CATEGORIES, DOC_PAGES, DOC_PAGE_META, DEFAULT_DOC_PAGE };
+export {
+    DOC_COLLECTIONS,
+    DOC_CATEGORIES,
+    DOC_PAGES,
+    DOC_PAGE_META,
+    DEFAULT_DOC_COLLECTION,
+    DEFAULT_DOC_PAGE,
+};
 
 export const messages = {
     en,
@@ -96,41 +105,103 @@ export const pagePath = (page = "home", locale = DEFAULT_LOCALE) => {
     return `${localePrefix}/${slug}`;
 };
 
-export const getDocPageById = (id = DEFAULT_DOC_PAGE) =>
-    DOC_PAGES.find((page) => page.id === id) || DOC_PAGES[0];
+export const getDocCollectionById = (id = DEFAULT_DOC_COLLECTION) =>
+    DOC_COLLECTIONS.find((collection) => collection.id === id) ||
+    DOC_COLLECTIONS[0];
 
-export const getDocPageBySlug = (slug = "") =>
-    DOC_PAGES.find((page) => page.slug === slug) || DOC_PAGES[0];
+export const getDocCollectionBySlug = (slug = "") =>
+    DOC_COLLECTIONS.find((collection) => collection.slug === slug) ||
+    DOC_COLLECTIONS[0];
+
+export const getDocCollectionMeta = (
+    docCollection = DEFAULT_DOC_COLLECTION,
+    locale = DEFAULT_LOCALE,
+) => {
+    const collection = getDocCollectionById(docCollection);
+
+    return (
+        collection.meta?.[normalizeLocale(locale)] ||
+        collection.meta?.[DEFAULT_LOCALE] || {
+            title: collection.id,
+        }
+    );
+};
+
+export const getDocPageById = (
+    id = DEFAULT_DOC_PAGE,
+    docCollection = DEFAULT_DOC_COLLECTION,
+) => {
+    const collection = getDocCollectionById(docCollection);
+
+    return (
+        DOC_PAGES.find(
+            (page) => page.collection === collection.id && page.id === id,
+        ) ||
+        DOC_PAGES.find((page) => page.collection === collection.id) ||
+        DOC_PAGES[0]
+    );
+};
+
+export const getDocPageBySlug = (
+    slug = "",
+    docCollection = DEFAULT_DOC_COLLECTION,
+) => {
+    const collection = getDocCollectionById(docCollection);
+
+    return (
+        DOC_PAGES.find(
+            (page) => page.collection === collection.id && page.slug === slug,
+        ) ||
+        DOC_PAGES.find((page) => page.collection === collection.id) ||
+        DOC_PAGES[0]
+    );
+};
 
 export const getDocPageMeta = (
     docPage = DEFAULT_DOC_PAGE,
     locale = DEFAULT_LOCALE,
-) =>
-    DOC_PAGE_META[docPage]?.[normalizeLocale(locale)] ||
-    DOC_PAGE_META[docPage]?.[DEFAULT_LOCALE] ||
-    DOC_PAGE_META[DEFAULT_DOC_PAGE][DEFAULT_LOCALE];
+    docCollection = DEFAULT_DOC_COLLECTION,
+) => {
+    const page = getDocPageById(docPage, docCollection);
+
+    return (
+        DOC_PAGE_META[page.collection]?.[page.id]?.[normalizeLocale(locale)] ||
+        DOC_PAGE_META[page.collection]?.[page.id]?.[DEFAULT_LOCALE] ||
+        DOC_PAGE_META[DEFAULT_DOC_COLLECTION]?.[DEFAULT_DOC_PAGE]?.[
+            DEFAULT_LOCALE
+        ]
+    );
+};
 
 export const getDocCategoryMeta = (
     category = "guide",
     locale = DEFAULT_LOCALE,
-) =>
-    DOC_CATEGORIES.find((item) => item.id === category)?.meta?.[
-        normalizeLocale(locale)
-    ] ||
-    DOC_CATEGORIES.find((item) => item.id === category)?.meta?.[
-        DEFAULT_LOCALE
-    ] || {
-        title: category,
-    };
+    docCollection = DEFAULT_DOC_COLLECTION,
+) => {
+    const collection = getDocCollectionById(docCollection);
+    const categoryMeta = DOC_CATEGORIES.find(
+        (item) => item.collection === collection.id && item.id === category,
+    )?.meta;
+
+    return (
+        categoryMeta?.[normalizeLocale(locale)] ||
+        categoryMeta?.[DEFAULT_LOCALE] || {
+            title: category,
+        }
+    );
+};
 
 export const docPath = (
     docPage = DEFAULT_DOC_PAGE,
     locale = DEFAULT_LOCALE,
+    docCollection = DEFAULT_DOC_COLLECTION,
 ) => {
-    const page = getDocPageById(docPage);
+    const collection = getDocCollectionById(docCollection);
+    const page = getDocPageById(docPage, collection.id);
     const basePath = pagePath("document", locale);
+    const collectionPath = `${basePath}/${collection.slug}`;
 
-    return page.slug ? `${basePath}/${page.slug}` : basePath;
+    return page.slug ? `${collectionPath}/${page.slug}` : collectionPath;
 };
 
 export const getDownloadPageById = (id = DEFAULT_DOWNLOAD_PAGE) =>
@@ -165,11 +236,14 @@ export const localizedPageLinks = (page = "home") =>
         href: `${SITE_ORIGIN}${pagePath(page, locale)}`,
     }));
 
-export const localizedDocLinks = (docPage = DEFAULT_DOC_PAGE) =>
+export const localizedDocLinks = (
+    docPage = DEFAULT_DOC_PAGE,
+    docCollection = DEFAULT_DOC_COLLECTION,
+) =>
     SUPPORTED_LOCALES.map((locale) => ({
         rel: "alternate",
         hreflang: LOCALE_META[locale].htmlLang,
-        href: `${SITE_ORIGIN}${docPath(docPage, locale)}`,
+        href: `${SITE_ORIGIN}${docPath(docPage, locale, docCollection)}`,
     }));
 
 export const localizedDownloadLinks = (downloadPage = DEFAULT_DOWNLOAD_PAGE) =>

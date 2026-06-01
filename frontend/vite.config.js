@@ -7,9 +7,11 @@ import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 import vueDevTools from "vite-plugin-vue-devtools";
 import {
+    DEFAULT_DOC_COLLECTION,
     DEFAULT_DOC_PAGE,
     DEFAULT_DOWNLOAD_PAGE,
     DEFAULT_LOCALE,
+    DOC_COLLECTIONS,
     LOCALE_META,
     PAGE_SLUGS,
     SITE_ORIGIN,
@@ -18,6 +20,7 @@ import {
     downloadPath,
     getDownloadPageBySlug,
     getDownloadPageMeta,
+    getDocCollectionBySlug,
     getDocPageBySlug,
     getDocPageMeta,
     messages,
@@ -65,11 +68,22 @@ const resolvePageFromRoute = (route) => {
         const docSlug = slug
             .replace(PAGE_SLUGS.document, "")
             .replace(/^\//, "");
-        const docPage = getDocPageBySlug(docSlug);
+        const docSegments = docSlug.split("/").filter(Boolean);
+        const hasCollectionSlug = DOC_COLLECTIONS.some(
+            (collection) => collection.slug === docSegments[0],
+        );
+        const docCollection = hasCollectionSlug
+            ? getDocCollectionBySlug(docSegments[0]).id
+            : DEFAULT_DOC_COLLECTION;
+        const docPageSlug = hasCollectionSlug
+            ? docSegments.slice(1).join("/")
+            : docSlug;
+        const docPage = getDocPageBySlug(docPageSlug, docCollection);
 
         return {
             locale,
             page: "document",
+            docCollection,
             docPage: docPage.id,
         };
     }
@@ -86,6 +100,7 @@ const resolvePageFromRoute = (route) => {
         return {
             locale,
             page: "download",
+            docCollection: DEFAULT_DOC_COLLECTION,
             docPage: DEFAULT_DOC_PAGE,
             downloadPage: downloadPage.id,
         };
@@ -99,6 +114,7 @@ const resolvePageFromRoute = (route) => {
     return {
         locale,
         page,
+        docCollection: DEFAULT_DOC_COLLECTION,
         docPage: DEFAULT_DOC_PAGE,
         downloadPage: DEFAULT_DOWNLOAD_PAGE,
     };
@@ -106,11 +122,12 @@ const resolvePageFromRoute = (route) => {
 
 // 渲染每个语言页面需要的 title、description、canonical 与 hreflang 标签。
 const renderSeoTags = (route) => {
-    const { locale, page, docPage, downloadPage } = resolvePageFromRoute(route);
+    const { locale, page, docCollection, docPage, downloadPage } =
+        resolvePageFromRoute(route);
     const localeMessages = messages[locale];
     const pageSeo =
         page === "document"
-            ? getDocPageMeta(docPage, locale)
+            ? getDocPageMeta(docPage, locale, docCollection)
             : page === "download"
               ? getDownloadPageMeta(downloadPage, locale)
               : localeMessages.seo[page];
@@ -123,7 +140,7 @@ const renderSeoTags = (route) => {
               );
     const canonicalHref =
         page === "document"
-            ? `${SITE_ORIGIN}${docPath(docPage, locale)}`
+            ? `${SITE_ORIGIN}${docPath(docPage, locale, docCollection)}`
             : page === "download"
               ? `${SITE_ORIGIN}${downloadPath(downloadPage, locale)}`
               : `${SITE_ORIGIN}${pagePath(page, locale)}`;
@@ -131,7 +148,11 @@ const renderSeoTags = (route) => {
         const hreflang = LOCALE_META[alternateLocale].htmlLang;
         const href =
             page === "document"
-                ? `${SITE_ORIGIN}${docPath(docPage, alternateLocale)}`
+                ? `${SITE_ORIGIN}${docPath(
+                      docPage,
+                      alternateLocale,
+                      docCollection,
+                  )}`
                 : page === "download"
                   ? `${SITE_ORIGIN}${downloadPath(downloadPage, alternateLocale)}`
                   : `${SITE_ORIGIN}${pagePath(page, alternateLocale)}`;
@@ -140,7 +161,7 @@ const renderSeoTags = (route) => {
     });
     const xDefaultHref =
         page === "document"
-            ? `${SITE_ORIGIN}${docPath(docPage, DEFAULT_LOCALE)}`
+            ? `${SITE_ORIGIN}${docPath(docPage, DEFAULT_LOCALE, docCollection)}`
             : page === "download"
               ? `${SITE_ORIGIN}${downloadPath(downloadPage, DEFAULT_LOCALE)}`
               : `${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`;

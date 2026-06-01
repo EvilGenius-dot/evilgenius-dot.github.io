@@ -14,7 +14,7 @@
                             {{ t("home.primaryCta") }}
                         </RouterLink>
                         <RouterLink
-                            :to="pagePath('document', currentLocale)"
+                            :to="primaryDocumentPath"
                             class="secondary-action"
                         >
                             <span>{{ t("home.secondaryCta") }}</span>
@@ -214,7 +214,7 @@ import { computed, onMounted, ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { Star } from "lucide-vue-next";
-import { downloadPath, getRouteLocale, pagePath } from "@/i18n";
+import { docPath, downloadPath, getRouteLocale } from "@/i18n";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 const route = useRoute();
@@ -223,6 +223,9 @@ const { t } = useI18n();
 const currentLocale = computed(() => getRouteLocale(route));
 const primaryDownloadPath = computed(() =>
     downloadPath("server", currentLocale.value),
+);
+const primaryDocumentPath = computed(() =>
+    docPath(undefined, currentLocale.value),
 );
 const releaseInfoUrl =
     "https://raw.githubusercontent.com/EvilGenius-dot/RustMinerSystem/refs/heads/main/origin.json";

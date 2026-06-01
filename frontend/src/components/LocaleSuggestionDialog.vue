@@ -2,7 +2,9 @@
     <AlertDialog :open="isOpen" @update:open="handleOpenChange">
         <AlertDialogContent class="locale-suggestion-dialog">
             <AlertDialogHeader>
-                <AlertDialogTitle>{{ t("localePrompt.title") }}</AlertDialogTitle>
+                <AlertDialogTitle>{{
+                    t("localePrompt.title")
+                }}</AlertDialogTitle>
                 <AlertDialogDescription>
                     {{
                         t("localePrompt.description", {
@@ -12,7 +14,10 @@
                 </AlertDialogDescription>
             </AlertDialogHeader>
             <AlertDialogFooter>
-                <AlertDialogCancel class="locale-cancel" @click="dismissSuggestion">
+                <AlertDialogCancel
+                    class="locale-cancel"
+                    @click="dismissSuggestion"
+                >
                     {{ t("localePrompt.cancel") }}
                 </AlertDialogCancel>
                 <AlertDialogAction class="locale-action" @click="confirmSwitch">
@@ -43,6 +48,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import {
     DEFAULT_DOWNLOAD_PAGE,
+    DEFAULT_DOC_COLLECTION,
     DEFAULT_DOC_PAGE,
     LOCALE_META,
     SUPPORTED_LOCALES,
@@ -116,7 +122,11 @@ const getLocalizedCurrentPath = (nextLocale) => {
     const page = route.meta?.page || "home";
 
     if (page === "document") {
-        return docPath(route.meta?.docPage || DEFAULT_DOC_PAGE, nextLocale);
+        return docPath(
+            route.meta?.docPage || DEFAULT_DOC_PAGE,
+            nextLocale,
+            route.meta?.docCollection || DEFAULT_DOC_COLLECTION,
+        );
     }
 
     if (page === "download") {
