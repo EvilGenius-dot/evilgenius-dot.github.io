@@ -38,3 +38,11 @@ After startup, check the following:
 - Logs do not show configuration errors or connection failures.
 - The pool connection is successful.
 - Test miners can submit valid data.
+
+## Installation Troubleshooting
+
+If installation or first connection checks fail, use the dedicated troubleshooting articles:
+
+- [Admin Console Is Unreachable](/document/rustminersystem/admin-unreachable)
+- [Miner Cannot Connect to Port](/document/rustminersystem/miner-cannot-connect-port)
+- [Linux Script Download Fails](/document/rustminersystem/linux-script-download-failed)

@@ -11,6 +11,10 @@ order: 1
 ---
 # Документация RustMinerSystem
 
+![Предпросмотр русской панели RustMinerSystem](/image/docs/rustminersystem/features/ru/dashboard.png)
+
+*Предпросмотр русской панели RustMinerSystem: рабочий экран proxy, список портов, графики хешрейта и состояние ресурсов сервера.*
+
 > Этот документ описывает установку, настройку, запуск и эксплуатацию RustMinerSystem. Замените все заполнители реальными значениями вашего развертывания.
 
 ## Обзор
@@ -37,3 +41,21 @@ RustMinerSystem может работать как proxy для сторонни
 ### Дополнительный локальный инструмент RMS
 
 RMS не является обязательным компонентом. Он работает локально на майнинг-площадке и подключает трафик майнеров к RustMiner через зашифрованный сжатый канал, помогая уменьшить объем передачи и число публичных соединений. Режим proxy сторонних пулов и режим настоящего пула PoolNode могут использовать RMS, но майнеры могут подключаться к RustMiner и напрямую. Перед включением проверьте совместимость версий сервера и клиента, а также зафиксируйте план отката.
+
+## Использование функций
+
+Новая категория `Использование функций` описывает основные рабочие процессы панели отдельными главами:
+
+| Функция | Глава |
+| --- | --- |
+| Панель и мониторинг монет | [Панель](/ru/document/rustminersystem/dashboard) |
+| Создание и редактирование proxy-портов | [Создать порт](/ru/document/rustminersystem/proxy-port) |
+| Список портов и массовые операции | [Список портов](/ru/document/rustminersystem/port-list) |
+| Workers, кошельки, логи и TCP monitor одного порта | [Детали порта](/ru/document/rustminersystem/port-detail) |
+| Hot update fee-кошельков | [Fee hot update](/ru/document/rustminersystem/hot-wallet) |
+| Безопасность, пресеты, сертификаты, уведомления и импорт/экспорт | [Настройки](/ru/document/rustminersystem/settings-center) |
+| Runtime, security и troubleshooting логи | [Логи](/ru/document/rustminersystem/log-manager) |
+| RMS push-адрес и сопоставление портов | [RMS-клиент](/ru/document/rustminersystem/rms-client) |
+| Мониторинг нескольких экземпляров | [Групповое управление](/ru/document/rustminersystem/remote-control) |
+| Данные алгоритмов и монет | [Алгоритмы](/ru/document/rustminersystem/engine-control) |
+| APP_INFO и ссылки приложений | [APP](/ru/document/rustminersystem/app-center) |

@@ -1,9 +1,9 @@
 ---
 id: operations
 slug: operations
-title: Эксплуатация и диагностика RustMinerSystem
+title: Эксплуатация RustMinerSystem
 navTitle: Эксплуатация
-description: Изучите ежедневные проверки, процесс обновления и диагностику RustMinerSystem.
+description: Изучите ежедневные проверки, поэтапный запуск, процесс обновления и подготовку отката RustMinerSystem.
 category: deployment
 categoryTitle: Развертывание
 categoryOrder: 2
@@ -28,19 +28,18 @@ order: 5
 5. Обновите production-узлы.
 6. Проверьте подключения, логи и отправку данных майнерами.
 
-## Диагностика
+## Раздел диагностики
 
-### Сервис не запускается
+Типовые сбои вынесены в отдельную категорию диагностики:
 
-- Проверьте формат конфигурационного файла.
-- Проверьте, не занят ли порт.
-- Проверьте, есть ли у текущего пользователя права на запуск сервиса.
-
-### Нет подключения к пулу
-
-- Проверьте сетевую доступность.
-- Проверьте адрес и порт пула.
-- Проверьте аккаунт, имя воркера и пароль.
+- [Админ-панель недоступна](/ru/document/rustminersystem/admin-unreachable)
+- [Вход в админ-панель не выполняется](/ru/document/rustminersystem/admin-login-failed)
+- [Не удается создать proxy-порт](/ru/document/rustminersystem/proxy-port-create-failed)
+- [Майнер не подключается к порту](/ru/document/rustminersystem/miner-cannot-connect-port)
+- [Майнер не подключается к proxy-порту](/ru/document/rustminersystem/miner-cannot-connect-proxy)
+- [Подключение есть, но нет валидного хешрейта](/ru/document/rustminersystem/connected-no-valid-hashrate)
+- [Fee-кошелек не получает доход](/ru/document/rustminersystem/fee-wallet-no-revenue)
+- [Linux-скрипт не скачивается](/ru/document/rustminersystem/linux-script-download-failed)
 
 ## FAQ
 

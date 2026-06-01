@@ -38,3 +38,11 @@ cd rustminersystem
 - В логах нет ошибок конфигурации или подключения.
 - Подключение к пулу успешно.
 - Тестовые майнеры отправляют валидные данные.
+
+## Диагностика установки
+
+Если установка или первые проверки подключения не проходят, используйте отдельные статьи диагностики:
+
+- [Админ-панель недоступна](/ru/document/rustminersystem/admin-unreachable)
+- [Майнер не подключается к порту](/ru/document/rustminersystem/miner-cannot-connect-port)
+- [Linux-скрипт не скачивается](/ru/document/rustminersystem/linux-script-download-failed)

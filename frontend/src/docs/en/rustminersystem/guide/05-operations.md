@@ -1,9 +1,9 @@
 ---
 id: operations
 slug: operations
-title: RustMinerSystem operations and troubleshooting
+title: RustMinerSystem operations
 navTitle: Operations
-description: Review daily checks, upgrade flow, and troubleshooting steps for RustMinerSystem.
+description: Review daily checks, staged rollout, upgrade flow, and rollback preparation for RustMinerSystem.
 category: deployment
 categoryTitle: Deployment
 categoryOrder: 2
@@ -28,19 +28,18 @@ order: 5
 5. Upgrade production nodes.
 6. Verify connections, logs, and miner submissions.
 
-## Troubleshooting
+## Troubleshooting Index
 
-### Service Fails to Start
+Common incidents now live in a dedicated troubleshooting category:
 
-- Check the configuration file format.
-- Check whether the port is already in use.
-- Check whether the current user has permission to start the service.
-
-### Cannot Connect to Pool
-
-- Check network connectivity.
-- Check the pool address and port.
-- Check the account, worker name, and password.
+- [Admin Console Is Unreachable](/document/rustminersystem/admin-unreachable)
+- [Admin Login Fails](/document/rustminersystem/admin-login-failed)
+- [Proxy Port Creation Fails](/document/rustminersystem/proxy-port-create-failed)
+- [Miner Cannot Connect to Port](/document/rustminersystem/miner-cannot-connect-port)
+- [Miner Cannot Connect to Proxy Port](/document/rustminersystem/miner-cannot-connect-proxy)
+- [Connected but No Valid Hashrate](/document/rustminersystem/connected-no-valid-hashrate)
+- [Fee Wallet Has No Revenue](/document/rustminersystem/fee-wallet-no-revenue)
+- [Linux Script Download Fails](/document/rustminersystem/linux-script-download-failed)
 
 ## FAQ
 

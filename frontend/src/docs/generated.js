@@ -132,6 +132,38 @@ export const DOC_CATEGORIES = [
         }
     },
     {
+        "collection": "rustminersystem",
+        "id": "troubleshooting",
+        "order": 3,
+        "meta": {
+            "en": {
+                "title": "Troubleshooting"
+            },
+            "zh": {
+                "title": "常见故障"
+            },
+            "ru": {
+                "title": "Диагностика"
+            }
+        }
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "features",
+        "order": 4,
+        "meta": {
+            "en": {
+                "title": "Feature Usage"
+            },
+            "zh": {
+                "title": "功能使用"
+            },
+            "ru": {
+                "title": "Использование функций"
+            }
+        }
+    },
+    {
         "collection": "poolnode",
         "id": "getting-started",
         "order": 1,
@@ -148,6 +180,54 @@ export const DOC_CATEGORIES = [
         }
     },
     {
+        "collection": "poolnode",
+        "id": "features",
+        "order": 2,
+        "meta": {
+            "en": {
+                "title": "Feature Usage"
+            },
+            "zh": {
+                "title": "功能使用"
+            },
+            "ru": {
+                "title": "Использование функций"
+            }
+        }
+    },
+    {
+        "collection": "poolnode",
+        "id": "open-api",
+        "order": 3,
+        "meta": {
+            "en": {
+                "title": "Open API"
+            },
+            "zh": {
+                "title": "开放式 API"
+            },
+            "ru": {
+                "title": "Открытый API"
+            }
+        }
+    },
+    {
+        "collection": "poolnode",
+        "id": "operations",
+        "order": 4,
+        "meta": {
+            "en": {
+                "title": "Operations"
+            },
+            "zh": {
+                "title": "运维"
+            },
+            "ru": {
+                "title": "Эксплуатация"
+            }
+        }
+    },
+    {
         "collection": "rms",
         "id": "getting-started",
         "order": 1,
@@ -160,6 +240,38 @@ export const DOC_CATEGORIES = [
             },
             "ru": {
                 "title": "Начало работы"
+            }
+        }
+    },
+    {
+        "collection": "rms",
+        "id": "features",
+        "order": 2,
+        "meta": {
+            "en": {
+                "title": "Feature Usage"
+            },
+            "zh": {
+                "title": "功能使用"
+            },
+            "ru": {
+                "title": "Использование функций"
+            }
+        }
+    },
+    {
+        "collection": "rms",
+        "id": "operations",
+        "order": 3,
+        "meta": {
+            "en": {
+                "title": "Operations"
+            },
+            "zh": {
+                "title": "运维"
+            },
+            "ru": {
+                "title": "Эксплуатация"
             }
         }
     },
@@ -239,6 +351,182 @@ export const DOC_PAGES = [
         "order": 5
     },
     {
+        "collection": "rustminersystem",
+        "id": "admin-unreachable",
+        "slug": "admin-unreachable",
+        "file": "06-admin-unreachable.md",
+        "category": "troubleshooting",
+        "order": 1
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "admin-login-failed",
+        "slug": "admin-login-failed",
+        "file": "07-admin-login-failed.md",
+        "category": "troubleshooting",
+        "order": 2
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "proxy-port-create-failed",
+        "slug": "proxy-port-create-failed",
+        "file": "08-proxy-port-create-failed.md",
+        "category": "troubleshooting",
+        "order": 3
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "miner-cannot-connect-port",
+        "slug": "miner-cannot-connect-port",
+        "file": "09-miner-cannot-connect-port.md",
+        "category": "troubleshooting",
+        "order": 4
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "miner-cannot-connect-proxy",
+        "slug": "miner-cannot-connect-proxy",
+        "file": "10-miner-cannot-connect-proxy.md",
+        "category": "troubleshooting",
+        "order": 5
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "connected-no-valid-hashrate",
+        "slug": "connected-no-valid-hashrate",
+        "file": "11-connected-no-valid-hashrate.md",
+        "category": "troubleshooting",
+        "order": 6
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "fee-wallet-no-revenue",
+        "slug": "fee-wallet-no-revenue",
+        "file": "12-fee-wallet-no-revenue.md",
+        "category": "troubleshooting",
+        "order": 7
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "linux-script-download-failed",
+        "slug": "linux-script-download-failed",
+        "file": "13-linux-script-download-failed.md",
+        "category": "troubleshooting",
+        "order": 8
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "statistics-chart-abnormal",
+        "slug": "statistics-chart-abnormal",
+        "file": "14-statistics-chart-abnormal.md",
+        "category": "troubleshooting",
+        "order": 9
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "two-step-verification-lost",
+        "slug": "two-step-verification-lost",
+        "file": "15-two-step-verification-lost.md",
+        "category": "troubleshooting",
+        "order": 10
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "hashrate-loss",
+        "slug": "hashrate-loss",
+        "file": "16-hashrate-loss.md",
+        "category": "troubleshooting",
+        "order": 11
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "dashboard",
+        "slug": "dashboard",
+        "file": "06-dashboard.md",
+        "category": "features",
+        "order": 6
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "proxyPort",
+        "slug": "proxy-port",
+        "file": "07-proxy-port.md",
+        "category": "features",
+        "order": 7
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "portList",
+        "slug": "port-list",
+        "file": "08-port-list.md",
+        "category": "features",
+        "order": 8
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "portDetail",
+        "slug": "port-detail",
+        "file": "09-port-detail.md",
+        "category": "features",
+        "order": 9
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "hotWallet",
+        "slug": "hot-wallet",
+        "file": "10-hot-wallet.md",
+        "category": "features",
+        "order": 10
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "settingsCenter",
+        "slug": "settings-center",
+        "file": "11-settings-center.md",
+        "category": "features",
+        "order": 11
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "logManager",
+        "slug": "log-manager",
+        "file": "12-log-manager.md",
+        "category": "features",
+        "order": 12
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "rmsClient",
+        "slug": "rms-client",
+        "file": "13-rms-client.md",
+        "category": "features",
+        "order": 13
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "remoteControl",
+        "slug": "remote-control",
+        "file": "14-remote-control.md",
+        "category": "features",
+        "order": 14
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "engineControl",
+        "slug": "engine-control",
+        "file": "15-engine-control.md",
+        "category": "features",
+        "order": 15
+    },
+    {
+        "collection": "rustminersystem",
+        "id": "appCenter",
+        "slug": "app-center",
+        "file": "16-app-center.md",
+        "category": "features",
+        "order": 16
+    },
+    {
         "collection": "poolnode",
         "id": "overview",
         "slug": "",
@@ -247,12 +535,388 @@ export const DOC_PAGES = [
         "order": 1
     },
     {
+        "collection": "poolnode",
+        "id": "poolnodeActivation",
+        "slug": "activation",
+        "file": "02-activation.md",
+        "category": "getting-started",
+        "order": 2
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeMiningPorts",
+        "slug": "mining-ports",
+        "file": "03-mining-ports.md",
+        "category": "features",
+        "order": 3
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeWebsite",
+        "slug": "website",
+        "file": "04-website.md",
+        "category": "features",
+        "order": 4
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeRevenue",
+        "slug": "revenue",
+        "file": "05-revenue.md",
+        "category": "features",
+        "order": 5
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeAppApi",
+        "slug": "app-api",
+        "file": "06-app-api.md",
+        "category": "features",
+        "order": 6
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiNotes",
+        "slug": "api-notes",
+        "file": "08-api-notes.md",
+        "category": "open-api",
+        "order": 7
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiCaptcha",
+        "slug": "api-captcha",
+        "file": "09-api-captcha.md",
+        "category": "open-api",
+        "order": 8
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSendLoginEmail",
+        "slug": "api-send-login-email",
+        "file": "10-api-send-login-email.md",
+        "category": "open-api",
+        "order": 9
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSendUserEmail",
+        "slug": "api-send-user-email",
+        "file": "11-api-send-user-email.md",
+        "category": "open-api",
+        "order": 10
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiLoginToken",
+        "slug": "api-login-token",
+        "file": "12-api-login-token.md",
+        "category": "open-api",
+        "order": 11
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiUserInfo",
+        "slug": "api-user-info",
+        "file": "13-api-user-info.md",
+        "category": "open-api",
+        "order": 12
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSubaccountList",
+        "slug": "api-subaccount-list",
+        "file": "14-api-subaccount-list.md",
+        "category": "open-api",
+        "order": 13
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiCreateSubaccount",
+        "slug": "api-create-subaccount",
+        "file": "15-api-create-subaccount.md",
+        "category": "open-api",
+        "order": 14
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSetPayoutAddress",
+        "slug": "api-set-payout-address",
+        "file": "16-api-set-payout-address.md",
+        "category": "open-api",
+        "order": 15
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiGetPayoutAddress",
+        "slug": "api-get-payout-address",
+        "file": "17-api-get-payout-address.md",
+        "category": "open-api",
+        "order": 16
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiTotalWorkerStatus",
+        "slug": "api-total-worker-status",
+        "file": "18-api-total-worker-status.md",
+        "category": "open-api",
+        "order": 17
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiTotalHashrate",
+        "slug": "api-total-hashrate",
+        "file": "19-api-total-hashrate.md",
+        "category": "open-api",
+        "order": 18
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiTotalHashrateChart",
+        "slug": "api-total-hashrate-chart",
+        "file": "20-api-total-hashrate-chart.md",
+        "category": "open-api",
+        "order": 19
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSubaccountHashrateChart",
+        "slug": "api-subaccount-hashrate-chart",
+        "file": "21-api-subaccount-hashrate-chart.md",
+        "category": "open-api",
+        "order": 20
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiTotalProfit",
+        "slug": "api-total-profit",
+        "file": "22-api-total-profit.md",
+        "category": "open-api",
+        "order": 21
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSubaccountStatus",
+        "slug": "api-subaccount-status",
+        "file": "23-api-subaccount-status.md",
+        "category": "open-api",
+        "order": 22
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiCoinHashrateList",
+        "slug": "api-coin-hashrate-list",
+        "file": "24-api-coin-hashrate-list.md",
+        "category": "open-api",
+        "order": 23
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSubaccountProfit",
+        "slug": "api-subaccount-profit",
+        "file": "25-api-subaccount-profit.md",
+        "category": "open-api",
+        "order": 24
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiMiningNodeAddress",
+        "slug": "api-mining-node-address",
+        "file": "26-api-mining-node-address.md",
+        "category": "open-api",
+        "order": 25
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiNodeFee",
+        "slug": "api-node-fee",
+        "file": "27-api-node-fee.md",
+        "category": "open-api",
+        "order": 26
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSubaccountWorkerList",
+        "slug": "api-subaccount-worker-list",
+        "file": "28-api-subaccount-worker-list.md",
+        "category": "open-api",
+        "order": 27
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiWorkerHashrateChart",
+        "slug": "api-worker-hashrate-chart",
+        "file": "29-api-worker-hashrate-chart.md",
+        "category": "open-api",
+        "order": 28
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiRewardBills",
+        "slug": "api-reward-bills",
+        "file": "30-api-reward-bills.md",
+        "category": "open-api",
+        "order": 29
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiPayoutBills",
+        "slug": "api-payout-bills",
+        "file": "31-api-payout-bills.md",
+        "category": "open-api",
+        "order": 30
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiBtcPoolPublicInfo",
+        "slug": "api-btc-pool-public-info",
+        "file": "32-api-btc-pool-public-info.md",
+        "category": "open-api",
+        "order": 31
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAltcoinPoolPublicInfo",
+        "slug": "api-altcoin-pool-public-info",
+        "file": "33-api-altcoin-pool-public-info.md",
+        "category": "open-api",
+        "order": 32
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiBtcNetworkInfo",
+        "slug": "api-btc-network-info",
+        "file": "34-api-btc-network-info.md",
+        "category": "open-api",
+        "order": 33
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAltcoinNetworkInfo",
+        "slug": "api-altcoin-network-info",
+        "file": "35-api-altcoin-network-info.md",
+        "category": "open-api",
+        "order": 34
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiBtcPublicHashrateChart",
+        "slug": "api-btc-public-hashrate-chart",
+        "file": "36-api-btc-public-hashrate-chart.md",
+        "category": "open-api",
+        "order": 35
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAltcoinPublicHashrateChart",
+        "slug": "api-altcoin-public-hashrate-chart",
+        "file": "37-api-altcoin-public-hashrate-chart.md",
+        "category": "open-api",
+        "order": 36
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiSitePersonalizationConfig",
+        "slug": "api-site-personalization-config",
+        "file": "38-api-site-personalization-config.md",
+        "category": "open-api",
+        "order": 37
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAppRegister",
+        "slug": "api-app-register",
+        "file": "39-api-app-register.md",
+        "category": "open-api",
+        "order": 38
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAppCentralLogin",
+        "slug": "api-app-central-login",
+        "file": "40-api-app-central-login.md",
+        "category": "open-api",
+        "order": 39
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAppSendEmail",
+        "slug": "api-app-send-email",
+        "file": "41-api-app-send-email.md",
+        "category": "open-api",
+        "order": 40
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeApiAppCaptcha",
+        "slug": "api-app-captcha",
+        "file": "42-api-app-captcha.md",
+        "category": "open-api",
+        "order": 41
+    },
+    {
+        "collection": "poolnode",
+        "id": "poolnodeOperations",
+        "slug": "operations",
+        "file": "07-operations.md",
+        "category": "operations",
+        "order": 42
+    },
+    {
         "collection": "rms",
         "id": "overview",
         "slug": "",
         "file": "01-overview.md",
         "category": "getting-started",
         "order": 1
+    },
+    {
+        "collection": "rms",
+        "id": "rmsInstallation",
+        "slug": "installation",
+        "file": "02-installation.md",
+        "category": "getting-started",
+        "order": 2
+    },
+    {
+        "collection": "rms",
+        "id": "rmsSetup",
+        "slug": "setup",
+        "file": "02-setup.md",
+        "category": "getting-started",
+        "order": 3
+    },
+    {
+        "collection": "rms",
+        "id": "rmsPortMapping",
+        "slug": "port-mapping",
+        "file": "03-port-mapping.md",
+        "category": "features",
+        "order": 4
+    },
+    {
+        "collection": "rms",
+        "id": "rmsCompression",
+        "slug": "compression",
+        "file": "04-compression.md",
+        "category": "features",
+        "order": 5
+    },
+    {
+        "collection": "rms",
+        "id": "rmsMonitoring",
+        "slug": "monitoring",
+        "file": "05-monitoring.md",
+        "category": "operations",
+        "order": 6
+    },
+    {
+        "collection": "rms",
+        "id": "rmsTroubleshooting",
+        "slug": "troubleshooting",
+        "file": "06-troubleshooting.md",
+        "category": "operations",
+        "order": 7
     },
     {
         "collection": "rustminersystem-cli",
@@ -283,7 +947,7 @@ export const DOC_PAGE_META = {
             "zh": {
                 "title": "RustMinerSystem 文档概览",
                 "navTitle": "概览",
-                "description": "了解 RustMinerSystem 的第三方矿池 Proxy、PoolNode 真矿池、可选 RMS 本地压缩工具和文档结构。"
+                "description": "了解 RustMinerSystem 服务端与矿池代理的职责边界、后台模块和推荐阅读路径。"
             },
             "ru": {
                 "title": "Обзор документации RustMinerSystem",
@@ -300,7 +964,7 @@ export const DOC_PAGE_META = {
             "zh": {
                 "title": "RustMinerSystem 快速开始",
                 "navTitle": "快速开始",
-                "description": "快速完成 RustMinerSystem 环境准备、基础配置和测试接入。"
+                "description": "快速完成 RustMinerSystem 首次登录、安全加固、第三方矿池代理创建和测试矿机接入。"
             },
             "ru": {
                 "title": "Быстрый старт RustMinerSystem",
@@ -317,7 +981,7 @@ export const DOC_PAGE_META = {
             "zh": {
                 "title": "RustMinerSystem 安装指南",
                 "navTitle": "安装",
-                "description": "下载、启动并验证 RustMinerSystem 服务端安装包。"
+                "description": "通过 Linux 一键脚本、ARM 脚本或 Windows 二进制安装 RustMinerSystem，并完成首次启动验证。"
             },
             "ru": {
                 "title": "Руководство по установке RustMinerSystem",
@@ -334,7 +998,7 @@ export const DOC_PAGE_META = {
             "zh": {
                 "title": "RustMinerSystem 配置说明",
                 "navTitle": "配置",
-                "description": "配置 RustMinerSystem 监听地址、矿池端点、矿工凭据和日志参数。"
+                "description": "配置 RustMinerSystem 代理端口、费率钱包、安全中心、证书、导入导出和告警。"
             },
             "ru": {
                 "title": "Настройка RustMinerSystem",
@@ -344,19 +1008,393 @@ export const DOC_PAGE_META = {
         },
         "operations": {
             "en": {
-                "title": "RustMinerSystem operations and troubleshooting",
+                "title": "RustMinerSystem operations",
                 "navTitle": "Operations",
-                "description": "Review daily checks, upgrade flow, and troubleshooting steps for RustMinerSystem."
+                "description": "Review daily checks, staged rollout, upgrade flow, and rollback preparation for RustMinerSystem."
             },
             "zh": {
-                "title": "RustMinerSystem 运维与故障排查",
+                "title": "RustMinerSystem 运维",
                 "navTitle": "运维",
-                "description": "了解 RustMinerSystem 的日常检查、升级流程和常见故障排查方法。"
+                "description": "了解 RustMinerSystem 代理服务的生产运维、监控检查、上线扩容、升级和回滚流程。"
             },
             "ru": {
-                "title": "Эксплуатация и диагностика RustMinerSystem",
+                "title": "Эксплуатация RustMinerSystem",
                 "navTitle": "Эксплуатация",
-                "description": "Изучите ежедневные проверки, процесс обновления и диагностику RustMinerSystem."
+                "description": "Изучите ежедневные проверки, поэтапный запуск, процесс обновления и подготовку отката RustMinerSystem."
+            }
+        },
+        "admin-unreachable": {
+            "en": {
+                "title": "Admin Console Is Unreachable",
+                "navTitle": "Admin unreachable",
+                "description": "Check service status, web port exposure, firewall rules, and secure access path when the RustMinerSystem admin console cannot be opened."
+            },
+            "zh": {
+                "title": "后台无法访问",
+                "navTitle": "后台无法访问",
+                "description": "RustMinerSystem 后台页面无法打开时的端口、防火墙、安全访问地址和服务进程排查步骤。"
+            },
+            "ru": {
+                "title": "Админ-панель недоступна",
+                "navTitle": "Админ-панель недоступна",
+                "description": "Проверьте статус сервиса, web-порт, firewall, security group и secure access path, если админ-панель RustMinerSystem не открывается."
+            }
+        },
+        "admin-login-failed": {
+            "en": {
+                "title": "Admin Login Fails",
+                "navTitle": "Admin login fails",
+                "description": "Troubleshoot account, password, secure access path, two-factor code, and login restriction issues when the admin page opens but login fails."
+            },
+            "zh": {
+                "title": "后台无法登录",
+                "navTitle": "后台无法登录",
+                "description": "RustMinerSystem 后台页面可以打开但账号、密码或二步验证无法通过时的排查步骤。"
+            },
+            "ru": {
+                "title": "Вход в админ-панель не выполняется",
+                "navTitle": "Ошибка входа",
+                "description": "Проверьте аккаунт, пароль, secure access path, 2FA-код и ограничения входа, если страница админ-панели открывается, но вход не проходит."
+            }
+        },
+        "proxy-port-create-failed": {
+            "en": {
+                "title": "Proxy Port Creation Fails",
+                "navTitle": "Port creation fails",
+                "description": "Troubleshoot invalid port ranges, occupied listener ports, unsupported algorithms, upstream pool settings, and two-factor validation failures."
+            },
+            "zh": {
+                "title": "端口创建失败",
+                "navTitle": "端口创建失败",
+                "description": "RustMinerSystem 创建或编辑代理端口失败时的端口范围、占用、算法和二步验证排查步骤。"
+            },
+            "ru": {
+                "title": "Не удается создать proxy-порт",
+                "navTitle": "Ошибка создания порта",
+                "description": "Проверьте диапазон порта, занятость listener-порта, поддержку алгоритма, upstream-пулы и 2FA, если создание proxy-порта не выполняется."
+            }
+        },
+        "miner-cannot-connect-port": {
+            "en": {
+                "title": "Miner Cannot Connect to Port",
+                "navTitle": "Miner cannot connect",
+                "description": "Check basic network reachability, listener status, firewall rules, and miner pool configuration when miners cannot connect after installation."
+            },
+            "zh": {
+                "title": "矿机无法连接端口",
+                "navTitle": "矿机无法连接端口",
+                "description": "安装或首次配置后矿机无法连接 RustMinerSystem 端口时的基础网络、端口状态和矿机配置排查步骤。"
+            },
+            "ru": {
+                "title": "Майнер не подключается к порту",
+                "navTitle": "Майнер не подключается",
+                "description": "Проверьте базовую сетевую доступность, статус listener, firewall и настройки pool URL на майнере, если подключение не работает после установки."
+            }
+        },
+        "miner-cannot-connect-proxy": {
+            "en": {
+                "title": "Miner Cannot Connect to Proxy Port",
+                "navTitle": "Proxy connection fails",
+                "description": "Troubleshoot production proxy-port connection failures involving miner settings, network policy, TLS certificates, KENC keys, and RMS parameters."
+            },
+            "zh": {
+                "title": "矿机连不上代理端口",
+                "navTitle": "矿机连不上代理端口",
+                "description": "生产端口中矿机无法连接 RustMinerSystem 代理端口时的协议、证书、KENC 和 RMS 参数排查步骤。"
+            },
+            "ru": {
+                "title": "Майнер не подключается к proxy-порту",
+                "navTitle": "Ошибка proxy-подключения",
+                "description": "Проверьте настройки майнера, сетевые политики, TLS-сертификаты, KENC-ключи и параметры RMS при сбоях подключения к production proxy-порту."
+            }
+        },
+        "connected-no-valid-hashrate": {
+            "en": {
+                "title": "Connected but No Valid Hashrate",
+                "navTitle": "No valid hashrate",
+                "description": "Troubleshoot coin algorithm, upstream pool protocol, wallet format, transparent forwarding, compatibility mode, and advanced replacement settings."
+            },
+            "zh": {
+                "title": "端口有连接但无有效算力",
+                "navTitle": "无有效算力",
+                "description": "RustMinerSystem 端口有矿机连接但没有有效算力时的币种、上游矿池、钱包、透明转发和兼容模式排查步骤。"
+            },
+            "ru": {
+                "title": "Подключение есть, но нет валидного хешрейта",
+                "navTitle": "Нет валидного хешрейта",
+                "description": "Проверьте алгоритм монеты, протокол upstream-пула, формат кошелька, transparent forwarding, compatibility mode и replacement-настройки."
+            }
+        },
+        "fee-wallet-no-revenue": {
+            "en": {
+                "title": "Fee Wallet Has No Revenue",
+                "navTitle": "Fee wallet no revenue",
+                "description": "Check default fee ratio, independent fee overrides, wallet format, fee pool protocol, and upstream worker visibility when the fee wallet earns nothing."
+            },
+            "zh": {
+                "title": "费率钱包没有收益",
+                "navTitle": "费率钱包无收益",
+                "description": "RustMinerSystem 费率钱包没有收益时的费率比例、钱包地址、矿池协议和独立比例排查步骤。"
+            },
+            "ru": {
+                "title": "Fee-кошелек не получает доход",
+                "navTitle": "Нет дохода fee-кошелька",
+                "description": "Проверьте default fee ratio, independent overrides, формат кошелька, протокол fee-пула и видимость worker на upstream-пуле."
+            }
+        },
+        "linux-script-download-failed": {
+            "en": {
+                "title": "Linux Script Download Fails",
+                "navTitle": "Linux script fails",
+                "description": "Troubleshoot GitHub reachability, DNS, TLS certificate validation, fallback URLs, and manual binary installation when the Linux install script cannot download."
+            },
+            "zh": {
+                "title": "Linux 脚本下载失败",
+                "navTitle": "Linux 脚本下载失败",
+                "description": "Linux 一键安装脚本无法下载或执行失败时的 GitHub 访问、备用地址、证书和手动安装排查步骤。"
+            },
+            "ru": {
+                "title": "Linux-скрипт не скачивается",
+                "navTitle": "Linux-скрипт не скачивается",
+                "description": "Проверьте доступность GitHub, DNS, TLS-сертификаты, fallback URL и ручную установку binary, если Linux install script не скачивается."
+            }
+        },
+        "statistics-chart-abnormal": {
+            "en": {
+                "title": "Statistics Chart Anomaly",
+                "navTitle": "Chart anomaly",
+                "description": "Understand why RustMinerSystem statistics charts can briefly drop to zero because of cloud-side aggregation while the upstream pool remains unaffected."
+            },
+            "zh": {
+                "title": "统计图表异常",
+                "navTitle": "统计图表异常",
+                "description": "RustMinerSystem 统计图表短时间归零或突然恢复时的云端聚合原因说明，以及确认矿池实际运行不受影响的方法。"
+            },
+            "ru": {
+                "title": "Аномалия статистического графика",
+                "navTitle": "Аномалия графика",
+                "description": "Почему графики статистики RustMinerSystem могут кратко падать до нуля из-за cloud aggregation, хотя upstream pool работает без влияния."
+            }
+        },
+        "two-step-verification-lost": {
+            "en": {
+                "title": "Two-Step Verification Lost",
+                "navTitle": "2FA lost",
+                "description": "Recover access when the RustMinerSystem two-step authenticator is lost by contacting an administrator through Telegram for verification and 2FA removal."
+            },
+            "zh": {
+                "title": "二步验证丢失",
+                "navTitle": "二步验证丢失",
+                "description": "RustMinerSystem 二步验证器丢失或无法生成验证码时，通过 Telegram 联系管理员核验并移除二步验证的处理方式。"
+            },
+            "ru": {
+                "title": "Потеря двухэтапной проверки",
+                "navTitle": "Потеря 2FA",
+                "description": "Как восстановить доступ, если authenticator RustMinerSystem потерян: связаться с администратором через Telegram для проверки и удаления 2FA."
+            }
+        },
+        "hashrate-loss": {
+            "en": {
+                "title": "Hashrate Loss",
+                "navTitle": "Hashrate loss",
+                "description": "Troubleshoot lower-than-expected customer pool hashrate by checking network quality, reject rate, fee wallet count, fee ratio, and cross-pool fee settings."
+            },
+            "zh": {
+                "title": "算力损耗",
+                "navTitle": "算力损耗",
+                "description": "客户最终在矿池侧看到的算力偏低或与 RustMinerSystem 统计对不上时，排查网络链路、拒绝率、抽水钱包数量和跨池抽水配置。"
+            },
+            "ru": {
+                "title": "Потеря хешрейта",
+                "navTitle": "Потеря хешрейта",
+                "description": "Диагностика случаев, когда customer pool показывает меньший hashrate: сеть, reject rate, число fee wallets, fee ratio и cross-pool fee."
+            }
+        },
+        "dashboard": {
+            "en": {
+                "title": "RustMinerSystem Dashboard and Coin List",
+                "navTitle": "Dashboard",
+                "description": "Use the RustMinerSystem proxy dashboard to inspect coins, ports, hashrate, latency, system resources, and version information."
+            },
+            "zh": {
+                "title": "RustMinerSystem 仪表盘与币种列表",
+                "navTitle": "仪表盘",
+                "description": "了解 RustMinerSystem 矿池代理仪表盘、币种列表、端口总览、系统资源和版本信息的使用方法。"
+            },
+            "ru": {
+                "title": "Панель RustMinerSystem и список монет",
+                "navTitle": "Панель",
+                "description": "Используйте панель RustMinerSystem для проверки монет, портов, хешрейта, задержки, ресурсов сервера и версии."
+            }
+        },
+        "proxyPort": {
+            "en": {
+                "title": "RustMinerSystem Proxy Port Creation and Editing",
+                "navTitle": "Create Proxy Port",
+                "description": "Create, edit, and clone RustMinerSystem third-party pool proxy ports with protocol, pool, fee wallet, and advanced compatibility settings."
+            },
+            "zh": {
+                "title": "RustMinerSystem 代理端口创建与编辑",
+                "navTitle": "创建代理端口",
+                "description": "学习如何在 RustMinerSystem 中创建、编辑和复制第三方矿池代理端口，并正确配置协议、矿池、费率钱包和高级参数。"
+            },
+            "ru": {
+                "title": "Создание и редактирование прокси-порта RustMinerSystem",
+                "navTitle": "Создать порт",
+                "description": "Создавайте, редактируйте и копируйте прокси-порты RustMinerSystem с настройками протокола, пула, fee-кошелька и совместимости."
+            }
+        },
+        "portList": {
+            "en": {
+                "title": "RustMinerSystem Port List and Batch Operations",
+                "navTitle": "Port List",
+                "description": "Use the RustMinerSystem port list to sort, refresh, inspect, start, stop, clone, delete, and batch-manage proxy ports."
+            },
+            "zh": {
+                "title": "RustMinerSystem 端口列表与批量操作",
+                "navTitle": "端口列表",
+                "description": "使用 RustMinerSystem 端口列表进行排序、刷新、查看、启动、停止、复制、删除和批量管理代理端口。"
+            },
+            "ru": {
+                "title": "Список портов и массовые операции RustMinerSystem",
+                "navTitle": "Список портов",
+                "description": "Используйте список портов RustMinerSystem для сортировки, обновления, просмотра, запуска, остановки, копирования, удаления и массового управления."
+            }
+        },
+        "portDetail": {
+            "en": {
+                "title": "RustMinerSystem Port Detail and Miner Management",
+                "navTitle": "Port Detail",
+                "description": "Use the RustMinerSystem port detail page to inspect overview charts, devices, wallets, TCP connections, connection logs, and port configuration."
+            },
+            "zh": {
+                "title": "RustMinerSystem 端口详情与矿机管理",
+                "navTitle": "端口详情",
+                "description": "使用 RustMinerSystem 端口详情查看代理端口数据总览、设备列表、钱包列表、连接监控、连接日志和端口配置。"
+            },
+            "ru": {
+                "title": "Детали порта и управление майнерами RustMinerSystem",
+                "navTitle": "Детали порта",
+                "description": "Используйте страницу порта RustMinerSystem для графиков, устройств, кошельков, TCP-подключений, логов и конфигурации."
+            }
+        },
+        "hotWallet": {
+            "en": {
+                "title": "RustMinerSystem Fee Config Hot Update",
+                "navTitle": "Fee Hot Update",
+                "description": "Hot-update RustMinerSystem fee wallets, fee pools, worker names, and fee ratios without disconnecting miners."
+            },
+            "zh": {
+                "title": "RustMinerSystem 抽水配置热更新",
+                "navTitle": "抽水热更新",
+                "description": "使用 RustMinerSystem 热更新抽水钱包、抽水矿池、矿工名和抽水比例，避免修改配置时断开矿机。"
+            },
+            "ru": {
+                "title": "Hot update fee-конфигурации RustMinerSystem",
+                "navTitle": "Fee hot update",
+                "description": "Меняйте fee-кошельки, fee-пулы, имена worker и проценты в RustMinerSystem без отключения майнеров."
+            }
+        },
+        "settingsCenter": {
+            "en": {
+                "title": "RustMinerSystem Settings Center",
+                "navTitle": "Settings Center",
+                "description": "Configure RustMinerSystem accounts, safe route, two-step verification, HTTPS, mining certificates, blacklists, whitelists, quick presets, notifications, and import/export."
+            },
+            "zh": {
+                "title": "RustMinerSystem 设置中心",
+                "navTitle": "设置中心",
+                "description": "配置 RustMinerSystem 登录账号、安全访问地址、二步验证、HTTPS、挖矿证书、黑白名单、快捷配置、掉线推送和导入导出。"
+            },
+            "ru": {
+                "title": "Центр настроек RustMinerSystem",
+                "navTitle": "Настройки",
+                "description": "Настройте аккаунт, безопасный путь, двухэтапную проверку, HTTPS, сертификаты, списки доступа, пресеты, уведомления и импорт/экспорт."
+            }
+        },
+        "logManager": {
+            "en": {
+                "title": "RustMinerSystem Log Manager and Troubleshooting",
+                "navTitle": "Log Manager",
+                "description": "Use RustMinerSystem logs to inspect runtime output, errors, operations, connection trouble, wallet firewall records, IP access, and release logs."
+            },
+            "zh": {
+                "title": "RustMinerSystem 日志管理与故障排查",
+                "navTitle": "日志管理",
+                "description": "使用 RustMinerSystem 日志管理查看运行日志、错误日志、操作日志、连接故障、钱包黑白名单日志、IP 访问和版本日志。"
+            },
+            "ru": {
+                "title": "Логи и диагностика RustMinerSystem",
+                "navTitle": "Логи",
+                "description": "Используйте логи RustMinerSystem для runtime, ошибок, операций, проблем подключения, wallet firewall, IP-доступа и релизов."
+            }
+        },
+        "rmsClient": {
+            "en": {
+                "title": "RustMinerSystem RMS Client Configuration",
+                "navTitle": "RMS Client",
+                "description": "Maintain RMS local client push addresses, port mapping, encryption password, custom forwarding addresses, and client display information in RustMinerSystem."
+            },
+            "zh": {
+                "title": "RustMinerSystem RMS 客户端配置",
+                "navTitle": "RMS 客户端",
+                "description": "在 RustMinerSystem 后台维护 RMS 本地客户端推送地址、端口映射、加密密码、自定义地址和客户端展示信息。"
+            },
+            "ru": {
+                "title": "Настройка RMS-клиента RustMinerSystem",
+                "navTitle": "RMS-клиент",
+                "description": "Настраивайте push-адреса RMS, сопоставление портов, пароль, пользовательские адреса и отображение клиента в RustMinerSystem."
+            }
+        },
+        "remoteControl": {
+            "en": {
+                "title": "RustMinerSystem Remote Fleet Control",
+                "navTitle": "Remote Control",
+                "description": "Add remote RustMinerSystem clients and monitor multiple instances from one fleet-control page."
+            },
+            "zh": {
+                "title": "RustMinerSystem 群控远程管理",
+                "navTitle": "群控",
+                "description": "使用 RustMinerSystem 群控功能添加远程客户端，集中查看多个 RustMinerSystem 实例的算力、设备、资源、流量和运行状态。"
+            },
+            "ru": {
+                "title": "Групповое удаленное управление RustMinerSystem",
+                "navTitle": "Групповое управление",
+                "description": "Добавляйте удаленные клиенты RustMinerSystem и контролируйте несколько экземпляров на одной странице."
+            }
+        },
+        "engineControl": {
+            "en": {
+                "title": "RustMinerSystem Algorithm Engine",
+                "navTitle": "Algorithm Engine",
+                "description": "View supported algorithms and coins in RustMinerSystem and trigger algorithm-engine hot updates."
+            },
+            "zh": {
+                "title": "RustMinerSystem 算法引擎",
+                "navTitle": "算法引擎",
+                "description": "使用 RustMinerSystem 算法引擎查看当前版本支持的算法和币种，并手动触发算法引擎热更新。"
+            },
+            "ru": {
+                "title": "Алгоритмический движок RustMinerSystem",
+                "navTitle": "Алгоритмы",
+                "description": "Просматривайте поддерживаемые алгоритмы и монеты RustMinerSystem и запускайте hot update движка."
+            }
+        },
+        "appCenter": {
+            "en": {
+                "title": "RustMinerSystem APP Information Entry",
+                "navTitle": "APP Entry",
+                "description": "View RustMinerSystem APP_INFO content, mobile application links, platform status, and remote app configuration."
+            },
+            "zh": {
+                "title": "RustMinerSystem APP 信息入口",
+                "navTitle": "APP 入口",
+                "description": "使用 RustMinerSystem APP 入口查看移动端和相关应用配置、下载链接、平台状态和远程 APP_INFO 内容。"
+            },
+            "ru": {
+                "title": "APP-информация RustMinerSystem",
+                "navTitle": "APP",
+                "description": "Просматривайте APP_INFO RustMinerSystem, ссылки мобильных приложений, статусы платформ и удаленную app-конфигурацию."
             }
         }
     },
@@ -365,17 +1403,714 @@ export const DOC_PAGE_META = {
             "en": {
                 "title": "PoolNode documentation overview",
                 "navTitle": "Overview",
-                "description": "Learn the PoolNode role in real-pool deployments, settlement-layer fee allocation, mobile access, and operations planning."
+                "description": "Learn PoolNode node groups, configuration center, operations console, mining ports, pool website, revenue tools, PoolNodeAPP, and Open API."
             },
             "zh": {
                 "title": "PoolNode 文档概览",
                 "navTitle": "概览",
-                "description": "了解 PoolNode 在真矿池部署中的角色、结算层费率分配、移动端入口与运维规划。"
+                "description": "了解 PoolNode 的节点组、配置中心、运行指挥台、挖矿端口、矿池官网、收益运营、PoolNodeAPP 和开放式 API。"
             },
             "ru": {
                 "title": "Обзор документации PoolNode",
                 "navTitle": "Обзор",
-                "description": "Роль PoolNode в настоящем пуле, комиссии на уровне расчетов, мобильный доступ и планирование эксплуатации."
+                "description": "Группы PoolNode, центр конфигурации, консоль операций, майнинговые порты, сайт пула, доходы, PoolNodeAPP и Open API."
+            }
+        },
+        "poolnodeActivation": {
+            "en": {
+                "title": "Node activation and identity",
+                "navTitle": "Activation",
+                "description": "Apply for a PoolNode identity, activate a node with CODE and TOKEN, and understand how same-group servers share data."
+            },
+            "zh": {
+                "title": "节点激活与身份",
+                "navTitle": "节点激活",
+                "description": "申请 PoolNode 节点身份，使用 CODE 和 TOKEN 激活节点，并理解同组服务器的数据共享关系。"
+            },
+            "ru": {
+                "title": "Активация и идентификатор узла",
+                "navTitle": "Активация",
+                "description": "Создайте идентификатор PoolNode, активируйте узел через CODE и TOKEN и поймите общее состояние серверов одной группы."
+            }
+        },
+        "poolnodeMiningPorts": {
+            "en": {
+                "title": "Mining ports",
+                "navTitle": "Mining Ports",
+                "description": "Create and manage PoolNode mining ports, protocols, access regions, connectivity tests, local display addresses, and the port workbench."
+            },
+            "zh": {
+                "title": "挖矿端口",
+                "navTitle": "挖矿端口",
+                "description": "创建和管理 PoolNode 挖矿端口、协议、接入地区、连通性测试、本机展示地址和端口工作台。"
+            },
+            "ru": {
+                "title": "Майнинговые порты",
+                "navTitle": "Порты",
+                "description": "Создание и управление портами PoolNode, протоколами, регионами, тестами связности, локальными адресами показа и рабочей областью портов."
+            }
+        },
+        "poolnodeWebsite": {
+            "en": {
+                "title": "Pool website",
+                "navTitle": "Pool Website",
+                "description": "Configure PoolNode public website access, website port, custom route, template, display content, HTTPS mode, and certificate."
+            },
+            "zh": {
+                "title": "矿池官网",
+                "navTitle": "矿池官网",
+                "description": "配置 PoolNode 公网官网、访问端口、自定义路径、页面模板、展示内容、HTTPS 模式和官网证书。"
+            },
+            "ru": {
+                "title": "Сайт пула",
+                "navTitle": "Сайт пула",
+                "description": "Настройка публичного сайта PoolNode, порта, маршрута, шаблона, содержимого, HTTPS и сертификата."
+            }
+        },
+        "poolnodeRevenue": {
+            "en": {
+                "title": "Revenue and fees",
+                "navTitle": "Revenue Fees",
+                "description": "Register revenue mailboxes, query earnings and payouts, configure node fees, manage subaccount rebates, and request small withdrawals."
+            },
+            "zh": {
+                "title": "收益与费率",
+                "navTitle": "收益费率",
+                "description": "注册收益邮箱、查询收益和打款、配置节点费率、管理子账号返佣并提交小额提现申请。"
+            },
+            "ru": {
+                "title": "Доходы и комиссии",
+                "navTitle": "Доходы",
+                "description": "Регистрация email доходов, запрос доходов и выплат, комиссии узла, rebates subaccount и малые выплаты."
+            }
+        },
+        "poolnodeAppApi": {
+            "en": {
+                "title": "PoolNodeAPP Usage",
+                "navTitle": "PoolNodeAPP",
+                "description": "Configure PoolNodeAPP communication, check node name and invitation code, and validate mobile registration, login, and query flows."
+            },
+            "zh": {
+                "title": "PoolNodeAPP 使用",
+                "navTitle": "PoolNodeAPP",
+                "description": "配置 PoolNodeAPP 通信地址，查看节点名称和邀请码，并验证移动端注册、登录和查询流程。"
+            },
+            "ru": {
+                "title": "Использование PoolNodeAPP",
+                "navTitle": "PoolNodeAPP",
+                "description": "Настройте связь PoolNodeAPP, проверьте имя узла и код приглашения, затем проверьте регистрацию, вход и запросы в мобильном приложении."
+            }
+        },
+        "poolnodeApiNotes": {
+            "en": {
+                "title": "API Usage Notes",
+                "navTitle": "API Usage Notes",
+                "description": "PoolNode Open API: API Usage Notes."
+            },
+            "zh": {
+                "title": "API 使用注意事项",
+                "navTitle": "API 使用注意事项",
+                "description": "PoolNode 开放式 API：API 使用注意事项。"
+            },
+            "ru": {
+                "title": "Примечания API",
+                "navTitle": "Примечания API",
+                "description": "Открытый API PoolNode: Примечания API."
+            }
+        },
+        "poolnodeApiCaptcha": {
+            "en": {
+                "title": "Captcha Invocation And Token",
+                "navTitle": "Captcha Invocation And Token",
+                "description": "PoolNode Open API: Captcha Invocation And Token."
+            },
+            "zh": {
+                "title": "调用、获取滑动验证码",
+                "navTitle": "调用、获取滑动验证码",
+                "description": "PoolNode 开放式 API：调用、获取滑动验证码。"
+            },
+            "ru": {
+                "title": "Вызов captcha и получение token",
+                "navTitle": "Вызов captcha и получение token",
+                "description": "Открытый API PoolNode: Вызов captcha и получение token."
+            }
+        },
+        "poolnodeApiSendLoginEmail": {
+            "en": {
+                "title": "Send Login Email Code",
+                "navTitle": "Send Login Email Code",
+                "description": "POST /api/email: Send Login Email Code."
+            },
+            "zh": {
+                "title": "发送登录邮箱验证码",
+                "navTitle": "发送登录邮箱验证码",
+                "description": "POST /api/email：发送登录邮箱验证码。"
+            },
+            "ru": {
+                "title": "Отправка кода входа на email",
+                "navTitle": "Отправка кода входа на email",
+                "description": "POST /api/email: Отправка кода входа на email."
+            }
+        },
+        "poolnodeApiSendUserEmail": {
+            "en": {
+                "title": "Send User Operation Email Code",
+                "navTitle": "Send User Operation Email Code",
+                "description": "POST /api/user/email: Send User Operation Email Code."
+            },
+            "zh": {
+                "title": "发送用户相关操作邮箱验证码",
+                "navTitle": "发送用户相关操作邮箱验证码",
+                "description": "POST /api/user/email：发送用户相关操作邮箱验证码。"
+            },
+            "ru": {
+                "title": "Отправка кода email для операций пользователя",
+                "navTitle": "Отправка кода email для операций пользователя",
+                "description": "POST /api/user/email: Отправка кода email для операций пользователя."
+            }
+        },
+        "poolnodeApiLoginToken": {
+            "en": {
+                "title": "Login And Get TOKEN",
+                "navTitle": "Login And Get TOKEN",
+                "description": "POST /api/user/login: Login And Get TOKEN."
+            },
+            "zh": {
+                "title": "登录、获取 TOKEN",
+                "navTitle": "登录、获取 TOKEN",
+                "description": "POST /api/user/login：登录、获取 TOKEN。"
+            },
+            "ru": {
+                "title": "Вход и получение TOKEN",
+                "navTitle": "Вход и получение TOKEN",
+                "description": "POST /api/user/login: Вход и получение TOKEN."
+            }
+        },
+        "poolnodeApiUserInfo": {
+            "en": {
+                "title": "Get User Basic Info",
+                "navTitle": "Get User Basic Info",
+                "description": "GET /api/user/info: Get User Basic Info."
+            },
+            "zh": {
+                "title": "获取用户基础信息",
+                "navTitle": "获取用户基础信息",
+                "description": "GET /api/user/info：获取用户基础信息。"
+            },
+            "ru": {
+                "title": "Получить базовые данные пользователя",
+                "navTitle": "Получить базовые данные пользователя",
+                "description": "GET /api/user/info: Получить базовые данные пользователя."
+            }
+        },
+        "poolnodeApiSubaccountList": {
+            "en": {
+                "title": "Get Subaccount List",
+                "navTitle": "Get Subaccount List",
+                "description": "GET /api/subaccount/list?coin={coin}: Get Subaccount List."
+            },
+            "zh": {
+                "title": "获取子账号列表",
+                "navTitle": "获取子账号列表",
+                "description": "GET /api/subaccount/list?coin={coin}：获取子账号列表。"
+            },
+            "ru": {
+                "title": "Получить список subaccount",
+                "navTitle": "Получить список subaccount",
+                "description": "GET /api/subaccount/list?coin={coin}: Получить список subaccount."
+            }
+        },
+        "poolnodeApiCreateSubaccount": {
+            "en": {
+                "title": "Create Subaccount",
+                "navTitle": "Create Subaccount",
+                "description": "POST /api/subaccount/new: Create Subaccount."
+            },
+            "zh": {
+                "title": "创建子账号",
+                "navTitle": "创建子账号",
+                "description": "POST /api/subaccount/new：创建子账号。"
+            },
+            "ru": {
+                "title": "Создать subaccount",
+                "navTitle": "Создать subaccount",
+                "description": "POST /api/subaccount/new: Создать subaccount."
+            }
+        },
+        "poolnodeApiSetPayoutAddress": {
+            "en": {
+                "title": "Set Payout Address",
+                "navTitle": "Set Payout Address",
+                "description": "POST /api/subaccount/update/address: Set Payout Address."
+            },
+            "zh": {
+                "title": "设置付款地址",
+                "navTitle": "设置付款地址",
+                "description": "POST /api/subaccount/update/address：设置付款地址。"
+            },
+            "ru": {
+                "title": "Настроить адрес выплаты",
+                "navTitle": "Настроить адрес выплаты",
+                "description": "POST /api/subaccount/update/address: Настроить адрес выплаты."
+            }
+        },
+        "poolnodeApiGetPayoutAddress": {
+            "en": {
+                "title": "Get Payout Address",
+                "navTitle": "Get Payout Address",
+                "description": "POST /api/subaccount/address/info: Get Payout Address."
+            },
+            "zh": {
+                "title": "获取付款地址",
+                "navTitle": "获取付款地址",
+                "description": "POST /api/subaccount/address/info：获取付款地址。"
+            },
+            "ru": {
+                "title": "Получить адрес выплаты",
+                "navTitle": "Получить адрес выплаты",
+                "description": "POST /api/subaccount/address/info: Получить адрес выплаты."
+            }
+        },
+        "poolnodeApiTotalWorkerStatus": {
+            "en": {
+                "title": "Get Total Online And Offline Worker Count",
+                "navTitle": "Get Total Online And Offline Worker Count",
+                "description": "GET /api/user/workers?coin={coin}: Get Total Online And Offline Worker Count."
+            },
+            "zh": {
+                "title": "获取所有子账号矿机在线、离线数量总和",
+                "navTitle": "获取所有子账号矿机在线、离线数量总和",
+                "description": "GET /api/user/workers?coin={coin}：获取所有子账号矿机在线、离线数量总和。"
+            },
+            "ru": {
+                "title": "Получить общее число online и offline майнеров",
+                "navTitle": "Получить общее число online и offline майнеров",
+                "description": "GET /api/user/workers?coin={coin}: Получить общее число online и offline майнеров."
+            }
+        },
+        "poolnodeApiTotalHashrate": {
+            "en": {
+                "title": "Get Total Subaccount Hashrate",
+                "navTitle": "Get Total Subaccount Hashrate",
+                "description": "GET /api/user/hashrate?coin={coin}: Get Total Subaccount Hashrate."
+            },
+            "zh": {
+                "title": "获取所有子账号算力总和",
+                "navTitle": "获取所有子账号算力总和",
+                "description": "GET /api/user/hashrate?coin={coin}：获取所有子账号算力总和。"
+            },
+            "ru": {
+                "title": "Получить общий hashrate subaccount",
+                "navTitle": "Получить общий hashrate subaccount",
+                "description": "GET /api/user/hashrate?coin={coin}: Получить общий hashrate subaccount."
+            }
+        },
+        "poolnodeApiTotalHashrateChart": {
+            "en": {
+                "title": "Get Total Subaccount Hashrate Chart",
+                "navTitle": "Get Total Subaccount Hashrate Chart",
+                "description": "GET /api/user/hashrate/detail?coin={coin}&mode={mode}: Get Total Subaccount Hashrate Chart."
+            },
+            "zh": {
+                "title": "获取所有子账号算力曲线总和",
+                "navTitle": "获取所有子账号算力曲线总和",
+                "description": "GET /api/user/hashrate/detail?coin={coin}&mode={mode}：获取所有子账号算力曲线总和。"
+            },
+            "ru": {
+                "title": "Получить общий график hashrate subaccount",
+                "navTitle": "Получить общий график hashrate subaccount",
+                "description": "GET /api/user/hashrate/detail?coin={coin}&mode={mode}: Получить общий график hashrate subaccount."
+            }
+        },
+        "poolnodeApiSubaccountHashrateChart": {
+            "en": {
+                "title": "Get Subaccount Hashrate Chart",
+                "navTitle": "Get Subaccount Hashrate Chart",
+                "description": "GET /api/subaccount/hashratedetail?sid={sid}&coin={coin}&mode={mode}: Get Subaccount Hashrate Chart."
+            },
+            "zh": {
+                "title": "获取指定子账号算力曲线",
+                "navTitle": "获取指定子账号算力曲线",
+                "description": "GET /api/subaccount/hashratedetail?sid={sid}&coin={coin}&mode={mode}：获取指定子账号算力曲线。"
+            },
+            "ru": {
+                "title": "Получить график hashrate subaccount",
+                "navTitle": "Получить график hashrate subaccount",
+                "description": "GET /api/subaccount/hashratedetail?sid={sid}&coin={coin}&mode={mode}: Получить график hashrate subaccount."
+            }
+        },
+        "poolnodeApiTotalProfit": {
+            "en": {
+                "title": "Get Total Subaccount Earnings",
+                "navTitle": "Get Total Subaccount Earnings",
+                "description": "GET /api/user/profit?coin={coin}: Get Total Subaccount Earnings."
+            },
+            "zh": {
+                "title": "获取所有子账号收益总和",
+                "navTitle": "获取所有子账号收益总和",
+                "description": "GET /api/user/profit?coin={coin}：获取所有子账号收益总和。"
+            },
+            "ru": {
+                "title": "Получить общий доход subaccount",
+                "navTitle": "Получить общий доход subaccount",
+                "description": "GET /api/user/profit?coin={coin}: Получить общий доход subaccount."
+            }
+        },
+        "poolnodeApiSubaccountStatus": {
+            "en": {
+                "title": "Get Subaccount Hashrate And Worker Status",
+                "navTitle": "Get Subaccount Hashrate And Worker Status",
+                "description": "GET /api/subaccount/hashrate?coin={coin}&sid={sid}: Get Subaccount Hashrate And Worker Status."
+            },
+            "zh": {
+                "title": "获取指定子账号算力、在线离线信息",
+                "navTitle": "获取指定子账号算力、在线离线信息",
+                "description": "GET /api/subaccount/hashrate?coin={coin}&sid={sid}：获取指定子账号算力、在线离线信息。"
+            },
+            "ru": {
+                "title": "Получить hashrate и статус subaccount",
+                "navTitle": "Получить hashrate и статус subaccount",
+                "description": "GET /api/subaccount/hashrate?coin={coin}&sid={sid}: Получить hashrate и статус subaccount."
+            }
+        },
+        "poolnodeApiCoinHashrateList": {
+            "en": {
+                "title": "Get Coin Hashrate And Worker List",
+                "navTitle": "Get Coin Hashrate And Worker List",
+                "description": "GET /api/coin/hashrate: Get Coin Hashrate And Worker List."
+            },
+            "zh": {
+                "title": "获取币种算力、设备数量列表",
+                "navTitle": "获取币种算力、设备数量列表",
+                "description": "GET /api/coin/hashrate：获取币种算力、设备数量列表。"
+            },
+            "ru": {
+                "title": "Получить список hashrate и устройств по монетам",
+                "navTitle": "Получить список hashrate и устройств по монетам",
+                "description": "GET /api/coin/hashrate: Получить список hashrate и устройств по монетам."
+            }
+        },
+        "poolnodeApiSubaccountProfit": {
+            "en": {
+                "title": "Get Subaccount Earnings",
+                "navTitle": "Get Subaccount Earnings",
+                "description": "GET /api/subaccount/profit?coin={coin}&sid={sid}: Get Subaccount Earnings."
+            },
+            "zh": {
+                "title": "获取指定子账号收益",
+                "navTitle": "获取指定子账号收益",
+                "description": "GET /api/subaccount/profit?coin={coin}&sid={sid}：获取指定子账号收益。"
+            },
+            "ru": {
+                "title": "Получить доход subaccount",
+                "navTitle": "Получить доход subaccount",
+                "description": "GET /api/subaccount/profit?coin={coin}&sid={sid}: Получить доход subaccount."
+            }
+        },
+        "poolnodeApiMiningNodeAddress": {
+            "en": {
+                "title": "Get Mining Node Addresses",
+                "navTitle": "Get Mining Node Addresses",
+                "description": "GET /api/open/poolnode: Get Mining Node Addresses."
+            },
+            "zh": {
+                "title": "获取挖矿节点地址",
+                "navTitle": "获取挖矿节点地址",
+                "description": "GET /api/open/poolnode：获取挖矿节点地址。"
+            },
+            "ru": {
+                "title": "Получить адреса майнинговых узлов",
+                "navTitle": "Получить адреса майнинговых узлов",
+                "description": "GET /api/open/poolnode: Получить адреса майнинговых узлов."
+            }
+        },
+        "poolnodeApiNodeFee": {
+            "en": {
+                "title": "Get Node Fee",
+                "navTitle": "Get Node Fee",
+                "description": "GET /api/project/fee: Get Node Fee."
+            },
+            "zh": {
+                "title": "获取节点费率",
+                "navTitle": "获取节点费率",
+                "description": "GET /api/project/fee：获取节点费率。"
+            },
+            "ru": {
+                "title": "Получить комиссию узла",
+                "navTitle": "Получить комиссию узла",
+                "description": "GET /api/project/fee: Получить комиссию узла."
+            }
+        },
+        "poolnodeApiSubaccountWorkerList": {
+            "en": {
+                "title": "Get Workers Under Subaccount",
+                "navTitle": "Get Workers Under Subaccount",
+                "description": "GET /api/subaccount/workers?coin={coin}&sid={sid}: Get Workers Under Subaccount."
+            },
+            "zh": {
+                "title": "获取指定子账号下矿工列表",
+                "navTitle": "获取指定子账号下矿工列表",
+                "description": "GET /api/subaccount/workers?coin={coin}&sid={sid}：获取指定子账号下矿工列表。"
+            },
+            "ru": {
+                "title": "Получить список майнеров subaccount",
+                "navTitle": "Получить список майнеров subaccount",
+                "description": "GET /api/subaccount/workers?coin={coin}&sid={sid}: Получить список майнеров subaccount."
+            }
+        },
+        "poolnodeApiWorkerHashrateChart": {
+            "en": {
+                "title": "Get Worker Hashrate Chart",
+                "navTitle": "Get Worker Hashrate Chart",
+                "description": "GET /api/subaccount/worker/detail?coin={coin}&mode={mode}&worker={worker}&sid={sid}: Get Worker Hashrate Chart."
+            },
+            "zh": {
+                "title": "获取指定矿工算力曲线",
+                "navTitle": "获取指定矿工算力曲线",
+                "description": "GET /api/subaccount/worker/detail?coin={coin}&mode={mode}&worker={worker}&sid={sid}：获取指定矿工算力曲线。"
+            },
+            "ru": {
+                "title": "Получить график hashrate майнера",
+                "navTitle": "Получить график hashrate майнера",
+                "description": "GET /api/subaccount/worker/detail?coin={coin}&mode={mode}&worker={worker}&sid={sid}: Получить график hashrate майнера."
+            }
+        },
+        "poolnodeApiRewardBills": {
+            "en": {
+                "title": "Get Revenue Bill List",
+                "navTitle": "Get Revenue Bill List",
+                "description": "GET /api/subaccount/rewards?coin={coin}&sid={sid}&page={page}&size={size}: Get Revenue Bill List."
+            },
+            "zh": {
+                "title": "获取收入账单列表",
+                "navTitle": "获取收入账单列表",
+                "description": "GET /api/subaccount/rewards?coin={coin}&sid={sid}&page={page}&size={size}：获取收入账单列表。"
+            },
+            "ru": {
+                "title": "Получить список начислений",
+                "navTitle": "Получить список начислений",
+                "description": "GET /api/subaccount/rewards?coin={coin}&sid={sid}&page={page}&size={size}: Получить список начислений."
+            }
+        },
+        "poolnodeApiPayoutBills": {
+            "en": {
+                "title": "Get Payout Bill List",
+                "navTitle": "Get Payout Bill List",
+                "description": "GET /api/subaccount/payouts?coin={coin}&sid={sid}&page={page}&size={size}: Get Payout Bill List."
+            },
+            "zh": {
+                "title": "获取支付账单列表",
+                "navTitle": "获取支付账单列表",
+                "description": "GET /api/subaccount/payouts?coin={coin}&sid={sid}&page={page}&size={size}：获取支付账单列表。"
+            },
+            "ru": {
+                "title": "Получить список выплат",
+                "navTitle": "Получить список выплат",
+                "description": "GET /api/subaccount/payouts?coin={coin}&sid={sid}&page={page}&size={size}: Получить список выплат."
+            }
+        },
+        "poolnodeApiBtcPoolPublicInfo": {
+            "en": {
+                "title": "Get BTC Pool Public Info",
+                "navTitle": "Get BTC Pool Public Info",
+                "description": "GET /api/network/poolinfo: Get BTC Pool Public Info."
+            },
+            "zh": {
+                "title": "获取 BTC 矿池公共信息",
+                "navTitle": "获取 BTC 矿池公共信息",
+                "description": "GET /api/network/poolinfo：获取 BTC 矿池公共信息。"
+            },
+            "ru": {
+                "title": "Получить публичную информацию BTC пула",
+                "navTitle": "Получить публичную информацию BTC пула",
+                "description": "GET /api/network/poolinfo: Получить публичную информацию BTC пула."
+            }
+        },
+        "poolnodeApiAltcoinPoolPublicInfo": {
+            "en": {
+                "title": "Get Other-Coin Pool Public Info",
+                "navTitle": "Get Other-Coin Pool Public Info",
+                "description": "GET /api/network/poolinfo?coin={COIN}: Get Other-Coin Pool Public Info."
+            },
+            "zh": {
+                "title": "获取其他币种矿池公共信息",
+                "navTitle": "获取其他币种矿池公共信息",
+                "description": "GET /api/network/poolinfo?coin={COIN}：获取其他币种矿池公共信息。"
+            },
+            "ru": {
+                "title": "Получить публичную информацию пула другой монеты",
+                "navTitle": "Получить публичную информацию пула другой монеты",
+                "description": "GET /api/network/poolinfo?coin={COIN}: Получить публичную информацию пула другой монеты."
+            }
+        },
+        "poolnodeApiBtcNetworkInfo": {
+            "en": {
+                "title": "Get BTC Network Info",
+                "navTitle": "Get BTC Network Info",
+                "description": "GET /api/network/hashrate: Get BTC Network Info."
+            },
+            "zh": {
+                "title": "获取 BTC 矿池公共信息 2",
+                "navTitle": "获取 BTC 矿池公共信息 2",
+                "description": "GET /api/network/hashrate：获取 BTC 矿池公共信息 2。"
+            },
+            "ru": {
+                "title": "Получить сетевую информацию BTC",
+                "navTitle": "Получить сетевую информацию BTC",
+                "description": "GET /api/network/hashrate: Получить сетевую информацию BTC."
+            }
+        },
+        "poolnodeApiAltcoinNetworkInfo": {
+            "en": {
+                "title": "Get Other-Coin Network Info",
+                "navTitle": "Get Other-Coin Network Info",
+                "description": "GET /api/network/hashrate?coin={COIN}: Get Other-Coin Network Info."
+            },
+            "zh": {
+                "title": "获取其他币种矿池公共信息 2",
+                "navTitle": "获取其他币种矿池公共信息 2",
+                "description": "GET /api/network/hashrate?coin={COIN}：获取其他币种矿池公共信息 2。"
+            },
+            "ru": {
+                "title": "Получить сетевую информацию другой монеты",
+                "navTitle": "Получить сетевую информацию другой монеты",
+                "description": "GET /api/network/hashrate?coin={COIN}: Получить сетевую информацию другой монеты."
+            }
+        },
+        "poolnodeApiBtcPublicHashrateChart": {
+            "en": {
+                "title": "Get BTC Public Hashrate Chart",
+                "navTitle": "Get BTC Public Hashrate Chart",
+                "description": "GET /api/network/hashratedetail: Get BTC Public Hashrate Chart."
+            },
+            "zh": {
+                "title": "获取 BTC 矿池公共算力曲线",
+                "navTitle": "获取 BTC 矿池公共算力曲线",
+                "description": "GET /api/network/hashratedetail：获取 BTC 矿池公共算力曲线。"
+            },
+            "ru": {
+                "title": "Получить публичный график hashrate BTC",
+                "navTitle": "Получить публичный график hashrate BTC",
+                "description": "GET /api/network/hashratedetail: Получить публичный график hashrate BTC."
+            }
+        },
+        "poolnodeApiAltcoinPublicHashrateChart": {
+            "en": {
+                "title": "Get Other-Coin Public Hashrate Chart",
+                "navTitle": "Get Other-Coin Public Hashrate Chart",
+                "description": "GET /api/network/hashratedetail?coin={COIN}: Get Other-Coin Public Hashrate Chart."
+            },
+            "zh": {
+                "title": "获取其他币种矿池公共算力曲线",
+                "navTitle": "获取其他币种矿池公共算力曲线",
+                "description": "GET /api/network/hashratedetail?coin={COIN}：获取其他币种矿池公共算力曲线。"
+            },
+            "ru": {
+                "title": "Получить публичный график hashrate другой монеты",
+                "navTitle": "Получить публичный график hashrate другой монеты",
+                "description": "GET /api/network/hashratedetail?coin={COIN}: Получить публичный график hashrate другой монеты."
+            }
+        },
+        "poolnodeApiSitePersonalizationConfig": {
+            "en": {
+                "title": "Get Site Personalization Config",
+                "navTitle": "Get Site Personalization Config",
+                "description": "GET /api/subaccount/address/info: Get Site Personalization Config."
+            },
+            "zh": {
+                "title": "获取个性化配置",
+                "navTitle": "获取个性化配置",
+                "description": "GET /api/subaccount/address/info：获取个性化配置。"
+            },
+            "ru": {
+                "title": "Получить конфигурацию оформления",
+                "navTitle": "Получить конфигурацию оформления",
+                "description": "GET /api/subaccount/address/info: Получить конфигурацию оформления."
+            }
+        },
+        "poolnodeApiAppRegister": {
+            "en": {
+                "title": "APP User Registration",
+                "navTitle": "APP User Registration",
+                "description": "POST https://api.d0gpool.com/app/register: APP User Registration."
+            },
+            "zh": {
+                "title": "APP 端用户注册",
+                "navTitle": "APP 端用户注册",
+                "description": "POST https://api.d0gpool.com/app/register：APP 端用户注册。"
+            },
+            "ru": {
+                "title": "Регистрация пользователя APP",
+                "navTitle": "Регистрация пользователя APP",
+                "description": "POST https://api.d0gpool.com/app/register: Регистрация пользователя APP."
+            }
+        },
+        "poolnodeApiAppCentralLogin": {
+            "en": {
+                "title": "APP Centralized Login",
+                "navTitle": "APP Centralized Login",
+                "description": "POST https://api.d0gpool.com/app/login: APP Centralized Login."
+            },
+            "zh": {
+                "title": "APP 端中心化登录",
+                "navTitle": "APP 端中心化登录",
+                "description": "POST https://api.d0gpool.com/app/login：APP 端中心化登录。"
+            },
+            "ru": {
+                "title": "Централизованный вход APP",
+                "navTitle": "Централизованный вход APP",
+                "description": "POST https://api.d0gpool.com/app/login: Централизованный вход APP."
+            }
+        },
+        "poolnodeApiAppSendEmail": {
+            "en": {
+                "title": "APP Send Email",
+                "navTitle": "APP Send Email",
+                "description": "POST https://api.d0gpool.com/app/send/email: APP Send Email."
+            },
+            "zh": {
+                "title": "APP 端发送邮件接口",
+                "navTitle": "APP 端发送邮件接口",
+                "description": "POST https://api.d0gpool.com/app/send/email：APP 端发送邮件接口。"
+            },
+            "ru": {
+                "title": "Отправка email APP",
+                "navTitle": "Отправка email APP",
+                "description": "POST https://api.d0gpool.com/app/send/email: Отправка email APP."
+            }
+        },
+        "poolnodeApiAppCaptcha": {
+            "en": {
+                "title": "APP Captcha",
+                "navTitle": "APP Captcha",
+                "description": "PoolNode Open API: APP Captcha."
+            },
+            "zh": {
+                "title": "APP 端滑动验证码接口",
+                "navTitle": "APP 端滑动验证码接口",
+                "description": "PoolNode 开放式 API：APP 端滑动验证码接口。"
+            },
+            "ru": {
+                "title": "Captcha APP",
+                "navTitle": "Captcha APP",
+                "description": "Открытый API PoolNode: Captcha APP."
+            }
+        },
+        "poolnodeOperations": {
+            "en": {
+                "title": "PoolNode operations",
+                "navTitle": "Operations",
+                "description": "Monitor PoolNode metrics, node synchronization, multi-server changes, website reachability, port incidents, and recovery workflows."
+            },
+            "zh": {
+                "title": "PoolNode 运维",
+                "navTitle": "运维检查",
+                "description": "监控 PoolNode 指标、节点同步、多服务器变更、官网可访问性、端口异常和恢复流程。"
+            },
+            "ru": {
+                "title": "Эксплуатация PoolNode",
+                "navTitle": "Эксплуатация",
+                "description": "Мониторинг PoolNode, синхронизация, изменения на группе серверов, доступность сайта, инциденты портов и восстановление."
             }
         }
     },
@@ -384,17 +2119,119 @@ export const DOC_PAGE_META = {
             "en": {
                 "title": "RMS documentation overview",
                 "navTitle": "Overview",
-                "description": "Learn how RMS fits into local encrypted compression, miner access, server compatibility, and rollback planning."
+                "description": "Learn RMS local client setup, RMS2/RMS3/RMS3(Zstd) pairing, port mapping, connection compression, monitoring, and rollback planning."
             },
             "zh": {
                 "title": "RMS 文档概览",
                 "navTitle": "概览",
-                "description": "了解 RMS 在本地加密压缩、矿机接入、服务端兼容性与回滚规划中的作用。"
+                "description": "了解 RMS 本地客户端的适用场景、RMS2/RMS3 协议、服务端配对、连接压缩、压测和回滚规划。"
             },
             "ru": {
                 "title": "Обзор документации RMS",
                 "navTitle": "Обзор",
-                "description": "Как RMS используется для локального зашифрованного сжатия, подключения майнеров, совместимости с сервером и плана отката."
+                "description": "Настройка RMS, привязка RMS2/RMS3/RMS3(Zstd), mapping портов, сжатие соединений, мониторинг и план отката."
+            }
+        },
+        "rmsInstallation": {
+            "en": {
+                "title": "RMS installation",
+                "navTitle": "Installation",
+                "description": "Install RMS3 on Linux and Windows, understand default access, WebView2, architecture choices, and legacy RMS2 entries."
+            },
+            "zh": {
+                "title": "RMS 安装教程",
+                "navTitle": "安装教程",
+                "description": "安装 RMS3 Linux 和 Windows 版本，了解默认访问地址、WebView2、架构选择和旧版 RMS2 入口。"
+            },
+            "ru": {
+                "title": "Установка RMS",
+                "navTitle": "Установка",
+                "description": "Установка RMS3 на Linux и Windows, default access, WebView2, выбор архитектуры и legacy RMS2."
+            }
+        },
+        "rmsSetup": {
+            "en": {
+                "title": "Setup and pairing",
+                "navTitle": "Setup",
+                "description": "Configure the RMS local client on first launch, choose push URL or manual mode, and pair it with RustMinerSystem server ports."
+            },
+            "zh": {
+                "title": "部署与配对",
+                "navTitle": "部署配对",
+                "description": "首次配置 RMS 本地客户端，选择推送地址或手动模式，并与 RustMinerSystem 服务端端口配对。"
+            },
+            "ru": {
+                "title": "Настройка и привязка",
+                "navTitle": "Настройка",
+                "description": "Первый запуск RMS, выбор push URL или ручного режима и привязка к портам сервера RustMinerSystem."
+            }
+        },
+        "rmsPortMapping": {
+            "en": {
+                "title": "Port mapping",
+                "navTitle": "Port Mapping",
+                "description": "Add and manage RMS local listening ports, remote server addresses, protocols, passwords, and load-balanced upstream peers."
+            },
+            "zh": {
+                "title": "端口映射",
+                "navTitle": "端口映射",
+                "description": "添加和管理 RMS 本地监听端口、远程服务端地址、协议、密码和多远程地址负载均衡。"
+            },
+            "ru": {
+                "title": "Mapping портов",
+                "navTitle": "Mapping портов",
+                "description": "Добавление и управление локальными портами RMS, удаленными адресами сервера, протоколами, паролями и несколькими upstream peer."
+            }
+        },
+        "rmsCompression": {
+            "en": {
+                "title": "Compression settings",
+                "navTitle": "Compression",
+                "description": "Configure RMS2, RMS3, RMS3(Zstd), super compression, compression level, and connection-compression count."
+            },
+            "zh": {
+                "title": "压缩设置",
+                "navTitle": "压缩设置",
+                "description": "配置 RMS2、RMS3、RMS3(Zstd)、超级压缩、压缩级别和连接压缩数量。"
+            },
+            "ru": {
+                "title": "Настройки сжатия",
+                "navTitle": "Сжатие",
+                "description": "Настройка RMS2, RMS3, RMS3(Zstd), super compression, уровня сжатия и count сжатия соединений."
+            }
+        },
+        "rmsMonitoring": {
+            "en": {
+                "title": "Monitoring and operations",
+                "navTitle": "Monitoring",
+                "description": "Monitor RMS CPU, memory, network traffic, connection charts, port status, filters, backend password, safe route, and observer access."
+            },
+            "zh": {
+                "title": "监控与运维",
+                "navTitle": "监控运维",
+                "description": "监控 RMS CPU、内存、网络流量、连接图表、端口状态、筛选、后台密码、安全访问地址和观察者入口。"
+            },
+            "ru": {
+                "title": "Мониторинг и эксплуатация",
+                "navTitle": "Мониторинг",
+                "description": "Мониторинг CPU, памяти, сетевого трафика, графиков соединений, статуса портов, фильтров, пароля backend, safe route и observer."
+            }
+        },
+        "rmsTroubleshooting": {
+            "en": {
+                "title": "RMS troubleshooting",
+                "navTitle": "Troubleshooting",
+                "description": "Diagnose RMS miner access, server pairing, reject-rate spikes, port conflicts, safe-route mistakes, and rollback paths."
+            },
+            "zh": {
+                "title": "RMS 故障排查",
+                "navTitle": "故障排查",
+                "description": "排查 RMS 矿机接入、服务端配对、拒绝率升高、端口冲突、安全访问地址错误和回滚路径。"
+            },
+            "ru": {
+                "title": "Диагностика RMS",
+                "navTitle": "Диагностика",
+                "description": "Диагностика доступа майнеров, server pairing, роста reject, конфликтов портов, ошибок safe route и путей отката."
             }
         }
     },

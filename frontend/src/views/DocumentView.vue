@@ -451,6 +451,17 @@ h1 {
     padding: 0;
 }
 
+.document-content :deep(img) {
+    background: rgb(2 6 23 / 70%);
+    border: 1px solid var(--color-neutral-900);
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    margin: 1.25rem 0 0.75rem;
+    max-width: 100%;
+    width: 100%;
+}
+
 .document-content :deep(table) {
     border-collapse: collapse;
     display: block;

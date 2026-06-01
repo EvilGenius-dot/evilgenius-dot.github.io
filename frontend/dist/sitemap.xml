@@ -290,6 +290,534 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/operations" />
     </url>
     <url>
+        <loc>https://minerproxy.org/document/rustminersystem/admin-unreachable</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/admin-unreachable</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/admin-unreachable</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-unreachable" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-unreachable" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/admin-login-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/admin-login-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/admin-login-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/admin-login-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/admin-login-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/proxy-port-create-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/proxy-port-create-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/proxy-port-create-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port-create-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port-create-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/miner-cannot-connect-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/miner-cannot-connect-proxy" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/connected-no-valid-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/connected-no-valid-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/connected-no-valid-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/connected-no-valid-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/fee-wallet-no-revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/fee-wallet-no-revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/fee-wallet-no-revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/fee-wallet-no-revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/linux-script-download-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/linux-script-download-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/linux-script-download-failed</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/linux-script-download-failed" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/linux-script-download-failed" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/statistics-chart-abnormal</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/statistics-chart-abnormal</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/statistics-chart-abnormal" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/statistics-chart-abnormal" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/two-step-verification-lost</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/two-step-verification-lost</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/two-step-verification-lost</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/two-step-verification-lost" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/two-step-verification-lost" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/hashrate-loss</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/hashrate-loss</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/hashrate-loss</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hashrate-loss" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/proxy-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/proxy-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/proxy-port</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/proxy-port" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/proxy-port" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/port-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/port-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/port-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/port-detail</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/port-detail</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/port-detail</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/port-detail" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/port-detail" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/hot-wallet</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/hot-wallet</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/hot-wallet</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/hot-wallet" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hot-wallet" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/settings-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/settings-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/settings-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/settings-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/settings-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/log-manager</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/log-manager</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/log-manager</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/log-manager" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/log-manager" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/rms-client</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/rms-client</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/rms-client</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/rms-client" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/rms-client" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/remote-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/remote-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/remote-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/remote-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/remote-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/engine-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/engine-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/engine-control</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/engine-control" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/engine-control" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/app-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/app-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/app-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/app-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/app-center</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/app-center" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/app-center" />
+    </url>
+    <url>
         <loc>https://minerproxy.org/document/poolnode</loc>
         <lastmod>2026-05-27</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode" />
@@ -314,6 +842,990 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode" />
     </url>
     <url>
+        <loc>https://minerproxy.org/document/poolnode/activation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/activation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/activation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/activation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/activation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/activation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/activation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/mining-ports</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/mining-ports" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/mining-ports</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/mining-ports" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/mining-ports</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/mining-ports" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/mining-ports" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/website</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/website" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/website</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/website" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/website</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/website" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/website" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/revenue</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/revenue" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/revenue" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/app-api</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/app-api" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/app-api</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/app-api" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/app-api</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/app-api" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/app-api" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-notes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-notes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-notes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-notes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-notes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-notes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-notes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-send-login-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-send-login-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-send-login-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-login-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-login-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-send-user-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-send-user-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-send-user-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-send-user-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-send-user-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-login-token</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-login-token" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-login-token</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-login-token" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-login-token</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-login-token" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-login-token" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-user-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-user-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-user-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-user-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-user-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-user-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-user-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-subaccount-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-subaccount-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-subaccount-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-create-subaccount</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-create-subaccount</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-create-subaccount</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-create-subaccount" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-create-subaccount" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-set-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-set-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-set-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-set-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-set-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-get-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-get-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-get-payout-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-get-payout-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-get-payout-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-total-worker-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-total-worker-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-total-worker-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-worker-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-worker-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-total-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-total-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-total-hashrate</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-total-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-total-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-total-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-subaccount-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-subaccount-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-total-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-total-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-total-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-total-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-total-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-subaccount-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-subaccount-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-subaccount-status</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-status" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-status" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-coin-hashrate-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-coin-hashrate-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-coin-hashrate-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-coin-hashrate-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-coin-hashrate-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-subaccount-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-subaccount-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-subaccount-profit</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-profit" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-profit" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-mining-node-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-mining-node-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-mining-node-address</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-mining-node-address" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-mining-node-address" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-node-fee</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-node-fee</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-node-fee</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-node-fee" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-node-fee" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-subaccount-worker-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-subaccount-worker-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-subaccount-worker-list</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-subaccount-worker-list" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-subaccount-worker-list" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-worker-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-worker-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-worker-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-worker-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-worker-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-reward-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-reward-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-reward-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-reward-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-reward-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-payout-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-payout-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-payout-bills</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-payout-bills" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-payout-bills" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-btc-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-btc-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-btc-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-altcoin-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-altcoin-pool-public-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-pool-public-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-pool-public-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-btc-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-btc-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-btc-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-altcoin-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-altcoin-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-altcoin-network-info</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-network-info" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-network-info" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-btc-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-btc-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-btc-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-btc-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-altcoin-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-altcoin-public-hashrate-chart</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-altcoin-public-hashrate-chart" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-altcoin-public-hashrate-chart" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-site-personalization-config</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-site-personalization-config</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-site-personalization-config</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-site-personalization-config" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-site-personalization-config" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-app-register</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-register" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-app-register</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-register" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-app-register</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-register" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-register" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-app-central-login</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-app-central-login</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-app-central-login</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-central-login" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-central-login" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-app-send-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-app-send-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-app-send-email</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-send-email" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-send-email" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/api-app-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/api-app-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/api-app-captcha</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/api-app-captcha" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/api-app-captcha" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/poolnode/operations</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/operations" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/poolnode/operations</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/operations" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/poolnode/operations</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/poolnode/operations" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/poolnode/operations" />
+    </url>
+    <url>
         <loc>https://minerproxy.org/document/rms</loc>
         <lastmod>2026-05-27</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms" />
@@ -336,6 +1848,150 @@
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/installation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/installation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/installation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/installation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/installation</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/installation" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/installation" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/setup</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/setup" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/setup</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/setup" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/setup</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/setup" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/setup" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/port-mapping</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/port-mapping" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/port-mapping</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/port-mapping" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/port-mapping</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/port-mapping" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/port-mapping" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/compression</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/compression" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/compression</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/compression" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/compression</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/compression" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/compression" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/monitoring</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/monitoring" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/monitoring</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/monitoring" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/monitoring</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/monitoring" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/monitoring" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rms/troubleshooting</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/troubleshooting" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rms/troubleshooting</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/troubleshooting" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rms/troubleshooting</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rms/troubleshooting" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rms/troubleshooting" />
     </url>
     <url>
         <loc>https://minerproxy.org/document/rustminersystem-cli</loc>
