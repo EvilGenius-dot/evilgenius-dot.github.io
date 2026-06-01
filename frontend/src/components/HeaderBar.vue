@@ -120,6 +120,8 @@
             </nav>
 
             <div class="header-actions">
+                <DocSearchButton />
+
                 <!-- 语言切换：切到同一个页面的不同语言路径，不丢失 hash 和 query。 -->
                 <DropdownMenu>
                     <DropdownMenuTrigger
@@ -288,6 +290,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import DocSearchButton from "@/components/DocSearchButton.vue";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 const route = useRoute();
