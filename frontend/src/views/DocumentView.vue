@@ -451,7 +451,8 @@ h1 {
     padding: 0;
 }
 
-.document-content :deep(img) {
+.document-content :deep(img),
+.document-content :deep(video) {
     background: rgb(2 6 23 / 70%);
     border: 1px solid var(--color-neutral-900);
     border-radius: 8px;

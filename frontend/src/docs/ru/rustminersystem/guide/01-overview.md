@@ -11,7 +11,7 @@ order: 1
 ---
 # Документация RustMinerSystem
 
-![Предпросмотр русской панели RustMinerSystem](/image/docs/rustminersystem/features/ru/dashboard.png)
+![Предпросмотр русской панели RustMinerSystem](/image/rust.mp4)
 
 *Предпросмотр русской панели RustMinerSystem: рабочий экран proxy, список портов, графики хешрейта и состояние ресурсов сервера.*
 

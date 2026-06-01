@@ -11,7 +11,7 @@ order: 1
 ---
 # RustMinerSystem Documentation
 
-![RustMinerSystem English dashboard preview](/image/docs/rustminersystem/features/en/dashboard.png)
+![RustMinerSystem English dashboard preview](/image/rust.mp4)
 
 *RustMinerSystem English dashboard preview: inspect the proxy workspace, port list, hashrate charts, and server resource status at a glance.*
 

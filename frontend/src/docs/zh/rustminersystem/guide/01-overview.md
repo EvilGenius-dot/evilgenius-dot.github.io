@@ -11,7 +11,7 @@ order: 1
 ---
 # RustMinerSystem 文档
 
-![RustMinerSystem 中文后台预览](/image/docs/rustminersystem/features/zh/dashboard.png)
+![RustMinerSystem 中文后台预览](/image/rust.mp4)
 
 *RustMinerSystem 中文后台预览：从概览页快速了解矿池代理仪表盘、端口列表、算力统计和服务器资源状态。*
 
