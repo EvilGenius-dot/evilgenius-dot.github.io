@@ -63,29 +63,30 @@
                                 <span></span>
                                 <strong>RustMinerSystem</strong>
                             </div>
-                            <img
-                                src="/image/review.gif"
-                                :alt="t('home.preview.imageAlt')"
-                                class="preview-image"
-                                loading="eager"
-                                decoding="async"
-                            />
+                            <video
+                                ref="previewVideo"
+                                src="/image/rust.mp4"
+                                :aria-label="t('home.preview.imageAlt')"
+                                class="preview-video"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                preload="auto"
+                                @playing="handlePreviewVideoPlaying"
+                                @pause="handlePreviewVideoPause"
+                            ></video>
                             <div class="preview-shade" aria-hidden="true"></div>
-                        </div>
-
-                        <div class="preview-stat stat-miners">
-                            <span>{{ t("home.preview.minersLabel") }}</span>
-                            <strong>{{ t("home.preview.minersValue") }}</strong>
-                        </div>
-                        <div class="preview-stat stat-network">
-                            <span>{{ t("home.preview.profitLabel") }}</span>
-                            <strong>{{ t("home.preview.profitValue") }}</strong>
-                        </div>
-                        <div class="preview-stat stat-profit">
-                            <span>{{ t("home.preview.networkLabel") }}</span>
-                            <strong>{{
-                                t("home.preview.networkValue")
-                            }}</strong>
+                            <button
+                                v-if="showPreviewPlayButton"
+                                type="button"
+                                class="preview-play-button"
+                                :aria-label="t('home.preview.playLabel')"
+                                :title="t('home.preview.playLabel')"
+                                @click="playPreviewVideo"
+                            >
+                                <Play aria-hidden="true" />
+                            </button>
                         </div>
                     </div>
 
@@ -210,10 +211,10 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { computed, nextTick, onMounted, ref } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
-import { Star } from "lucide-vue-next";
+import { Play, Star } from "lucide-vue-next";
 import { docPath, downloadPath, getRouteLocale } from "@/i18n";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
@@ -238,6 +239,8 @@ const releaseVersion = ref("");
 const releaseStatus = ref("loading");
 const githubStars = ref(null);
 const githubStarsStatus = ref("loading");
+const previewVideo = ref(null);
+const showPreviewPlayButton = ref(false);
 const formattedReleaseVersion = computed(() => {
     const version = releaseVersion.value.trim();
 
@@ -375,7 +378,31 @@ const loadGithubStars = async () => {
     }
 };
 
+const playPreviewVideo = async () => {
+    const video = previewVideo.value;
+
+    if (!video) return;
+
+    try {
+        video.muted = true;
+        await video.play();
+        showPreviewPlayButton.value = false;
+    } catch {
+        showPreviewPlayButton.value = true;
+    }
+};
+
+const handlePreviewVideoPlaying = () => {
+    showPreviewPlayButton.value = false;
+};
+
+const handlePreviewVideoPause = () => {
+    showPreviewPlayButton.value = true;
+};
+
 onMounted(async () => {
+    await nextTick();
+    playPreviewVideo();
     await Promise.all([loadReleaseVersion(), loadGithubStars()]);
 });
 
@@ -875,7 +902,7 @@ h1 {
     margin-left: 0.25rem;
 }
 
-.preview-image {
+.preview-video {
     aspect-ratio: 4104 / 2178;
     display: block;
     height: auto;
@@ -891,58 +918,41 @@ h1 {
     position: absolute;
 }
 
-.preview-stat {
-    backdrop-filter: blur(18px);
-    background: rgb(12 18 28 / 78%);
-    border: 1px solid rgb(255 255 255 / 14%);
-    border-radius: 8px;
-    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 28%);
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    min-width: 9.5rem;
-    padding: 0.875rem 1rem;
+.preview-play-button {
+    align-items: center;
+    background: rgb(12 18 28 / 72%);
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 9999px;
+    box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 32%);
+    color: var(--color-white);
+    cursor: pointer;
+    display: inline-flex;
+    height: 4rem;
+    justify-content: center;
+    left: 50%;
     position: absolute;
+    top: calc(50% + 1.125rem);
+    transform: translate(-50%, -50%);
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease,
+        transform 150ms ease;
+    width: 4rem;
 }
 
-.preview-stat span {
-    color: var(--color-neutral-400);
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-medium);
+.preview-play-button:hover,
+.preview-play-button:focus-visible {
+    background: rgb(44 104 44 / 86%);
+    border-color: rgb(255 255 255 / 34%);
+    outline: none;
+    transform: translate(-50%, -50%) scale(1.04);
 }
 
-.preview-stat strong {
-    color: var(--color-white);
-    font-size: var(--text-xl);
-    font-weight: 700;
-    line-height: 1;
-}
-
-.stat-miners {
-    left: 1rem;
-    top: 4rem;
-}
-
-.stat-network {
-    right: 1rem;
-    top: 4rem;
-}
-
-.stat-profit {
-    bottom: 1rem;
-    right: 1rem;
-}
-
-.stat-network strong {
-    color: var(--color-white);
-}
-
-.stat-profit strong {
-    color: var(--color-green-400);
-}
-
-.stat-miners strong {
-    color: #facc15;
+.preview-play-button svg {
+    height: 1.75rem;
+    margin-left: 0.175rem;
+    stroke-width: 2.25;
+    width: 1.75rem;
 }
 
 .preview-meta-pills {
@@ -1100,14 +1110,9 @@ h1 {
         gap: 0.75rem;
     }
 
-    .preview-frame {
-        display: grid;
-        gap: 0.75rem;
-    }
-
-    .preview-stat {
-        min-width: 0;
-        position: static;
+    .preview-play-button {
+        height: 3.25rem;
+        width: 3.25rem;
     }
 }
 

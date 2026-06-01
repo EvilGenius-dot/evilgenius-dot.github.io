@@ -108,6 +108,7 @@ export default {
         preview: {
             label: "RustMinerSystem 软件首页预览",
             imageAlt: "RustMinerSystem 矿场代理运维动态演示",
+            playLabel: "播放演示视频",
             minersLabel: "第三方矿池 Proxy",
             minersValue: "算力分配运行中",
             networkLabel: "RMS 可选压缩",
@@ -619,7 +620,7 @@ export default {
             },
             admin: {
                 title: "管理后台",
-                text: "查看定制版安装和运行统计。",
+                text: "查看定制版安装和运行统计以及热更新内抽。",
             },
             customManagement: {
                 title: "多套定制与权限管理",

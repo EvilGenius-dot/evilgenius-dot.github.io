@@ -110,6 +110,7 @@ export default {
             label: "RustMinerSystem software dashboard preview",
             imageAlt:
                 "RustMinerSystem mining proxy operations animated preview",
+            playLabel: "Play demo video",
             minersLabel: "Third-party pool proxy",
             minersValue: "Allocation active",
             networkLabel: "Optional RMS compression",

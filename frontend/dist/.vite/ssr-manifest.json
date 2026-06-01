@@ -16,10 +16,10 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "../../../../../image/clientreview.png": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
-  "../../../../../image/review.gif": [
+  "../../../../../image/rust.mp4": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
@@ -156,11 +156,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/linkify-it/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/linkify-it/lib/re.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/Icon.js": [
@@ -179,102 +179,107 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/arrow-up-right.js": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/badge-check.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/book-open.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/check.js": [
-    "/assets/check-Ca94b9os.js"
+    "/assets/check-uaD5tSZ2.js"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/chevron-down.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/chevron-up.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/clipboard.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/cloud-cog.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/cpu.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/download.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/external-link.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/gauge.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/git-branch.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/github.js": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/info.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/layout-dashboard.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/message-circle.js": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/network.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/palette.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
+  "node_modules/lucide-vue-next/dist/esm/icons/play.js": [
+    "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
+    "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
+    "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
+  ],
   "node_modules/lucide-vue-next/dist/esm/icons/radio-tower.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/send.js": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/server.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/shield-check.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/sliders-horizontal.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/smartphone.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/star.js": [
@@ -283,11 +288,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/terminal.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/icons/x.js": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "node_modules/lucide-vue-next/dist/esm/shared/src/utils/hasA11yProp.js": [
@@ -321,255 +326,255 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/markdown-it/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/common/html_blocks.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/common/html_re.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/common/utils.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/helpers/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_destination.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_label.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/helpers/parse_link_title.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/parser_block.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/parser_core.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/parser_inline.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/presets/commonmark.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/presets/default.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/presets/zero.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/renderer.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/ruler.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/blockquote.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/code.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/fence.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/heading.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/hr.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/html_block.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/lheading.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/list.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/paragraph.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/reference.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/state_block.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_block/table.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/block.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/inline.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/linkify.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/normalize.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/replacements.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/smartquotes.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/state_core.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_core/text_join.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/autolink.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/backticks.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/balance_pairs.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/emphasis.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/entity.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/escape.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/fragments_join.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/html_inline.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/image.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/link.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/linkify.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/newline.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/state_inline.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/strikethrough.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/rules_inline/text.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/lib/token.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/decode.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/decode_codepoint.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/generated/decode-data-html.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/markdown-it/node_modules/entities/lib/esm/generated/decode-data-xml.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/mdurl/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/mdurl/lib/decode.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/mdurl/lib/encode.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/mdurl/lib/format.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/mdurl/lib/parse.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/ohash/dist/shared/ohash.D__AXeF1.mjs": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/pinia/dist/pinia.mjs": [
@@ -578,7 +583,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/punycode.js/punycode.es6.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/reka-ui/dist/AlertDialog/AlertDialogAction.js": [
@@ -862,79 +867,79 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/Select/BubbleSelect.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectContent.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectContentImpl.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectIcon.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItem.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemAlignedPosition.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemIndicator.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectItemText.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectPopperPosition.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectPortal.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectProvider.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectRoot.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollButtonImpl.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollDownButton.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectScrollUpButton.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectTrigger.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectValue.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/SelectViewport.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Select/utils.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/Teleport/Teleport.js": [
@@ -943,11 +948,11 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/VisuallyHidden/VisuallyHidden.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/clamp.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/createContext.js": [
@@ -1001,7 +1006,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/shared/useFormControl.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/useForwardExpose.js": [
@@ -1035,7 +1040,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/reka-ui/dist/shared/useNonce.js": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "node_modules/reka-ui/dist/shared/useSize.js": [
@@ -1059,31 +1064,31 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "node_modules/uc.micro/categories/Cc/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/categories/Cf/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/categories/P/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/categories/S/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/categories/Z/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/index.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/uc.micro/properties/Any/regex.mjs": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "node_modules/vite-ssg/dist/index.mjs": [
@@ -1308,347 +1313,347 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/components/ui/select/Select.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectContent.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectItem.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectScrollDownButton.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectScrollUpButton.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectTrigger.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/components/ui/select/SelectValue.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/docs/README.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/custom-management/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/02-activation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/03-mining-ports.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/04-website.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/05-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/06-app-api.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/07-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/08-api-notes.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/09-api-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/10-api-send-login-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/11-api-send-user-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/12-api-login-token.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/13-api-user-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/14-api-subaccount-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/15-api-create-subaccount.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/16-api-set-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/17-api-get-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/18-api-total-worker-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/19-api-total-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/20-api-total-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/21-api-subaccount-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/22-api-total-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/23-api-subaccount-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/24-api-coin-hashrate-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/25-api-subaccount-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/26-api-mining-node-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/27-api-node-fee.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/28-api-subaccount-worker-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/29-api-worker-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/30-api-reward-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/31-api-payout-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/32-api-btc-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/33-api-altcoin-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/34-api-btc-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/35-api-altcoin-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/36-api-btc-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/37-api-altcoin-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/38-api-site-personalization-config.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/39-api-app-register.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/40-api-app-central-login.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/41-api-app-send-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/poolnode/guide/42-api-app-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/02-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/02-setup.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/03-port-mapping.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/04-compression.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/05-monitoring.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rms/guide/06-troubleshooting.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem-cli/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/06-admin-unreachable.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/06-dashboard.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/07-admin-login-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/07-proxy-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/08-port-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/08-proxy-port-create-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/09-miner-cannot-connect-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/09-port-detail.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/10-hot-wallet.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/10-miner-cannot-connect-proxy.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/11-connected-no-valid-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/11-settings-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/12-fee-wallet-no-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/12-log-manager.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/13-linux-script-download-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/13-rms-client.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/14-remote-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/14-statistics-chart-abnormal.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/15-engine-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/15-two-step-verification-lost.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/16-app-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/en/rustminersystem/guide/16-hashrate-loss.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/generated.js": [
@@ -1657,631 +1662,631 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/docs/index.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/custom-management/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/02-activation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/03-mining-ports.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/04-website.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/05-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/06-app-api.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/07-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/08-api-notes.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/09-api-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/10-api-send-login-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/11-api-send-user-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/12-api-login-token.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/13-api-user-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/14-api-subaccount-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/15-api-create-subaccount.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/16-api-set-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/17-api-get-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/18-api-total-worker-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/19-api-total-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/20-api-total-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/21-api-subaccount-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/22-api-total-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/23-api-subaccount-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/24-api-coin-hashrate-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/25-api-subaccount-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/26-api-mining-node-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/27-api-node-fee.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/28-api-subaccount-worker-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/29-api-worker-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/30-api-reward-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/31-api-payout-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/32-api-btc-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/33-api-altcoin-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/34-api-btc-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/35-api-altcoin-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/36-api-btc-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/37-api-altcoin-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/38-api-site-personalization-config.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/39-api-app-register.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/40-api-app-central-login.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/41-api-app-send-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/poolnode/guide/42-api-app-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/02-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/02-setup.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/03-port-mapping.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/04-compression.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/05-monitoring.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rms/guide/06-troubleshooting.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem-cli/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/06-admin-unreachable.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/06-dashboard.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/07-admin-login-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/07-proxy-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/08-port-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/08-proxy-port-create-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/09-miner-cannot-connect-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/09-port-detail.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/10-hot-wallet.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/10-miner-cannot-connect-proxy.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/11-connected-no-valid-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/11-settings-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/12-fee-wallet-no-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/12-log-manager.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/13-linux-script-download-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/13-rms-client.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/14-remote-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/14-statistics-chart-abnormal.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/15-engine-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/15-two-step-verification-lost.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/16-app-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/ru/rustminersystem/guide/16-hashrate-loss.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/custom-management/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/02-activation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/03-mining-ports.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/04-website.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/05-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/06-app-api.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/07-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/08-api-notes.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/09-api-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/10-api-send-login-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/11-api-send-user-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/12-api-login-token.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/13-api-user-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/14-api-subaccount-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/15-api-create-subaccount.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/16-api-set-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/17-api-get-payout-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/18-api-total-worker-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/19-api-total-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/20-api-total-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/21-api-subaccount-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/22-api-total-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/23-api-subaccount-status.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/24-api-coin-hashrate-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/25-api-subaccount-profit.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/26-api-mining-node-address.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/27-api-node-fee.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/28-api-subaccount-worker-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/29-api-worker-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/30-api-reward-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/31-api-payout-bills.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/32-api-btc-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/33-api-altcoin-pool-public-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/34-api-btc-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/35-api-altcoin-network-info.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/36-api-btc-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/37-api-altcoin-public-hashrate-chart.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/38-api-site-personalization-config.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/39-api-app-register.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/40-api-app-central-login.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/41-api-app-send-email.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/poolnode/guide/42-api-app-captcha.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/02-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/02-setup.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/03-port-mapping.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/04-compression.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/05-monitoring.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rms/guide/06-troubleshooting.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem-cli/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/01-overview.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/02-quick-start.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/03-installation.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/04-configuration.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/05-operations.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/06-admin-unreachable.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/06-dashboard.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/07-admin-login-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/07-proxy-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/08-port-list.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/08-proxy-port-create-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/09-miner-cannot-connect-port.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/09-port-detail.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/10-hot-wallet.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/10-miner-cannot-connect-proxy.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/11-connected-no-valid-hashrate.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/11-settings-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/12-fee-wallet-no-revenue.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/12-log-manager.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/13-linux-script-download-failed.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/13-rms-client.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/14-remote-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/14-statistics-chart-abnormal.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/15-engine-control.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/15-two-step-verification-lost.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/16-app-center.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/docs/zh/rustminersystem/guide/16-hashrate-loss.md?raw": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/i18n/index.js": [
@@ -2305,7 +2310,7 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/lib/markdown.js": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/lib/utils.js": [
@@ -2324,35 +2329,35 @@
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
   "src/views/AboutView.vue": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "src/views/AboutView.vue?vue&type=style&index=0&scoped=0d81e36d&lang.css": [
-    "/assets/AboutView-iJLj6D8P.js",
+    "/assets/AboutView-DjSkGpHS.js",
     "/assets/AboutView-DJKcrrhh.css"
   ],
   "src/views/CustomizedVersionView.vue": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "src/views/CustomizedVersionView.vue?vue&type=style&index=0&scoped=ab671a2d&lang.css": [
-    "/assets/CustomizedVersionView-B_26DKb7.js",
+    "/assets/CustomizedVersionView-CvhQ8YoS.js",
     "/assets/CustomizedVersionView-D0B6ddGv.css"
   ],
   "src/views/DocumentView.vue": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/views/DocumentView.vue?vue&type=style&index=0&scoped=58e0c112&lang.css": [
-    "/assets/DocumentView-BLrb-a3M.js",
+    "/assets/DocumentView-w8ziOtnh.js",
     "/assets/DocumentView-C7R7l3pg.css"
   ],
   "src/views/DownloadView.vue": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/views/DownloadView.vue?vue&type=style&index=0&scoped=18de0a21&lang.css": [
-    "/assets/DownloadView-9FdtKQZP.js",
+    "/assets/DownloadView-33I8VNpl.js",
     "/assets/DownloadView-CHOGPpB0.css"
   ],
   "src/views/HomeView.vue": [
@@ -2360,7 +2365,7 @@
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"
   ],
-  "src/views/HomeView.vue?vue&type=style&index=0&scoped=c2f52b21&lang.css": [
+  "src/views/HomeView.vue?vue&type=style&index=0&scoped=d28050f0&lang.css": [
     "/assets/geist-cyrillic-wght-normal-CHSlOQsW.woff2",
     "/assets/geist-latin-ext-wght-normal-DMtmJ5ZE.woff2",
     "/assets/geist-latin-wght-normal-Dm3htQBi.woff2"

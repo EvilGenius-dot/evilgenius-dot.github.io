@@ -109,6 +109,7 @@ export default {
         preview: {
             label: "Предпросмотр панели RustMinerSystem",
             imageAlt: "Анимированный предпросмотр панели RustMinerSystem",
+            playLabel: "Воспроизвести демо-видео",
             minersLabel: "Proxy сторонних пулов",
             minersValue: "Доля активна",
             networkLabel: "Опциональное сжатие RMS",
