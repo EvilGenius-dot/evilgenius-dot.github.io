@@ -10,7 +10,7 @@ const container = ref(null);
 
 const docsearchConfig = {
     appId: "MFAGEF2P8F",
-    indexName: import.meta.env.VITE_DOCSEARCH_INDEX_NAME || "YOUR_INDEX_NAME",
+    indexName: import.meta.env.VITE_DOCSEARCH_INDEX_NAME || "RustMinerSystem Documents",
     apiKey: "0ecc1b54035668f7eee14915d2359aaf",
     placeholder: "Search RustMinerSystem docs",
     translations: {
