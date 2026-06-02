@@ -384,6 +384,14 @@ export const DOC_PAGES = [
     },
     {
         "collection": "rustminersystem",
+        "id": "migration",
+        "slug": "migration",
+        "file": "06-migration.md",
+        "category": "deployment",
+        "order": 6
+    },
+    {
+        "collection": "rustminersystem",
         "id": "admin-unreachable",
         "slug": "admin-unreachable",
         "file": "06-admin-unreachable.md",
@@ -1085,6 +1093,23 @@ export const DOC_PAGE_META = {
                 "title": "Эксплуатация RustMinerSystem",
                 "navTitle": "Эксплуатация",
                 "description": "Изучите ежедневные проверки, поэтапный запуск, процесс обновления и подготовку отката RustMinerSystem."
+            }
+        },
+        "migration": {
+            "en": {
+                "title": "Migrating RustMinerSystem",
+                "navTitle": "Migration",
+                "description": "Learn which RustMinerSystem files to copy during migration and which runtime files should be excluded."
+            },
+            "zh": {
+                "title": "RustMinerSystem 如何迁移",
+                "navTitle": "如何迁移",
+                "description": "了解迁移 RustMinerSystem 时需要复制的文件范围，以及为什么要排除 0 开头的运行期文件。"
+            },
+            "ru": {
+                "title": "Миграция RustMinerSystem",
+                "navTitle": "Миграция",
+                "description": "Узнайте, какие файлы RustMinerSystem нужно копировать при миграции и какие runtime-файлы следует исключить."
             }
         },
         "admin-unreachable": {

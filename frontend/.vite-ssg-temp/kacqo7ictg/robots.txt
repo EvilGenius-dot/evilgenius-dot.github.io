@@ -1,8 +1,0 @@
-User-agent: Algolia Crawler
-Allow: /
-
-User-agent: *
-Allow: /
-
-Sitemap: https://minerproxy.org/sitemap.xml
-# Algolia-Crawler-Verif: 878A361DEB41211F
