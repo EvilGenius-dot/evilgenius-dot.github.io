@@ -2041,4 +2041,100 @@
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management" />
     </url>
+    <url>
+        <loc>https://minerproxy.org/document/custom-management/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/custom-management/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/custom-management/dashboard</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/dashboard" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/dashboard" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/custom-management/service-management</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/service-management" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/custom-management/service-management</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/service-management" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/custom-management/service-management</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/service-management" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/service-management" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/custom-management/pool-nodes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/custom-management/pool-nodes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/custom-management/pool-nodes</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/pool-nodes" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/custom-management/audits-permissions</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/custom-management/audits-permissions</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/custom-management/audits-permissions</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/audits-permissions" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/audits-permissions" />
+    </url>
 </urlset>

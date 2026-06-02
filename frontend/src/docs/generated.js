@@ -306,6 +306,38 @@ export const DOC_CATEGORIES = [
                 "title": "Начало работы"
             }
         }
+    },
+    {
+        "collection": "custom-management",
+        "id": "features",
+        "order": 2,
+        "meta": {
+            "en": {
+                "title": "Feature Usage"
+            },
+            "zh": {
+                "title": "功能使用"
+            },
+            "ru": {
+                "title": "Использование функций"
+            }
+        }
+    },
+    {
+        "collection": "custom-management",
+        "id": "operations",
+        "order": 3,
+        "meta": {
+            "en": {
+                "title": "Operations"
+            },
+            "zh": {
+                "title": "运维流程"
+            },
+            "ru": {
+                "title": "Эксплуатация"
+            }
+        }
     }
 ];
 
@@ -933,6 +965,38 @@ export const DOC_PAGES = [
         "file": "01-overview.md",
         "category": "getting-started",
         "order": 1
+    },
+    {
+        "collection": "custom-management",
+        "id": "dashboard",
+        "slug": "dashboard",
+        "file": "02-dashboard.md",
+        "category": "features",
+        "order": 2
+    },
+    {
+        "collection": "custom-management",
+        "id": "serviceManagement",
+        "slug": "service-management",
+        "file": "03-service-management.md",
+        "category": "features",
+        "order": 3
+    },
+    {
+        "collection": "custom-management",
+        "id": "poolNodes",
+        "slug": "pool-nodes",
+        "file": "04-pool-nodes.md",
+        "category": "features",
+        "order": 4
+    },
+    {
+        "collection": "custom-management",
+        "id": "auditsPermissions",
+        "slug": "audits-permissions",
+        "file": "05-audits-permissions.md",
+        "category": "operations",
+        "order": 5
     }
 ];
 
@@ -2259,17 +2323,85 @@ export const DOC_PAGE_META = {
             "en": {
                 "title": "Custom management documentation overview",
                 "navTitle": "Overview",
-                "description": "Learn how to organize custom management workflows for branded builds, customer access, hosted deployment, and updates."
+                "description": "Learn how Custom Management centralizes installed RustMinerSystem custom builds, statistics, fee configuration, audits, and account permissions."
             },
             "zh": {
                 "title": "定制管理文档概览",
                 "navTitle": "概览",
-                "description": "了解定制管理中的品牌定制版本、客户权限、托管部署和更新流程。"
+                "description": "了解定制管理后台如何统一管理已安装的 RustMinerSystem 定制版程序、数据统计、抽水配置、审核和权限关系。"
             },
             "ru": {
                 "title": "Обзор документации Custom Management",
                 "navTitle": "Обзор",
-                "description": "Как организовать Custom Management для брендированных сборок, доступа клиентов, hosted-развертывания и обновлений."
+                "description": "Как Custom Management управляет установленными custom-сборками RustMinerSystem, статистикой, комиссиями, аудитом и правами аккаунтов."
+            }
+        },
+        "dashboard": {
+            "en": {
+                "title": "Custom Management Dashboard",
+                "navTitle": "Dashboard",
+                "description": "Use the dashboard to view client count, active devices, regional distribution, coin share, and hashrate trends across custom builds."
+            },
+            "zh": {
+                "title": "定制管理仪表盘",
+                "navTitle": "仪表盘",
+                "description": "使用定制管理仪表盘查看全部定制版的客户端数量、活跃设备、地区分布、币种占比和算力趋势。"
+            },
+            "ru": {
+                "title": "Dashboard Custom Management",
+                "navTitle": "Dashboard",
+                "description": "Используйте Dashboard для просмотра клиентов, активных устройств, регионов, доли монет и трендов hashrate по custom-сборкам."
+            }
+        },
+        "serviceManagement": {
+            "en": {
+                "title": "Custom Service Management",
+                "navTitle": "Service Management",
+                "description": "Manage coin permissions, wallet fee configuration, historical version activation, and client details for RustMinerSystem custom builds."
+            },
+            "zh": {
+                "title": "定制版服务管理",
+                "navTitle": "服务管理",
+                "description": "管理 RustMinerSystem 定制版服务的币种权限、钱包抽水配置、历史版本应用和客户端明细。"
+            },
+            "ru": {
+                "title": "Управление Custom Service",
+                "navTitle": "Service Management",
+                "description": "Управление coin permissions, wallet fee config, historical version activation и client details для custom-сборок RustMinerSystem."
+            }
+        },
+        "poolNodes": {
+            "en": {
+                "title": "Pool Nodes and Inside Fees",
+                "navTitle": "Pool Nodes",
+                "description": "Use the Pool Nodes page to view BTC, FB, LTC, DOGE, and BELLS live node data, and manage inside and official fee rates."
+            },
+            "zh": {
+                "title": "矿池节点与内抽配置",
+                "navTitle": "矿池节点",
+                "description": "使用矿池节点页面查看 BTC、FB、LTC、DOGE、BELLS 节点实时数据，并维护内抽费率和官方费率。"
+            },
+            "ru": {
+                "title": "Pool Nodes и Inside Fees",
+                "navTitle": "Pool Nodes",
+                "description": "Используйте Pool Nodes для live data BTC, FB, LTC, DOGE и BELLS, а также inside fee и official fee."
+            }
+        },
+        "auditsPermissions": {
+            "en": {
+                "title": "Audits and Permission Assignment",
+                "navTitle": "Audits & Permissions",
+                "description": "Use an account with audit permission to approve wallet configuration changes and maintain account visibility and operation scope."
+            },
+            "zh": {
+                "title": "审核列表与权限分配",
+                "navTitle": "审核与权限",
+                "description": "使用具备审核权限的管理员账号处理钱包配置审核，并维护管理账号之间的可见范围和操作归属。"
+            },
+            "ru": {
+                "title": "Audit и Permission Assignment",
+                "navTitle": "Audit & Permissions",
+                "description": "Используйте аккаунт с audit permission для approval wallet changes и управления видимостью аккаунтов."
             }
         }
     }

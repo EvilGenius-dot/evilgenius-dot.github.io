@@ -8,3 +8,4 @@
 - Rms 的 github 在https://github.com/EvilGenius-dot/RMS
 - RustMinerSystem的 github https://github.com/EvilGenius-dot/RustMinerSystem
 - 旧的RustMinerSystem文档https://rustminersystem.gitbook.io/rustminersystem
+- 定制管理工程路径 /Users/kt007/Desktop/RustMinerClient/newFrontend
