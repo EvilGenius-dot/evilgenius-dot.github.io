@@ -47,6 +47,9 @@ const escapeText = (value) =>
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;");
 
+const escapeJsonScript = (value) =>
+    JSON.stringify(value).replace(/</g, "\\u003C");
+
 // 根据静态构建中的 route 反推页面 key 和语言，用来生成对应 SEO 信息。
 const resolvePageFromRoute = (route) => {
     const segments = route
@@ -131,6 +134,12 @@ const renderSeoTags = (route) => {
             : page === "download"
               ? getDownloadPageMeta(downloadPage, locale)
               : localeMessages.seo[page];
+    const keywords = [
+        ...new Set([
+            ...(pageSeo.keywords || []),
+            ...(localeMessages.seo.keywords || []),
+        ]),
+    ].filter(Boolean);
     const title =
         page === "home"
             ? localeMessages.seo.defaultTitle
@@ -165,12 +174,46 @@ const renderSeoTags = (route) => {
             : page === "download"
               ? `${SITE_ORIGIN}${downloadPath(downloadPage, DEFAULT_LOCALE)}`
               : `${SITE_ORIGIN}${pagePath(page, DEFAULT_LOCALE)}`;
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: title,
+        url: canonicalHref,
+        description: pageSeo.description,
+        inLanguage: LOCALE_META[locale].htmlLang,
+        keywords,
+        about: keywords.map((keyword) => ({
+            "@type": "Thing",
+            name: keyword,
+        })),
+        isPartOf: {
+            "@type": "WebSite",
+            name: localeMessages.site.name,
+            url: SITE_ORIGIN,
+            availableLanguage: SUPPORTED_LOCALES.map(
+                (supportedLocale) => LOCALE_META[supportedLocale].htmlLang,
+            ),
+        },
+        ...(page === "home"
+            ? {
+                  mainEntity: {
+                      "@type": "SoftwareApplication",
+                      name: localeMessages.site.name,
+                      applicationCategory: "BusinessApplication",
+                      operatingSystem: "Linux, Web",
+                      description: pageSeo.description,
+                  },
+              }
+            : {}),
+    };
 
     return {
         htmlLang: LOCALE_META[locale].htmlLang,
         title,
         description: pageSeo.description,
+        keywords: keywords.join(", "),
         tags: [
+            `<meta name="keywords" content="${escapeAttribute(keywords.join(", "))}">`,
             `<meta property="og:title" content="${escapeAttribute(title)}">`,
             `<meta property="og:description" content="${escapeAttribute(pageSeo.description)}">`,
             '<meta property="og:type" content="website">',
@@ -179,6 +222,7 @@ const renderSeoTags = (route) => {
             `<link rel="canonical" href="${escapeAttribute(canonicalHref)}">`,
             ...alternateLinks,
             `<link rel="alternate" hreflang="x-default" href="${escapeAttribute(xDefaultHref)}">`,
+            `<script type="application/ld+json">${escapeJsonScript(structuredData)}</script>`,
         ],
     };
 };

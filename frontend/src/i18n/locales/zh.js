@@ -8,12 +8,31 @@ export default {
     },
     seo: {
         defaultTitle:
-            "RustMinerSystem - 第三方矿池 Proxy 与 PoolNode 真矿池系统",
+            "RustMinerSystem - 矿池中转、矿池转发与 PoolNode 真矿池系统",
         titleTemplate: "{pageTitle} | RustMinerSystem",
+        keywords: [
+            "矿池中转",
+            "矿池抽水",
+            "矿池转发",
+            "矿池中转搭建",
+            "第三方矿池代理",
+            "矿池 Proxy",
+            "PoolNode 真矿池",
+            "RustMinerSystem",
+        ],
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem 面向矿场和矿池运营方，支持作为第三方矿池 Proxy 将接入算力按任意比例分配到指定矿池钱包，也支持通过 PoolNode 搭建真正矿池并在虚拟币结算层分配费率；在矿机接入上，不仅可以通过传统 TCP/SSL 直连 RustMiner，也可以配套 RMS 客户端进行本地加密压缩接入。",
+                "RustMinerSystem 面向矿场和矿池运营方，支持矿池中转、矿池转发、矿池中转搭建和透明矿池抽水费率分配：可作为第三方矿池 Proxy 将接入算力按任意比例分配到指定矿池钱包，也可通过 PoolNode 搭建真正矿池并在虚拟币结算层分配费率；矿机可通过传统 TCP/SSL 直连 RustMiner，也可配套 RMS 客户端进行本地加密压缩接入。",
+            keywords: [
+                "矿池中转",
+                "矿池抽水",
+                "矿池转发",
+                "矿池中转搭建",
+                "矿池代理搭建",
+                "矿池费率分配",
+                "矿机转发代理",
+            ],
         },
         document: {
             title: "文档",
@@ -120,7 +139,7 @@ export default {
         features: {
             deployment: {
                 title: "第三方矿池 Proxy",
-                text: "RustMiner 可作为第三方矿池的接入代理，将任意比例的矿机算力分配到指定第三方矿池钱包或矿工名。",
+                text: "RustMiner 可作为第三方矿池的接入代理，用于矿池中转与矿池转发，将任意比例的矿机算力分配到指定第三方矿池钱包或矿工名。",
             },
             operations: {
                 title: "PoolNode 真矿池",
@@ -129,6 +148,33 @@ export default {
             localization: {
                 title: "RMS 可选本地压缩工具",
                 text: "需要优化网络时，可在矿场本地部署 RMS，让矿机通过加密压缩链路接入 RustMiner，减少数据体积和公网连接数；不使用 RMS 也可以直接接入 RustMiner。",
+            },
+        },
+        searchIntents: {
+            title: "面向矿池中转、转发与费率分配的真实场景",
+            description:
+                "这些词会以可读正文形式出现在页面中，帮助搜索引擎理解 RustMinerSystem 覆盖的矿池中转、矿池抽水、矿池转发和矿池中转搭建需求。",
+            items: {
+                relay: {
+                    term: "矿池中转",
+                    title: "矿机接入第三方矿池的统一入口",
+                    text: "把矿场矿机先接入 RustMiner，再由系统按配置连接 ViaBTC、F2Pool、AntPool 等第三方矿池，方便统一管理端口、钱包和线路。",
+                },
+                fee: {
+                    term: "矿池抽水",
+                    title: "透明费率与算力份额分配",
+                    text: "用于软件费、合作分成或运营费率场景，可按设定比例将算力分配到指定矿池钱包，便于记录和审计。",
+                },
+                forwarding: {
+                    term: "矿池转发",
+                    title: "多矿池、多钱包的转发策略",
+                    text: "根据场地、矿机分组或钱包目标，把接入算力转发到不同第三方矿池地址、钱包或矿工名。",
+                },
+                setup: {
+                    term: "矿池中转搭建",
+                    title: "从部署到运维的完整链路",
+                    text: "支持本地服务器或云服务器部署，结合文档完成端口创建、矿池目标配置、RMS 可选压缩和运行监控。",
+                },
             },
         },
         global: {

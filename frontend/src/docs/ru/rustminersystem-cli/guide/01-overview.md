@@ -1,18 +1,18 @@
 ---
 id: overview
 slug: ""
-title: Обзор документации RustMinerSystemCli
+title: Обзор документации RustMinerSystem Cli
 navTitle: Обзор
-description: Как организовать команды RustMinerSystemCli, автоматизацию, диагностику и задачи обслуживания.
+description: Как организовать команды RustMinerSystem Cli, автоматизацию, диагностику и задачи обслуживания.
 category: getting-started
 categoryTitle: Начало работы
 categoryOrder: 1
 order: 1
 ---
 
-# Документация RustMinerSystemCli
+# Документация RustMinerSystem Cli
 
-RustMinerSystemCli должен хранить повторяемые командные процессы операторов: проверки, автоматизацию, диагностику, обслуживание и поддержку релизов.
+RustMinerSystem Cli должен хранить повторяемые командные процессы операторов: проверки, автоматизацию, диагностику, обслуживание и поддержку релизов.
 
 ## Область документации
 

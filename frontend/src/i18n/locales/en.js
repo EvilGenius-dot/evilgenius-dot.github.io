@@ -8,12 +8,31 @@ export default {
     },
     seo: {
         defaultTitle:
-            "RustMinerSystem - Third-party pool proxy and PoolNode real pool",
+            "RustMinerSystem - Mining pool relay, pool forwarding, and PoolNode real pool",
         titleTemplate: "{pageTitle} | RustMinerSystem",
+        keywords: [
+            "mining pool relay",
+            "mining pool fee skimming",
+            "mining pool forwarding",
+            "mining pool relay setup",
+            "third-party pool proxy",
+            "pool proxy",
+            "PoolNode real pool",
+            "RustMinerSystem",
+        ],
         home: {
             title: "RustMinerSystem",
             description:
-                "RustMinerSystem lets operators run a third-party pool proxy that allocates any configured share of connected hashrate to specified pool wallets, or build a real pool with PoolNode and distribute fees at the coin settlement layer. For miner access, sites can connect directly to RustMiner over traditional TCP/SSL or pair it with the optional RMS client for local encrypted compression.",
+                "RustMinerSystem helps mining farms and pool operators build mining pool relay, mining pool forwarding, mining pool relay setup, and transparent pool fee-skimming workflows. It can run as a third-party pool proxy that allocates any configured share of connected hashrate to specified pool wallets, or build a real pool with PoolNode and distribute fees at the coin settlement layer. Miners can connect directly to RustMiner over TCP/SSL or use the optional RMS client for local encrypted compression.",
+            keywords: [
+                "mining pool relay",
+                "mining pool fee skimming",
+                "mining pool forwarding",
+                "mining pool relay setup",
+                "pool proxy setup",
+                "pool fee allocation",
+                "miner forwarding proxy",
+            ],
         },
         document: {
             title: "Documentation",
@@ -123,7 +142,7 @@ export default {
         features: {
             deployment: {
                 title: "Third-party pool proxy",
-                text: "Use RustMiner as the access proxy for third-party pools, then allocate any share of connected miner hashrate to specified pool wallets or worker names.",
+                text: "Use RustMiner as the access proxy for third-party pools and as a mining pool relay or forwarding layer, then allocate any share of connected miner hashrate to specified pool wallets or worker names.",
             },
             operations: {
                 title: "PoolNode real pool",
@@ -132,6 +151,33 @@ export default {
             localization: {
                 title: "Optional RMS local compression tool",
                 text: "When a site needs network optimization, RMS can run locally so miners connect to RustMiner through an encrypted compressed link, reducing data volume and public connection count. Sites can also connect directly without RMS.",
+            },
+        },
+        searchIntents: {
+            title: "Built for real mining pool relay, forwarding, and fee-allocation needs",
+            description:
+                "These crawlable page sections help search engines understand that RustMinerSystem covers mining pool relay, mining pool fee skimming, mining pool forwarding, and mining pool relay setup use cases.",
+            items: {
+                relay: {
+                    term: "Mining pool relay",
+                    title: "One access layer for miners and third-party pools",
+                    text: "Connect miners to RustMiner first, then route traffic to third-party pools such as ViaBTC, F2Pool, and AntPool while managing ports, wallets, and network lines centrally.",
+                },
+                fee: {
+                    term: "Mining pool fee skimming",
+                    title: "Transparent fee and hashrate-share allocation",
+                    text: "Use configured ratios for software fees, partner shares, or operating fees, with hashrate directed to specified pool wallets for easier records and audits.",
+                },
+                forwarding: {
+                    term: "Mining pool forwarding",
+                    title: "Forwarding rules for multiple pools and wallets",
+                    text: "Route connected hashrate to different third-party pool addresses, wallets, or worker names by site, miner group, or wallet target.",
+                },
+                setup: {
+                    term: "Mining pool relay setup",
+                    title: "Deployment, configuration, and operations",
+                    text: "Deploy locally or on cloud servers, create ports, configure pool targets, add optional RMS compression, and monitor runtime status from the documentation workflow.",
+                },
             },
         },
         global: {
@@ -642,7 +688,8 @@ export default {
                 tiers: {
                     free: "Limited to one custom build per person. The dashboard manages only your own build and cannot manage other custom permissions.",
                     basic: "Create multiple custom builds and manage other custom permissions.",
-                    advanced: "Create multiple custom builds and manage other custom permissions.",
+                    advanced:
+                        "Create multiple custom builds and manage other custom permissions.",
                 },
             },
             name: {

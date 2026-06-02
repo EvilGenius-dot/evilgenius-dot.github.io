@@ -30,6 +30,7 @@ import {
     localizedDownloadLinks,
     localizedDocLinks,
     localizedPageLinks,
+    messages,
     pagePath,
 } from "./i18n";
 
@@ -92,10 +93,68 @@ const pageDescription = computed(() =>
                 .description
           : t(`seo.${currentPage.value}.description`),
 );
+const localizedSeo = computed(
+    () => messages[currentLocale.value]?.seo || messages[DEFAULT_LOCALE].seo,
+);
+const pageKeywordList = computed(() => {
+    const defaultKeywords = localizedSeo.value.keywords || [];
+    const routeKeywords =
+        currentPage.value === "document"
+            ? getDocPageMeta(
+                  currentDocPage.value,
+                  currentLocale.value,
+                  currentDocCollection.value,
+              ).keywords
+            : currentPage.value === "download"
+              ? getDownloadPageMeta(
+                    currentDownloadPage.value,
+                    currentLocale.value,
+                ).keywords
+              : localizedSeo.value[currentPage.value]?.keywords;
+
+    return [...new Set([...(routeKeywords || []), ...defaultKeywords])].filter(
+        Boolean,
+    );
+});
+const pageKeywords = computed(() => pageKeywordList.value.join(", "));
 const fullTitle = computed(() =>
     currentPage.value === "home"
         ? t("seo.defaultTitle")
         : `${pageTitle.value} | ${t("site.name")}`,
+);
+const toJsonScript = (value) => JSON.stringify(value).replace(/</g, "\\u003C");
+const structuredData = computed(() =>
+    toJsonScript({
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        name: fullTitle.value,
+        url: canonicalHref.value,
+        description: pageDescription.value,
+        inLanguage: LOCALE_META[currentLocale.value].htmlLang,
+        keywords: pageKeywordList.value,
+        about: pageKeywordList.value.map((keyword) => ({
+            "@type": "Thing",
+            name: keyword,
+        })),
+        isPartOf: {
+            "@type": "WebSite",
+            name: t("site.name"),
+            url: SITE_ORIGIN,
+            availableLanguage: Object.values(LOCALE_META).map(
+                ({ htmlLang }) => htmlLang,
+            ),
+        },
+        mainEntity:
+            currentPage.value === "home"
+                ? {
+                      "@type": "SoftwareApplication",
+                      name: t("site.name"),
+                      applicationCategory: "BusinessApplication",
+                      operatingSystem: "Linux, Web",
+                      description: pageDescription.value,
+                  }
+                : undefined,
+    }),
 );
 
 if (!import.meta.env.SSR) {
@@ -120,6 +179,10 @@ const head = computed(() => ({
             content: pageDescription.value,
         },
         {
+            name: "keywords",
+            content: pageKeywords.value,
+        },
+        {
             property: "og:title",
             content: fullTitle.value,
         },
@@ -138,6 +201,12 @@ const head = computed(() => ({
         {
             name: "twitter:card",
             content: "summary",
+        },
+    ],
+    script: [
+        {
+            type: "application/ld+json",
+            innerHTML: structuredData.value,
         },
     ],
     link: [

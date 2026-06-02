@@ -64,16 +64,16 @@ export const DOC_COLLECTIONS = [
         "order": 4,
         "meta": {
             "en": {
-                "title": "RustMinerSystemCli",
-                "description": "RustMinerSystemCli documentation for command-line operations, automation, diagnostics, and maintenance."
+                "title": "RustMinerSystem Cli",
+                "description": "RustMinerSystem Cli documentation for command-line operations, automation, diagnostics, and maintenance."
             },
             "zh": {
-                "title": "RustMinerSystemCli",
-                "description": "RustMinerSystemCli 文档，覆盖命令行操作、自动化、诊断与维护。"
+                "title": "RustMinerSystem Cli",
+                "description": "RustMinerSystem Cli 文档，覆盖命令行操作、自动化、诊断与维护。"
             },
             "ru": {
-                "title": "RustMinerSystemCli",
-                "description": "Документация RustMinerSystemCli: операции командной строки, автоматизация, диагностика и обслуживание."
+                "title": "RustMinerSystem Cli",
+                "description": "Документация RustMinerSystem Cli: операции командной строки, автоматизация, диагностика и обслуживание."
             }
         }
     },
@@ -2238,19 +2238,19 @@ export const DOC_PAGE_META = {
     "rustminersystem-cli": {
         "overview": {
             "en": {
-                "title": "RustMinerSystemCli documentation overview",
+                "title": "RustMinerSystem Cli documentation overview",
                 "navTitle": "Overview",
-                "description": "Learn how to organize RustMinerSystemCli commands, automation workflows, diagnostics, and maintenance tasks."
+                "description": "Learn how to organize RustMinerSystem Cli commands, automation workflows, diagnostics, and maintenance tasks."
             },
             "zh": {
-                "title": "RustMinerSystemCli 文档概览",
+                "title": "RustMinerSystem Cli 文档概览",
                 "navTitle": "概览",
-                "description": "了解如何组织 RustMinerSystemCli 命令、自动化流程、诊断与维护任务。"
+                "description": "了解如何组织 RustMinerSystem Cli 命令、自动化流程、诊断与维护任务。"
             },
             "ru": {
-                "title": "Обзор документации RustMinerSystemCli",
+                "title": "Обзор документации RustMinerSystem Cli",
                 "navTitle": "Обзор",
-                "description": "Как организовать команды RustMinerSystemCli, автоматизацию, диагностику и задачи обслуживания."
+                "description": "Как организовать команды RustMinerSystem Cli, автоматизацию, диагностику и задачи обслуживания."
             }
         }
     },

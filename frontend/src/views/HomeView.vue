@@ -148,6 +148,30 @@
             </section>
 
             <section
+                class="content-section search-section"
+                aria-labelledby="search-intents-title"
+            >
+                <div class="section-heading">
+                    <h2 id="search-intents-title">
+                        {{ t("home.searchIntents.title") }}
+                    </h2>
+                    <p>{{ t("home.searchIntents.description") }}</p>
+                </div>
+
+                <div class="search-intent-grid">
+                    <article
+                        v-for="item in searchIntentItems"
+                        :key="item.term"
+                        class="search-intent-card"
+                    >
+                        <span>{{ item.term }}</span>
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.text }}</p>
+                    </article>
+                </div>
+            </section>
+
+            <section
                 class="content-section global-section"
                 aria-labelledby="global-title"
             >
@@ -421,6 +445,14 @@ const features = computed(() => [
         text: t("home.features.localization.text"),
     },
 ]);
+
+const searchIntentItems = computed(() =>
+    ["relay", "fee", "forwarding", "setup"].map((id) => ({
+        term: t(`home.searchIntents.items.${id}.term`),
+        title: t(`home.searchIntents.items.${id}.title`),
+        text: t(`home.searchIntents.items.${id}.text`),
+    })),
+);
 
 const deploymentSites = computed(() => [
     {
@@ -1155,6 +1187,69 @@ h1 {
     margin-bottom: 0;
 }
 
+.section-heading {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    max-width: 50rem;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.section-heading p {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.search-section {
+    display: grid;
+    gap: 0;
+}
+
+.search-intent-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.search-intent-card {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 5%), transparent 52%),
+        rgb(12 18 28 / 76%);
+    border: 1px solid rgb(255 255 255 / 11%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.625rem;
+    min-height: 12rem;
+    padding: 1.25rem;
+}
+
+.search-intent-card span {
+    color: #7dd3fc;
+    font-size: var(--text-sm);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.search-intent-card h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+.search-intent-card p {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+}
+
 .global-section {
     display: grid;
     gap: 1rem;
@@ -1373,6 +1468,10 @@ h1 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .search-intent-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .global-metrics {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -1428,6 +1527,10 @@ h1 {
 
     .feature-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .search-intent-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .deployment-panel {
