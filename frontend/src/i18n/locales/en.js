@@ -44,6 +44,11 @@ export default {
             description:
                 "Create a branded RustMiner build with an admin dashboard, install statistics, built-in fee-ratio management, hot updates, and paid hosted deployment options.",
         },
+        customizedLookup: {
+            title: "Customized Version Hosting Lookup",
+            description:
+                "Enter your CID to look up hosted custom files and installation links.",
+        },
         about: {
             title: "About",
             description:

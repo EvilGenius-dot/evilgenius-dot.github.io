@@ -44,6 +44,10 @@ export default {
             description:
                 "制作用于推广的定制版 RustMiner，配套管理后台、安装统计、内抽比例配置、热更新与付费托管部署能力。",
         },
+        customizedLookup: {
+            title: "定制版本托管查询",
+            description: "输入 CID 查询您的定制托管文件及安装链接。",
+        },
         about: {
             title: "关于",
             description:

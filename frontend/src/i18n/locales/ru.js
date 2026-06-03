@@ -44,6 +44,11 @@ export default {
             description:
                 "Создайте брендированную сборку RustMiner с admin-панелью, статистикой установок, управлением встроенной комиссией, hot update конфигурации и платным hosted-развертыванием.",
         },
+        customizedLookup: {
+            title: "Поиск hosted-версии",
+            description:
+                "Введите CID, чтобы найти hosted-файлы индивидуальной версии и ссылки установки.",
+        },
         about: {
             title: "О проекте",
             description:

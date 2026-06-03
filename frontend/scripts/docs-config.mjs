@@ -19,6 +19,7 @@ export const PAGE_SLUGS = {
     download: "download",
     document: "document",
     customized: "customized-version",
+    customizedLookup: "customized-version-lookup",
     about: "about",
 };
 

@@ -24,6 +24,8 @@ const pageComponents = {
     download: () => import("../views/DownloadView.vue"),
     document: () => import("../views/DocumentView.vue"),
     customized: () => import("../views/CustomizedVersionView.vue"),
+    customizedLookup: () =>
+        import("../views/CustomizedReleaseLookupView.vue"),
     about: () => import("../views/AboutView.vue"),
 };
 
