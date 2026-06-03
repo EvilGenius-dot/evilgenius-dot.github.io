@@ -7,7 +7,7 @@ description: 了解 RustMinerSystem 代理服务的生产运维、监控检查�
 category: deployment
 categoryTitle: 部署运维
 categoryOrder: 2
-order: 5
+order: 6
 ---
 
 # 运维

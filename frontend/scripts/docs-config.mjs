@@ -97,19 +97,19 @@ export const DOC_COLLECTIONS = [
         order: 4,
         meta: {
             en: {
-                title: "RustMinerSystem Cli",
+                title: "RustMinerSystem CLI",
                 description:
-                    "RustMinerSystem Cli documentation for command-line operations, automation, diagnostics, and maintenance.",
+                    "RustMinerSystem CLI documentation for command-line operations, automation, diagnostics, and maintenance.",
             },
             zh: {
-                title: "RustMinerSystem Cli",
+                title: "RustMinerSystem CLI",
                 description:
-                    "RustMinerSystem Cli 文档，覆盖命令行操作、自动化、诊断与维护。",
+                    "RustMinerSystem CLI 文档，覆盖命令行操作、自动化、诊断与维护。",
             },
             ru: {
-                title: "RustMinerSystem Cli",
+                title: "RustMinerSystem CLI",
                 description:
-                    "Документация RustMinerSystem Cli: операции командной строки, автоматизация, диагностика и обслуживание.",
+                    "Документация RustMinerSystem CLI: операции командной строки, автоматизация, диагностика и обслуживание.",
             },
         },
     },

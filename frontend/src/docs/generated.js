@@ -64,16 +64,16 @@ export const DOC_COLLECTIONS = [
         "order": 4,
         "meta": {
             "en": {
-                "title": "RustMinerSystem Cli",
-                "description": "RustMinerSystem Cli documentation for command-line operations, automation, diagnostics, and maintenance."
+                "title": "RustMinerSystem CLI",
+                "description": "RustMinerSystem CLI documentation for command-line operations, automation, diagnostics, and maintenance."
             },
             "zh": {
-                "title": "RustMinerSystem Cli",
-                "description": "RustMinerSystem Cli 文档，覆盖命令行操作、自动化、诊断与维护。"
+                "title": "RustMinerSystem CLI",
+                "description": "RustMinerSystem CLI 文档，覆盖命令行操作、自动化、诊断与维护。"
             },
             "ru": {
-                "title": "RustMinerSystem Cli",
-                "description": "Документация RustMinerSystem Cli: операции командной строки, автоматизация, диагностика и обслуживание."
+                "title": "RustMinerSystem CLI",
+                "description": "Документация RustMinerSystem CLI: операции командной строки, автоматизация, диагностика и обслуживание."
             }
         }
     },
@@ -376,11 +376,19 @@ export const DOC_PAGES = [
     },
     {
         "collection": "rustminersystem",
+        "id": "security",
+        "slug": "security",
+        "file": "05-security.md",
+        "category": "deployment",
+        "order": 5
+    },
+    {
+        "collection": "rustminersystem",
         "id": "operations",
         "slug": "operations",
         "file": "05-operations.md",
         "category": "deployment",
-        "order": 5
+        "order": 6
     },
     {
         "collection": "rustminersystem",
@@ -388,7 +396,7 @@ export const DOC_PAGES = [
         "slug": "migration",
         "file": "06-migration.md",
         "category": "deployment",
-        "order": 6
+        "order": 7
     },
     {
         "collection": "rustminersystem",
@@ -1076,6 +1084,23 @@ export const DOC_PAGE_META = {
                 "title": "Настройка RustMinerSystem",
                 "navTitle": "Настройка",
                 "description": "Настройте адрес прослушивания, endpoint пула, учетные данные воркера и логирование RustMinerSystem."
+            }
+        },
+        "security": {
+            "en": {
+                "title": "RustMinerSystem security essentials",
+                "navTitle": "Security",
+                "description": "Complete the required RustMinerSystem security checks for admin access, SSH, firewalls, two-step verification, strong credentials, and script sources before production rollout."
+            },
+            "zh": {
+                "title": "RustMinerSystem 安全必读",
+                "navTitle": "安全必读",
+                "description": "上线 RustMinerSystem 前必须完成的后台入口、SSH、防火墙、二步验证、强密码和脚本来源安全检查。"
+            },
+            "ru": {
+                "title": "Обязательная безопасность RustMinerSystem",
+                "navTitle": "Безопасность",
+                "description": "Выполните обязательные проверки безопасности RustMinerSystem перед production-запуском: админ-доступ, SSH, firewall, двухэтапная проверка, надежные учетные данные и источники скриптов."
             }
         },
         "operations": {
@@ -2327,19 +2352,19 @@ export const DOC_PAGE_META = {
     "rustminersystem-cli": {
         "overview": {
             "en": {
-                "title": "RustMinerSystem Cli documentation overview",
+                "title": "RustMinerSystem CLI documentation overview",
                 "navTitle": "Overview",
-                "description": "Learn how to organize RustMinerSystem Cli commands, automation workflows, diagnostics, and maintenance tasks."
+                "description": "Learn how to organize RustMinerSystem CLI commands, automation workflows, diagnostics, and maintenance tasks."
             },
             "zh": {
-                "title": "RustMinerSystem Cli 文档概览",
+                "title": "RustMinerSystem CLI 文档概览",
                 "navTitle": "概览",
-                "description": "了解如何组织 RustMinerSystem Cli 命令、自动化流程、诊断与维护任务。"
+                "description": "了解如何组织 RustMinerSystem CLI 命令、自动化流程、诊断与维护任务。"
             },
             "ru": {
-                "title": "Обзор документации RustMinerSystem Cli",
+                "title": "Обзор документации RustMinerSystem CLI",
                 "navTitle": "Обзор",
-                "description": "Как организовать команды RustMinerSystem Cli, автоматизацию, диагностику и задачи обслуживания."
+                "description": "Как организовать команды RustMinerSystem CLI, автоматизацию, диагностику и задачи обслуживания."
             }
         }
     },

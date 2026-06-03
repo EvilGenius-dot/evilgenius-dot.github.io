@@ -7,7 +7,7 @@ description: Review daily checks, staged rollout, upgrade flow, and rollback pre
 category: deployment
 categoryTitle: Deployment
 categoryOrder: 2
-order: 5
+order: 6
 ---
 
 # Operations

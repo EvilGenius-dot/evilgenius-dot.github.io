@@ -7,7 +7,7 @@ description: Learn which RustMinerSystem files to copy during migration and whic
 category: deployment
 categoryTitle: Deployment
 categoryOrder: 2
-order: 6
+order: 7
 ---
 
 # Migration

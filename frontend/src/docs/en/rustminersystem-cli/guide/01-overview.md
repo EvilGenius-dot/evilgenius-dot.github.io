@@ -1,18 +1,18 @@
 ---
 id: overview
 slug: ""
-title: RustMinerSystem Cli documentation overview
+title: RustMinerSystem CLI documentation overview
 navTitle: Overview
-description: Learn how to organize RustMinerSystem Cli commands, automation workflows, diagnostics, and maintenance tasks.
+description: Learn how to organize RustMinerSystem CLI commands, automation workflows, diagnostics, and maintenance tasks.
 category: getting-started
 categoryTitle: Getting Started
 categoryOrder: 1
 order: 1
 ---
 
-# RustMinerSystem Cli Documentation
+# RustMinerSystem CLI Documentation
 
-RustMinerSystem Cli should hold command-line workflows that operators run repeatedly: inspection, automation, diagnostics, maintenance, and release support.
+RustMinerSystem CLI should hold command-line workflows that operators run repeatedly: inspection, automation, diagnostics, maintenance, and release support.
 
 ## Scope
 

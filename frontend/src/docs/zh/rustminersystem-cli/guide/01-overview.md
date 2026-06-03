@@ -1,18 +1,18 @@
 ---
 id: overview
 slug: ""
-title: RustMinerSystem Cli 文档概览
+title: RustMinerSystem CLI 文档概览
 navTitle: 概览
-description: 了解如何组织 RustMinerSystem Cli 命令、自动化流程、诊断与维护任务。
+description: 了解如何组织 RustMinerSystem CLI 命令、自动化流程、诊断与维护任务。
 category: getting-started
 categoryTitle: 开始使用
 categoryOrder: 1
 order: 1
 ---
 
-# RustMinerSystem Cli 文档
+# RustMinerSystem CLI 文档
 
-RustMinerSystem Cli 文档应独立记录运维人员反复执行的命令行流程，包括巡检、自动化、诊断、维护和版本发布辅助操作。
+RustMinerSystem CLI 文档应独立记录运维人员反复执行的命令行流程，包括巡检、自动化、诊断、维护和版本发布辅助操作。
 
 ## 文档范围
 

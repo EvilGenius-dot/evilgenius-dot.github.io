@@ -7,7 +7,7 @@ description: Узнайте, какие файлы RustMinerSystem нужно к
 category: deployment
 categoryTitle: Развертывание
 categoryOrder: 2
-order: 6
+order: 7
 ---
 
 # Миграция
