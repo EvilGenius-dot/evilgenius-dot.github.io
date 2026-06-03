@@ -2,20 +2,20 @@
     <main id="main-content" class="custom-release-page">
         <section class="lookup-shell" aria-labelledby="lookup-title">
             <div class="hero-copy">
-                <p class="eyebrow">定制托管服务</p>
-                <h1 id="lookup-title">定制版本托管查询</h1>
-                <p>输入 CID 查询您的定制托管文件及安装链接。</p>
+                <p class="eyebrow">{{ t("customizedLookup.eyebrow") }}</p>
+                <h1 id="lookup-title">{{ t("customizedLookup.title") }}</h1>
+                <p>{{ t("customizedLookup.description") }}</p>
             </div>
 
             <form class="lookup-form" @submit.prevent="handleSubmit">
-                <label for="cid-input">CID</label>
+                <label for="cid-input">{{ t("customizedLookup.cid") }}</label>
                 <div class="cid-control">
                     <input
                         id="cid-input"
                         v-model.trim="cidInput"
                         autocomplete="off"
                         inputmode="text"
-                        placeholder="例如 1"
+                        :placeholder="t('customizedLookup.placeholder')"
                         type="text"
                     />
                     <button type="submit" :disabled="!canSubmit">
@@ -25,7 +25,13 @@
                             aria-hidden="true"
                         />
                         <Search v-else aria-hidden="true" />
-                        <span>{{ isLoading ? "查询中" : "查询" }}</span>
+                        <span>
+                            {{
+                                isLoading
+                                    ? t("customizedLookup.searching")
+                                    : t("customizedLookup.search")
+                            }}
+                        </span>
                     </button>
                 </div>
                 <p v-if="validationMessage" class="form-message">
@@ -38,19 +44,34 @@
             v-if="isLoading"
             class="state-panel"
             aria-live="polite"
-            aria-label="查询状态"
+            :aria-label="t('customizedLookup.statusLabel')"
         >
             <LoaderCircle class="spin-icon" aria-hidden="true" />
-            <p>正在读取定制版本文件...</p>
+            <p>{{ t("customizedLookup.loading") }}</p>
         </section>
 
         <section
             v-else-if="errorMessage"
-            class="state-panel state-panel-error"
+            class="empty-state empty-state-error"
             aria-live="polite"
+            aria-labelledby="no-result-title"
         >
-            <TriangleAlert aria-hidden="true" />
-            <p>{{ errorMessage }}</p>
+            <div class="empty-visual" aria-hidden="true">
+                <TriangleAlert />
+            </div>
+            <div class="empty-content">
+                <p class="panel-kicker">
+                    {{ t("customizedLookup.noResult.eyebrow") }}
+                </p>
+                <h2 id="no-result-title">
+                    {{ t("customizedLookup.noResult.title") }}
+                </h2>
+                <p>{{ errorMessage }}</p>
+                <div class="empty-chips" aria-hidden="true">
+                    <span>{{ t("customizedLookup.noResult.checkCid") }}</span>
+                    <span>{{ t("customizedLookup.noResult.retry") }}</span>
+                </div>
+            </div>
         </section>
 
         <section
@@ -63,22 +84,29 @@
                     <div class="panel-title">
                         <BadgeCheck aria-hidden="true" />
                         <div>
-                            <p class="panel-kicker">托管文件已匹配</p>
-                            <h2 id="result-title">CID {{ result.cid }}</h2>
+                            <p class="panel-kicker">
+                                {{ t("customizedLookup.matched") }}
+                            </p>
+                            <h2 id="result-title">
+                                {{
+                                    t("customizedLookup.cidResult", {
+                                        cid: result.cid,
+                                    })
+                                }}
+                            </h2>
                         </div>
                     </div>
-                    <span class="match-badge">Available</span>
+                    <span class="match-badge">
+                        {{ t("customizedLookup.available") }}
+                    </span>
                 </div>
 
                 <div class="release-meta">
                     <div>
-                        <span>当前版本</span>
+                        <span>{{ t("customizedLookup.currentVersion") }}</span>
                         <strong>{{ result.version }}</strong>
                     </div>
-                    <p>
-                        请根据使用环境选择 Windows 或 Linux 文件；Linux
-                        服务器可直接复制下方安装命令。
-                    </p>
+                    <p>{{ t("customizedLookup.resultDescription") }}</p>
                 </div>
             </article>
 
@@ -114,7 +142,11 @@
                     </div>
 
                     <p v-else class="empty-note">
-                        未找到 {{ group.title }} 文件。
+                        {{
+                            t("customizedLookup.emptyFiles", {
+                                platform: group.title,
+                            })
+                        }}
                     </p>
                 </article>
             </div>
@@ -125,7 +157,7 @@
                         <Terminal aria-hidden="true" />
                         <div>
                             <p class="panel-kicker">Linux</p>
-                            <h2>安装命令</h2>
+                            <h2>{{ t("customizedLookup.installTitle") }}</h2>
                         </div>
                     </div>
                     <button
@@ -143,18 +175,48 @@
                         <span>
                             {{
                                 copiedId === "install-command"
-                                    ? "已复制"
-                                    : "复制"
+                                    ? t("customizedLookup.copied")
+                                    : t("customizedLookup.copy")
                             }}
                         </span>
                     </button>
                 </div>
                 <pre><code>{{ result.installCommand }}</code></pre>
                 <p class="command-note">
-                    请在 Linux 服务器上使用 root
-                    用户运行，脚本会继续显示语言和安装菜单。
+                    {{ t("customizedLookup.commandNote") }}
                 </p>
             </article>
+        </section>
+
+        <section v-else class="idle-shell" aria-labelledby="idle-title">
+            <article class="idle-panel">
+                <div class="panel-title">
+                    <Search aria-hidden="true" />
+                    <div>
+                        <p class="panel-kicker">
+                            {{ t("customizedLookup.idle.eyebrow") }}
+                        </p>
+                        <h2 id="idle-title">
+                            {{ t("customizedLookup.idle.title") }}
+                        </h2>
+                    </div>
+                </div>
+                <p class="idle-copy">
+                    {{ t("customizedLookup.idle.description") }}
+                </p>
+            </article>
+
+            <div class="idle-grid">
+                <article
+                    v-for="item in idleItems"
+                    :key="item.title"
+                    class="idle-card"
+                >
+                    <component :is="item.icon" aria-hidden="true" />
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.text }}</p>
+                </article>
+            </div>
         </section>
     </main>
 </template>
@@ -162,6 +224,7 @@
 <script setup>
 import { computed, markRaw, onMounted, ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import { useI18n } from "vue-i18n";
 import {
     BadgeCheck,
     Check,
@@ -176,6 +239,7 @@ import {
 
 const route = useRoute();
 const router = useRouter();
+const { t } = useI18n();
 
 const repositoryOwner = "EvilGenius-dot";
 const repositoryName = "shortcut";
@@ -270,7 +334,8 @@ const extractVersionFromScript = (script = "") => {
     return match ? extractVersion(match[1]) : "";
 };
 
-const formatVersion = (version) => (version ? `v${version}` : "未知版本");
+const formatVersion = (version) =>
+    version ? `v${version}` : t("customizedLookup.unknownVersion");
 
 const normalizeFile = (entry) => ({
     downloadUrl: githubRawUrl(entry.path),
@@ -371,11 +436,11 @@ const lookupCid = async (cid) => {
         });
     } catch (error) {
         if (error instanceof DOMException && error.name === "AbortError") {
-            errorMessage.value = "查询超时，请稍后重试。";
+            errorMessage.value = t("customizedLookup.errors.timeout");
         } else if (error instanceof Error && error.message === "NOT_FOUND") {
-            errorMessage.value = `没有找到 CID ${cid} 对应的定制版本目录。`;
+            errorMessage.value = t("customizedLookup.errors.notFound", { cid });
         } else {
-            errorMessage.value = "读取 GitHub 文件失败，请确认网络状态后再试。";
+            errorMessage.value = t("customizedLookup.errors.fetchFailed");
         }
     } finally {
         window.clearTimeout(timeoutId);
@@ -389,13 +454,12 @@ const handleSubmit = () => {
     validationMessage.value = "";
 
     if (!cid) {
-        validationMessage.value = "请输入 CID。";
+        validationMessage.value = t("customizedLookup.errors.required");
         return;
     }
 
     if (!allowedCidPattern.test(cid)) {
-        validationMessage.value =
-            "CID 只能包含字母、数字、点、下划线和短横线。";
+        validationMessage.value = t("customizedLookup.errors.invalid");
         return;
     }
 
@@ -453,20 +517,38 @@ const downloadGroups = computed(() => {
             icon: markRaw(MonitorDown),
             id: "windows",
             kicker: "Windows",
-            title: "Windows 下载",
-            hint: "点击下载 Windows 安装包",
+            title: t("customizedLookup.windowsTitle"),
+            hint: t("customizedLookup.windowsHint"),
             files: result.value.windowsFiles,
         },
         {
             icon: markRaw(Terminal),
             id: "linux",
             kicker: "Linux",
-            title: "Linux 下载",
-            hint: "点击下载 Linux 执行文件",
+            title: t("customizedLookup.linuxTitle"),
+            hint: t("customizedLookup.linuxHint"),
             files: result.value.linuxFiles,
         },
     ];
 });
+
+const idleItems = computed(() => [
+    {
+        icon: markRaw(MonitorDown),
+        title: t("customizedLookup.idle.windows.title"),
+        text: t("customizedLookup.idle.windows.text"),
+    },
+    {
+        icon: markRaw(Terminal),
+        title: t("customizedLookup.idle.linux.title"),
+        text: t("customizedLookup.idle.linux.text"),
+    },
+    {
+        icon: markRaw(Clipboard),
+        title: t("customizedLookup.idle.command.title"),
+        text: t("customizedLookup.idle.command.text"),
+    },
+]);
 
 function compareVersions(first, second) {
     const firstParts = first.match(/\d+/g)?.map(Number) || [0];
@@ -520,7 +602,9 @@ onMounted(() => {
 
 .lookup-shell,
 .result-shell,
-.state-panel {
+.state-panel,
+.empty-state,
+.idle-shell {
     margin: 0 auto;
     max-width: 1120px;
 }
@@ -546,6 +630,7 @@ onMounted(() => {
 
 h1,
 h2,
+h3,
 p {
     margin-top: 0;
 }
@@ -568,6 +653,15 @@ h2 {
     overflow-wrap: anywhere;
 }
 
+h3 {
+    color: var(--color-white);
+    font-size: var(--text-base);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
 .hero-copy p:not(.eyebrow) {
     color: var(--color-neutral-300);
     font-size: var(--text-lg);
@@ -580,7 +674,10 @@ h2 {
 .release-overview,
 .download-panel,
 .command-panel,
-.state-panel {
+.state-panel,
+.empty-state,
+.idle-panel,
+.idle-card {
     border: 1px solid rgb(255 255 255 / 12%);
     border-radius: 8px;
     box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 18%);
@@ -702,11 +799,67 @@ h2 {
     color: #fecaca;
 }
 
+.empty-state {
+    align-items: center;
+    align-content: center;
+    background:
+        linear-gradient(135deg, rgb(248 113 113 / 12%), transparent 48%),
+        linear-gradient(180deg, rgb(255 255 255 / 4%), transparent),
+        rgb(13 18 28 / 82%);
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    min-height: min(28rem, calc(100vh - 18rem));
+    padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.empty-visual {
+    align-items: center;
+    background: rgb(248 113 113 / 12%);
+    border: 1px solid rgb(248 113 113 / 28%);
+    border-radius: 8px;
+    color: #fecaca;
+    display: inline-flex;
+    height: 4.25rem;
+    justify-content: center;
+    width: 4.25rem;
+}
+
+.empty-visual svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.empty-content p:not(.panel-kicker) {
+    color: var(--color-neutral-300);
+    line-height: 1.7;
+    margin: 0.875rem 0 0;
+    max-width: 44rem;
+}
+
+.empty-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.empty-chips span {
+    background: rgb(8 12 18 / 62%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 999px;
+    color: var(--color-neutral-200);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    padding: 0.375rem 0.625rem;
+}
+
 .spin-icon {
     animation: spin 0.9s linear infinite;
 }
 
-.result-shell {
+.result-shell,
+.idle-shell {
     display: grid;
     gap: 1rem;
     margin-top: 1.5rem;
@@ -714,16 +867,65 @@ h2 {
 
 .release-overview,
 .download-panel,
-.command-panel {
+.command-panel,
+.idle-panel,
+.idle-card {
     padding: 1rem;
 }
 
 .release-overview,
 .download-panel,
-.command-panel {
+.command-panel,
+.idle-panel,
+.idle-card {
     background:
         linear-gradient(180deg, rgb(255 255 255 / 4%), transparent),
         rgb(13 18 28 / 82%);
+}
+
+.idle-panel {
+    align-content: center;
+    background:
+        linear-gradient(135deg, rgb(65 126 56 / 15%), transparent 52%),
+        linear-gradient(180deg, rgb(255 255 255 / 5%), transparent),
+        rgb(13 18 28 / 82%);
+    min-height: 11.5rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.idle-copy {
+    color: var(--color-neutral-300);
+    line-height: 1.7;
+    margin: 1rem 0 0;
+    max-width: 42rem;
+}
+
+.idle-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.idle-card {
+    display: grid;
+    gap: 0.75rem;
+    min-height: 10.5rem;
+}
+
+.idle-card > svg {
+    background: rgb(8 12 18 / 58%);
+    border: 1px solid rgb(132 186 100 / 22%);
+    border-radius: 8px;
+    color: var(--color-green-400);
+    height: 2.5rem;
+    padding: 0.5rem;
+    width: 2.5rem;
+}
+
+.idle-card p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .panel-title,
@@ -911,8 +1113,14 @@ h2 {
     }
 
     .release-meta,
-    .download-grid {
+    .download-grid,
+    .idle-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .empty-state {
+        grid-template-columns: auto minmax(0, 1fr);
+        min-height: min(28rem, calc(100vh - 17rem));
     }
 }
 
@@ -923,6 +1131,10 @@ h2 {
 
     .download-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .idle-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 </style>

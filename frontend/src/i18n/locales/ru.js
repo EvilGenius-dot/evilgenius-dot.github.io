@@ -78,6 +78,68 @@ export default {
             poolNode: "Мобильное приложение PoolNode",
         },
     },
+    customizedLookup: {
+        eyebrow: "Сервис индивидуального хостинга",
+        title: "Поиск hosted-версии",
+        description:
+            "Введите CID, чтобы найти hosted-файлы индивидуальной версии и ссылки установки.",
+        cid: "CID",
+        placeholder: "например 1",
+        search: "Найти",
+        searching: "Поиск",
+        statusLabel: "Статус поиска",
+        loading: "Чтение hosted-файлов...",
+        idle: {
+            eyebrow: "Готово к поиску",
+            title: "Введите CID, чтобы увидеть hosted-файлы",
+            description:
+                "Результат покажет текущую версию, загрузки Windows и Linux, а также команду установки Linux в одну строку.",
+            windows: {
+                title: "Файлы Windows",
+                text: "Показывает установщик Windows для найденной индивидуальной сборки.",
+            },
+            linux: {
+                title: "Файлы Linux",
+                text: "Показывает исполняемый файл Linux вместе с командой установки на сервер.",
+            },
+            command: {
+                title: "Ссылка установки",
+                text: "Скопируйте команду и продолжите установку в терминале сервера.",
+            },
+        },
+        noResult: {
+            eyebrow: "Пока нет совпадений",
+            title: "Нет hosted-файлов для отображения",
+            checkCid: "Проверьте CID",
+            retry: "Повторите позже",
+        },
+        matched: "Hosted-файлы найдены",
+        cidResult: "CID {cid}",
+        available: "Доступно",
+        currentVersion: "Текущая версия",
+        resultDescription:
+            "Выберите файл Windows или Linux для вашей среды. На Linux-сервере можно скопировать команду установки ниже.",
+        windowsTitle: "Загрузка Windows",
+        windowsHint: "Скачать установщик Windows",
+        linuxTitle: "Загрузка Linux",
+        linuxHint: "Скачать исполняемый файл Linux",
+        emptyFiles: "Файл {platform} не найден.",
+        installTitle: "Команда установки",
+        copy: "Копировать",
+        copied: "Скопировано",
+        commandNote:
+            "Запустите команду от root на Linux-сервере. Скрипт продолжит с выбором языка и меню установки.",
+        unknownVersion: "Версия неизвестна",
+        errors: {
+            required: "Введите CID.",
+            invalid:
+                "CID может содержать только буквы, цифры, точки, подчеркивания и дефисы.",
+            timeout: "Время поиска истекло. Попробуйте еще раз.",
+            notFound: "Hosted-файлы для CID {cid} не найдены.",
+            fetchFailed:
+                "Не удалось прочитать файлы GitHub. Проверьте сеть и повторите попытку.",
+        },
+    },
     localePrompt: {
         title: "Сменить язык?",
         description:
@@ -89,12 +151,16 @@ export default {
         brandLabel: "Footer RustMinerSystem",
         navigation: "Навигация footer",
         product: "Продукт",
+        customizedLookup: "Поиск версии",
         community: "Сообщество",
         github: "GitHub",
         telegram: "Telegram",
         telegramEnglish: "Telegram (английский)",
         telegramRussian: "Telegram (русский)",
         discord: "Discord",
+        downloads: {
+            cli: "RustMinerSystem CLI",
+        },
         miningPoolPartners: {
             title: "Партнерские майнинг-пулы",
             items: {

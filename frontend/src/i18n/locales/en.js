@@ -78,6 +78,68 @@ export default {
             poolNode: "PoolNode Mobile App",
         },
     },
+    customizedLookup: {
+        eyebrow: "Custom hosting service",
+        title: "Customized Version Hosting Lookup",
+        description:
+            "Enter your CID to look up hosted custom files and installation links.",
+        cid: "CID",
+        placeholder: "e.g. 1",
+        search: "Search",
+        searching: "Searching",
+        statusLabel: "Lookup status",
+        loading: "Reading hosted custom files...",
+        idle: {
+            eyebrow: "Ready to search",
+            title: "Enter a CID to view hosted files",
+            description:
+                "Results will show the current version, Windows and Linux downloads, and the one-line Linux install command.",
+            windows: {
+                title: "Windows files",
+                text: "Shows the Windows installer for the matching customized build.",
+            },
+            linux: {
+                title: "Linux files",
+                text: "Shows the Linux executable together with the server install command.",
+            },
+            command: {
+                title: "Install link",
+                text: "Copy the command and continue the installation in your server terminal.",
+            },
+        },
+        noResult: {
+            eyebrow: "No match yet",
+            title: "No hosted files are available to show",
+            checkCid: "Check the CID",
+            retry: "Try again later",
+        },
+        matched: "Hosted files matched",
+        cidResult: "CID {cid}",
+        available: "Available",
+        currentVersion: "Current version",
+        resultDescription:
+            "Choose the Windows or Linux file for your environment. Linux servers can copy the install command below.",
+        windowsTitle: "Windows download",
+        windowsHint: "Download Windows installer",
+        linuxTitle: "Linux download",
+        linuxHint: "Download Linux executable",
+        emptyFiles: "No {platform} file found.",
+        installTitle: "Install command",
+        copy: "Copy",
+        copied: "Copied",
+        commandNote:
+            "Run this as root on your Linux server. The script will continue with language and installation menus.",
+        unknownVersion: "Unknown version",
+        errors: {
+            required: "Enter CID.",
+            invalid:
+                "CID can only include letters, numbers, dots, underscores, and hyphens.",
+            timeout: "Lookup timed out. Please try again.",
+            notFound: "No hosted custom files found for CID {cid}.",
+            fetchFailed:
+                "Failed to read GitHub files. Check your network and try again.",
+        },
+    },
     localePrompt: {
         title: "Switch language?",
         description:
@@ -89,12 +151,16 @@ export default {
         brandLabel: "RustMinerSystem footer",
         navigation: "Footer navigation",
         product: "Product",
+        customizedLookup: "Custom Lookup",
         community: "Community",
         github: "GitHub",
         telegram: "Telegram",
         telegramEnglish: "Telegram (English)",
         telegramRussian: "Telegram (Russian)",
         discord: "Discord",
+        downloads: {
+            cli: "RustMinerSystem CLI",
+        },
         miningPoolPartners: {
             title: "Mining Pool Partners",
             items: {

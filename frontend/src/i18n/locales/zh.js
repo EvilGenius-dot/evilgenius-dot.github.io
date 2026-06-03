@@ -77,6 +77,65 @@ export default {
             poolNode: "PoolNode 移动应用",
         },
     },
+    customizedLookup: {
+        eyebrow: "定制托管服务",
+        title: "定制版本托管查询",
+        description: "输入 CID 查询您的定制托管文件及安装链接。",
+        cid: "CID",
+        placeholder: "例如 1",
+        search: "查询",
+        searching: "查询中",
+        statusLabel: "查询状态",
+        loading: "正在读取定制托管文件...",
+        idle: {
+            eyebrow: "准备查询",
+            title: "输入 CID 后即可查看托管文件",
+            description:
+                "查询结果会在这里展示当前版本、Windows 与 Linux 下载入口，以及 Linux 一键安装命令。",
+            windows: {
+                title: "Windows 文件",
+                text: "展示对应定制版本的 Windows 安装包，适合本地管理端使用。",
+            },
+            linux: {
+                title: "Linux 文件",
+                text: "展示 Linux 执行文件，并配套服务器安装命令。",
+            },
+            command: {
+                title: "安装链接",
+                text: "复制命令后可在服务器终端继续完成安装流程。",
+            },
+        },
+        noResult: {
+            eyebrow: "暂无匹配结果",
+            title: "没有找到可展示的托管文件",
+            checkCid: "检查 CID 是否正确",
+            retry: "稍后重新查询",
+        },
+        matched: "托管文件已匹配",
+        cidResult: "CID {cid}",
+        available: "可用",
+        currentVersion: "当前版本",
+        resultDescription:
+            "请根据使用环境选择 Windows 或 Linux 文件；Linux 服务器可直接复制下方安装命令。",
+        windowsTitle: "Windows 下载",
+        windowsHint: "点击下载 Windows 安装包",
+        linuxTitle: "Linux 下载",
+        linuxHint: "点击下载 Linux 执行文件",
+        emptyFiles: "未找到 {platform} 文件。",
+        installTitle: "安装命令",
+        copy: "复制",
+        copied: "已复制",
+        commandNote:
+            "请在 Linux 服务器上使用 root 用户运行，脚本会继续显示语言和安装菜单。",
+        unknownVersion: "未知版本",
+        errors: {
+            required: "请输入 CID。",
+            invalid: "CID 只能包含字母、数字、点、下划线和短横线。",
+            timeout: "查询超时，请稍后重试。",
+            notFound: "没有找到 CID {cid} 对应的定制托管文件。",
+            fetchFailed: "读取 GitHub 文件失败，请确认网络状态后再试。",
+        },
+    },
     localePrompt: {
         title: "切换语言？",
         description:
@@ -88,12 +147,16 @@ export default {
         brandLabel: "RustMinerSystem 页脚",
         navigation: "页脚导航",
         product: "产品",
+        customizedLookup: "定制查询",
         community: "社区",
         github: "GitHub",
         telegram: "Telegram",
         telegramEnglish: "Telegram（英文）",
         telegramRussian: "Telegram（俄语）",
         discord: "Discord",
+        downloads: {
+            cli: "RustMinerSystem CLI",
+        },
         miningPoolPartners: {
             title: "矿池合作伙伴",
             items: {

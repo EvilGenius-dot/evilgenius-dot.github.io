@@ -144,6 +144,11 @@ const primaryLinks = computed(() => [
         to: localizedPath("customized"),
     },
     {
+        page: "customizedLookup",
+        label: t("footer.customizedLookup"),
+        to: localizedPath("customizedLookup"),
+    },
+    {
         page: "about",
         label: t("nav.about"),
         to: localizedPath("about"),
@@ -157,6 +162,14 @@ const downloadGroups = computed(() => [
             {
                 label: t("nav.downloads.server"),
                 to: downloadPath("server", currentLocale.value),
+            },
+            {
+                label: t("footer.downloads.cli"),
+                to: docPath(
+                    undefined,
+                    currentLocale.value,
+                    "rustminersystem-cli",
+                ),
             },
             {
                 label: t("nav.downloads.rms"),
