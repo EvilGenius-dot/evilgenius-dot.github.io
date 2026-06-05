@@ -64,6 +64,10 @@ export const DOWNLOAD_PAGES = [
         id: "pool-node",
         slug: "poolnode-mobile-app",
     },
+    {
+        id: "cli",
+        slug: "rustminersystem-cli",
+    },
 ];
 
 export const DEFAULT_DOWNLOAD_PAGE = DOWNLOAD_PAGES[0].id;

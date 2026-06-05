@@ -66,6 +66,7 @@ export default {
         about: "About",
         server: "Server components",
         app: "Mobile apps",
+        plugin: "Plugins",
         openMenu: "Open navigation menu",
         closeMenu: "Close navigation menu",
         language: "Language",
@@ -76,6 +77,7 @@ export default {
             rms: "RMS Secure Client",
             mobile: "RustMinerApp Mobile App",
             poolNode: "PoolNode Mobile App",
+            cli: "RustMinerSystem CLI",
         },
     },
     customizedLookup: {
@@ -371,6 +373,52 @@ export default {
                 heading: "PoolNode Mobile App",
                 description:
                     "PoolNode Mobile App is the end-user mobile app for pool nodes built on RustMinerSystem, giving pool users a mobile entry for earnings, hashrate, workers, and asset records.",
+            },
+            cli: {
+                title: "RustMinerSystem CLI Download",
+                heading: "RustMinerSystem CLI",
+                description:
+                    "RustMinerSystem CLI is a command-line tool plugin for RustMinerSystem, built for users who do not want to use the web management dashboard. The CLI has not been released yet, so this page currently presents its role, use cases, and future download entry.",
+            },
+        },
+        cli: {
+            comingSoonBadge: "Plugin not released yet",
+            downloadKicker: "Command-line plugin",
+            downloadTitle: "Prepared for management without the web dashboard",
+            downloadDescription:
+                "Some users may avoid browser-based administration because of security rules, network isolation, or personal workflow. RustMinerSystem CLI will provide common management capabilities as a command-line plugin, so server terminals can handle status checks and basic operations.",
+            visual: {
+                label: "Preview of the RustMinerSystem CLI command-line tool",
+                alt: "Animated terminal preview of RustMinerSystem CLI",
+                badge: "RustMinerSystem CLI",
+                title: "Bring management into the terminal",
+                description:
+                    "Designed for server terminals, jump hosts, and isolated environments where operators want a smaller web exposure surface or prefer command-line workflows.",
+            },
+            status: {
+                title: "The CLI tool is being prepared",
+                description:
+                    "After release, this page will include Linux and Windows packages, install commands, and version details. For now it explains the plugin positioning and target scenarios.",
+            },
+            command: {
+                ariaLabel: "RustMinerSystem CLI command preview",
+                line1: "$ rustminer-cli status",
+                line2: "server   rustminer.example.com   connected",
+                line3: "ports    8 active                0 warning",
+            },
+            features: {
+                terminal: {
+                    title: "Terminal management",
+                    text: "Run common checks, inspect status, and perform basic operations from the server terminal with less reliance on the browser dashboard.",
+                },
+                security: {
+                    title: "Built for isolated access",
+                    text: "When the web dashboard should be hidden, tightly restricted, or kept inside a private network, the CLI can act as a narrower management entry.",
+                },
+                operations: {
+                    title: "Automation friendly",
+                    text: "Future releases can support scripted checks, batch tasks, and troubleshooting flows that match server operations habits.",
+                },
             },
         },
         rustMinerApp: {

@@ -5,6 +5,7 @@
         :class="{
             'download-page-app': isMobileAppDownloadPage,
             'download-page-rustminerapp': isRustMinerAppDownloadPage,
+            'download-page-cli': isCliDownloadPage,
         }"
     >
         <div
@@ -19,7 +20,10 @@
                     <p class="hero-description">{{ pageMeta.description }}</p>
                     <div v-if="hasHeroActions" class="hero-actions">
                         <RouterLink
-                            v-if="!isRustMinerAppDownloadPage"
+                            v-if="
+                                !isRustMinerAppDownloadPage &&
+                                !isCliDownloadPage
+                            "
                             :to="installationGuidePath"
                             class="guide-link"
                         >
@@ -31,6 +35,13 @@
                             class="latest-version-badge latest-version-badge-app rustminerapp-status-badge"
                         >
                             <Info aria-hidden="true" />
+                            <span>{{ downloadText("comingSoonBadge") }}</span>
+                        </span>
+                        <span
+                            v-if="isCliDownloadPage"
+                            class="latest-version-badge latest-version-badge-cli"
+                        >
+                            <Terminal aria-hidden="true" />
                             <span>{{ downloadText("comingSoonBadge") }}</span>
                         </span>
                         <span
@@ -69,11 +80,27 @@
                         'download-hero-visual-app': isMobileAppDownloadPage,
                         'download-hero-visual-rustminerapp':
                             isRustMinerAppDownloadPage,
+                        'download-hero-visual-cli': isCliDownloadPage,
                     }"
                     role="img"
                     :aria-label="downloadText('visual.label')"
                 >
-                    <template v-if="isRustMinerAppDownloadPage">
+                    <template v-if="isCliDownloadPage">
+                        <figure class="cli-visual-frame">
+                            <img
+                                src="/image/cligif.gif"
+                                :alt="downloadText('visual.alt')"
+                                decoding="async"
+                                fetchpriority="high"
+                            />
+                        </figure>
+                        <div class="cli-visual-summary">
+                            <span>{{ downloadText("visual.badge") }}</span>
+                            <strong>{{ downloadText("visual.title") }}</strong>
+                            <p>{{ downloadText("visual.description") }}</p>
+                        </div>
+                    </template>
+                    <template v-else-if="isRustMinerAppDownloadPage">
                         <div class="rustminerapp-visual-stage">
                             <figure
                                 v-for="screen in rustMinerAppHeroScreens"
@@ -376,6 +403,57 @@
                         <figcaption>{{ screen.label }}</figcaption>
                     </figure>
                 </div> -->
+            </section>
+
+            <section
+                v-if="isCliDownloadPage"
+                class="cli-download-section"
+                aria-labelledby="cli-download-title"
+            >
+                <div class="cli-section-copy">
+                    <span>{{ downloadText("downloadKicker") }}</span>
+                    <h2 id="cli-download-title">
+                        {{ downloadText("downloadTitle") }}
+                    </h2>
+                    <p>{{ downloadText("downloadDescription") }}</p>
+                </div>
+
+                <div class="cli-status-panel">
+                    <div class="cli-status-heading">
+                        <Terminal aria-hidden="true" />
+                        <div>
+                            <h3>{{ downloadText("status.title") }}</h3>
+                            <p>{{ downloadText("status.description") }}</p>
+                        </div>
+                    </div>
+                    <div
+                        class="cli-command-preview"
+                        :aria-label="downloadText('command.ariaLabel')"
+                    >
+                        <span
+                            v-for="line in cliCommandPreviewLines"
+                            :key="line"
+                        >
+                            {{ line }}
+                        </span>
+                    </div>
+                </div>
+
+                <div class="cli-feature-grid">
+                    <article
+                        v-for="feature in cliFeatures"
+                        :key="feature.title"
+                        class="cli-feature-card"
+                    >
+                        <span class="cli-feature-icon">
+                            <component :is="feature.icon" aria-hidden="true" />
+                        </span>
+                        <div>
+                            <h3>{{ feature.title }}</h3>
+                            <p>{{ feature.text }}</p>
+                        </div>
+                    </article>
+                </div>
             </section>
 
             <section
@@ -703,6 +781,7 @@ const isRustMinerAppDownloadPage = computed(
 const isPoolNodeDownloadPage = computed(
     () => currentDownloadPage.value === "pool-node",
 );
+const isCliDownloadPage = computed(() => currentDownloadPage.value === "cli");
 const isMobileAppDownloadPage = computed(
     () => isRustMinerAppDownloadPage.value || isPoolNodeDownloadPage.value,
 );
@@ -713,10 +792,14 @@ const hasHeroVisual = computed(
     () =>
         isServerDownloadPage.value ||
         isRmsDownloadPage.value ||
-        isMobileAppDownloadPage.value,
+        isMobileAppDownloadPage.value ||
+        isCliDownloadPage.value,
 );
 const hasHeroActions = computed(
-    () => hasDownloadFinder.value || isMobileAppDownloadPage.value,
+    () =>
+        hasDownloadFinder.value ||
+        isMobileAppDownloadPage.value ||
+        isCliDownloadPage.value,
 );
 const hasLatestVersionLookup = computed(
     () => hasDownloadFinder.value || isPoolNodeDownloadPage.value,
@@ -725,6 +808,7 @@ const downloadTranslationKey = computed(() => {
     if (isRmsDownloadPage.value) return "download.rms";
     if (isRustMinerAppDownloadPage.value) return "download.rustMinerApp";
     if (isPoolNodeDownloadPage.value) return "download.poolNode";
+    if (isCliDownloadPage.value) return "download.cli";
 
     return "download.server";
 });
@@ -891,6 +975,28 @@ const poolNodeFeatures = computed(() => [
         icon: ShieldCheck,
         title: downloadText("features.asset.title"),
         text: downloadText("features.asset.text"),
+    },
+]);
+const cliCommandPreviewLines = computed(() => [
+    downloadText("command.line1"),
+    downloadText("command.line2"),
+    downloadText("command.line3"),
+]);
+const cliFeatures = computed(() => [
+    {
+        icon: Terminal,
+        title: downloadText("features.terminal.title"),
+        text: downloadText("features.terminal.text"),
+    },
+    {
+        icon: ShieldCheck,
+        title: downloadText("features.security.title"),
+        text: downloadText("features.security.text"),
+    },
+    {
+        icon: Server,
+        title: downloadText("features.operations.title"),
+        text: downloadText("features.operations.text"),
     },
 ]);
 
@@ -1562,6 +1668,14 @@ onMounted(() => {
         linear-gradient(180deg, rgb(13 18 28 / 96%), rgb(3 7 18) 58%);
 }
 
+.download-page-cli {
+    background-image:
+        linear-gradient(90deg, rgb(34 197 94 / 9%), transparent 42%),
+        linear-gradient(270deg, rgb(56 189 248 / 8%), transparent 46%),
+        linear-gradient(180deg, rgb(13 18 28 / 96%), rgb(3 7 18) 60%);
+    place-items: start center;
+}
+
 .download-shell {
     display: grid;
     gap: 1.75rem;
@@ -1717,6 +1831,18 @@ h1 {
     border-color: rgb(163 255 18 / 22%);
 }
 
+.download-hero-visual-cli {
+    background:
+        linear-gradient(135deg, rgb(34 197 94 / 14%), transparent 44%),
+        linear-gradient(225deg, rgb(56 189 248 / 10%), transparent 48%),
+        linear-gradient(180deg, rgb(7 12 18 / 96%), rgb(3 7 18 / 96%));
+    border-color: rgb(74 222 128 / 22%);
+    display: grid;
+    gap: 0.875rem;
+    overflow: hidden;
+    position: relative;
+}
+
 .download-hero-visual-app::before {
     background:
         linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 9%)),
@@ -1731,6 +1857,16 @@ h1 {
     background:
         linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 7%)),
         linear-gradient(180deg, rgb(163 255 18 / 0%), rgb(163 255 18 / 8%));
+}
+
+.download-hero-visual-cli::before {
+    background:
+        linear-gradient(90deg, rgb(255 255 255 / 0%), rgb(255 255 255 / 8%)),
+        linear-gradient(180deg, rgb(34 197 94 / 0%), rgb(34 197 94 / 8%));
+    content: "";
+    inset: 0;
+    pointer-events: none;
+    position: absolute;
 }
 
 .visual-kicker {
@@ -2070,6 +2206,202 @@ h1 {
     background: rgb(163 255 18 / 10%);
     border-color: rgb(163 255 18 / 18%);
     color: rgb(217 255 125);
+}
+
+.latest-version-badge-cli {
+    background: rgb(34 197 94 / 10%);
+    border-color: rgb(134 239 172 / 18%);
+    color: var(--color-green-200);
+}
+
+.cli-visual-frame {
+    background: rgb(2 6 23 / 76%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 36%);
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.cli-visual-frame img {
+    aspect-ratio: 16 / 15;
+    display: block;
+    height: auto;
+    object-fit: contain;
+    width: 100%;
+}
+
+.cli-visual-summary {
+    background: rgb(2 6 23 / 72%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.375rem;
+    padding: 0.875rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cli-visual-summary span {
+    color: var(--color-green-300);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.cli-visual-summary strong {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    line-height: 1.25;
+}
+
+.cli-visual-summary p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cli-download-section {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.cli-section-copy {
+    display: grid;
+    gap: 0.625rem;
+    max-width: 52rem;
+}
+
+.cli-section-copy span {
+    color: var(--color-green-300);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+}
+
+.cli-section-copy h2 {
+    color: var(--color-white);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.cli-section-copy p {
+    color: var(--color-neutral-400);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.cli-status-panel {
+    background:
+        linear-gradient(180deg, rgb(255 255 255 / 5%), transparent),
+        rgb(9 14 22 / 74%);
+    border: 1px solid rgb(134 239 172 / 16%);
+    border-radius: 8px;
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.cli-status-heading {
+    align-items: start;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+.cli-status-heading > svg {
+    color: var(--color-green-400);
+    height: 1.25rem;
+    margin-top: 0.125rem;
+    width: 1.25rem;
+}
+
+.cli-status-heading h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.375rem;
+}
+
+.cli-status-heading p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.65;
+    margin: 0;
+}
+
+.cli-command-preview {
+    background: rgb(2 6 23 / 72%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.375rem;
+    overflow-x: auto;
+    padding: 0.875rem;
+}
+
+.cli-command-preview span {
+    color: var(--color-neutral-100);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    white-space: pre;
+}
+
+.cli-command-preview span:first-child {
+    color: var(--color-green-300);
+}
+
+.cli-feature-grid {
+    display: grid;
+    gap: 0.875rem;
+}
+
+.cli-feature-card {
+    align-items: start;
+    background: rgb(9 14 22 / 64%);
+    border: 1px solid rgb(255 255 255 / 10%);
+    border-radius: 8px;
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    padding: 1rem;
+}
+
+.cli-feature-icon {
+    align-items: center;
+    background: rgb(34 197 94 / 12%);
+    border: 1px solid rgb(134 239 172 / 18%);
+    border-radius: 8px;
+    color: var(--color-green-300);
+    display: inline-flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+}
+
+.cli-feature-icon svg {
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+.cli-feature-card h3 {
+    color: var(--color-white);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 0.25rem;
+}
+
+.cli-feature-card p {
+    color: var(--color-neutral-400);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    margin: 0;
 }
 
 .rustminerapp-visual-stage {
@@ -3017,6 +3349,14 @@ h1 {
     }
 
     .poolnode-feature-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cli-feature-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cli-feature-card {
         grid-template-columns: 1fr;
     }
 

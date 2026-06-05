@@ -164,14 +164,6 @@ const downloadGroups = computed(() => [
                 to: downloadPath("server", currentLocale.value),
             },
             {
-                label: t("footer.downloads.cli"),
-                to: docPath(
-                    undefined,
-                    currentLocale.value,
-                    "rustminersystem-cli",
-                ),
-            },
-            {
                 label: t("nav.downloads.rms"),
                 to: downloadPath("rms", currentLocale.value),
             },
@@ -187,6 +179,15 @@ const downloadGroups = computed(() => [
             {
                 label: t("nav.downloads.poolNode"),
                 to: downloadPath("pool-node", currentLocale.value),
+            },
+        ],
+    },
+    {
+        label: t("nav.plugin"),
+        items: [
+            {
+                label: t("nav.downloads.cli"),
+                to: downloadPath("cli", currentLocale.value),
             },
         ],
     },

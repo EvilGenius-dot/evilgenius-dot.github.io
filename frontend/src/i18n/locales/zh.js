@@ -65,6 +65,7 @@ export default {
         about: "关于",
         server: "服务端组件",
         app: "移动应用",
+        plugin: "插件",
         openMenu: "打开导航菜单",
         closeMenu: "关闭导航菜单",
         language: "语言",
@@ -75,6 +76,7 @@ export default {
             rms: "RMS 安全客户端",
             mobile: "RustMinerApp 移动应用",
             poolNode: "PoolNode 移动应用",
+            cli: "RustMinerSystem CLI",
         },
     },
     customizedLookup: {
@@ -363,6 +365,52 @@ export default {
                 heading: "PoolNode 移动应用",
                 description:
                     "PoolNode 移动应用是基于 RustMinerSystem 搭建的矿池节点用户终端，为矿池用户提供收益、算力、矿工与资产数据的移动端入口。",
+            },
+            cli: {
+                title: "RustMinerSystem CLI 下载",
+                heading: "RustMinerSystem CLI",
+                description:
+                    "RustMinerSystem CLI 是 RustMinerSystem 的命令行工具插件，面向不想或不方便使用 Web 管理后台的用户。CLI 工具暂未正式发布，当前页面先展示定位、适用场景与后续下载入口。",
+            },
+        },
+        cli: {
+            comingSoonBadge: "插件暂未发布",
+            downloadKicker: "命令行插件",
+            downloadTitle: "为不使用 Web 后台的管理场景准备",
+            downloadDescription:
+                "部分用户可能出于安全策略、网络隔离或个人习惯，不希望通过浏览器访问管理后台。RustMinerSystem CLI 会以命令行插件的形式提供常用管理能力，让服务器终端也能完成 RustMinerSystem 的状态检查和基础运维。",
+            visual: {
+                label: "RustMinerSystem CLI 命令行工具预览",
+                alt: "RustMinerSystem CLI 终端动效预览",
+                badge: "RustMinerSystem CLI",
+                title: "把管理入口带到终端里",
+                description:
+                    "面向服务器终端、跳板机和安全隔离环境，适合需要减少 Web 暴露面或偏好命令行工作流的管理者。",
+            },
+            status: {
+                title: "CLI 工具正在准备中",
+                description:
+                    "正式发布后，这里会补充 Linux、Windows 等平台的下载包、安装命令和版本信息。当前页面用于提前说明插件定位和使用场景。",
+            },
+            command: {
+                ariaLabel: "RustMinerSystem CLI 命令行预览",
+                line1: "$ rustminer-cli status",
+                line2: "server   rustminer.example.com   connected",
+                line3: "ports    8 active                0 warning",
+            },
+            features: {
+                terminal: {
+                    title: "终端管理",
+                    text: "在服务器终端中执行常用检查、状态查看和基础操作，减少对浏览器管理后台的依赖。",
+                },
+                security: {
+                    title: "适合安全隔离",
+                    text: "当后台 Web 端需要隐藏、限制访问或只允许内网使用时，CLI 可作为更收敛的管理入口。",
+                },
+                operations: {
+                    title: "配合自动化运维",
+                    text: "后续可用于脚本化检查、批量任务和故障排查，让 RustMinerSystem 管理流程更贴近服务器运维习惯。",
+                },
             },
         },
         rustMinerApp: {

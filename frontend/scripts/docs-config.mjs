@@ -159,6 +159,10 @@ export const DOWNLOAD_PAGES = [
         id: "pool-node",
         slug: "poolnode-mobile-app",
     },
+    {
+        id: "cli",
+        slug: "rustminersystem-cli",
+    },
 ];
 
 export const pagePath = (page = "home", locale = DEFAULT_LOCALE) => {

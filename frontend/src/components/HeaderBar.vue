@@ -362,6 +362,15 @@ const downloadGroups = computed(() => [
             },
         ],
     },
+    {
+        label: t("nav.plugin"),
+        items: [
+            {
+                label: t("nav.downloads.cli"),
+                to: downloadPath("cli", currentLocale.value),
+            },
+        ],
+    },
 ]);
 
 const flatDownloadLinks = computed(() =>
