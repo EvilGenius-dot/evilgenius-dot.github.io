@@ -682,7 +682,7 @@
             </section>
 
             <section
-                v-if="hasDownloadFinder || isRustMinerAppDownloadPage"
+                v-if="showsDownloadPartners"
                 class="download-partners"
                 aria-labelledby="download-partners-title"
             >
@@ -787,6 +787,13 @@ const isMobileAppDownloadPage = computed(
 );
 const hasDownloadFinder = computed(
     () => isServerDownloadPage.value || isRmsDownloadPage.value,
+);
+const showsDownloadPartners = computed(
+    () =>
+        hasDownloadFinder.value ||
+        isRustMinerAppDownloadPage.value ||
+        isPoolNodeDownloadPage.value ||
+        isCliDownloadPage.value,
 );
 const hasHeroVisual = computed(
     () =>
