@@ -496,6 +496,14 @@ export const DOC_PAGES = [
     },
     {
         "collection": "rustminersystem",
+        "id": "ltc-coin-issues",
+        "slug": "ltc-coin-issues",
+        "file": "18-ltc-coin-issues.md",
+        "category": "troubleshooting",
+        "order": 13
+    },
+    {
+        "collection": "rustminersystem",
         "id": "dashboard",
         "slug": "dashboard",
         "file": "06-dashboard.md",
@@ -1347,6 +1355,23 @@ export const DOC_PAGE_META = {
                 "title": "Проблемы с PRL",
                 "navTitle": "PRL coin issues",
                 "description": "Совместимость PRL mining: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming; рекомендации по pure forwarding."
+            }
+        },
+        "ltc-coin-issues": {
+            "en": {
+                "title": "LTC Coin Issues",
+                "navTitle": "LTC coin issues",
+                "description": "For LTC mining, avoid sending fee-skimming hashrate to F2Pool because fee hashrate may be insufficient; ViaBTC is recommended instead."
+            },
+            "zh": {
+                "title": "LTC币相关问题",
+                "navTitle": "LTC币相关问题",
+                "description": "LTC 币挖掘中不建议将抽水目标设置到鱼池，避免抽水算力不足，建议优先抽到 ViaBTC。"
+            },
+            "ru": {
+                "title": "Проблемы с LTC",
+                "navTitle": "LTC coin issues",
+                "description": "Для LTC mining не рекомендуется направлять fee-skimming hashrate на F2Pool: fee hashrate может быть недостаточным; лучше использовать ViaBTC."
             }
         },
         "dashboard": {

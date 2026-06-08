@@ -1,4 +1,4 @@
-import{B as e,J as t,R as n,_ as r,_t as i,b as a,ft as o,g as s,mt as c,p as l,r as u,t as d,v as f,x as p,y as m,yt as h}from"./_plugin-vue_export-helper-C21jn19j.js";import{B as g,F as _,H as v,I as y,M as b,N as ee,P as x,R as te,U as ne,V as re,W as ie,z as S}from"./app-Br2ANXSQ.js";var C=Object.assign({"./README.md":'# 文档维护说明\n\n文档以“产品独立文档集”的方式维护，每篇文档都是带 frontmatter 的 Markdown 文件。路由、侧边栏标签、SEO 元数据、上一篇/下一篇链接、顶部文档下拉菜单以及 `public/sitemap.xml` 都会从 Markdown 元数据生成。\n\n## 架构\n\n每个产品拥有独立的文档集：\n\n```text\nsrc/docs/en/rustminersystem/guide/\nsrc/docs/en/poolnode/guide/\nsrc/docs/en/rms/guide/\nsrc/docs/en/rustminersystem-cli/guide/\nsrc/docs/en/custom-management/guide/\n```\n\n`zh` 和 `ru` 目录下也保持相同结构。文档集定义位于 `scripts/docs-config.mjs`：\n\n- `id` 是稳定的文档集 key。\n- `slug` 是 `/document/` 后面的 URL 路径片段。\n- `meta` 提供文档下拉菜单中展示的多语言文档集名称。\n\n生成后的路由使用以下格式：\n\n```text\n/document/rustminersystem\n/document/rustminersystem/quick-start\n/document/poolnode\n/document/rms\n/document/rustminersystem-cli\n/document/custom-management\n```\n\n旧的 RustMinerSystem 文档链接会自动重定向，例如 `/document/quick-start` 会跳转到 `/document/rustminersystem/quick-start`。\n\n## 可视化维护\n\n推荐日常使用本地文档管理器维护文档：\n\n```bash\nnpm run docs:manager\n```\n\n启动后打开终端中显示的本地地址，默认是：\n\n```text\nhttp://localhost:5199\n```\n\n文档管理器支持：\n\n- 选择文档集并编辑已有文章。\n- 新增文章，并自动创建 `en`、`zh`、`ru` 三种语言文件。\n- 通过文章里的 `category`、`categoryTitle` 和 `categoryOrder` 新增或调整类目。\n- 新增和顶部“文档”下拉菜单同级的文档集，并自动创建概览页。\n- 保存后自动写回 Markdown 文件，并执行 `docs:generate` 更新元数据和 sitemap。\n\n注意：这是本地维护工具，不会被打包到正式网站里。编辑完成后仍建议运行：\n\n```bash\nnpm run build\n```\n\n确认所有静态页面、SEO 和 sitemap 都能正常生成。\n\n## 新建页面\n\n```bash\nnpm run docs:new -- my-topic "My Topic"\n```\n\n在指定文档集和侧边栏分类中创建页面：\n\n```bash\nnpm run docs:new -- advanced-config "Advanced Config" --collection rms --category advanced --category-title "Advanced" --category-order 3\n```\n\n该命令会在以下目录中创建对应语言文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n创建后需要编辑每个语言文件，并更新 frontmatter：\n\n```md\n---\nid: myTopic\nslug: my-topic\ntitle: 页面 SEO 标题\nnavTitle: 侧边栏标题\ndescription: 一段简洁的搜索结果描述。\ncategory: getting-started\ncategoryTitle: 开始使用\ncategoryOrder: 1\norder: 6\n---\n```\n\n分类字段用于控制侧边栏分组：\n\n- `category` 是稳定的分组 id，所有语言必须一致。\n- `categoryTitle` 是侧边栏中显示的多语言分组名称。\n- `categoryOrder` 控制分组排序。\n- `order` 控制页面在生成文档列表中的排序。\n\n## 删除页面\n\n先预览将被删除的文件：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms --dry-run\n```\n\n确认后删除所有语言版本，并重新生成元数据：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms\n```\n\n删除目标可以是文档的 `id`、`slug` 或 Markdown 文件名。命令会从以下目录删除匹配文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n## 重新生成元数据\n\n```bash\nnpm run docs:generate\n```\n\n该命令会更新：\n\n```text\nsrc/docs/generated.js\npublic/sitemap.xml\n```\n\n`npm run build` 会通过 `prebuild` 自动执行该生成流程。\n\n## 维护规则\n\n- 所有语言版本必须保持相同的 `id`、`slug`、`file` 和 `order`。\n- 所有语言版本必须保持相同的 `category` 和 `categoryOrder`。\n- 所有语言版本必须放在相同的文档集目录下。\n- `title` 用于 SEO 页面标题。\n- `navTitle` 用于侧边栏和上一篇/下一篇链接。\n- `description` 用于 meta description 和搜索结果摘要。\n- `categoryTitle` 用于本地化的侧边栏分组标题。\n- 每个 Markdown 文件只保留一个顶级 `#` 标题；页面布局会把 SEO 标题渲染为唯一的页面 H1。\n',"./en/custom-management/guide/01-overview.md":`---
+import{B as e,J as t,R as n,_ as r,_t as i,b as a,ft as o,g as s,mt as c,p as l,r as u,t as d,v as f,x as p,y as m,yt as h}from"./_plugin-vue_export-helper-C21jn19j.js";import{B as g,F as _,H as v,I as y,M as b,N as ee,P as x,R as te,U as ne,V as re,W as ie,z as S}from"./app-Bp9XnE8U.js";var C=Object.assign({"./README.md":'# 文档维护说明\n\n文档以“产品独立文档集”的方式维护，每篇文档都是带 frontmatter 的 Markdown 文件。路由、侧边栏标签、SEO 元数据、上一篇/下一篇链接、顶部文档下拉菜单以及 `public/sitemap.xml` 都会从 Markdown 元数据生成。\n\n## 架构\n\n每个产品拥有独立的文档集：\n\n```text\nsrc/docs/en/rustminersystem/guide/\nsrc/docs/en/poolnode/guide/\nsrc/docs/en/rms/guide/\nsrc/docs/en/rustminersystem-cli/guide/\nsrc/docs/en/custom-management/guide/\n```\n\n`zh` 和 `ru` 目录下也保持相同结构。文档集定义位于 `scripts/docs-config.mjs`：\n\n- `id` 是稳定的文档集 key。\n- `slug` 是 `/document/` 后面的 URL 路径片段。\n- `meta` 提供文档下拉菜单中展示的多语言文档集名称。\n\n生成后的路由使用以下格式：\n\n```text\n/document/rustminersystem\n/document/rustminersystem/quick-start\n/document/poolnode\n/document/rms\n/document/rustminersystem-cli\n/document/custom-management\n```\n\n旧的 RustMinerSystem 文档链接会自动重定向，例如 `/document/quick-start` 会跳转到 `/document/rustminersystem/quick-start`。\n\n## 可视化维护\n\n推荐日常使用本地文档管理器维护文档：\n\n```bash\nnpm run docs:manager\n```\n\n启动后打开终端中显示的本地地址，默认是：\n\n```text\nhttp://localhost:5199\n```\n\n文档管理器支持：\n\n- 选择文档集并编辑已有文章。\n- 新增文章，并自动创建 `en`、`zh`、`ru` 三种语言文件。\n- 通过文章里的 `category`、`categoryTitle` 和 `categoryOrder` 新增或调整类目。\n- 新增和顶部“文档”下拉菜单同级的文档集，并自动创建概览页。\n- 保存后自动写回 Markdown 文件，并执行 `docs:generate` 更新元数据和 sitemap。\n\n注意：这是本地维护工具，不会被打包到正式网站里。编辑完成后仍建议运行：\n\n```bash\nnpm run build\n```\n\n确认所有静态页面、SEO 和 sitemap 都能正常生成。\n\n## 新建页面\n\n```bash\nnpm run docs:new -- my-topic "My Topic"\n```\n\n在指定文档集和侧边栏分类中创建页面：\n\n```bash\nnpm run docs:new -- advanced-config "Advanced Config" --collection rms --category advanced --category-title "Advanced" --category-order 3\n```\n\n该命令会在以下目录中创建对应语言文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n创建后需要编辑每个语言文件，并更新 frontmatter：\n\n```md\n---\nid: myTopic\nslug: my-topic\ntitle: 页面 SEO 标题\nnavTitle: 侧边栏标题\ndescription: 一段简洁的搜索结果描述。\ncategory: getting-started\ncategoryTitle: 开始使用\ncategoryOrder: 1\norder: 6\n---\n```\n\n分类字段用于控制侧边栏分组：\n\n- `category` 是稳定的分组 id，所有语言必须一致。\n- `categoryTitle` 是侧边栏中显示的多语言分组名称。\n- `categoryOrder` 控制分组排序。\n- `order` 控制页面在生成文档列表中的排序。\n\n## 删除页面\n\n先预览将被删除的文件：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms --dry-run\n```\n\n确认后删除所有语言版本，并重新生成元数据：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms\n```\n\n删除目标可以是文档的 `id`、`slug` 或 Markdown 文件名。命令会从以下目录删除匹配文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n## 重新生成元数据\n\n```bash\nnpm run docs:generate\n```\n\n该命令会更新：\n\n```text\nsrc/docs/generated.js\npublic/sitemap.xml\n```\n\n`npm run build` 会通过 `prebuild` 自动执行该生成流程。\n\n## 维护规则\n\n- 所有语言版本必须保持相同的 `id`、`slug`、`file` 和 `order`。\n- 所有语言版本必须保持相同的 `category` 和 `categoryOrder`。\n- 所有语言版本必须放在相同的文档集目录下。\n- `title` 用于 SEO 页面标题。\n- `navTitle` 用于侧边栏和上一篇/下一篇链接。\n- `description` 用于 meta description 和搜索结果摘要。\n- `categoryTitle` 用于本地化的侧边栏分组标题。\n- 每个 Markdown 文件只保留一个顶级 `#` 标题；页面布局会把 SEO 标题渲染为唯一的页面 H1。\n',"./en/custom-management/guide/01-overview.md":`---
 id: overview
 slug: ""
 title: Custom management documentation overview
@@ -4670,6 +4670,38 @@ Because SRB only recently added PRL support, current testing has also found SRB-
 
 - [Fee wallet has no revenue](/document/rustminersystem/fee-wallet-no-revenue)
 - [Hashrate loss](/document/rustminersystem/hashrate-loss)
+`,"./en/rustminersystem/guide/18-ltc-coin-issues.md":`---
+id: ltc-coin-issues
+slug: ltc-coin-issues
+title: LTC Coin Issues
+navTitle: LTC coin issues
+description: For LTC mining, avoid sending fee-skimming hashrate to F2Pool because fee hashrate may be insufficient; ViaBTC is recommended instead.
+category: troubleshooting
+categoryTitle: Troubleshooting
+categoryOrder: 3
+order: 13
+---
+
+# LTC Coin Issues
+
+When skimming fees for LTC mining, do not set the fee target to F2Pool. In current practice, this path can result in insufficient fee hashrate, where the actual fee hashrate is lower than the configured ratio or pool-side fee statistics are unstable.
+
+## Symptoms
+
+- Main LTC miner hashrate is normal, but the fee wallet has insufficient hashrate.
+- The fee ratio is configured correctly, but F2Pool shows lower fee hashrate than expected.
+- The fee worker statistics on F2Pool are unstable, and revenue does not match the configured ratio.
+
+## Recommendations
+
+- Do not skim LTC fees to F2Pool.
+- Set the LTC fee target to ViaBTC instead.
+- After switching the fee pool, observe at least one full pool statistics window before judging whether the actual fee ratio is stable.
+
+## Related Pages
+
+- [Fee wallet has no revenue](/document/rustminersystem/fee-wallet-no-revenue)
+- [Hashrate loss](/document/rustminersystem/hashrate-loss)
 `,"./en/rustminersystem-cli/guide/01-overview.md":`---
 id: overview
 slug: ""
@@ -9279,6 +9311,38 @@ SRB kernel только недавно добавил поддержку PRL. Т
 - Не используйте SRB kernel для PRL mining, если требуется fee skimming.
 - Если подключение к \`pearlhash.xyz\` обязательно, используйте pure forwarding proxy mode и отключите fee skimming.
 - Для PRL mining выбирайте pools и mining kernels, где fee skimming уже проверен и работает стабильно.
+
+## Связанные страницы
+
+- [Нет дохода fee-кошелька](/ru/document/rustminersystem/fee-wallet-no-revenue)
+- [Потеря хешрейта](/ru/document/rustminersystem/hashrate-loss)
+`,"./ru/rustminersystem/guide/18-ltc-coin-issues.md":`---
+id: ltc-coin-issues
+slug: ltc-coin-issues
+title: Проблемы с LTC
+navTitle: LTC coin issues
+description: Для LTC mining не рекомендуется направлять fee-skimming hashrate на F2Pool: fee hashrate может быть недостаточным; лучше использовать ViaBTC.
+category: troubleshooting
+categoryTitle: Диагностика
+categoryOrder: 3
+order: 13
+---
+
+# Проблемы с LTC
+
+При fee skimming для LTC mining не задавайте F2Pool как fee target. На практике этот путь может давать недостаточный fee hashrate: фактический fee hashrate ниже заданной доли или статистика fee на стороне pool нестабильна.
+
+## Симптомы
+
+- Основной LTC hashrate нормальный, но у fee wallet недостаточный hashrate.
+- Fee ratio настроен правильно, но F2Pool показывает fee hashrate ниже ожидаемого.
+- Fee worker на F2Pool отображается нестабильно, а доход не соответствует заданной доле.
+
+## Рекомендации
+
+- Не направляйте LTC fee skimming на F2Pool.
+- Для LTC fee target рекомендуется использовать ViaBTC.
+- После смены fee pool наблюдайте минимум одно полное statistics window pool, прежде чем оценивать стабильность фактической доли fee.
 
 ## Связанные страницы
 
@@ -14861,6 +14925,38 @@ SRB 内核由于刚支持 PRL 币种，目前已发现受 SRB 内核自身问题
 - 不建议使用 SRB 内核挖掘 PRL。
 - 如果必须接入 \`pearlhash.xyz\`，请使用纯转发代理，不要配置抽水。
 - 挖掘 PRL 时，优先选择已验证抽水稳定的矿池和挖矿内核。
+
+## 相关页面
+
+- [费率钱包没有收益](/zh/document/rustminersystem/fee-wallet-no-revenue)
+- [算力损耗](/zh/document/rustminersystem/hashrate-loss)
+`,"./zh/rustminersystem/guide/18-ltc-coin-issues.md":`---
+id: ltc-coin-issues
+slug: ltc-coin-issues
+title: LTC币相关问题
+navTitle: LTC币相关问题
+description: LTC 币挖掘中不建议将抽水目标设置到鱼池，避免抽水算力不足，建议优先抽到 ViaBTC。
+category: troubleshooting
+categoryTitle: 常见故障
+categoryOrder: 3
+order: 13
+---
+
+# LTC币相关问题
+
+LTC 币抽水时，不建议将抽水目标设置为鱼池。当前实践中，该链路容易出现抽水算力不足的问题，表现为实际抽水算力低于预期比例，或抽水算力统计不稳定。
+
+## 现象
+
+- LTC 主矿工算力正常，但抽水钱包侧算力不足。
+- 抽水比例已经配置正确，但鱼池侧显示的抽水算力低于预期。
+- 抽水 worker 在鱼池侧统计不稳定，收益表现与配置比例不匹配。
+
+## 处理建议
+
+- LTC 抽水不建议抽到鱼池。
+- 建议将 LTC 抽水目标设置到 ViaBTC。
+- 切换抽水矿池后，至少观察一个完整矿池统计周期，再判断实际抽水比例是否稳定。
 
 ## 相关页面
 
