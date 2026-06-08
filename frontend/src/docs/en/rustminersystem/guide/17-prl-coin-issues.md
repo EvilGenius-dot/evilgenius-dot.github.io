@@ -3,7 +3,7 @@ id: prl-coin-issues
 slug: prl-coin-issues
 title: PRL Coin Issues
 navTitle: PRL coin issues
-description: Compatibility notes and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel.
+description: Compatibility notes, displayed-hashrate behavior, and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel.
 category: troubleshooting
 categoryTitle: Troubleshooting
 categoryOrder: 3
@@ -25,6 +25,10 @@ In current PRL mining paths, the `pearlhash.xyz` pool and miner software have fe
 The `pearlhash.xyz` pool and the affected miner software currently do not support the fee-skimming path correctly, so the path should be used as pure forwarding only.
 
 Because SRB only recently added PRL support, current testing has also found SRB-kernel-side issues that prevent fee skimming from working correctly.
+
+## Displayed Hashrate
+
+On PRL paths, the hashrate value calculated and displayed in RustMinerSystem may not be fully accurate, and it can differ from the statistics shown by the upstream pool. The fee ratio relationship is still correct, so this display difference does not affect actual pool-side settlement or final revenue.
 
 ## Recommendations
 

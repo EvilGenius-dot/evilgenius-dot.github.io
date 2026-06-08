@@ -1344,17 +1344,17 @@ export const DOC_PAGE_META = {
             "en": {
                 "title": "PRL Coin Issues",
                 "navTitle": "PRL coin issues",
-                "description": "Compatibility notes and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel."
+                "description": "Compatibility notes, displayed-hashrate behavior, and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel."
             },
             "zh": {
                 "title": "PRL币相关问题",
                 "navTitle": "PRL币相关问题",
-                "description": "PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明与处理建议。"
+                "description": "PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明、算力显示说明与处理建议。"
             },
             "ru": {
                 "title": "Проблемы с PRL",
                 "navTitle": "PRL coin issues",
-                "description": "Совместимость PRL mining: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming; рекомендации по pure forwarding."
+                "description": "Совместимость PRL mining, отображение hashrate и рекомендации: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming."
             }
         },
         "ltc-coin-issues": {

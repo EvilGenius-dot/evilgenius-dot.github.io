@@ -3,7 +3,7 @@ id: prl-coin-issues
 slug: prl-coin-issues
 title: PRL币相关问题
 navTitle: PRL币相关问题
-description: PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明与处理建议。
+description: PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明、算力显示说明与处理建议。
 category: troubleshooting
 categoryTitle: 常见故障
 categoryOrder: 3
@@ -25,6 +25,10 @@ order: 12
 `pearlhash.xyz` 矿池和锄头当前无法正常支持抽水链路，因此需要改用纯转发代理模式。
 
 SRB 内核由于刚支持 PRL 币种，目前已发现受 SRB 内核自身问题影响，同样无法正常抽水。
+
+## 算力显示说明
+
+PRL 链路中，RustMinerSystem 后台计算并显示的算力数值可能不够准确，实际显示值可能与上游矿池统计存在偏差。但抽水比例关系是正确的，不会影响矿池侧的实际结算和最终收益。
 
 ## 处理建议
 

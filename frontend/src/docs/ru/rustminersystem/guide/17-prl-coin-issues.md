@@ -3,7 +3,7 @@ id: prl-coin-issues
 slug: prl-coin-issues
 title: Проблемы с PRL
 navTitle: PRL coin issues
-description: Совместимость PRL mining: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming; рекомендации по pure forwarding.
+description: Совместимость PRL mining, отображение hashrate и рекомендации: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming.
 category: troubleshooting
 categoryTitle: Диагностика
 categoryOrder: 3
@@ -25,6 +25,10 @@ order: 12
 `pearlhash.xyz` и affected miner software сейчас не поддерживают fee-skimming path корректно, поэтому этот путь следует использовать только как pure forwarding.
 
 SRB kernel только недавно добавил поддержку PRL. Текущие проверки также выявили проблемы на стороне SRB kernel, из-за которых fee skimming не работает корректно.
+
+## Отображение хешрейта
+
+В PRL path значение hashrate, рассчитанное и показанное в RustMinerSystem, может быть не полностью точным и отличаться от статистики upstream pool. При этом соотношение fee ratio остается правильным, поэтому такая разница отображения не влияет на фактический settlement на стороне pool и итоговый доход.
 
 ## Рекомендации
 
