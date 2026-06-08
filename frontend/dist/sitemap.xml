@@ -626,6 +626,30 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/hashrate-loss" />
     </url>
     <url>
+        <loc>https://minerproxy.org/document/rustminersystem/prl-coin-issues</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/prl-coin-issues</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/prl-coin-issues</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/prl-coin-issues" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/prl-coin-issues" />
+    </url>
+    <url>
         <loc>https://minerproxy.org/document/rustminersystem/dashboard</loc>
         <lastmod>2026-05-27</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/dashboard" />

@@ -488,6 +488,14 @@ export const DOC_PAGES = [
     },
     {
         "collection": "rustminersystem",
+        "id": "prl-coin-issues",
+        "slug": "prl-coin-issues",
+        "file": "17-prl-coin-issues.md",
+        "category": "troubleshooting",
+        "order": 12
+    },
+    {
+        "collection": "rustminersystem",
         "id": "dashboard",
         "slug": "dashboard",
         "file": "06-dashboard.md",
@@ -1322,6 +1330,23 @@ export const DOC_PAGE_META = {
                 "title": "Потеря хешрейта",
                 "navTitle": "Потеря хешрейта",
                 "description": "Диагностика случаев, когда customer pool показывает меньший hashrate: сеть, reject rate, число fee wallets, fee ratio и cross-pool fee."
+            }
+        },
+        "prl-coin-issues": {
+            "en": {
+                "title": "PRL Coin Issues",
+                "navTitle": "PRL coin issues",
+                "description": "Compatibility notes and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel."
+            },
+            "zh": {
+                "title": "PRL币相关问题",
+                "navTitle": "PRL币相关问题",
+                "description": "PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明与处理建议。"
+            },
+            "ru": {
+                "title": "Проблемы с PRL",
+                "navTitle": "PRL coin issues",
+                "description": "Совместимость PRL mining: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming; рекомендации по pure forwarding."
             }
         },
         "dashboard": {

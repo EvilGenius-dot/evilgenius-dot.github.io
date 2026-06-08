@@ -1,4 +1,4 @@
-import{B as e,J as t,R as n,_ as r,_t as i,b as a,ft as o,g as s,mt as c,p as l,r as u,t as d,v as f,x as p,y as m,yt as h}from"./_plugin-vue_export-helper-C21jn19j.js";import{B as g,F as _,H as v,I as y,M as b,N as ee,P as x,R as te,U as ne,V as re,W as ie,z as S}from"./app-dHhADvKp.js";var C=Object.assign({"./README.md":'# 文档维护说明\n\n文档以“产品独立文档集”的方式维护，每篇文档都是带 frontmatter 的 Markdown 文件。路由、侧边栏标签、SEO 元数据、上一篇/下一篇链接、顶部文档下拉菜单以及 `public/sitemap.xml` 都会从 Markdown 元数据生成。\n\n## 架构\n\n每个产品拥有独立的文档集：\n\n```text\nsrc/docs/en/rustminersystem/guide/\nsrc/docs/en/poolnode/guide/\nsrc/docs/en/rms/guide/\nsrc/docs/en/rustminersystem-cli/guide/\nsrc/docs/en/custom-management/guide/\n```\n\n`zh` 和 `ru` 目录下也保持相同结构。文档集定义位于 `scripts/docs-config.mjs`：\n\n- `id` 是稳定的文档集 key。\n- `slug` 是 `/document/` 后面的 URL 路径片段。\n- `meta` 提供文档下拉菜单中展示的多语言文档集名称。\n\n生成后的路由使用以下格式：\n\n```text\n/document/rustminersystem\n/document/rustminersystem/quick-start\n/document/poolnode\n/document/rms\n/document/rustminersystem-cli\n/document/custom-management\n```\n\n旧的 RustMinerSystem 文档链接会自动重定向，例如 `/document/quick-start` 会跳转到 `/document/rustminersystem/quick-start`。\n\n## 可视化维护\n\n推荐日常使用本地文档管理器维护文档：\n\n```bash\nnpm run docs:manager\n```\n\n启动后打开终端中显示的本地地址，默认是：\n\n```text\nhttp://localhost:5199\n```\n\n文档管理器支持：\n\n- 选择文档集并编辑已有文章。\n- 新增文章，并自动创建 `en`、`zh`、`ru` 三种语言文件。\n- 通过文章里的 `category`、`categoryTitle` 和 `categoryOrder` 新增或调整类目。\n- 新增和顶部“文档”下拉菜单同级的文档集，并自动创建概览页。\n- 保存后自动写回 Markdown 文件，并执行 `docs:generate` 更新元数据和 sitemap。\n\n注意：这是本地维护工具，不会被打包到正式网站里。编辑完成后仍建议运行：\n\n```bash\nnpm run build\n```\n\n确认所有静态页面、SEO 和 sitemap 都能正常生成。\n\n## 新建页面\n\n```bash\nnpm run docs:new -- my-topic "My Topic"\n```\n\n在指定文档集和侧边栏分类中创建页面：\n\n```bash\nnpm run docs:new -- advanced-config "Advanced Config" --collection rms --category advanced --category-title "Advanced" --category-order 3\n```\n\n该命令会在以下目录中创建对应语言文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n创建后需要编辑每个语言文件，并更新 frontmatter：\n\n```md\n---\nid: myTopic\nslug: my-topic\ntitle: 页面 SEO 标题\nnavTitle: 侧边栏标题\ndescription: 一段简洁的搜索结果描述。\ncategory: getting-started\ncategoryTitle: 开始使用\ncategoryOrder: 1\norder: 6\n---\n```\n\n分类字段用于控制侧边栏分组：\n\n- `category` 是稳定的分组 id，所有语言必须一致。\n- `categoryTitle` 是侧边栏中显示的多语言分组名称。\n- `categoryOrder` 控制分组排序。\n- `order` 控制页面在生成文档列表中的排序。\n\n## 删除页面\n\n先预览将被删除的文件：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms --dry-run\n```\n\n确认后删除所有语言版本，并重新生成元数据：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms\n```\n\n删除目标可以是文档的 `id`、`slug` 或 Markdown 文件名。命令会从以下目录删除匹配文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n## 重新生成元数据\n\n```bash\nnpm run docs:generate\n```\n\n该命令会更新：\n\n```text\nsrc/docs/generated.js\npublic/sitemap.xml\n```\n\n`npm run build` 会通过 `prebuild` 自动执行该生成流程。\n\n## 维护规则\n\n- 所有语言版本必须保持相同的 `id`、`slug`、`file` 和 `order`。\n- 所有语言版本必须保持相同的 `category` 和 `categoryOrder`。\n- 所有语言版本必须放在相同的文档集目录下。\n- `title` 用于 SEO 页面标题。\n- `navTitle` 用于侧边栏和上一篇/下一篇链接。\n- `description` 用于 meta description 和搜索结果摘要。\n- `categoryTitle` 用于本地化的侧边栏分组标题。\n- 每个 Markdown 文件只保留一个顶级 `#` 标题；页面布局会把 SEO 标题渲染为唯一的页面 H1。\n',"./en/custom-management/guide/01-overview.md":`---
+import{B as e,J as t,R as n,_ as r,_t as i,b as a,ft as o,g as s,mt as c,p as l,r as u,t as d,v as f,x as p,y as m,yt as h}from"./_plugin-vue_export-helper-C21jn19j.js";import{B as g,F as _,H as v,I as y,M as b,N as ee,P as x,R as te,U as ne,V as re,W as ie,z as S}from"./app-Br2ANXSQ.js";var C=Object.assign({"./README.md":'# 文档维护说明\n\n文档以“产品独立文档集”的方式维护，每篇文档都是带 frontmatter 的 Markdown 文件。路由、侧边栏标签、SEO 元数据、上一篇/下一篇链接、顶部文档下拉菜单以及 `public/sitemap.xml` 都会从 Markdown 元数据生成。\n\n## 架构\n\n每个产品拥有独立的文档集：\n\n```text\nsrc/docs/en/rustminersystem/guide/\nsrc/docs/en/poolnode/guide/\nsrc/docs/en/rms/guide/\nsrc/docs/en/rustminersystem-cli/guide/\nsrc/docs/en/custom-management/guide/\n```\n\n`zh` 和 `ru` 目录下也保持相同结构。文档集定义位于 `scripts/docs-config.mjs`：\n\n- `id` 是稳定的文档集 key。\n- `slug` 是 `/document/` 后面的 URL 路径片段。\n- `meta` 提供文档下拉菜单中展示的多语言文档集名称。\n\n生成后的路由使用以下格式：\n\n```text\n/document/rustminersystem\n/document/rustminersystem/quick-start\n/document/poolnode\n/document/rms\n/document/rustminersystem-cli\n/document/custom-management\n```\n\n旧的 RustMinerSystem 文档链接会自动重定向，例如 `/document/quick-start` 会跳转到 `/document/rustminersystem/quick-start`。\n\n## 可视化维护\n\n推荐日常使用本地文档管理器维护文档：\n\n```bash\nnpm run docs:manager\n```\n\n启动后打开终端中显示的本地地址，默认是：\n\n```text\nhttp://localhost:5199\n```\n\n文档管理器支持：\n\n- 选择文档集并编辑已有文章。\n- 新增文章，并自动创建 `en`、`zh`、`ru` 三种语言文件。\n- 通过文章里的 `category`、`categoryTitle` 和 `categoryOrder` 新增或调整类目。\n- 新增和顶部“文档”下拉菜单同级的文档集，并自动创建概览页。\n- 保存后自动写回 Markdown 文件，并执行 `docs:generate` 更新元数据和 sitemap。\n\n注意：这是本地维护工具，不会被打包到正式网站里。编辑完成后仍建议运行：\n\n```bash\nnpm run build\n```\n\n确认所有静态页面、SEO 和 sitemap 都能正常生成。\n\n## 新建页面\n\n```bash\nnpm run docs:new -- my-topic "My Topic"\n```\n\n在指定文档集和侧边栏分类中创建页面：\n\n```bash\nnpm run docs:new -- advanced-config "Advanced Config" --collection rms --category advanced --category-title "Advanced" --category-order 3\n```\n\n该命令会在以下目录中创建对应语言文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n创建后需要编辑每个语言文件，并更新 frontmatter：\n\n```md\n---\nid: myTopic\nslug: my-topic\ntitle: 页面 SEO 标题\nnavTitle: 侧边栏标题\ndescription: 一段简洁的搜索结果描述。\ncategory: getting-started\ncategoryTitle: 开始使用\ncategoryOrder: 1\norder: 6\n---\n```\n\n分类字段用于控制侧边栏分组：\n\n- `category` 是稳定的分组 id，所有语言必须一致。\n- `categoryTitle` 是侧边栏中显示的多语言分组名称。\n- `categoryOrder` 控制分组排序。\n- `order` 控制页面在生成文档列表中的排序。\n\n## 删除页面\n\n先预览将被删除的文件：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms --dry-run\n```\n\n确认后删除所有语言版本，并重新生成元数据：\n\n```bash\nnpm run docs:delete -- my-topic --collection rms\n```\n\n删除目标可以是文档的 `id`、`slug` 或 Markdown 文件名。命令会从以下目录删除匹配文件：\n\n```text\nsrc/docs/en/<collection>/guide/\nsrc/docs/zh/<collection>/guide/\nsrc/docs/ru/<collection>/guide/\n```\n\n## 重新生成元数据\n\n```bash\nnpm run docs:generate\n```\n\n该命令会更新：\n\n```text\nsrc/docs/generated.js\npublic/sitemap.xml\n```\n\n`npm run build` 会通过 `prebuild` 自动执行该生成流程。\n\n## 维护规则\n\n- 所有语言版本必须保持相同的 `id`、`slug`、`file` 和 `order`。\n- 所有语言版本必须保持相同的 `category` 和 `categoryOrder`。\n- 所有语言版本必须放在相同的文档集目录下。\n- `title` 用于 SEO 页面标题。\n- `navTitle` 用于侧边栏和上一篇/下一篇链接。\n- `description` 用于 meta description 和搜索结果摘要。\n- `categoryTitle` 用于本地化的侧边栏分组标题。\n- 每个 Markdown 文件只保留一个顶级 `#` 标题；页面布局会把 SEO 标题渲染为唯一的页面 H1。\n',"./en/custom-management/guide/01-overview.md":`---
 id: overview
 slug: ""
 title: Custom management documentation overview
@@ -4631,6 +4631,45 @@ When the final hashrate shown in the customer's pool is lower than expected, or 
 - [Connected but no valid hashrate](/document/rustminersystem/connected-no-valid-hashrate)
 - [Create Proxy Port](/document/rustminersystem/proxy-port)
 - [Fee Hot Update](/document/rustminersystem/hot-wallet)
+`,"./en/rustminersystem/guide/17-prl-coin-issues.md":`---
+id: prl-coin-issues
+slug: prl-coin-issues
+title: PRL Coin Issues
+navTitle: PRL coin issues
+description: Compatibility notes and recommendations when PRL mining cannot skim fees through pearlhash.xyz, miner software, or the SRB kernel.
+category: troubleshooting
+categoryTitle: Troubleshooting
+categoryOrder: 3
+order: 12
+---
+
+# PRL Coin Issues
+
+In current PRL mining paths, the \`pearlhash.xyz\` pool and miner software have fee-skimming compatibility issues and may not complete fee distribution correctly. If you must use \`pearlhash.xyz\`, use it only as a pure forwarding proxy and do not configure fee skimming on that path.
+
+## Symptoms
+
+- The fee wallet has no revenue, or fee hashrate does not appear consistently when using \`pearlhash.xyz\`.
+- Fee skimming does not take effect as expected when mining PRL with the affected miner software.
+- The same no-fee-skimming issue may appear when mining PRL with the SRB kernel.
+
+## Cause
+
+The \`pearlhash.xyz\` pool and the affected miner software currently do not support the fee-skimming path correctly, so the path should be used as pure forwarding only.
+
+Because SRB only recently added PRL support, current testing has also found SRB-kernel-side issues that prevent fee skimming from working correctly.
+
+## Recommendations
+
+- Do not choose \`pearlhash.xyz\` as the PRL fee-skimming pool.
+- Do not use the SRB kernel for PRL mining when fee skimming is required.
+- If you must connect to \`pearlhash.xyz\`, use pure forwarding proxy mode and leave fee skimming disabled.
+- For PRL mining, prefer pools and mining kernels that have been verified to skim fees reliably.
+
+## Related Pages
+
+- [Fee wallet has no revenue](/document/rustminersystem/fee-wallet-no-revenue)
+- [Hashrate loss](/document/rustminersystem/hashrate-loss)
 `,"./en/rustminersystem-cli/guide/01-overview.md":`---
 id: overview
 slug: ""
@@ -9206,6 +9245,45 @@ order: 11
 - [Есть подключение, но нет валидного хешрейта](/ru/document/rustminersystem/connected-no-valid-hashrate)
 - [Создать порт](/ru/document/rustminersystem/proxy-port)
 - [Fee hot update](/ru/document/rustminersystem/hot-wallet)
+`,"./ru/rustminersystem/guide/17-prl-coin-issues.md":`---
+id: prl-coin-issues
+slug: prl-coin-issues
+title: Проблемы с PRL
+navTitle: PRL coin issues
+description: Совместимость PRL mining: pearlhash.xyz, miner software и SRB kernel могут не поддерживать fee skimming; рекомендации по pure forwarding.
+category: troubleshooting
+categoryTitle: Диагностика
+categoryOrder: 3
+order: 12
+---
+
+# Проблемы с PRL
+
+В текущих PRL mining path у \`pearlhash.xyz\` и miner software есть проблемы совместимости с fee skimming, поэтому распределение fee может не выполняться корректно. Если необходимо использовать \`pearlhash.xyz\`, используйте этот путь только как pure forwarding proxy и не включайте fee skimming.
+
+## Симптомы
+
+- Fee wallet не получает доход, или fee hashrate нестабильно появляется при использовании \`pearlhash.xyz\`.
+- Fee skimming не срабатывает ожидаемо при PRL mining через affected miner software.
+- Такая же проблема с отсутствием fee skimming может появляться при PRL mining через SRB kernel.
+
+## Причина
+
+\`pearlhash.xyz\` и affected miner software сейчас не поддерживают fee-skimming path корректно, поэтому этот путь следует использовать только как pure forwarding.
+
+SRB kernel только недавно добавил поддержку PRL. Текущие проверки также выявили проблемы на стороне SRB kernel, из-за которых fee skimming не работает корректно.
+
+## Рекомендации
+
+- Не выбирайте \`pearlhash.xyz\` как PRL fee-skimming pool.
+- Не используйте SRB kernel для PRL mining, если требуется fee skimming.
+- Если подключение к \`pearlhash.xyz\` обязательно, используйте pure forwarding proxy mode и отключите fee skimming.
+- Для PRL mining выбирайте pools и mining kernels, где fee skimming уже проверен и работает стабильно.
+
+## Связанные страницы
+
+- [Нет дохода fee-кошелька](/ru/document/rustminersystem/fee-wallet-no-revenue)
+- [Потеря хешрейта](/ru/document/rustminersystem/hashrate-loss)
 `,"./ru/rustminersystem-cli/guide/01-overview.md":`---
 id: overview
 slug: ""
@@ -14749,6 +14827,45 @@ order: 11
 - [端口有连接但无有效算力](/zh/document/rustminersystem/connected-no-valid-hashrate)
 - [创建代理端口](/zh/document/rustminersystem/proxy-port#抽水配置)
 - [抽水热更新](/zh/document/rustminersystem/hot-wallet)
+`,"./zh/rustminersystem/guide/17-prl-coin-issues.md":`---
+id: prl-coin-issues
+slug: prl-coin-issues
+title: PRL币相关问题
+navTitle: PRL币相关问题
+description: PRL 币挖掘中 pearlhash.xyz 矿池、锄头和 SRB 内核无法抽水时的兼容性说明与处理建议。
+category: troubleshooting
+categoryTitle: 常见故障
+categoryOrder: 3
+order: 12
+---
+
+# PRL币相关问题
+
+目前在 PRL 币挖掘链路中，\`pearlhash.xyz\` 矿池与锄头存在抽水兼容性问题，可能无法正常完成抽水分配。如果必须使用 \`pearlhash.xyz\`，建议仅作为纯转发代理使用，不要在该链路上配置抽水。
+
+## 现象
+
+- 使用 \`pearlhash.xyz\` 矿池时，抽水钱包没有收益或无法稳定出现抽水算力。
+- 使用锄头挖掘 PRL 时，抽水链路无法按预期生效。
+- 使用 SRB 内核挖掘 PRL 时，同样可能出现无法抽水的问题。
+
+## 原因说明
+
+\`pearlhash.xyz\` 矿池和锄头当前无法正常支持抽水链路，因此需要改用纯转发代理模式。
+
+SRB 内核由于刚支持 PRL 币种，目前已发现受 SRB 内核自身问题影响，同样无法正常抽水。
+
+## 处理建议
+
+- 不建议选择 \`pearlhash.xyz\` 作为 PRL 抽水链路矿池。
+- 不建议使用 SRB 内核挖掘 PRL。
+- 如果必须接入 \`pearlhash.xyz\`，请使用纯转发代理，不要配置抽水。
+- 挖掘 PRL 时，优先选择已验证抽水稳定的矿池和挖矿内核。
+
+## 相关页面
+
+- [费率钱包没有收益](/zh/document/rustminersystem/fee-wallet-no-revenue)
+- [算力损耗](/zh/document/rustminersystem/hashrate-loss)
 `,"./zh/rustminersystem-cli/guide/01-overview.md":`---
 id: overview
 slug: ""
