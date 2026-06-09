@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-labelledby="title">
-    <title id="title">Alibaba Cloud International</title>
-    <path d="M24 23h20l6 6v14l-6 6H24l-8-8V31l8-8Z" fill="#FF6A00"/>
-    <path d="M56 23h20l8 8v10l-8 8H56l-6-6V29l6-6Z" fill="#FF6A00"/>
-    <path d="M40 31h20v10H40z" fill="#0B1220"/>
-    <text x="98" y="31" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800">Alibaba Cloud</text>
-    <text x="98" y="51" fill="#FFB86B" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">International</text>
-</svg>
