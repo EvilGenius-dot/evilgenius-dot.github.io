@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="zh-CN" class="dark"><head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="在 RustMinerSystem CLI 模式下编辑 rust-config、port-config.json 和 wallet-config.json，并通过 rustminer restart 使配置生效。">
+    <meta name="keywords" content="矿池中转, 矿池抽水, 矿池转发, 矿池中转搭建, 第三方矿池代理, 矿池 Proxy, PoolNode 真矿池, RustMinerSystem">
+    <meta property="og:title" content="CLI 模式修改 RustMinerSystem 配置 | RustMinerSystem">
+    <meta property="og:description" content="在 RustMinerSystem CLI 模式下编辑 rust-config、port-config.json 和 wallet-config.json，并通过 rustminer restart 使配置生效。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minerproxy.org/zh/document/rustminersystem-cli/configuration">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://minerproxy.org/zh/document/rustminersystem-cli/configuration">
+    <link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem-cli/configuration">
+    <link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem-cli/configuration">
+    <link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem-cli/configuration">
+    <link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem-cli/configuration">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"CLI 模式修改 RustMinerSystem 配置 | RustMinerSystem","url":"https://minerproxy.org/zh/document/rustminersystem-cli/configuration","description":"在 RustMinerSystem CLI 模式下编辑 rust-config、port-config.json 和 wallet-config.json，并通过 rustminer restart 使配置生效。","inLanguage":"zh-CN","keywords":["矿池中转","矿池抽水","矿池转发","矿池中转搭建","第三方矿池代理","矿池 Proxy","PoolNode 真矿池","RustMinerSystem"],"about":[{"@type":"Thing","name":"矿池中转"},{"@type":"Thing","name":"矿池抽水"},{"@type":"Thing","name":"矿池转发"},{"@type":"Thing","name":"矿池中转搭建"},{"@type":"Thing","name":"第三方矿池代理"},{"@type":"Thing","name":"矿池 Proxy"},{"@type":"Thing","name":"PoolNode 真矿池"},{"@type":"Thing","name":"RustMinerSystem"}],"isPartOf":{"@type":"WebSite","name":"RustMinerSystem","url":"https://minerproxy.org","availableLanguage":["en","zh-CN","ru-RU"]}}</script>
+        <meta name="algolia-site-verification" content="878A361DEB41211F">
+        <title>CLI 模式修改 RustMinerSystem 配置 | RustMinerSystem</title>
+      <script type="module" crossorigin="" src="/assets/app-CpqOPJoU.js"></script>
+      <link rel="modulepreload" crossorigin="" href="/assets/_plugin-vue_export-helper-C21jn19j.js">
+      <link rel="stylesheet" crossorigin="" href="/assets/app-X0nJPTPV.css">
+    <link rel="modulepreload" crossorigin="" href="/assets/DocumentView-BQO83Dar.js"><link rel="stylesheet" href="/assets/DocumentView-Dusi1p1b.css"></head>
+    <body>
+        <div id="app" data-server-rendered="true"><div class="app-shell" data-v-0fe31637=""><header class="header-bar" data-v-0fe31637="" data-v-78647d1b=""><a class="skip-link" href="#main-content" data-v-78647d1b="">跳转到主要内容</a><div class="header-shell" data-v-78647d1b=""><a href="/zh" class="brand-link" aria-label="首页" data-v-78647d1b=""><img src="/image/rustminersystem.png" alt="" class="brand-logo rotating-element" data-v-78647d1b=""><span class="brand-name" data-v-78647d1b="">RustMinerSystem</span></a><nav class="desktop-nav" aria-label="主导航" data-v-78647d1b=""><ul class="desktop-nav-list" data-v-78647d1b=""><li data-v-78647d1b=""><!--[--><!--[--><!--[--><!--[--><button class="outline-none nav-link nav-trigger" aria-label="下载" data-v-78647d1b="" id="reka-dropdown-menu-trigger-v-0" type="button" aria-haspopup="menu" aria-expanded="false" data-state="closed"><!--[--><!--[--><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg><span data-v-78647d1b="">下载</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg><!--]--><!--]--></button><!--v-if--><!--]--><!--]--><!--]--><!--]--></li><li data-v-78647d1b=""><!--[--><!--[--><!--[--><!--[--><button class="outline-none nav-link nav-trigger is-active" aria-label="文档" data-v-78647d1b="" id="reka-dropdown-menu-trigger-v-1" type="button" aria-haspopup="menu" aria-expanded="false" data-state="closed"><!--[--><!--[--><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"></path></svg><span data-v-78647d1b="">文档</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg><!--]--><!--]--></button><!--v-if--><!--]--><!--]--><!--]--><!--]--></li><!--[--><li data-v-78647d1b=""><a href="/zh/customized-version" class="nav-link" data-v-78647d1b="">定制版本</a></li><li data-v-78647d1b=""><a href="/zh/about" class="nav-link" data-v-78647d1b="">关于</a></li><!--]--></ul></nav><div class="header-actions" data-v-78647d1b=""><div id="docsearch" class="docsearch-mount" data-v-78647d1b="" data-v-ae3850ed=""></div><!--[--><!--[--><!--[--><!--[--><button class="outline-none language-trigger" aria-label="语言" data-v-78647d1b="" id="reka-dropdown-menu-trigger-v-2" type="button" aria-haspopup="menu" aria-expanded="false" data-state="closed"><!--[--><!--[--><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-md" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"></path></svg><span class="language-label" data-v-78647d1b="">简体中文</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"></path></svg><!--]--><!--]--></button><!--v-if--><!--]--><!--]--><!--]--><!--]--><a href="https://github.com/evilgenius-dot" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 打开 RustMinerSystem" data-v-78647d1b=""><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon-md" aria-hidden="true" data-v-78647d1b=""><path d="M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16.9891 7.82344 16.2563C5.625 16.6609 5.05625 15.7203 4.88125 15.2281C4.78281 14.9766 4.35625 14.2 3.98438 13.9922C3.67812 13.8281 3.24063 13.4234 3.97344 13.4125C4.6625 13.4016 5.15469 14.0469 5.31875 14.3094C6.10625 15.6328 7.36406 15.2609 7.86719 15.0312C7.94375 14.4625 8.17344 14.0797 8.425 13.8609C6.47813 13.6422 4.44375 12.8875 4.44375 9.54062C4.44375 8.58906 4.78281 7.80156 5.34062 7.18906C5.25313 6.97031 4.94687 6.07344 5.42812 4.87031C5.42812 4.87031 6.16094 4.64063 7.83437 5.76719C8.53438 5.57031 9.27813 5.47187 10.0219 5.47187C10.7656 5.47187 11.5094 5.57031 12.2094 5.76719C13.8828 4.62969 14.6156 4.87031 14.6156 4.87031C15.0969 6.07344 14.7906 6.97031 14.7031 7.18906C15.2609 7.80156 15.6 8.57812 15.6 9.54062C15.6 12.8984 13.5547 13.6422 11.6078 13.8609C11.925 14.1344 12.1984 14.6594 12.1984 15.4797C12.1984 16.65 12.1875 17.5906 12.1875 17.8859C12.1875 18.1156 12.3516 18.3891 12.7891 18.3016C14.5261 17.7152 16.0355 16.5988 17.1048 15.1096C18.1741 13.6204 18.7495 11.8333 18.75 10C18.75 5.16562 14.8344 1.25 10 1.25Z"></path></svg></a><button type="button" class="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="打开导航菜单" data-v-78647d1b=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-lg" data-v-78647d1b=""><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path></svg></button></div></div><nav id="mobile-menu" class="mobile-nav" aria-label="移动端导航" style="display:none;" data-v-78647d1b=""><ul class="mobile-nav-list" data-v-78647d1b=""><li class="mobile-document-group" data-v-78647d1b=""><p data-v-78647d1b="">文档</p><!--[--><a href="/zh/document/rustminersystem" class="mobile-document-link" data-v-78647d1b="">RustMinerSystem</a><a href="/zh/document/poolnode" class="mobile-document-link" data-v-78647d1b="">PoolNode</a><a href="/zh/document/rms" class="mobile-document-link" data-v-78647d1b="">RMS</a><a aria-current="page" href="/zh/document/rustminersystem-cli" class="mobile-document-link" data-v-78647d1b="">RustMinerSystem CLI</a><a href="/zh/document/custom-management" class="mobile-document-link" data-v-78647d1b="">定制管理</a><!--]--></li><!--[--><li data-v-78647d1b=""><a href="/zh/customized-version" class="mobile-nav-link" data-v-78647d1b="">定制版本</a></li><li data-v-78647d1b=""><a href="/zh/about" class="mobile-nav-link" data-v-78647d1b="">关于</a></li><!--]--><li class="mobile-download-group" data-v-78647d1b=""><p data-v-78647d1b="">下载</p><!--[--><a href="/zh/download/rustminersystem-core-server" class="mobile-download-link" data-v-78647d1b="">RustMinerSystem 核心服务端</a><a href="/zh/download/rms-secure-client" class="mobile-download-link" data-v-78647d1b="">RMS 安全客户端</a><a href="/zh/download/rustminerapp-mobile-app" class="mobile-download-link" data-v-78647d1b="">RustMinerApp 移动应用</a><a href="/zh/download/poolnode-mobile-app" class="mobile-download-link" data-v-78647d1b="">PoolNode 移动应用</a><a href="/zh/download/rustminersystem-cli" class="mobile-download-link" data-v-78647d1b="">RustMinerSystem CLI</a><!--]--></li><li class="mobile-language-group" data-v-78647d1b=""><!--[--><button type="button" class="mobile-language-button" data-v-78647d1b="">English</button><button type="button" class="is-active mobile-language-button" data-v-78647d1b="">简体中文</button><button type="button" class="mobile-language-button" data-v-78647d1b="">Русский</button><!--]--></li></ul></nav></header><main id="main-content" class="docs-shell" data-v-0fe31637="" data-v-0f6403c6=""><aside class="docs-sidebar" aria-labelledby="docs-sidebar-title" data-v-0f6403c6=""><div class="docs-sidebar-inner" data-v-0f6403c6=""><div class="sidebar-groups" data-v-0f6403c6=""><!--[--><section class="sidebar-group" data-v-0f6403c6=""><h2 data-v-0f6403c6="">开始使用</h2><nav class="sidebar-nav" data-v-0f6403c6=""><!--[--><a href="/zh/document/rustminersystem-cli" class="sidebar-link" data-v-0f6403c6="">概览</a><a aria-current="page" href="/zh/document/rustminersystem-cli/configuration" class="router-link-active router-link-exact-active sidebar-link is-active" data-v-0f6403c6="">修改配置</a><!--]--></nav></section><!--]--></div></div></aside><article class="docs-article" aria-labelledby="document-title" data-v-0f6403c6=""><header class="docs-header" data-v-0f6403c6=""><p class="eyebrow" data-v-0f6403c6="">文档</p><h1 id="document-title" data-v-0f6403c6="">CLI 模式修改 RustMinerSystem 配置</h1><p data-v-0f6403c6="">在 RustMinerSystem CLI 模式下编辑 rust-config、port-config.json 和 wallet-config.json，并通过 rustminer restart 使配置生效。</p></header><section class="document-content" aria-label="Documentation content" data-v-0f6403c6=""><h1 id="cli-模式修改-rustminersystem-配置">CLI 模式修改 RustMinerSystem 配置</h1>
+<p>CLI 模式下不通过 Web 后台修改配置，而是在服务器终端中直接编辑 RustMinerSystem 的配置文件。保存配置文件后，运行 <code>rustminer restart</code> 重启服务即可生效。</p>
+<p>默认安装目录为：</p>
+<pre><code class="language-bash">cd /root/rustminersystem
+</code></pre>
+<p>如果你的程序目录经过定制或调试环境不同，请先在安装脚本中选择 <code>21</code> 查看运行状态和文件路径。</p>
+<h2 id="修改流程">修改流程</h2>
+<p>推荐按下面顺序操作：</p>
+<pre><code class="language-bash">cd /root/rustminersystem
+
+cp rust-config rust-config.bak.$(date +%Y%m%d%H%M%S)
+cp port-config.json port-config.json.bak.$(date +%Y%m%d%H%M%S)
+cp wallet-config.json wallet-config.json.bak.$(date +%Y%m%d%H%M%S)
+
+nano rust-config
+nano port-config.json
+nano wallet-config.json
+
+rustminer restart
+</code></pre>
+<p>也可以使用 <code>vim</code>、<code>vi</code> 或其他文本编辑器。修改 JSON 文件后，建议先校验格式：</p>
+<pre><code class="language-bash">jq . port-config.json &gt;/dev/null
+jq . wallet-config.json &gt;/dev/null
+</code></pre>
+<p>如果服务器没有安装 <code>jq</code>，至少要确认 JSON 的引号、逗号、中括号和大括号没有缺失。</p>
+<h2 id="rust-config">rust-config</h2>
+<p><code>rust-config</code> 是一行一个配置项的文本文件，格式为：</p>
+<pre><code class="language-bash">KEY=value
+</code></pre>
+<p>普通开关和端口直接写数字；数组或对象类配置使用单行 JSON。不要把一个 JSON 值拆成多行。</p>
+<p>常用配置项：</p>
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ENABLE_WEB_UI</code></td>
+<td>是否开启 Web 管理后台。<code>1</code> 表示开启，<code>0</code> 表示关闭。CLI 模式要求关闭 Web 访问，即设置为 <code>0</code>。</td>
+</tr>
+<tr>
+<td><code>ENABLE_WEB_TLS</code></td>
+<td>Web 后台访问协议。<code>1</code> 表示 HTTPS，<code>0</code> 表示 HTTP。只有 Web 访问开启时才需要关注。</td>
+</tr>
+<tr>
+<td><code>START_PORT</code></td>
+<td>Web 后台访问端口，建议使用 <code>10000-65535</code> 范围内的端口。</td>
+</tr>
+<tr>
+<td><code>RMS_PORT</code></td>
+<td>RMS 接入端口，建议使用 <code>10000-65535</code> 范围内的端口。</td>
+</tr>
+<tr>
+<td><code>POOLNODE_PORT</code></td>
+<td>PoolNode 访问端口，建议使用 <code>10000-65535</code> 范围内的端口。</td>
+</tr>
+<tr>
+<td><code>IP_BLACKLIST</code></td>
+<td>IP 黑名单，JSON 数组格式。</td>
+</tr>
+<tr>
+<td><code>WALLET_BLACKLIST</code></td>
+<td>钱包黑名单，JSON 数组格式。</td>
+</tr>
+<tr>
+<td><code>WALLET_WHITELIST</code></td>
+<td>钱包白名单，JSON 数组格式。</td>
+</tr>
+<tr>
+<td><code>POOL_ENDPOINT</code></td>
+<td>自定义矿池和自定义钱包配置，JSON 对象格式。</td>
+</tr>
+<tr>
+<td><code>RMS</code></td>
+<td>RMS 相关配置，JSON 对象格式。</td>
+</tr>
+<tr>
+<td><code>WARNING_SETTING</code></td>
+<td>告警配置，JSON 对象格式。</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<pre><code class="language-bash">ENABLE_WEB_UI=0
+ENABLE_WEB_TLS=0
+START_PORT=46679
+RMS_PORT=13293
+POOLNODE_PORT=15354
+IP_BLACKLIST=["203.0.113.10","198.51.100.20"]
+WALLET_BLACKLIST=["wallet-name"]
+WALLET_WHITELIST=[]
+</code></pre>
+<p>修改端口时，也可以用 <code>sed</code> 直接替换：</p>
+<pre><code class="language-bash">sed -i 's/^START_PORT=.*/START_PORT=46679/' rust-config
+sed -i 's/^RMS_PORT=.*/RMS_PORT=13293/' rust-config
+sed -i 's/^POOLNODE_PORT=.*/POOLNODE_PORT=15354/' rust-config
+</code></pre>
+<p>请不要把 <code>REMOTE_KEY</code>、<code>REMOTE_CODE</code>、<code>OB_TOKEN</code>、SMTP 密钥等令牌写入公开文档或截图。如果只是调整端口、Web 开关或黑名单，通常不需要修改这些密钥类字段。</p>
+<h2 id="port-configjson">port-config.json</h2>
+<p><code>port-config.json</code> 是端口配置文件，整体是一个 JSON 数组，每个对象代表一个矿机接入端口。</p>
+<h3 id="端口-id-格式">端口 ID 格式</h3>
+<p>手动新增端口时，<code>id</code> 需要按固定格式生成：</p>
+<pre><code class="language-text">前 5 位随机字母或数字 + . + 后 2 位随机数字
+</code></pre>
+<p>例如：</p>
+<pre><code class="language-text">6YMpg.06
+A1b2C.34
+</code></pre>
+<p>也可以理解为正则格式：<code>[A-Za-z0-9]{5}\.[0-9]{2}</code>。同一个 <code>port-config.json</code> 文件内不要重复使用相同的 <code>id</code>。</p>
+<p>常用字段：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>端口 ID。已有端口建议保留原值；手动新增时使用 <code>6YMpg.06</code> 这种格式，并确保唯一。</td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>本地监听端口，也就是矿机连接 RustMinerSystem 的端口。</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>端口名称，可为空。</td>
+</tr>
+<tr>
+<td><code>currency</code></td>
+<td>币种名称。</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>算法或分类名称。</td>
+</tr>
+<tr>
+<td><code>protocol</code></td>
+<td>矿机接入协议：<code>0</code> TCP，<code>1</code> TLS，<code>3</code> TTS，<code>5</code> RMS2，<code>6</code> RMS3，<code>8</code> RMS3(zstd)，<code>9</code> TP。</td>
+</tr>
+<tr>
+<td><code>limit_connections</code></td>
+<td>端口连接数限制。</td>
+</tr>
+<tr>
+<td><code>pool_address</code></td>
+<td>主矿池地址。</td>
+</tr>
+<tr>
+<td><code>connect_mode</code></td>
+<td>主矿池连接协议：<code>0</code> TCP，<code>1</code> TLS。</td>
+</tr>
+<tr>
+<td><code>pool_address2</code></td>
+<td>备用矿池地址，可为空。</td>
+</tr>
+<tr>
+<td><code>connect_mode2</code></td>
+<td>备用矿池连接协议：<code>0</code> TCP，<code>1</code> TLS。</td>
+</tr>
+<tr>
+<td><code>mode</code></td>
+<td>端口模式：<code>0</code> 高效模式，<code>1</code> 兼容模式。</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<pre><code class="language-json">[
+    {
+        "id": "6YMpg.06",
+        "port": 47777,
+        "name": "IRON proxy",
+        "currency": "IRON",
+        "category": "blake3s",
+        "protocol": 1,
+        "limit_connections": 65535,
+        "pool_address": "hk.ironfish.example.com:1145",
+        "pool_address2": "",
+        "connect_mode": 0,
+        "connect_mode2": 0,
+        "mode": 0,
+        "proxy_addr": null,
+        "proxy_device": null,
+        "pattern_addr": "",
+        "replace_addr": "",
+        "status": 2,
+        "error": "",
+        "nc": 1
+    }
+]
+</code></pre>
+<p>如果只修改某个端口的矿池地址，可以使用 <code>jq</code>：</p>
+<pre><code class="language-bash">jq 'map(if .id == "6YMpg.06" then .pool_address = "hk.ironfish.example.com:1145" else . end)' port-config.json &gt; port-config.json.tmp
+mv port-config.json.tmp port-config.json
+rustminer restart
+</code></pre>
+<h2 id="wallet-configjson">wallet-config.json</h2>
+<p><code>wallet-config.json</code> 是钱包配置文件，整体也是一个 JSON 数组。每个对象代表一条钱包或设备相关的转发、费率配置。</p>
+<h3 id="钱包-id-与端口关联">钱包 ID 与端口关联</h3>
+<p>手动新增钱包配置时，<code>id</code> 也使用同样的随机格式：</p>
+<pre><code class="language-text">前 5 位随机字母或数字 + . + 后 2 位随机数字
+</code></pre>
+<p>例如 <code>AFq3H.35</code>。同一个 <code>wallet-config.json</code> 文件内不要重复使用相同的 <code>id</code>。</p>
+<p><code>server_id</code> 不是随便生成的随机值，它必须填写 <code>port-config.json</code> 中某个端口的 <code>id</code>。也就是说，如果某个端口配置是：</p>
+<pre><code class="language-json">{
+    "id": "6YMpg.06",
+    "port": 47777
+}
+</code></pre>
+<p>那么绑定到这个端口的钱包配置应写成：</p>
+<pre><code class="language-json">{
+    "id": "AFq3H.35",
+    "server_id": "6YMpg.06"
+}
+</code></pre>
+<p>常用字段：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>钱包配置 ID。已有记录建议保留原值；手动新增时使用 <code>AFq3H.35</code> 这种格式，并确保唯一。</td>
+</tr>
+<tr>
+<td><code>server_id</code></td>
+<td>关联的端口 ID，必须对应 <code>port-config.json</code> 中某个端口对象的 <code>id</code>，不要填端口号，也不要随机生成。</td>
+</tr>
+<tr>
+<td><code>addr</code></td>
+<td>钱包名称或钱包标识。</td>
+</tr>
+<tr>
+<td><code>device</code></td>
+<td>设备名称。</td>
+</tr>
+<tr>
+<td><code>pool_address</code></td>
+<td>钱包对应的矿池地址。</td>
+</tr>
+<tr>
+<td><code>pool_protocol</code></td>
+<td>钱包矿池连接协议：<code>0</code> TCP，<code>1</code> TLS。</td>
+</tr>
+<tr>
+<td><code>ratio</code></td>
+<td>钱包费率，使用小数表示。例如 <code>0.03</code> 表示 3%。</td>
+</tr>
+</tbody>
+</table>
+<p>示例：</p>
+<pre><code class="language-json">[
+    {
+        "id": "AFq3H.35",
+        "server_id": "6YMpg.06",
+        "addr": "wallet-main",
+        "device": "MY20602",
+        "pool_address": "kas.example.com:443",
+        "pool_protocol": 0,
+        "ratio": 0.03
+    }
+]
+</code></pre>
+<p>把某个钱包费率改为 5% 的示例：</p>
+<pre><code class="language-bash">jq 'map(if .id == "AFq3H.35" then .ratio = 0.05 else . end)' wallet-config.json &gt; wallet-config.json.tmp
+mv wallet-config.json.tmp wallet-config.json
+rustminer restart
+</code></pre>
+<h2 id="生效与回滚">生效与回滚</h2>
+<p>修改完成后必须重启：</p>
+<pre><code class="language-bash">rustminer restart
+</code></pre>
+<p>如果重启后无法连接端口或配置异常，可以恢复备份：</p>
+<pre><code class="language-bash">cp rust-config.bak.YYYYMMDDHHMMSS rust-config
+cp port-config.json.bak.YYYYMMDDHHMMSS port-config.json
+cp wallet-config.json.bak.YYYYMMDDHHMMSS wallet-config.json
+rustminer restart
+</code></pre>
+<p>恢复时请把 <code>YYYYMMDDHHMMSS</code> 换成你实际备份文件名中的时间。</p>
+</section><nav class="page-nav" aria-label="Documentation page navigation" data-v-0f6403c6=""><a href="/zh/document/rustminersystem-cli" class="page-nav-link" data-v-0f6403c6=""><span data-v-0f6403c6="">上一篇</span> 概览</a><!----></nav></article><aside class="article-aside" aria-labelledby="article-toc-title" data-v-0f6403c6=""><div class="article-aside-inner" data-v-0f6403c6=""><section class="aside-section" data-v-0f6403c6=""><p class="aside-label" data-v-0f6403c6="">阅读时间</p><p class="reading-time" data-v-0f6403c6="">约 2 分钟</p></section><section class="aside-section" data-v-0f6403c6=""><h2 id="article-toc-title" data-v-0f6403c6="">本页内容</h2><nav class="article-toc" data-v-0f6403c6=""><!--[--><a class="toc-link toc-link-level-2" href="#修改流程" data-v-0f6403c6="">修改流程</a><a class="toc-link toc-link-level-2" href="#rust-config" data-v-0f6403c6="">rust-config</a><a class="toc-link toc-link-level-2" href="#port-configjson" data-v-0f6403c6="">port-config.json</a><a class="toc-link toc-link-level-3" href="#端口-id-格式" data-v-0f6403c6="">端口 ID 格式</a><a class="toc-link toc-link-level-2" href="#wallet-configjson" data-v-0f6403c6="">wallet-config.json</a><a class="toc-link toc-link-level-3" href="#钱包-id-与端口关联" data-v-0f6403c6="">钱包 ID 与端口关联</a><a class="toc-link toc-link-level-2" href="#生效与回滚" data-v-0f6403c6="">生效与回滚</a><!--]--></nav></section></div></aside></main><footer class="footer-bar" data-v-0fe31637="" data-v-16c1446c=""><div class="footer-shell" data-v-16c1446c=""><section class="footer-brand" aria-label="RustMinerSystem 页脚" data-v-16c1446c=""><a href="/zh" class="brand-link" aria-label="首页" data-v-16c1446c=""><img src="/image/rustminersystem.png" alt="" class="brand-logo rotating-element" data-v-16c1446c=""><span class="brand-name" data-v-16c1446c="">RustMinerSystem</span></a><p class="footer-description" data-v-16c1446c="">RustMinerSystem 不只是矿池代理入口：它能把矿机接入第三方矿池并按策略完成收益与费率分配，也能通过 PoolNode 搭建真正的自有矿池，在结算层管理费率；当带宽和公网连接成为瓶颈时，可叠加 RMS 加密压缩链路，把部署、分配和运维收拢到同一套系统。</p></section><nav class="footer-nav" aria-label="页脚导航" data-v-16c1446c=""><section class="footer-group" data-v-16c1446c=""><h2 data-v-16c1446c="">产品</h2><!--[--><a href="/zh/document/rustminersystem" class="footer-link" data-v-16c1446c="">文档</a><a href="/zh/customized-version" class="footer-link" data-v-16c1446c="">定制版本</a><a href="/zh/customized-version-lookup" class="footer-link" data-v-16c1446c="">定制查询</a><a href="/zh/about" class="footer-link" data-v-16c1446c="">关于</a><!--]--></section><section class="footer-group" data-v-16c1446c=""><h2 data-v-16c1446c="">下载</h2><!--[--><a href="/zh/download/rustminersystem-core-server" class="footer-link" data-v-16c1446c="">RustMinerSystem 核心服务端</a><a href="/zh/download/rms-secure-client" class="footer-link" data-v-16c1446c="">RMS 安全客户端</a><a href="/zh/download/rustminerapp-mobile-app" class="footer-link" data-v-16c1446c="">RustMinerApp 移动应用</a><a href="/zh/download/poolnode-mobile-app" class="footer-link" data-v-16c1446c="">PoolNode 移动应用</a><a href="/zh/download/rustminersystem-cli" class="footer-link" data-v-16c1446c="">RustMinerSystem CLI</a><!--]--></section><section class="footer-group" data-v-16c1446c=""><h2 data-v-16c1446c="">矿池合作伙伴</h2><!--[--><a href="https://www.viabtc.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/viabtc.png" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">ViaBTC</span></a><a href="https://www.f2pool.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/f2pool.png" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">F2Pool</span></a><a href="https://www.antpool.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/antpool.png" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">AntPool</span></a><a href="https://www.poolin.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/poolin.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">Poolin</span></a><!--]--></section><section class="footer-group" data-v-16c1446c=""><h2 data-v-16c1446c="">全球云与网络基础设施合作商</h2><!--[--><a href="https://www.vultr.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/vultr.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">Vultr</span></a><a href="https://aws.amazon.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/aws.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">亚马逊 AWS</span></a><a href="https://azure.microsoft.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/azure.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">微软云 Azure</span></a><a href="https://www.alibabacloud.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/aliyun.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">阿里云国际</span></a><a href="https://www.cloudflare.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/cloudflare.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">Cloudflare</span></a><a href="https://github.com/" class="footer-link partner-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><img src="/image/partners/github.svg" alt="" class="partner-icon" aria-hidden="true" data-v-16c1446c=""><span data-v-16c1446c="">GitHub</span></a><!--]--></section><section class="footer-group" data-v-16c1446c=""><h2 data-v-16c1446c="">社区</h2><!--[--><a href="https://github.com/evilgenius-dot" class="footer-link external-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon-sm" aria-hidden="true" data-v-16c1446c=""><path d="M10 1.25C5.16562 1.25 1.25 5.16562 1.25 10C1.25 13.8719 3.75469 17.1422 7.23281 18.3016C7.67031 18.3781 7.83437 18.1156 7.83437 17.8859C7.83437 17.6781 7.82344 16.9891 7.82344 16.2563C5.625 16.6609 5.05625 15.7203 4.88125 15.2281C4.78281 14.9766 4.35625 14.2 3.98438 13.9922C3.67812 13.8281 3.24063 13.4234 3.97344 13.4125C4.6625 13.4016 5.15469 14.0469 5.31875 14.3094C6.10625 15.6328 7.36406 15.2609 7.86719 15.0312C7.94375 14.4625 8.17344 14.0797 8.425 13.8609C6.47813 13.6422 4.44375 12.8875 4.44375 9.54062C4.44375 8.58906 4.78281 7.80156 5.34062 7.18906C5.25313 6.97031 4.94687 6.07344 5.42812 4.87031C5.42812 4.87031 6.16094 4.64063 7.83437 5.76719C8.53438 5.57031 9.27813 5.47187 10.0219 5.47187C10.7656 5.47187 11.5094 5.57031 12.2094 5.76719C13.8828 4.62969 14.6156 4.87031 14.6156 4.87031C15.0969 6.07344 14.7906 6.97031 14.7031 7.18906C15.2609 7.80156 15.6 8.57812 15.6 9.54062C15.6 12.8984 13.5547 13.6422 11.6078 13.8609C11.925 14.1344 12.1984 14.6594 12.1984 15.4797C12.1984 16.65 12.1875 17.5906 12.1875 17.8859C12.1875 18.1156 12.3516 18.3891 12.7891 18.3016C14.5261 17.7152 16.0355 16.5988 17.1048 15.1096C18.1741 13.6204 18.7495 11.8333 18.75 10C18.75 5.16562 14.8344 1.25 10 1.25Z"></path></svg><span data-v-16c1446c="">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a><a href="https://t.me/rustkt" class="footer-link external-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"></path></svg><span data-v-16c1446c="">Telegram</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a><a href="https://t.me/rustkt/55515" class="footer-link external-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"></path></svg><span data-v-16c1446c="">Telegram（英文）</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a><a href="https://t.me/rustkt/55517" class="footer-link external-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"></path></svg><span data-v-16c1446c="">Telegram（俄语）</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a><a href="https://discord.com/invite/xpjRnv8wpX" class="footer-link external-link" target="_blank" rel="noopener noreferrer" data-v-16c1446c=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-sm" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path></svg><span data-v-16c1446c="">Discord</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="icon-xs" data-v-16c1446c=""><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg></a><!--]--></section></nav></div><div class="footer-bottom" data-v-16c1446c=""><p data-v-16c1446c="">© 2026 RustMinerSystem. 保留所有权利。</p></div></footer><!--[--><!--[--><!--[--><!--v-if--><!--]--><!--]--><!--]--></div></div>
+    
+
+</body></html>
