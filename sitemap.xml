@@ -194,6 +194,30 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/download/rustminersystem-cli" />
     </url>
     <url>
+        <loc>https://minerproxy.org/download/custom-ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/download/custom-ios-widget" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/download/custom-ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/download/custom-ios-widget" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/download/custom-ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/download/custom-ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/download/custom-ios-widget" />
+    </url>
+    <url>
         <loc>https://minerproxy.org/document/rustminersystem</loc>
         <lastmod>2026-05-27</lastmod>
         <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem" />
@@ -960,6 +984,30 @@
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/app-center" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/app-center" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/app-center" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/rustminersystem/transparent-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/rustminersystem/transparent-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/rustminersystem/transparent-proxy</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/rustminersystem/transparent-proxy" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/rustminersystem/transparent-proxy" />
     </url>
     <url>
         <loc>https://minerproxy.org/document/poolnode</loc>
@@ -2280,6 +2328,30 @@
         <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/pool-nodes" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/pool-nodes" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/pool-nodes" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/document/custom-management/ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/ios-widget" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/zh/document/custom-management/ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/ios-widget" />
+    </url>
+    <url>
+        <loc>https://minerproxy.org/ru/document/custom-management/ios-widget</loc>
+        <lastmod>2026-05-27</lastmod>
+        <xhtml:link rel="alternate" hreflang="en" href="https://minerproxy.org/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://minerproxy.org/zh/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://minerproxy.org/ru/document/custom-management/ios-widget" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://minerproxy.org/document/custom-management/ios-widget" />
     </url>
     <url>
         <loc>https://minerproxy.org/document/custom-management/audits-permissions</loc>
